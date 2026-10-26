@@ -1,0 +1,18 @@
+dataset_id,alias,alias_type,source_ref,note
+aishell4,OpenSLR 111,catalog_id,,seed: not checked against a source
+alimeeting,M2MeT data,other_source_name,,seed: not checked against a source
+alimeeting,OpenSLR 119,catalog_id,,seed: not checked against a source
+ami,AMI,short_name,,seed: not checked against a source
+callhome_american_english,LDC97S42,catalog_id,,seed: not checked against a source
+callhome_sre2000,CALLHOME,short_name,,seed: not checked against a source
+callhome_sre2000,LDC2001S97,catalog_id,,seed: not checked against a source
+callhome_sre2000,NIST SRE 2000 CALLHOME,other_source_name,,seed: not checked against a source
+dihard3,DIHARD III,short_name,,seed: not checked against a source
+dipco,DiPCo,short_name,,seed: not checked against a source
+fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
+icsi,LDC2004S02,catalog_id,,seed: not checked against a source
+librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
+magicdata_ramc,OpenSLR 123,catalog_id,,seed: not checked against a source
+magicdata_ramc,RAMC,short_name,,seed: not checked against a source
+mixer6,LDC2013S03,catalog_id,,seed: not checked against a source
+switchboard1,LDC97S62,catalog_id,,seed: not checked against a source

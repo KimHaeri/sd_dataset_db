@@ -1,0 +1,12 @@
+challenge_id,dataset_id,role,source_type,source_ref,checked_on,checked_by,note
+chime6,chime6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime7_dasr,chime6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime7_dasr,dipco,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime7_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_dasr,chime6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_dasr,dipco,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_dasr,notsofar1,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+dihard3,dihard3,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,dev and eval sets of the challenge
+m2met,alimeeting,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+voxsrc21,voxconverse,dev,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,Diarization track; a new test set was used for evaluation

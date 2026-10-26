@@ -1,0 +1,10 @@
+table,path,key_columns,description
+datasets,data/datasets.csv,dataset_id,One row = one dataset (authoritative). Evidence for values is in evidence.csv
+evidence,data/evidence.csv,evidence_id,"One row = evidence for one value in datasets (source, date checked, type)"
+aliases,data/aliases.csv,dataset_id;alias,"Other names of datasets (official names, short names, catalogue numbers, former labels, etc.)"
+relations,data/relations.csv,dataset_id;relation;other_dataset_id,"Relations between datasets (versions, subsets, shared recordings, suspected identity, etc.)"
+splits,data/splits.csv,dataset_id;split,One row = one split of a dataset as published. Each row carries its own source
+challenges,data/challenges.csv,challenge_id,"One row = one evaluation campaign or benchmark (DIHARD, CHiME, VoxSRC, ...)"
+challenge_membership,data/challenge_membership.csv,challenge_id;dataset_id;role,Datasets used by a challenge and in what role. Each row carries its own source
+annotations,data/annotations.csv,dataset_id;item,"Annotations of a dataset other than speaker segments (transcripts, gender, VAD, video tracks, etc.). One row = dataset x item. Each row carries its own source"
+collections,data/collections.csv,dataset_id,One row = one dataset we have downloaded. Measured columns are filled by tools/sync.py from measurements/<dataset_id>.json

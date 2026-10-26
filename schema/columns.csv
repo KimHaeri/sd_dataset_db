@@ -1,0 +1,117 @@
+table,column,type,nulls,evidence,description
+datasets,dataset_id,slug,-,no,Stable ID. Never changed once committed (keep an old ID in aliases as former_label)
+datasets,name,text,-,no,Name as written in the primary source
+datasets,full_title,text,empty,no,Full title
+datasets,collection_status,enum:collection_status,-,status,collected / candidate / needs_decision / deferred / excluded
+datasets,status_reason_codes,enumlist:reason_code,NA,status,Reason codes for statuses other than collected (;-separated). NA for collected
+datasets,status_note,text,empty,no,Notes on the status
+datasets,status_checked_on,date,empty,no,Date the status was last checked
+datasets,languages,isolist,empty;unknown,yes,ISO 639-3 codes (;-separated). mul = multilingual with unknown breakdown
+datasets,language_note,text,empty,no,"Notes on varieties, code-switching and how the language value was decided"
+datasets,domain,enumlist:domain,empty;unknown,yes,"Setting of the recordings (;-separated): meeting, telephone, broadcast, web_video, dinner_party, interview, ..."
+datasets,speech_style,enumlist:speech_style,empty;unknown,yes,How the speech was produced (;-separated): spontaneous / scripted / read / simulated_mixture (single-speaker audio mixed or replayed to make conversations)
+datasets,recording_setup,enumlist:recording_setup,empty;unknown,yes,Microphones and channels (;-separated): close_talk / far_field_single / far_field_array / wearable / telephone_channel / broadcast_mix
+datasets,modality,enum:modality,empty;unknown,yes,audio / audio_visual (video is distributed with the audio)
+datasets,license_spdx,enum:license_spdx,empty,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
+datasets,license_class,enum:license_class,empty,no,Column derived from license_spdx (derived in enums.csv)
+datasets,license_note,text,empty,no,"Gist of the license wording; separate terms for audio, annotations and video go here"
+datasets,access_method,enum:access_method,empty,yes,Access method
+datasets,raw_audio_available,bool,empty;unknown,yes,Whether raw audio is distributed (false when only video links or features are given)
+datasets,release_version,text,empty,no,Version described by this row
+datasets,doi,text,empty,no,DOI
+datasets,source_url,url,empty,no,Official page of the dataset
+datasets,download_url,urllist,empty,no,Direct download locations (;-separated). Read by tools/fetch.py. Only URLs opened and checked
+datasets,paper_url,url,empty,no,Paper URL
+datasets,hours_reported,float,empty;unknown,yes,Total hours of audio per the primary source (all splits)
+datasets,n_sessions_reported,int,empty;unknown,yes,"Number of sessions (meetings, calls, videos, recordings) per the primary source"
+datasets,n_speakers_reported,int,empty;unknown,yes,Number of distinct speakers per the primary source
+datasets,speakers_per_session_reported,range,empty;unknown,yes,Speakers per session per the primary source: N or MIN-MAX
+datasets,overlap_ratio_reported,float,empty;unknown,yes,Overlapped speech as a percentage of total speech per the primary source. Write how it was defined in notes
+datasets,annotation_format,enumlist:annotation_format,empty;unknown;none,yes,Formats in which speaker segments are distributed (;-separated). none = no speaker segments
+datasets,annotation_method,enum:annotation_method,empty;unknown,yes,How speaker segment boundaries were made: manual / forced_alignment / automatic / mixed
+datasets,has_transcript,bool,empty;unknown,yes,Whether word-level or segment-level transcripts are distributed
+datasets,has_official_splits,bool,empty;unknown,yes,Whether the source publishes train/dev/test splits (details in splits.csv)
+datasets,hours_measured,float,empty;unknown;NA,yes,Total hours of the audio we obtained (our measurement)
+datasets,n_sessions_measured,int,empty;unknown;NA,yes,Number of sessions in what we obtained (our measurement)
+datasets,n_speakers_measured,int,empty;unknown;NA,yes,Number of distinct speaker labels in what we obtained (our measurement; labels may not be global across sessions)
+datasets,overlap_ratio_measured,float,empty;unknown;NA,yes,"Overlapped speech as a percentage of total speech, computed by tools/measure.py from the reference RTTM"
+datasets,notes,text,empty,no,Our own notes
+datasets,report_path,path,empty,no,Where details are (reports/<date>_<dataset_id>.md)
+datasets,last_updated_on,date,-,no,Date this row was last updated
+evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2-digit sequence number>
+evidence,dataset_id,slug,-,no,Foreign key to datasets
+evidence,field,text,-,no,Column name in datasets (a column with evidence=yes or status)
+evidence,value,text,-,no,The value the evidence supports (same format as in datasets)
+evidence,source_type,enum:source_type,-,no,user / measured / primary / secondary / seed
+evidence,source_ref,text,-,no,"Source (URL, LDC catalogue page, file path, commit)"
+evidence,locator,text,empty,no,Location within the source (25 words at most)
+evidence,via,text,empty,no,"How it was brought in (seed import, survey, measurement, report)"
+evidence,checked_on,date,-,no,Date checked
+evidence,checked_by,enum:checked_by,-,no,Who checked
+evidence,is_canonical,bool,-,no,true if this is the evidence for the value in datasets (one row per dataset x field)
+evidence,status,enum:evidence_status,-,no,current / superseded / conflicting
+evidence,note,text,empty,no,Notes. Required when a lower-ranked source is made canonical
+aliases,dataset_id,slug,-,no,Foreign key to datasets
+aliases,alias,text,-,no,Alias
+aliases,alias_type,enum:alias_type,-,no,Kind of alias
+aliases,source_ref,text,empty,no,Source
+aliases,note,text,empty,no,Notes
+relations,dataset_id,slug,-,no,Foreign key to datasets
+relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / shares_recordings_with / distinct_from / possibly_same_as
+relations,other_dataset_id,slug,-,no,The other dataset_id
+relations,source_ref,text,empty,no,Source
+relations,note,text,empty,no,Notes
+splits,dataset_id,slug,-,no,Foreign key to datasets
+splits,split,slug,-,no,"Split name as published, lower-cased (train, dev, eval, test, ...)"
+splits,n_sessions_reported,int,empty;unknown,no,Sessions in the split per the source
+splits,hours_reported,float,empty;unknown,no,Hours in the split per the source
+splits,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
+splits,source_ref,text,-,no,Source
+splits,locator,text,empty,no,Location within the source (25 words at most)
+splits,checked_on,date,-,no,Date checked
+splits,checked_by,enum:checked_by,-,no,Who checked
+splits,note,text,empty,no,Notes
+challenges,challenge_id,slug,-,no,Stable ID of the challenge or benchmark
+challenges,name,text,-,no,Name as written by the organisers
+challenges,year,int,empty;unknown,no,Year the evaluation took place
+challenges,source_url,url,empty,no,Official page
+challenges,paper_url,url,empty,no,Overview paper
+challenges,note,text,empty,no,Notes
+challenge_membership,challenge_id,slug,-,no,Foreign key to challenges
+challenge_membership,dataset_id,slug,-,no,Foreign key to datasets
+challenge_membership,role,enum:challenge_role,-,no,train / dev / eval / train_dev_eval
+challenge_membership,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
+challenge_membership,source_ref,text,-,no,Source
+challenge_membership,checked_on,date,-,no,Date checked
+challenge_membership,checked_by,enum:checked_by,-,no,Who checked
+challenge_membership,note,text,empty,no,"Notes (which part of the dataset, re-segmentation, new annotations)"
+annotations,dataset_id,slug,-,no,Foreign key to datasets
+annotations,item,slug,-,no,"Item name (lower-case letters and underscores, e.g. transcript, speaker_gender, face_tracks)"
+annotations,description,text,-,no,Content (what is annotated and in what form)
+annotations,annotator,enum:annotator,empty;unknown,no,Annotator: human / automatic / mixed
+annotations,unit,enum:annotation_unit,empty;unknown,no,Unit of annotation
+annotations,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
+annotations,source_ref,text,-,no,Source
+annotations,locator,text,empty,no,Location within the source (25 words at most)
+annotations,checked_on,date,-,no,Date checked
+annotations,checked_by,enum:checked_by,-,no,Who checked
+annotations,note,text,empty,no,Notes
+collections,dataset_id,slug,-,no,Foreign key to datasets (collection_status must be collected)
+collections,data_env_var,text,-,no,"Environment variable naming the local copy (SD_DATA_ROOT, with the dataset under $SD_DATA_ROOT/<dataset_id>)"
+collections,release_version,text,empty,no,Version we obtained
+collections,obtained_on,date,empty,no,Date we obtained it
+collections,obtained_via,text,empty,no,"How we obtained it (tools/fetch.py, LDC download, request e-mail, ...)"
+collections,rttm_glob,text,-,no,Glob of the reference RTTM files relative to the dataset directory (read by tools/measure.py)
+collections,uem_glob,text,empty;NA,no,Glob of UEM files relative to the dataset directory. NA when the dataset has none
+collections,audio_glob,text,empty;NA,no,Glob of audio files relative to the dataset directory (for durations and formats)
+collections,n_sessions,int,empty;NA,no,Sessions with an RTTM (measured)
+collections,n_speakers,int,empty;NA,no,Distinct speaker labels over all RTTM files (measured)
+collections,speakers_per_session,range,empty;NA,no,MIN-MAX speakers per session (measured)
+collections,speech_hours,float,empty;NA,no,Hours covered by at least one speaker (measured)
+collections,overlap_ratio,float,empty;NA,no,Percentage of speech with two or more speakers (measured)
+collections,audio_hours,float,empty;NA,no,Total hours of the audio files (measured; NA without audio_glob)
+collections,audio_format,text,empty;NA,no,Counts per sample rate / channels (measured)
+collections,measured_on,date,empty;NA,no,Date measured
+collections,measurement_file,path,empty;NA,no,measurements/<dataset_id>.json
+collections,known_issues,text,empty,no,"Known issues (missing files, label inconsistencies, ...)"
+collections,notes,text,empty,no,Our own notes

@@ -1,0 +1,5 @@
+dataset_id,item,description,annotator,unit,source_type,source_ref,locator,checked_on,checked_by,note
+aishell4,transcript,Segment-level Mandarin transcripts,human,segment,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+alimeeting,transcript,Segment-level Mandarin transcripts,human,segment,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+ami,transcript,Word-level orthographic transcripts,human,word,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+chime6,transcript,Segment-level transcripts,human,segment,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,

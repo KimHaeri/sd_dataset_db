@@ -1,0 +1,6 @@
+dataset_id,split,n_sessions_reported,hours_reported,source_type,source_ref,locator,checked_on,checked_by,note
+alimeeting,eval,8,4,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+alimeeting,test,20,10,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+alimeeting,train,212,104.75,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+voxconverse,dev,216,,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+voxconverse,test,232,,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
