@@ -1,8 +1,7 @@
 dataset_id,alias,alias_type,source_ref,note
-aishell4,OpenSLR 111,catalog_id,,seed: not checked against a source
-alimeeting,M2MeT data,other_source_name,,seed: not checked against a source
-alimeeting,OpenSLR 119,catalog_id,,seed: not checked against a source
-ami,AMI,short_name,,seed: not checked against a source
+aishell4,OpenSLR 111,catalog_id,https://www.openslr.org/111/,
+alimeeting,OpenSLR 119,catalog_id,https://www.openslr.org/119/,
+ami,AMI,short_name,https://groups.inf.ed.ac.uk/ami/corpus/,
 callhome_american_english,LDC97S42,catalog_id,,seed: not checked against a source
 callhome_sre2000,CALLHOME,short_name,,seed: not checked against a source
 callhome_sre2000,LDC2001S97,catalog_id,,seed: not checked against a source
@@ -12,7 +11,7 @@ dipco,DiPCo,short_name,,seed: not checked against a source
 fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
 librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
-magicdata_ramc,OpenSLR 123,catalog_id,,seed: not checked against a source
-magicdata_ramc,RAMC,short_name,,seed: not checked against a source
+magicdata_ramc,OpenSLR 123,catalog_id,https://www.openslr.org/123/,
+magicdata_ramc,RAMC,short_name,https://arxiv.org/abs/2203.16844,
 mixer6,LDC2013S03,catalog_id,,seed: not checked against a source
 switchboard1,LDC97S62,catalog_id,,seed: not checked against a source

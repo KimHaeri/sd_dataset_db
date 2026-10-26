@@ -98,7 +98,10 @@ python3 tools/db.py get|set|add|ev|fmt
 
 ## Current state (2026-10-26)
 
-23 datasets, 6 challenges. `candidate` 22, `excluded` 1, `collected` 0. **Every value is still `seed`** (219 canonical evidence rows in `views/needs_verification.csv`): the next step is to confirm them against primary sources, starting with the datasets you plan to download.
+23 datasets, 6 challenges. `candidate` 22, `excluded` 1, `collected` 0.
+
+- Checked against primary sources on 2026-10-26 (official pages, papers, HTTP checks of the download URLs): `ami`, `voxconverse`, `aishell4`, `alimeeting`, `magicdata_ramc`. Their status reason is now `not_yet_downloaded`, and their `download_url` cells hold the URLs that were checked. Three seed values were wrong, all for MagicData-RAMC: it was recorded on smartphones, not over phone calls (`domain`, `recording_setup`), and no source states speakers per conversation (`unknown`).
+- Still `seed`: 156 canonical evidence rows in `views/needs_verification.csv`, including the languages of `ami` and `voxconverse` and the speech style of `voxconverse`, which no source states.
 
 Not yet surveyed: DIHARD I/II, NIST RT meeting sets, VoxSRC test sets after 2021, DISPLACE 2024, AISHELL-5, CHiME-8 MMCSG, RealMAN, Korean conversational corpora (e.g. AIHub), child-language and clinical corpora.
 

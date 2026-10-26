@@ -1,6 +1,11 @@
 dataset_id,split,n_sessions_reported,hours_reported,source_type,source_ref,locator,checked_on,checked_by,note
-alimeeting,eval,8,4,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
-alimeeting,test,20,10,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
-alimeeting,train,212,104.75,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
-voxconverse,dev,216,,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
-voxconverse,test,232,,seed,assistant background knowledge at repository creation (no source opened),,2026-10-26,claude,
+aishell4,test,20,12.72,primary,https://arxiv.org/abs/2104.03603,"Table 1: Evaluation 12.72 h, 20 sessions",2026-10-26,claude,Called evaluation in the paper and test on OpenSLR
+aishell4,train,191,107.5,primary,https://arxiv.org/abs/2104.03603,"Table 1: Training 107.50 h, 191 sessions",2026-10-26,claude,
+alimeeting,eval,8,4,primary,https://www.openslr.org/119/,"Split table: Eval 4 h, 8 sessions",2026-10-26,claude,
+alimeeting,test,20,10,primary,https://www.openslr.org/119/,"Split table: Test 10 h, 20 sessions",2026-10-26,claude,
+alimeeting,train,212,104.75,primary,https://www.openslr.org/119/,"Split table: Train 104.75 h, 212 sessions",2026-10-26,claude,
+magicdata_ramc,dev,19,9.89,primary,https://arxiv.org/abs/2203.16844,"Table 2: Development 9.89 h, 19 samples",2026-10-26,claude,
+magicdata_ramc,test,43,20.64,primary,https://arxiv.org/abs/2203.16844,"Table 2: Test 20.64 h, 43 samples",2026-10-26,claude,
+magicdata_ramc,train,289,149.65,primary,https://arxiv.org/abs/2203.16844,"Table 2: Training 149.65 h, 289 samples",2026-10-26,claude,
+voxconverse,dev,216,20.3,primary,https://arxiv.org/abs/2007.01216,"Sec. 3: 216 videos covering 1,218 minutes",2026-10-26,claude,
+voxconverse,test,232,43.53,primary,https://arxiv.org/abs/2007.01216,"Sec. 3: approximately 232 videos covering 2,612 minutes",2026-10-26,claude,The paper says approximately; the v0.3 repository holds 232 RTTM files

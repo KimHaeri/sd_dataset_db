@@ -1,1 +1,4 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
+magicdata_ramc,domain,superseded,conversation,primary,telephone,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+magicdata_ramc,recording_setup,superseded,mobile_device,primary,telephone_channel,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+magicdata_ramc,speakers_per_session_reported,superseded,unknown,primary,2,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
