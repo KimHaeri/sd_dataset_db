@@ -148,6 +148,30 @@ def check_types(tables, cols, db, enums):
         derived = enums["license_spdx"].get(row["license_spdx"], {}).get("derived", "")
         if row["license_class"] != derived:
             err(f"datasets {row['dataset_id']}: license_class {row['license_class']!r} != derived {derived!r}")
+        allowed = allowed_tiers(row["license_spdx"])
+        if row["license_tier"] and allowed and row["license_tier"] not in allowed:
+            err(f"datasets {row['dataset_id']}: license_tier {row['license_tier']!r} does not fit "
+                f"license_spdx {row['license_spdx']!r} (allowed: {', '.join(sorted(allowed))})")
+
+
+def allowed_tiers(spdx):
+    """Tiers a licence permits. hold and excluded are always allowed except where noted.
+
+    A permissive licence can still be held or excluded (terms that differ by part, platform terms),
+    but ShareAlike or NonCommercial terms can never be train, ND is always excluded and an
+    institutional licence is licensed_internal. Empty: no licence recorded, no constraint.
+    """
+    if not spdx:
+        return set()
+    if "-ND-" in spdx:
+        return {"excluded"}
+    if spdx in ("LicenseRef-LDC-member-or-nonmember", "LicenseRef-proprietary-restricted"):
+        return {"licensed_internal", "excluded"}
+    if "-SA-" in spdx or "-NC-" in spdx or spdx == "LicenseRef-custom-research-only":
+        return {"eval", "hold", "excluded"}
+    if spdx in ("none_stated", "unknown", "conflicting", "LicenseRef-other"):
+        return {"hold", "excluded"}
+    return {"train", "hold", "excluded"}
 
 
 # ---- 3. keys, foreign keys, aliases ---------------------------------------

@@ -31,6 +31,24 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 - `excluded` needs a clear reason code: no time-aligned speaker labels, single speaker per recording, duplicate, unobtainable.
 - `collected` requires a `collections.csv` row, a measurement and no remaining `seed` value.
 
+## License tiers
+
+`license_tier` records what a dataset may be used for. Work it out from the licence text (in the copy we hold and on the current official page), then record it with `tools/db.py ev`, citing the same source as the licence.
+
+| Tier | Licences | Use |
+|---|---|---|
+| `train` | CC0, CC BY, MIT, Apache-2.0, CDLA-Permissive, public domain | Training and evaluation |
+| `eval` | CC BY-SA, CC BY-NC, CC BY-NC-SA, research-only, if redistribution is allowed | Open-set evaluation only |
+| `licensed_internal` | LDC, ELRA and other institutional licences | Internal use where the lab holds the licence; the maintainer decides the use |
+| `excluded` | NoDerivatives, no redistribution, region-bound or paid terms | Not used |
+| `hold` | No licence, `unknown`, `conflicting`, or redistribution terms not known | Undecided |
+
+- `tools/validate.py` enforces the licence side: ND is always `excluded`; LDC and proprietary terms are `licensed_internal` or `excluded`; ShareAlike, NonCommercial and research-only are never `train`; `none_stated`, `unknown` and `conflicting` are `hold` or `excluded`. A permissive licence may still be `hold` or `excluded` (for example terms that differ by part).
+- Terms that differ for audio, annotations and video: the tier follows the most restrictive part we use, and `license_note` says which part is which.
+- A simulation has no licence of its own. Its tier follows the most restrictive of its speech, noise and RIR sources, which `license_note` lists one by one; when conditions differ (clean vs noise), the row takes the most restrictive one and `license_note` gives the tier per condition.
+- Do not set a tier on a licence that is still `seed`: verify the licence first.
+- A tier says what data may be used for, not that an evaluation set is clean: check that it shares no recordings or speakers with the training data.
+
 ## Workflow: verify a seed value
 
 1. Open `views/needs_verification.csv` and pick a dataset.

@@ -15,6 +15,7 @@ datasets,modality,enum:modality,empty;unknown,yes,audio / audio_visual (video is
 datasets,license_spdx,enum:license_spdx,empty,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
 datasets,license_class,enum:license_class,empty,no,Column derived from license_spdx (derived in enums.csv)
 datasets,license_note,text,empty,no,"Gist of the license wording; separate terms for audio, annotations and video go here"
+datasets,license_tier,enum:license_tier,empty,yes,"What the data may be used for, from its licence: train / eval / licensed_internal / excluded / hold (rules in docs/manual.md)"
 datasets,access_method,enum:access_method,empty,yes,Access method
 datasets,raw_audio_available,bool,empty;unknown,yes,Whether raw audio is distributed (false when only video links or features are given)
 datasets,release_version,text,empty,no,Version described by this row

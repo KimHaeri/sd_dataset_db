@@ -46,6 +46,7 @@ Diarization-specific columns of `datasets`:
 - **IDs** match `^[a-z][a-z0-9]*(_[a-z0-9]+)*$` and never change once committed (keep an old one in `aliases` as `former_label`).
 - **CSV format**: UTF-8, no BOM, LF, minimal quoting, rows in key order. After editing by hand, run `python3 tools/db.py fmt`.
 - **Licenses**: `license_spdx` maps the stated terms to an SPDX identifier or `LicenseRef-...`; `license_class` is derived from it mechanically. Separate terms for audio, annotations and video go in `license_note`.
+- **License tier**: `license_tier` says what the data may be used for: `train` (permissive), `eval` (ShareAlike, NonCommercial or research-only terms that allow redistribution; open-set evaluation only), `licensed_internal` (LDC, ELRA), `excluded` (NoDerivatives, no redistribution, paid) or `hold` (undecided). It carries evidence like the licence. `license_class` is not the tier: CC BY-SA is `open` but `eval`. `tools/validate.py` rejects a tier that the licence does not allow (rules in `docs/manual.md`).
 - **Language**: everything in the DB and its documents is English.
 - **No machine-specific paths**: local data is referred to by environment variable (`$SD_DATA_ROOT/<dataset_id>`), set in the git-ignored `.env`. `tools/validate.py` rejects absolute home paths in tracked files.
 

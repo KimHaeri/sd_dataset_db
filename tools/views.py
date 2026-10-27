@@ -13,7 +13,7 @@ import db as dbmod
 
 WIDE_COLS = [
     "dataset_id", "name", "collection_status", "status_reason_codes", "languages", "domain", "speech_style",
-    "recording_setup", "modality", "license_spdx", "license_class", "access_method", "raw_audio_available",
+    "recording_setup", "modality", "license_spdx", "license_class", "license_tier", "access_method", "raw_audio_available",
     "hours_reported", "n_sessions_reported", "n_speakers_reported", "speakers_per_session_reported",
     "overlap_ratio_reported", "annotation_format", "annotation_method", "has_transcript", "has_official_splits",
     "hours_measured", "n_sessions_measured", "n_speakers_measured", "overlap_ratio_measured",
