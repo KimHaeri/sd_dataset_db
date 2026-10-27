@@ -26,6 +26,7 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 ```
 
 - `candidate` with `unexamined` is the default for a newly found dataset.
+- `candidate` with `lab_copy_available` means a copy already exists on the lab's storage but is not registered and measured yet: it has no RTTM to measure, the copy is partial, or it lives outside `$SD_DATA_ROOT`. Say which in `status_note`, without the local path.
 - `needs_decision` is for what only the maintainer can decide: LDC fees, signed agreements, terms of use.
 - `excluded` needs a clear reason code: no time-aligned speaker labels, single speaker per recording, duplicate, unobtainable.
 - `collected` requires a `collections.csv` row, a measurement and no remaining `seed` value.

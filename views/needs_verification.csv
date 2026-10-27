@@ -36,7 +36,6 @@ chime5,recording_setup,close_talk;far_field_array,chime5/recording_setup/01,2026
 chime5,speakers_per_session_reported,4,chime5/speakers_per_session_reported/01,2026-10-26
 chime5,speech_style,spontaneous,chime5/speech_style/01,2026-10-26
 chime5,status_reason_codes,unexamined,chime5/status_reason_codes/01,2026-10-26
-chime6,collection_status,candidate,chime6/collection_status/01,2026-10-26
 chime6,domain,dinner_party,chime6/domain/01,2026-10-26
 chime6,has_official_splits,true,chime6/has_official_splits/01,2026-10-26
 chime6,has_transcript,true,chime6/has_transcript/01,2026-10-26
@@ -45,7 +44,6 @@ chime6,n_sessions_reported,20,chime6/n_sessions_reported/01,2026-10-26
 chime6,recording_setup,close_talk;far_field_array,chime6/recording_setup/01,2026-10-26
 chime6,speakers_per_session_reported,4,chime6/speakers_per_session_reported/01,2026-10-26
 chime6,speech_style,spontaneous,chime6/speech_style/01,2026-10-26
-chime6,status_reason_codes,unexamined,chime6/status_reason_codes/01,2026-10-26
 dihard3,access_method,paid_or_membership,dihard3/access_method/01,2026-10-26
 dihard3,annotation_format,rttm;uem,dihard3/annotation_format/01,2026-10-26
 dihard3,annotation_method,manual,dihard3/annotation_method/01,2026-10-26
@@ -87,14 +85,12 @@ ego4d,recording_setup,wearable,ego4d/recording_setup/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 ego4d,status_reason_codes,unexamined,ego4d/status_reason_codes/01,2026-10-26
 fisher_english_part1,access_method,paid_or_membership,fisher_english_part1/access_method/01,2026-10-26
-fisher_english_part1,collection_status,candidate,fisher_english_part1/collection_status/01,2026-10-26
 fisher_english_part1,domain,telephone,fisher_english_part1/domain/01,2026-10-26
 fisher_english_part1,languages,eng,fisher_english_part1/languages/01,2026-10-26
 fisher_english_part1,license_spdx,LicenseRef-LDC-member-or-nonmember,fisher_english_part1/license_spdx/01,2026-10-26
 fisher_english_part1,recording_setup,telephone_channel,fisher_english_part1/recording_setup/01,2026-10-26
 fisher_english_part1,speakers_per_session_reported,2,fisher_english_part1/speakers_per_session_reported/01,2026-10-26
 fisher_english_part1,speech_style,spontaneous,fisher_english_part1/speech_style/01,2026-10-26
-fisher_english_part1,status_reason_codes,unexamined,fisher_english_part1/status_reason_codes/01,2026-10-26
 icsi,collection_status,candidate,icsi/collection_status/01,2026-10-26
 icsi,domain,meeting,icsi/domain/01,2026-10-26
 icsi,has_transcript,true,icsi/has_transcript/01,2026-10-26
@@ -142,7 +138,6 @@ notsofar1,recording_setup,close_talk;far_field_array;far_field_single,notsofar1/
 notsofar1,speech_style,spontaneous,notsofar1/speech_style/01,2026-10-26
 notsofar1,status_reason_codes,unexamined,notsofar1/status_reason_codes/01,2026-10-26
 switchboard1,access_method,paid_or_membership,switchboard1/access_method/01,2026-10-26
-switchboard1,collection_status,candidate,switchboard1/collection_status/01,2026-10-26
 switchboard1,domain,telephone,switchboard1/domain/01,2026-10-26
 switchboard1,hours_reported,260,switchboard1/hours_reported/01,2026-10-26
 switchboard1,languages,eng,switchboard1/languages/01,2026-10-26
@@ -152,6 +147,5 @@ switchboard1,n_speakers_reported,543,switchboard1/n_speakers_reported/01,2026-10
 switchboard1,recording_setup,telephone_channel,switchboard1/recording_setup/01,2026-10-26
 switchboard1,speakers_per_session_reported,2,switchboard1/speakers_per_session_reported/01,2026-10-26
 switchboard1,speech_style,spontaneous,switchboard1/speech_style/01,2026-10-26
-switchboard1,status_reason_codes,unexamined,switchboard1/status_reason_codes/01,2026-10-26
 voxconverse,languages,eng,voxconverse/languages/01,2026-10-26
 voxconverse,speech_style,spontaneous,voxconverse/speech_style/01,2026-10-26
