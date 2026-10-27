@@ -166,6 +166,7 @@ State nothing as fact that you did not check.
 | `... != measurements ... (run tools/sync.py)` | a measurement changed; run `tools/sync.py` |
 | `views/... is out of date` | run `python3 tools/views.py` |
 | `not in canonical form` | run `python3 tools/db.py fmt` |
+| `license_tier ... does not fit license_spdx` | the tier contradicts the licence (e.g. SA as `train`); re-read [references/license-tiers.md](references/license-tiers.md) |
 | `not in enum ...` | use a value from `schema/enums.csv`, or add one there and describe it in the manual |
 | `no files match ... under $SD_DATA_ROOT/<id>` (measure.py) | the glob in `collections.csv` is relative to the dataset directory; check `.env` |
 | `ModuleNotFoundError: soundfile` / FLAC durations missing (measure.py) | run it in an environment with `soundfile` |

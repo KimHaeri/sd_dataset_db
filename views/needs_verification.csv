@@ -84,10 +84,6 @@ ego4d,modality,audio_visual,ego4d/modality/01,2026-10-26
 ego4d,recording_setup,wearable,ego4d/recording_setup/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 ego4d,status_reason_codes,unexamined,ego4d/status_reason_codes/01,2026-10-26
-fisher_english_part1,access_method,paid_or_membership,fisher_english_part1/access_method/01,2026-10-26
-fisher_english_part1,domain,telephone,fisher_english_part1/domain/01,2026-10-26
-fisher_english_part1,languages,eng,fisher_english_part1/languages/01,2026-10-26
-fisher_english_part1,license_spdx,LicenseRef-LDC-member-or-nonmember,fisher_english_part1/license_spdx/01,2026-10-26
 fisher_english_part1,recording_setup,telephone_channel,fisher_english_part1/recording_setup/01,2026-10-26
 fisher_english_part1,speakers_per_session_reported,2,fisher_english_part1/speakers_per_session_reported/01,2026-10-26
 fisher_english_part1,speech_style,spontaneous,fisher_english_part1/speech_style/01,2026-10-26
@@ -114,7 +110,6 @@ librispeech,access_method,direct_download,librispeech/access_method/01,2026-10-2
 librispeech,annotation_format,none,librispeech/annotation_format/01,2026-10-26
 librispeech,collection_status,excluded,librispeech/collection_status/01,2026-10-26
 librispeech,languages,eng,librispeech/languages/01,2026-10-26
-librispeech,license_spdx,CC-BY-4.0,librispeech/license_spdx/01,2026-10-26
 librispeech,speech_style,read,librispeech/speech_style/01,2026-10-26
 librispeech,status_reason_codes,single_speaker_only;simulation_source_only,librispeech/status_reason_codes/01,2026-10-26
 mixer6,access_method,paid_or_membership,mixer6/access_method/01,2026-10-26
@@ -137,13 +132,6 @@ notsofar1,languages,eng,notsofar1/languages/01,2026-10-26
 notsofar1,recording_setup,close_talk;far_field_array;far_field_single,notsofar1/recording_setup/01,2026-10-26
 notsofar1,speech_style,spontaneous,notsofar1/speech_style/01,2026-10-26
 notsofar1,status_reason_codes,unexamined,notsofar1/status_reason_codes/01,2026-10-26
-switchboard1,access_method,paid_or_membership,switchboard1/access_method/01,2026-10-26
-switchboard1,domain,telephone,switchboard1/domain/01,2026-10-26
-switchboard1,hours_reported,260,switchboard1/hours_reported/01,2026-10-26
-switchboard1,languages,eng,switchboard1/languages/01,2026-10-26
-switchboard1,license_spdx,LicenseRef-LDC-member-or-nonmember,switchboard1/license_spdx/01,2026-10-26
-switchboard1,n_sessions_reported,2400,switchboard1/n_sessions_reported/01,2026-10-26
-switchboard1,n_speakers_reported,543,switchboard1/n_speakers_reported/01,2026-10-26
 switchboard1,recording_setup,telephone_channel,switchboard1/recording_setup/01,2026-10-26
 switchboard1,speakers_per_session_reported,2,switchboard1/speakers_per_session_reported/01,2026-10-26
 switchboard1,speech_style,spontaneous,switchboard1/speech_style/01,2026-10-26

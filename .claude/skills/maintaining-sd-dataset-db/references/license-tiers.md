@@ -4,9 +4,10 @@ The DB records the licence (`license_spdx`, `license_note`). The tier, meaning w
 be used for, is worked out from the licence with the rules below. `license_class` is **not** the
 tier: it puts CC-BY-SA in `open`, but for the tier SA is "less safe".
 
-The tier is not stored in the DB yet. A `license_tier` column has been proposed and is waiting
-for the maintainer. Until it is approved, report the tier in your reply. You may also mention it
-in `license_note`. Do not add the column on your own.
+The tier is stored in `datasets.license_tier`, with evidence like any other value. Cite the same
+source as the licence. `tools/validate.py` rejects a tier the licence does not allow (see
+`allowed_tiers` in it, and the "License tiers" section of `docs/manual.md`). Leave the tier empty
+while the licence is still `seed`.
 
 ## The tiers
 
@@ -31,8 +32,8 @@ Two cases come up often:
    (`LICENSE`, `LICENCE.txt`, readme) and on the current official page. The two can differ
    because datasets are relicensed between releases. Example: AMI's official page says CC BY 4.0,
    but the annotation release 1.7 on the lab storage ships a `LICENCE.txt` with CC BY-NC-SA 2.5.
-   Record both as evidence. Mark the later one `conflicting` unless a source says it replaces
-   the other, and let the maintainer decide.
+   Record both as evidence, both rows `conflicting`, with `license_spdx=conflicting` and tier
+   `hold`, unless a source says one replaces the other. Let the maintainer decide.
 2. **Check the platform's terms.** A CC BY dataset on a platform that forbids mirroring cannot be
    re-hosted from that copy. Corpora that publish only labels plus video IDs have audio under
    the video site's terms. Do not scrape.
