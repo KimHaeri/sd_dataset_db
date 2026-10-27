@@ -3,6 +3,7 @@ aishell4,OpenSLR 111,catalog_id,https://www.openslr.org/111/,
 alimeeting,OpenSLR 119,catalog_id,https://www.openslr.org/119/,
 ami,AMI,short_name,https://groups.inf.ed.ac.uk/ami/corpus/,
 callhome_american_english,LDC97S42,catalog_id,,seed: not checked against a source
+callhome_spanish,LDC96S35,catalog_id,https://catalog.ldc.upenn.edu/LDC96S35,
 callhome_sre2000,CALLHOME,short_name,,seed: not checked against a source
 callhome_sre2000,LDC2001S97,catalog_id,,seed: not checked against a source
 callhome_sre2000,NIST SRE 2000 CALLHOME,other_source_name,,seed: not checked against a source
@@ -14,4 +15,6 @@ librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
 magicdata_ramc,OpenSLR 123,catalog_id,https://www.openslr.org/123/,
 magicdata_ramc,RAMC,short_name,https://arxiv.org/abs/2203.16844,
 mixer6,LDC2013S03,catalog_id,,seed: not checked against a source
+rt03_eval,LDC2007S10,catalog_id,https://catalog.ldc.upenn.edu/LDC2007S10,
+rt03_eval,RT-03,short_name,index.html of LDC2007S10 (lab copy),
 switchboard1,LDC97S62,catalog_id,,seed: not checked against a source

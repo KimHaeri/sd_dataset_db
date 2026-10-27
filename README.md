@@ -98,7 +98,9 @@ python3 tools/db.py get|set|add|ev|fmt
 
 ## Current state (2026-10-26)
 
-23 datasets, 6 challenges. `candidate` 22, `excluded` 1, `collected` 0.
+29 datasets, 6 challenges. `candidate` 27, `excluded` 1, `collected` 1.
+
+- Survey of the lab's shared corpus storage on 2026-10-26: `aishell4` is `collected` (train_L, train_M and test; train_S is missing from the lab copy) and measured from its RTTM files. `ami`, `chime6`, `alimeeting` (Test_Ali only), `switchboard1` and `fisher_english_part1` have lab copies but no RTTM yet, so they are `candidate` with `lab_copy_available`. Six datasets were added from the same survey: `msp_conversation`, `seamless_interaction`, `rt03_eval`, `callhome_spanish`, and two lab-internal simulations, `librispeech_meetings_sim` and `fisher_meetings_sim` (on purgeable scratch storage).
 
 - Checked against primary sources on 2026-10-26 (official pages, papers, HTTP checks of the download URLs): `ami`, `voxconverse`, `aishell4`, `alimeeting`, `magicdata_ramc`. Their status reason is now `not_yet_downloaded`, and their `download_url` cells hold the URLs that were checked. Three seed values were wrong, all for MagicData-RAMC: it was recorded on smartphones, not over phone calls (`domain`, `recording_setup`), and no source states speakers per conversation (`unknown`).
 - Still `seed`: 156 canonical evidence rows in `views/needs_verification.csv`, including the languages of `ami` and `voxconverse` and the speech style of `voxconverse`, which no source states.
