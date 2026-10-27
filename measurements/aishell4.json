@@ -1,0 +1,32 @@
+{
+  "dataset_id": "aishell4",
+  "data_env_var": "SD_DATA_ROOT",
+  "measured_on": "2026-10-26",
+  "rttm_glob": "*/TextGrid/*.rttm",
+  "uem_glob": "NA",
+  "audio_glob": "*/wav/*.flac",
+  "n_rttm_files": 158,
+  "rttm_sha1": "08d15f61ee72bff125162090d63c02af430228c0",
+  "n_sessions": 158,
+  "n_speakers": 14,
+  "speakers_per_session": {
+    "min": 3,
+    "max": 7,
+    "histogram": {
+      "3": 15,
+      "4": 33,
+      "5": 68,
+      "6": 11,
+      "7": 31
+    }
+  },
+  "speech_hours": 80.09,
+  "overlap_ratio": 9.36,
+  "audio": {
+    "n_files": 158,
+    "hours": 89.485,
+    "format": {
+      "16000Hz/8ch": 158
+    }
+  }
+}

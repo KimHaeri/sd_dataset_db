@@ -1,4 +1,9 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
+aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,primary,https://arxiv.org/abs/2104.03603,
+aishell4,hours_reported vs hours_measured,reported_vs_measured,120,see evidence,89.485,measured,measurements/aishell4.json,the release we obtained or the RTTM version may differ from the paper
+aishell4,n_sessions_reported vs n_sessions_measured,reported_vs_measured,211,see evidence,158,measured,measurements/aishell4.json,the release we obtained or the RTTM version may differ from the paper
+aishell4,n_speakers_reported vs n_speakers_measured,reported_vs_measured,60,see evidence,14,measured,measurements/aishell4.json,the release we obtained or the RTTM version may differ from the paper
 magicdata_ramc,domain,superseded,conversation,primary,telephone,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 magicdata_ramc,recording_setup,superseded,mobile_device,primary,telephone_channel,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 magicdata_ramc,speakers_per_session_reported,superseded,unknown,primary,2,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
