@@ -6,17 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-callhome_sre2000,access_method,paid_or_membership,callhome_sre2000/access_method/01,2026-10-26
-callhome_sre2000,collection_status,candidate,callhome_sre2000/collection_status/01,2026-10-26
-callhome_sre2000,domain,telephone,callhome_sre2000/domain/01,2026-10-26
-callhome_sre2000,languages,mul,callhome_sre2000/languages/01,2026-10-26
-callhome_sre2000,license_spdx,LicenseRef-LDC-member-or-nonmember,callhome_sre2000/license_spdx/01,2026-10-26
-callhome_sre2000,modality,audio,callhome_sre2000/modality/01,2026-10-26
-callhome_sre2000,n_sessions_reported,500,callhome_sre2000/n_sessions_reported/01,2026-10-26
-callhome_sre2000,recording_setup,telephone_channel,callhome_sre2000/recording_setup/01,2026-10-26
-callhome_sre2000,speakers_per_session_reported,2-7,callhome_sre2000/speakers_per_session_reported/01,2026-10-26
-callhome_sre2000,speech_style,spontaneous,callhome_sre2000/speech_style/01,2026-10-26
-callhome_sre2000,status_reason_codes,unexamined,callhome_sre2000/status_reason_codes/01,2026-10-26
 chime5,collection_status,candidate,chime5/collection_status/01,2026-10-26
 chime5,domain,dinner_party,chime5/domain/01,2026-10-26
 chime5,has_transcript,true,chime5/has_transcript/01,2026-10-26

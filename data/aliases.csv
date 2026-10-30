@@ -4,9 +4,9 @@ alimeeting,OpenSLR 119,catalog_id,https://www.openslr.org/119/,
 ami,AMI,short_name,https://groups.inf.ed.ac.uk/ami/corpus/,
 callhome_american_english,LDC97S42,catalog_id,https://catalog.ldc.upenn.edu/LDC97S42,LDC Catalog No. on the catalogue page
 callhome_spanish,LDC96S35,catalog_id,https://catalog.ldc.upenn.edu/LDC96S35,
-callhome_sre2000,CALLHOME,short_name,,seed: not checked against a source
-callhome_sre2000,LDC2001S97,catalog_id,,seed: not checked against a source
-callhome_sre2000,NIST SRE 2000 CALLHOME,other_source_name,,seed: not checked against a source
+callhome_sre2000,CALLHOME,short_name,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,The evaluation plan calls this part the CALLHOME data (section 7)
+callhome_sre2000,LDC2001S97,catalog_id,https://catalog.ldc.upenn.edu/LDC2001S97,The release that contains this set (2000 NIST Speaker Recognition Evaluation)
+callhome_sre2000,NIST SRE 2000 CALLHOME,other_source_name,,seed: name used in diarization papers; not checked against a source
 dihard3,DIHARD III,short_name,,seed: not checked against a source
 dipco,DiPCo,short_name,,seed: not checked against a source
 fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
