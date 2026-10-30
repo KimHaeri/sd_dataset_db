@@ -29,10 +29,11 @@ What you need to know about the surroundings:
   `soundfile` for any audio that is not `.wav` (FLAC, for example). Without it the audio duration
   step fails. Use an environment that has `soundfile` (a throw-away venv outside the repository
   is enough) and run with `python -I`.
-- **The pre-commit hook may not run.** `tools/hooks/pre-commit` is tracked without the
-  executable bit, and git then skips it with a hint. Run `tools/validate.py` yourself before every
-  commit, and never claim the hook validated a commit. Making it executable changes a tracked
-  file, so ask first.
+- **The pre-commit hook runs `tools/validate.py`** once `git config core.hooksPath tools/hooks`
+  is set in the clone (a local setting: check it with `git config core.hooksPath`). A commit
+  that fails validation is refused. If git prints `hook was ignored because it's not set as
+  executable`, the hook did not run: run `tools/validate.py` yourself and never claim the hook
+  validated that commit.
 - **Heavy work runs as a batch job.** That means scanning large trees, decoding many hours of
   audio and computing checksums. Reading RTTM files and audio headers of one corpus is light.
 
@@ -173,7 +174,7 @@ State nothing as fact that you did not check.
 | `not in enum ...` | use a value from `schema/enums.csv`, or add one there and describe it in the manual |
 | `no files match ... under $SD_DATA_ROOT/<id>` (measure.py) | the glob in `collections.csv` is relative to the dataset directory; check `.env` |
 | `ModuleNotFoundError: soundfile` / FLAC durations missing (measure.py) | run it in an environment with `soundfile` |
-| git hint `hook was ignored because it's not set as executable` | validation did not run in the hook; run `tools/validate.py` yourself |
+| git hint `hook was ignored because it's not set as executable` | the hook did not run; run `tools/validate.py` yourself, and check that `tools/hooks/pre-commit` is executable (`chmod +x`; git records mode 100755) |
 
 ## Files in this skill
 

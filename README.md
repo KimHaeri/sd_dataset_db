@@ -88,7 +88,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 ```
 
 - Run with Python 3.9+; no third-party packages are needed for the DB tools.
-- `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
+- `git config core.hooksPath tools/hooks` (once per clone) makes `tools/validate.py` run before every commit; a commit that fails validation is refused. `tools/hooks/pre-commit` must stay executable. Do not use `--no-verify`.
 - Make one commit per dataset or per checking session, and say in the message what changed and what the evidence was.
 
 ## What counts as one row
