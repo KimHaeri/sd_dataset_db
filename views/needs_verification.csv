@@ -6,14 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-chime6,domain,dinner_party,chime6/domain/01,2026-10-26
-chime6,has_official_splits,true,chime6/has_official_splits/01,2026-10-26
-chime6,has_transcript,true,chime6/has_transcript/01,2026-10-26
-chime6,languages,eng,chime6/languages/01,2026-10-26
-chime6,n_sessions_reported,20,chime6/n_sessions_reported/01,2026-10-26
-chime6,recording_setup,close_talk;far_field_array,chime6/recording_setup/01,2026-10-26
-chime6,speakers_per_session_reported,4,chime6/speakers_per_session_reported/01,2026-10-26
-chime6,speech_style,spontaneous,chime6/speech_style/01,2026-10-26
 dihard3,access_method,paid_or_membership,dihard3/access_method/01,2026-10-26
 dihard3,annotation_format,rttm;uem,dihard3/annotation_format/01,2026-10-26
 dihard3,annotation_method,manual,dihard3/annotation_method/01,2026-10-26
