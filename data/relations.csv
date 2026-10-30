@@ -1,7 +1,7 @@
 dataset_id,relation,other_dataset_id,source_ref,note
 callhome_spanish,distinct_from,callhome_sre2000,https://catalog.ldc.upenn.edu/LDC96S35,Both are called CALLHOME; the SRE 2000 diarization set is multilingual and separate
 callhome_sre2000,distinct_from,callhome_american_english,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,"Different releases. The segmentation data is drawn from the CALLHOME Corpus (plan section 6), so it may share calls or speakers with CALLHOME American English; not checked"
-chime6,shares_recordings_with,chime5,,CHiME-6 re-releases the CHiME-5 recordings with array synchronisation (seed: not checked against a source)
+chime6,shares_recordings_with,chime5,https://www.chimechallenge.org/datasets/chime5,"The CHiME-5 page: CHiME-5 is superseded by the CHiME-6 release, which fixes audio alignment issues in the original data"
 fisher_meetings_sim,shares_recordings_with,fisher_english_part1,clean supervisions manifest,Built from Fisher English Parts 1 and 2 (original_cut_id fe_03_*); Part 2 has no row yet
 libricss,shares_recordings_with,librispeech,,Utterances come from LibriSpeech (seed: not checked against a source)
 librispeech_meetings_sim,shares_recordings_with,librispeech,clean supervisions manifest,Built from LibriSpeech training utterances (original_cut_id)
