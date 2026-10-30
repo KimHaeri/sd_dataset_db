@@ -57,7 +57,7 @@ Columns marked `yes` or `status` in the `evidence` column of `schema/columns.csv
 - Each such cell has exactly one row with `is_canonical=true`, and its value equals the cell.
 - Strength of `source_type`: `user` > `measured` > `primary` (paper, official page, LICENSE, LDC catalogue) > `secondary` > `seed`. When a weaker source is canonical while a stronger one exists, `note` must say why.
 - **`seed`** marks values filled from an assistant's background knowledge when the repository was created. Nobody opened a source for them. They are listed in `views/needs_verification.csv`; replace each with a checked source (`tools/db.py ev ...`) before relying on it. A `collected` dataset may not keep any `seed` value, and `validate.py --strict` fails while any remain.
-- A new fact never overwrites the old evidence: the old row becomes `superseded`. When sources disagree and cannot be decided, keep both as `conflicting` and set the cell to `conflicting` (license) or leave the better one canonical with a note.
+- A new fact never overwrites the old evidence: the old row becomes `superseded`. A value that was simply wrong and has no replacement is withdrawn with `tools/db.py clear`, which empties the cell and keeps the row as `superseded` with the reason; evidence rows are never deleted. When sources disagree and cannot be decided, keep both as `conflicting` and set the cell to `conflicting` (license) or leave the better one canonical with a note.
 - `*_measured` columns take only `measured` evidence; `*_reported` columns cannot use `measured`.
 - Write nothing the sources do not say. Never guess URLs, catalogue numbers or counts.
 
@@ -84,7 +84,7 @@ python3 tools/views.py && python3 tools/validate.py
 python3 tools/validate.py            # format, types, enums, keys, evidence rules, measurements, views
 python3 tools/validate.py --strict   # also fail while any seed value remains
 python3 tools/views.py               # regenerate views/
-python3 tools/db.py get|set|add|ev|fmt
+python3 tools/db.py get|set|add|ev|clear|fmt
 ```
 
 - Run with Python 3.9+; no third-party packages are needed for the DB tools.

@@ -7,9 +7,12 @@ Usage:
   python3 tools/db.py add TABLE COL=VAL...          add a row
   python3 tools/db.py ev DATASET FIELD VALUE source_type=... source_ref=... [locator=... via=... note=... checked_by=...]
                                                     set a datasets cell together with its evidence row
+  python3 tools/db.py clear DATASET FIELD reason=...
+                                                    empty a datasets cell whose value was simply wrong
 
 `ev` makes the new row canonical, marks the previous canonical row superseded and
-updates datasets.last_updated_on. After any change, run tools/validate.py.
+updates datasets.last_updated_on. `clear` keeps the evidence rows: the canonical one
+becomes superseded and its note records the reason. After any change, run tools/validate.py.
 """
 
 import datetime
@@ -82,6 +85,29 @@ def set_with_evidence(db, dataset_id, field, value, source_type, source_ref, loc
     row["last_updated_on"] = today
 
 
+def clear_with_evidence(db, dataset_id, field, reason, checked_on=None):
+    """Empty datasets[dataset_id][field]; supersede its canonical evidence row and record why."""
+    today = checked_on or datetime.date.today().isoformat()
+    row = find(db, "datasets", [dataset_id])
+    if row is None:
+        sys.exit(f"no dataset {dataset_id}")
+    if field not in row:
+        sys.exit(f"unknown column {field}")
+    canon = [e for e in db["evidence"][1]
+             if e["dataset_id"] == dataset_id and e["field"] == field and e["is_canonical"] == "true"]
+    if not canon:
+        sys.exit(f"{dataset_id}/{field} has no canonical evidence row to withdraw")
+    for e in canon:
+        e["is_canonical"] = "false"
+        e["status"] = "superseded"
+        withdrawn = f"Withdrawn {today}: {reason}"
+        e["note"] = f"{e['note']} {withdrawn}" if e["note"] else withdrawn
+    row[field] = ""
+    if field == "license_spdx":
+        row["license_class"] = ""
+    row["last_updated_on"] = today
+
+
 def main(argv):
     if not argv:
         sys.exit(__doc__)
@@ -124,6 +150,14 @@ def main(argv):
             if req not in opts:
                 sys.exit(f"ev needs {req}=...")
         set_with_evidence(db, args[0], args[1], args[2], **opts)
+        save(db)
+    elif cmd == "clear":
+        if len(args) < 2:
+            sys.exit(__doc__)
+        opts = parse_assignments(args[2:])
+        if not opts.get("reason"):
+            sys.exit("clear needs reason=...")
+        clear_with_evidence(db, args[0], args[1], opts["reason"])
         save(db)
     else:
         sys.exit(__doc__)

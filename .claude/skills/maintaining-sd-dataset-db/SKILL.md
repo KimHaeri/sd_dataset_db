@@ -51,7 +51,9 @@ What you need to know about the surroundings:
    evaluates are theirs. Record their decisions as `source_type=user`; propose, do not decide.
    An instruction such as "update the DB" covers registering what you verified. It does not cover
    decisions they have not made.
-5. **Never delete history.** Use `tools/db.py ev`, which supersedes the old evidence row. When
+5. **Never delete history.** Use `tools/db.py ev`, which supersedes the old evidence row. To
+   withdraw a value that was simply wrong, use `tools/db.py clear ... reason=...`; never delete
+   an evidence row. When
    sources disagree (for example the licence file in our copy and the current web page), keep
    both and mark the disagreement.
 6. **Keep "the whole release" and "what we hold or use" apart** in counts and notes: full corpus
@@ -165,6 +167,7 @@ State nothing as fact that you did not check.
 | `status_reason_codes must be NA exactly when collected` | `NA` for collected rows, at least one reason code otherwise |
 | `... != measurements ... (run tools/sync.py)` | a measurement changed; run `tools/sync.py` |
 | `views/... is out of date` | run `python3 tools/views.py` |
+| `the datasets cell is empty but a row is still canonical or current` | the cell was emptied with `set`; restore it, then use `tools/db.py clear` |
 | `not in canonical form` | run `python3 tools/db.py fmt` |
 | `license_tier ... does not fit license_spdx` | the tier contradicts the licence (e.g. SA as `train`); re-read [references/license-tiers.md](references/license-tiers.md) |
 | `not in enum ...` | use a value from `schema/enums.csv`, or add one there and describe it in the manual |

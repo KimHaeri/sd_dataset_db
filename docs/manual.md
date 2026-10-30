@@ -56,7 +56,8 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 3. For each value:
    - The source agrees → `python3 tools/db.py ev <id> <field> <value> source_type=primary source_ref=<url> locator="<where in the source>"`. The seed row becomes superseded.
    - The source disagrees → the same command with the source's value. The discrepancy shows up in `views/discrepancies.csv`.
-   - The source does not say → `ev <id> <field> unknown ...` (if the column allows `unknown`), or set the cell empty and remove the seed row by hand if it was simply wrong.
+   - The source does not say → `ev <id> <field> unknown ...` (if the column allows `unknown`).
+   - The value was simply wrong and nothing can replace it (the column does not allow `unknown`, or the field does not apply in the way the seed assumed) → `python3 tools/db.py clear <id> <field> reason="<what was wrong and the source that shows it>"`. The cell becomes empty; the seed row is kept as superseded and its note records the reason. Never delete an evidence row.
 4. Fill free-text columns (`license_note`, `notes`) with what you learned, then `python3 tools/views.py && python3 tools/validate.py`.
 
 ## Workflow: add a dataset

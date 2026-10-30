@@ -256,8 +256,10 @@ def check_evidence(cols, db, strict):
             rows = ev.get((d, field), [])
             canon = [r for r in rows if r["is_canonical"] == "true"]
             if not needed:
-                if rows and v == "":
-                    err(f"evidence {d}/{field}: rows exist but the datasets cell is empty")
+                # An emptied cell keeps its withdrawn rows (tools/db.py clear), but none may still be in force.
+                if v == "" and any(r["is_canonical"] == "true" or r["status"] == "current" for r in rows):
+                    err(f"evidence {d}/{field}: the datasets cell is empty but a row is still canonical or current "
+                        "(use tools/db.py clear)")
                 continue
             if len(canon) != 1:
                 err(f"evidence {d}/{field}: needs exactly one canonical row, found {len(canon)}")
