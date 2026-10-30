@@ -6,16 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-callhome_american_english,access_method,paid_or_membership,callhome_american_english/access_method/01,2026-10-26
-callhome_american_english,collection_status,candidate,callhome_american_english/collection_status/01,2026-10-26
-callhome_american_english,domain,telephone,callhome_american_english/domain/01,2026-10-26
-callhome_american_english,languages,eng,callhome_american_english/languages/01,2026-10-26
-callhome_american_english,license_spdx,LicenseRef-LDC-member-or-nonmember,callhome_american_english/license_spdx/01,2026-10-26
-callhome_american_english,modality,audio,callhome_american_english/modality/01,2026-10-26
-callhome_american_english,n_sessions_reported,120,callhome_american_english/n_sessions_reported/01,2026-10-26
-callhome_american_english,recording_setup,telephone_channel,callhome_american_english/recording_setup/01,2026-10-26
-callhome_american_english,speech_style,spontaneous,callhome_american_english/speech_style/01,2026-10-26
-callhome_american_english,status_reason_codes,unexamined,callhome_american_english/status_reason_codes/01,2026-10-26
 callhome_sre2000,access_method,paid_or_membership,callhome_sre2000/access_method/01,2026-10-26
 callhome_sre2000,collection_status,candidate,callhome_sre2000/collection_status/01,2026-10-26
 callhome_sre2000,domain,telephone,callhome_sre2000/domain/01,2026-10-26

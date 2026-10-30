@@ -2,7 +2,7 @@ dataset_id,alias,alias_type,source_ref,note
 aishell4,OpenSLR 111,catalog_id,https://www.openslr.org/111/,
 alimeeting,OpenSLR 119,catalog_id,https://www.openslr.org/119/,
 ami,AMI,short_name,https://groups.inf.ed.ac.uk/ami/corpus/,
-callhome_american_english,LDC97S42,catalog_id,,seed: not checked against a source
+callhome_american_english,LDC97S42,catalog_id,https://catalog.ldc.upenn.edu/LDC97S42,LDC Catalog No. on the catalogue page
 callhome_spanish,LDC96S35,catalog_id,https://catalog.ldc.upenn.edu/LDC96S35,
 callhome_sre2000,CALLHOME,short_name,,seed: not checked against a source
 callhome_sre2000,LDC2001S97,catalog_id,,seed: not checked against a source
