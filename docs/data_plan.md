@@ -28,6 +28,7 @@ to be copied to permanent storage.
 | Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | LDC | No | — |
 | Fisher simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings) | LDC (built from Fisher) + generated RIRs | Copy | — |
 | [CALLHOME Spanish](https://catalog.ldc.upenn.edu/LDC96S35) | Train split (devtest and evltest: evaluation) | LDC | No | — |
+| [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | LDC | LDC | Check overlap with the HUB5 English evaluation sets drawn from it (the 2000 set, LDC2002S09, is on the lab storage) |
 | [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | LDC | LDC | — |
 | [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | Signed licence agreement | Agreement | Sign? An individual or the institution |
 
@@ -55,7 +56,6 @@ to be copied to permanent storage.
 |---|---|---|---|---|
 | [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Hold | Research-only agreement | No (v1.1; v2.0 exists) | Who signed the agreement for the lab copy? |
 | [MSDWild](https://github.com/X-LANCE/MSDWILD) | Hold | Research-only agreement | Agreement | Sign? |
-| [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Undecided | LDC | LDC | Use it? Train or evaluation? |
 | [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Undecided | Annotations MIT; video rights unclear | Yes (lab storage not checked) | Proposed: hold |
 | [DiPCo](https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf) | Deferred (planned for evaluation) | CDLA-Permissive-1.0 | Not available (the download link in the paper returns 403) | A working download link? |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | CC BY-NC-ND 4.0 | — | — |

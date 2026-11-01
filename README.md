@@ -116,9 +116,8 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0; download unreachable), `displace2023` (CC BY 4.0; only Dev released)
 - **`licensed_internal`** (12): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
-  - Train split for training, other splits for evaluation: `callhome_spanish`, `mixer6_chime8`, `ego4d` (agreement not signed yet)
+  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (not on the lab storage), `mixer6_chime8`, `ego4d` (agreement not signed yet)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
-  - Not decided: `callhome_american_english` (not on the lab storage)
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
 - **`hold`** (2): undecided
   - `msp_conversation`: research-only agreement without redistribution; who signed for the lab copy is not known
