@@ -115,9 +115,9 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
   - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0; download unreachable), `displace2023` (CC BY 4.0; only Dev released)
 - **`licensed_internal`** (12): LDC or signed agreement, internal use only, never redistributed
-  - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim`
+  - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
   - Train split for training, other splits for evaluation: `callhome_spanish`, `mixer6_chime8`, `ego4d` (agreement not signed yet)
-  - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (evaluation set; the development set's use needs confirmation)
+  - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - Not decided: `callhome_american_english` (not on the lab storage)
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
 - **`hold`** (2): undecided
@@ -132,7 +132,7 @@ Maintainer rules: SA/NC data is evaluation only; published splits are used as de
 
 Open items:
 
-- Decisions: the use of DIHARD III's development set (training was decided, the split rule says evaluation); which AMI partition to use (scenario-only, full-corpus or full-corpus-ASR; diarization setups such as BUT's use full-corpus-ASR); whether `fisher_meetings_sim` also drops its noise conditions (same BFND noise); who signed the agreement for the lab copy of `msp_conversation`; signing the `msdwild` and `ego4d` agreements (for Ego4D, individual or institution).
+- Decisions: whether AMI may be treated as CC BY 4.0 (to confirm with the PI); which AMI partition to use (scenario-only, full-corpus or full-corpus-ASR; diarization setups such as BUT's use full-corpus-ASR); who signed the agreement for the lab copy of `msp_conversation`; signing the `msdwild` and `ego4d` agreements (for Ego4D, individual or institution).
 - Sources: the remaining seed values above; a working download for `dipco` (the S3 link answers 403).
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting` (Test_Ali only), `msp_conversation`, `seamless_interaction`, `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 

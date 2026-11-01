@@ -20,16 +20,15 @@ to be copied to permanent storage.
 
 | Dataset | Use | Licence | Download | To confirm |
 |---|---|---|---|---|
-| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | Which partition: full-corpus-ASR (BUT setup, 136 / 18 / 16 meetings) recommended |
-| [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | CC BY 4.0 | Yes | RTTM from the NXT annotations |
-| [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | CC BY 4.0 | Yes (Hugging Face token) | dev1 shares 10 of its 12 speakers with train |
+| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | Licence: may we treat it as CC BY 4.0 (current official page), or must we follow CC BY-NC-SA 2.5 (licence file in release 1.7)? Which partition: full-corpus-ASR (BUT setup, 136 / 18 / 16 meetings) recommended |
+| [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | CC BY 4.0 | Yes | — |
+| [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | CC BY 4.0 | Yes (Hugging Face token) | — |
 | LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | Copy | — |
 | [Switchboard-1 Release 2](https://catalog.ldc.upenn.edu/LDC97S62) | Train | LDC | No | — |
-| Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | LDC | No | Turn boundaries are automatic, not manual |
-| Fisher simulated meetings (lab) | Train | LDC (built from Fisher) | Copy | Drop the noise conditions (BFND noise states no licence)? |
+| Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | LDC | No | — |
+| Fisher simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings) | LDC (built from Fisher) + generated RIRs | Copy | — |
 | [CALLHOME Spanish](https://catalog.ldc.upenn.edu/LDC96S35) | Train split (devtest and evltest: evaluation) | LDC | No | — |
-| [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | LDC | LDC | Purchase? |
-| [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | **Needs confirmation** | LDC | LDC | Train or evaluation? Released as a development set, so the split rule says evaluation |
+| [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | LDC | LDC | — |
 | [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | Signed licence agreement | Agreement | Sign? An individual or the institution |
 
 ## Evaluation data
@@ -39,15 +38,16 @@ to be copied to permanent storage.
 | [AISHELL-4](https://www.openslr.org/111/) | Eval | CC BY-SA 4.0 | No (measured) | — |
 | [AliMeeting](https://www.openslr.org/119/) | Eval | CC BY-SA 4.0 | Partial (only Test on the lab storage) | — |
 | [CHiME-6](https://openslr.org/150/) | Eval | CC BY-SA 4.0 | No | — |
-| [CHiME-5](https://www.chimechallenge.org/datasets/chime5) | Eval | CC BY-SA 4.0 | Yes | Same recordings as CHiME-6: needed? |
+| [CHiME-5](https://www.chimechallenge.org/datasets/chime5) | Eval | CC BY-SA 4.0 | No (same recordings as CHiME-6, which fixes their audio alignment) | — |
 | [Seamless Interaction](https://huggingface.co/datasets/facebook/seamless-interaction) | Eval | CC BY-NC 4.0 | No (audio, improvised sessions only) | — |
 | [Earnings-21](https://github.com/revdotcom/speech-datasets/tree/main/earnings21) | Eval | Transcripts CC BY-SA 4.0; audio under a fair-use claim | Yes | — |
-| [LibriCSS](https://github.com/chenzhuo1011/libri_css) | Eval | No licence stated for the recordings | Yes | Acceptable for evaluation? |
+| [LibriCSS](https://github.com/chenzhuo1011/libri_css) | Eval | No licence stated for the recordings | Yes | — |
 | [VoxConverse](https://github.com/joonson/voxconverse) | Eval | CC BY 4.0 (video copyright stays with its owners) | Yes | — |
 | [DISPLACE 2023](https://zenodo.org/records/8375161) | Eval | CC BY 4.0 | Yes (Dev only; Eval not released) | — |
 | [RT-03 evaluation set](https://catalog.ldc.upenn.edu/LDC2007S10) | Eval | LDC | No | — |
-| [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | LDC | LDC | Purchase? |
-| [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | LDC | LDC | Purchase? |
+| [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | LDC | LDC | — |
+| [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | Eval | LDC | LDC | — |
+| [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | LDC | LDC | — |
 
 ## Not used or undecided
 
