@@ -7,3 +7,4 @@ fisher_meetings_sim,shares_recordings_with,fisher_english_part1,clean supervisio
 fisher_meetings_sim,shares_recordings_with,fisher_english_part2,clean supervisions manifest,Source calls run to fe_03_11699; Part 2 holds fe_03_05851 to fe_03_11699 (lab copy of LDC2005T19)
 libricss,shares_recordings_with,librispeech,https://arxiv.org/abs/2001.11482,Replays LibriSpeech test-clean utterances (40 speakers) through loudspeakers (paper 3.1)
 librispeech_meetings_sim,shares_recordings_with,librispeech,clean supervisions manifest,Built from LibriSpeech training utterances (original_cut_id)
+mixer6_chime8,subset_of,mixer6,https://catalog.ldc.upenn.edu/LDC2025S07,80 hours of interviews and calls from Mixer 6 Speech (LDC2013S03) with new transcripts

@@ -3,9 +3,11 @@ chime6,chime6,train_dev_eval,primary,https://openslr.org/150/,2026-10-30,claude,
 chime7_dasr,chime6,train_dev_eval,primary,https://openslr.org/150/,2026-10-30,claude,OpenSLR 150: CHiME-6 dataset as used in the CHiME-6 Challenge in 2020 and CHiME-7 DASR task in 2023. The role (its own splits) is not stated there
 chime7_dasr,dipco,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 chime7_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime7_dasr,mixer6_chime8,train_dev_eval,primary,https://catalog.ldc.upenn.edu/LDC2025S07,2026-10-31,claude,"Used in CHiME 7 Task 1 and CHiME 8 Task 1 with its own training, development and test sets"
 chime8_dasr,chime6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 chime8_dasr,dipco,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 chime8_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_dasr,mixer6_chime8,train_dev_eval,primary,https://catalog.ldc.upenn.edu/LDC2025S07,2026-10-31,claude,"Used in CHiME 7 Task 1 and CHiME 8 Task 1 with its own training, development and test sets"
 chime8_dasr,notsofar1,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 dihard3,dihard3,dev,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,"Third DIHARD Challenge dev set (LDC2022S12, listed under Related Works). Replaces a seed row with role train_dev_eval: the challenge has no training set"
 dihard3,dihard3,eval,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,Third DIHARD Challenge eval set (LDC2022S14). Replaces a seed row with role train_dev_eval: the challenge has no training set
