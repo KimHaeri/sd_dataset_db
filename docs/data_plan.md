@@ -28,8 +28,8 @@ to be copied to permanent storage.
 | Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | LDC | No | — |
 | Fisher simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings) | LDC (built from Fisher) + generated RIRs | Copy | — |
 | [CALLHOME Spanish](https://catalog.ldc.upenn.edu/LDC96S35) | Train split (devtest and evltest: evaluation) | LDC | No | — |
-| [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | LDC | LDC | — |
-| [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | LDC | LDC | — |
+| [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | LDC | LDC | Purchase? |
+| [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | LDC | LDC | Purchase? |
 | [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Train partition (development and test: evaluation) | Research-only agreement, no redistribution (held like LDC) | No (v1.1; v2.0 exists) | Who signed the agreement for the lab copy? It covers only that person and the people they supervise |
 | [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | Signed licence agreement | Agreement | Sign? An individual or the institution |
 
@@ -47,9 +47,9 @@ to be copied to permanent storage.
 | [VoxConverse](https://github.com/joonson/voxconverse) | Eval | CC BY 4.0 (video copyright stays with its owners) | Yes | — |
 | [DISPLACE 2023](https://zenodo.org/records/8375161) | Eval | CC BY 4.0 | Yes (Dev only; Eval not released) | — |
 | [RT-03 evaluation set](https://catalog.ldc.upenn.edu/LDC2007S10) | Eval | LDC | No | — |
-| [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | LDC | LDC | — |
-| [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | Eval | LDC | LDC | — |
-| [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | LDC | LDC | — |
+| [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | LDC | LDC | Purchase? |
+| [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | Eval | LDC | LDC | Purchase? |
+| [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | LDC | LDC | Purchase? |
 
 ## Not used or undecided
 
