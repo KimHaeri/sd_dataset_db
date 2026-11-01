@@ -15,7 +15,7 @@ while the licence is still `seed`.
 |---|---|---|
 | `train` | CC0-1.0, CC-BY (any version), MIT, Apache-2.0, CDLA-Permissive-1.0/2.0, public domain | Training, and evaluation as well |
 | `eval` | CC-BY-SA, CC-BY-NC, CC-BY-NC-SA, `LicenseRef-custom-research-only`, **only if redistribution is allowed** | Open-set evaluation only, never training |
-| `licensed_internal` | `LicenseRef-LDC-member-or-nonmember`, ELRA and similar institutional licences | Kept as its own pool. Internal use only, and only where the lab holds the licence for that release. Never redistributed. Whether it enters training or evaluation is the maintainer's decision |
+| `licensed_internal` | `LicenseRef-LDC-member-or-nonmember`, ELRA and similar institutional licences; `LicenseRef-custom-research-only` under a signed agreement, by maintainer decision only | Kept as its own pool. Internal use only, and only where the lab holds the licence for that release. Never redistributed. Whether it enters training or evaluation is the maintainer's decision |
 | `excluded` | Any ND (NoDerivatives; cutting, excerpting or relabelling can count as adaptation), terms that forbid redistribution, region-bound obligations, paid licences outside `licensed_internal` | Not used |
 | `hold` | `none_stated`, `unknown`, `conflicting`, or a research-only licence whose redistribution terms are not known | Undecided: find the missing fact or ask the maintainer. Do not pick a tier for it |
 

@@ -152,6 +152,9 @@ def check_types(tables, cols, db, enums):
         if row["license_spdx"] in UNDECIDED_LICENSES and user_decided(db, row["dataset_id"], "license_tier"):
             # A missing or unclear licence cannot make data trainable, but the maintainer may decide it is evaluation-only.
             allowed = allowed | {"eval"}
+        if row["license_spdx"] == "LicenseRef-custom-research-only" and user_decided(db, row["dataset_id"], "license_tier"):
+            # A signed research-only agreement without redistribution is held like an LDC licence, if the maintainer says so.
+            allowed = allowed | {"licensed_internal"}
         if row["license_tier"] and allowed and row["license_tier"] not in allowed:
             err(f"datasets {row['dataset_id']}: license_tier {row['license_tier']!r} does not fit "
                 f"license_spdx {row['license_spdx']!r} (allowed: {', '.join(sorted(allowed))})")
