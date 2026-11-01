@@ -9,6 +9,8 @@ callhome_sre2000,LDC2001S97,catalog_id,https://catalog.ldc.upenn.edu/LDC2001S97,
 callhome_sre2000,NIST SRE 2000 CALLHOME,other_source_name,,seed: name used in diarization papers; not checked against a source
 chime6,OpenSLR 150,catalog_id,https://openslr.org/150/,Identifier: SLR150
 dihard3,DIHARD III,short_name,,seed: not checked against a source
+dihard3,LDC2022S12,catalog_id,https://catalog.ldc.upenn.edu/LDC2022S14,"Development set (Third DIHARD Challenge Development), listed under Related Works; its own page not checked"
+dihard3,LDC2022S14,catalog_id,https://catalog.ldc.upenn.edu/LDC2022S14,Evaluation set (Third DIHARD Challenge Evaluation)
 dipco,DiPCo,short_name,,seed: not checked against a source
 fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
