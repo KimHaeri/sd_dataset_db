@@ -9,15 +9,6 @@ ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
-libricss,collection_status,candidate,libricss/collection_status/01,2026-10-26
-libricss,domain,simulated,libricss/domain/01,2026-10-26
-libricss,hours_reported,10,libricss/hours_reported/01,2026-10-26
-libricss,languages,eng,libricss/languages/01,2026-10-26
-libricss,n_sessions_reported,10,libricss/n_sessions_reported/01,2026-10-26
-libricss,recording_setup,far_field_array,libricss/recording_setup/01,2026-10-26
-libricss,speakers_per_session_reported,8,libricss/speakers_per_session_reported/01,2026-10-26
-libricss,speech_style,simulated_mixture,libricss/speech_style/01,2026-10-26
-libricss,status_reason_codes,unexamined,libricss/status_reason_codes/01,2026-10-26
 librispeech,access_method,direct_download,librispeech/access_method/01,2026-10-26
 librispeech,annotation_format,none,librispeech/annotation_format/01,2026-10-26
 librispeech,collection_status,excluded,librispeech/collection_status/01,2026-10-26
