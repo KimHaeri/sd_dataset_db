@@ -14,7 +14,8 @@ dihard3,LDC2022S14,catalog_id,https://catalog.ldc.upenn.edu/LDC2022S14,Evaluatio
 dipco,DiPCo,short_name,https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf,Paper title: DiPCo - Dinner Party Corpus
 displace2023,DISPLACE Corpus 2023,official_name,https://zenodo.org/records/8375161,Zenodo title: DISPLACE Corpus 2023: Dev Set
 ego4d,Ego4D Audio-Visual Diarization benchmark,other_source_name,https://github.com/EGO4D/audio-visual,README title: EGO4D Audio Visual Diarization Benchmark (AVD); the part of Ego4D with speaker segments
-fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
+fisher_english_part1,LDC2004S13,catalog_id,https://catalog.ldc.upenn.edu/LDC2004S13,Speech release (Fisher English Training Speech Part 1 Speech)
+fisher_english_part1,LDC2004T19,catalog_id,https://catalog.ldc.upenn.edu/LDC2004T19,"Transcripts release (Fisher English Training Speech Part 1 Transcripts), DOI 10.35111/w4bk-9b14"
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
 librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
 magicdata_ramc,OpenSLR 123,catalog_id,https://www.openslr.org/123/,

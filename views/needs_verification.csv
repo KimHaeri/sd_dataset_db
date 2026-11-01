@@ -7,9 +7,6 @@ ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
-fisher_english_part1,recording_setup,telephone_channel,fisher_english_part1/recording_setup/01,2026-10-26
-fisher_english_part1,speakers_per_session_reported,2,fisher_english_part1/speakers_per_session_reported/01,2026-10-26
-fisher_english_part1,speech_style,spontaneous,fisher_english_part1/speech_style/01,2026-10-26
 icsi,collection_status,candidate,icsi/collection_status/01,2026-10-26
 icsi,domain,meeting,icsi/domain/01,2026-10-26
 icsi,has_transcript,true,icsi/has_transcript/01,2026-10-26
