@@ -9,8 +9,5 @@ ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
-switchboard1,recording_setup,telephone_channel,switchboard1/recording_setup/01,2026-10-26
-switchboard1,speakers_per_session_reported,2,switchboard1/speakers_per_session_reported/01,2026-10-26
-switchboard1,speech_style,spontaneous,switchboard1/speech_style/01,2026-10-26
 voxconverse,languages,eng,voxconverse/languages/01,2026-10-26
 voxconverse,speech_style,spontaneous,voxconverse/speech_style/01,2026-10-26
