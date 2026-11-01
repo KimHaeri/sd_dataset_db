@@ -1,5 +1,1 @@
 dataset_id,field,value,evidence_id,checked_on
-ami,languages,eng,ami/languages/01,2026-10-26
-ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
-icsi,languages,eng,icsi/languages/01,2026-10-26
-icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
