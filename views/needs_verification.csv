@@ -6,13 +6,7 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-ego4d,access_method,signed_agreement,ego4d/access_method/01,2026-10-26
-ego4d,collection_status,candidate,ego4d/collection_status/01,2026-10-26
-ego4d,domain,egocentric,ego4d/domain/01,2026-10-26
-ego4d,modality,audio_visual,ego4d/modality/01,2026-10-26
-ego4d,recording_setup,wearable,ego4d/recording_setup/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
-ego4d,status_reason_codes,unexamined,ego4d/status_reason_codes/01,2026-10-26
 fisher_english_part1,recording_setup,telephone_channel,fisher_english_part1/recording_setup/01,2026-10-26
 fisher_english_part1,speakers_per_session_reported,2,fisher_english_part1/speakers_per_session_reported/01,2026-10-26
 fisher_english_part1,speech_style,spontaneous,fisher_english_part1/speech_style/01,2026-10-26

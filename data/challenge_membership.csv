@@ -11,6 +11,7 @@ dihard3,dihard3,dev,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,
 dihard3,dihard3,eval,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,Third DIHARD Challenge eval set (LDC2022S14). Replaces a seed row with role train_dev_eval: the challenge has no training set
 displace2023,displace2023,dev,primary,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,2026-10-31,claude,3.4: only development and evaluation sets were released; no training data
 displace2023,displace2023,eval,primary,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,2026-10-31,claude,3.4: only development and evaluation sets were released; no training data
+ego4d_avd_2022,ego4d,train_dev_eval,primary,https://github.com/EGO4D/audio-visual,2026-10-31,claude,"AVD benchmark clips: train 389, validation 50, test the remaining (README); the README does not say which split the challenge scores"
 m2met,aishell4,train,primary,https://arxiv.org/abs/2110.07393,2026-10-26,claude,Sec. 1: AISHELL-4 offered as M2MeT training data
 m2met,alimeeting,train_dev_eval,primary,https://www.openslr.org/119/,2026-10-26,claude,OpenSLR: designed for the ICASSP 2022 M2MeT challenge
 voxsrc21,voxconverse,dev,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,Diarization track; a new test set was used for evaluation
