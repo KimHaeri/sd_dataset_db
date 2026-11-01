@@ -68,3 +68,9 @@ Record what you checked in `notes` or in `relations`, and only when a source sta
 The tier of a `hold` dataset. Whether `licensed_internal` data is used, and for what. Any
 licence interpretation the rules above do not settle. Record their answer with
 `source_type=user` and the date the decision was made.
+
+A maintainer may move a dataset with a missing or unclear licence (`none_stated`, `unknown`,
+`conflicting`, `LicenseRef-other`) from `hold` to `eval`, typically because it was built as an
+evaluation set (Earnings-21, LibriCSS). `validate.py` accepts that only when the tier's canonical
+evidence is `source_type=user`, and never accepts `train` for such a licence. Say in the evidence
+note that the decision was made knowing the licence gap.

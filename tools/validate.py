@@ -149,6 +149,9 @@ def check_types(tables, cols, db, enums):
         if row["license_class"] != derived:
             err(f"datasets {row['dataset_id']}: license_class {row['license_class']!r} != derived {derived!r}")
         allowed = allowed_tiers(row["license_spdx"])
+        if row["license_spdx"] in UNDECIDED_LICENSES and user_decided(db, row["dataset_id"], "license_tier"):
+            # A missing or unclear licence cannot make data trainable, but the maintainer may decide it is evaluation-only.
+            allowed = allowed | {"eval"}
         if row["license_tier"] and allowed and row["license_tier"] not in allowed:
             err(f"datasets {row['dataset_id']}: license_tier {row['license_tier']!r} does not fit "
                 f"license_spdx {row['license_spdx']!r} (allowed: {', '.join(sorted(allowed))})")
@@ -169,9 +172,18 @@ def allowed_tiers(spdx):
         return {"licensed_internal", "excluded"}
     if "-SA-" in spdx or "-NC-" in spdx or spdx == "LicenseRef-custom-research-only":
         return {"eval", "hold", "excluded"}
-    if spdx in ("none_stated", "unknown", "conflicting", "LicenseRef-other"):
+    if spdx in UNDECIDED_LICENSES:
         return {"hold", "excluded"}
     return {"train", "hold", "excluded"}
+
+
+UNDECIDED_LICENSES = ("none_stated", "unknown", "conflicting", "LicenseRef-other")
+
+
+def user_decided(db, dataset_id, field):
+    """True when the canonical evidence row of datasets[dataset_id][field] is a maintainer decision."""
+    return any(e["dataset_id"] == dataset_id and e["field"] == field and e["is_canonical"] == "true"
+               and e["source_type"] == "user" for e in db["evidence"][1])
 
 
 # ---- 3. keys, foreign keys, aliases ---------------------------------------
