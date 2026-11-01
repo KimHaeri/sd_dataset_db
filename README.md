@@ -114,11 +114,13 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
   - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0; download unreachable), `displace2023` (CC BY 4.0; only Dev released)
-- **`licensed_internal`** (14): LDC or signed agreement, internal use only, never redistributed
+- **`licensed_internal`** (13): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
-  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (not on the lab storage), `mixer6_chime8`, `ego4d` (agreement not signed yet), `msp_conversation` (research-only agreement; who signed for the lab copy is not known), `msdwild` (research-only agreement, not signed yet)
+  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (not on the lab storage), `mixer6_chime8`, `ego4d` (agreement not signed yet), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
+- **`hold`** (1): undecided
+  - `msdwild`: research-only agreement without redistribution, not signed
 - **`excluded`** (1)
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
 - Not set (1)
