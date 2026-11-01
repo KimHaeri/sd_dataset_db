@@ -174,7 +174,7 @@ def allowed_tiers(spdx):
         return {"eval", "hold", "excluded"}
     if spdx in UNDECIDED_LICENSES:
         return {"hold", "excluded"}
-    return {"train", "hold", "excluded"}
+    return {"train", "eval", "hold", "excluded"}  # permissive: evaluation-only use narrows it and is always allowed
 
 
 UNDECIDED_LICENSES = ("none_stated", "unknown", "conflicting", "LicenseRef-other")

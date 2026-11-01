@@ -63,6 +63,16 @@ check, not conclusions:
 
 Record what you checked in `notes` or in `relations`, and only when a source states it.
 
+## Published splits
+
+Maintainer rule (2026-10-31): where the source defines train, development and test splits, use them
+as defined. Train splits are for training; development and test splits are for evaluation (a
+development split may tune). A dataset that publishes only development and test or evaluation
+splits (VoxConverse, DiPCo, DISPLACE 2023) is evaluation only, so its tier is `eval` even when
+the licence would allow training. Write the use per split into the `splits.csv` notes. A
+decision that departs from the rule (DIHARD III's development set) stays marked as needing
+confirmation until the maintainer settles it.
+
 ## What the maintainer decides
 
 The tier of a `hold` dataset. Whether `licensed_internal` data is used, and for what. Any

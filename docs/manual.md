@@ -43,10 +43,11 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 | `excluded` | NoDerivatives, no redistribution, region-bound or paid terms | Not used |
 | `hold` | No licence, `unknown`, `conflicting`, or redistribution terms not known | Undecided |
 
-- `tools/validate.py` enforces the licence side: ND is always `excluded`; LDC and proprietary terms are `licensed_internal` or `excluded`; ShareAlike, NonCommercial and research-only are never `train`; `none_stated`, `unknown`, `conflicting` and `LicenseRef-other` are `hold` or `excluded`, or `eval` when the tier's canonical evidence is a maintainer decision (`source_type=user`); they can never be `train`. A permissive licence may still be `hold` or `excluded` (for example terms that differ by part).
+- `tools/validate.py` enforces the licence side: ND is always `excluded`; LDC and proprietary terms are `licensed_internal` or `excluded`; ShareAlike, NonCommercial and research-only are never `train`; `none_stated`, `unknown`, `conflicting` and `LicenseRef-other` are `hold` or `excluded`, or `eval` when the tier's canonical evidence is a maintainer decision (`source_type=user`); they can never be `train`. A permissive licence may still be `eval` (evaluation-only use narrows it), `hold` or `excluded` (for example terms that differ by part).
 - Terms that differ for audio, annotations and video: the tier follows the most restrictive part we use, and `license_note` says which part is which.
 - A simulation has no licence of its own. Its tier follows the most restrictive of its speech, noise and RIR sources, which `license_note` lists one by one; when conditions differ (clean vs noise), the row takes the most restrictive one and `license_note` gives the tier per condition.
 - Do not set a tier on a licence that is still `seed`: verify the licence first.
+- Published splits (maintainer rule, 2026-10-31): where the source defines train, development and test splits, use them as defined: train splits for training, development and test splits for evaluation (a development split may tune). A dataset that publishes only development and test or evaluation splits is evaluation only. Record the use per split in `splits.csv` notes and as `source_type=user` evidence on `license_tier`; a decision that departs from the rule is marked as needing confirmation.
 - A tier says what data may be used for, not that an evaluation set is clean: check that it shares no recordings or speakers with the training data.
 
 ## Workflow: verify a seed value
