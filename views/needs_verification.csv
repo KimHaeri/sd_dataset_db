@@ -9,12 +9,6 @@ ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
-librispeech,access_method,direct_download,librispeech/access_method/01,2026-10-26
-librispeech,annotation_format,none,librispeech/annotation_format/01,2026-10-26
-librispeech,collection_status,excluded,librispeech/collection_status/01,2026-10-26
-librispeech,languages,eng,librispeech/languages/01,2026-10-26
-librispeech,speech_style,read,librispeech/speech_style/01,2026-10-26
-librispeech,status_reason_codes,single_speaker_only;simulation_source_only,librispeech/status_reason_codes/01,2026-10-26
 mixer6,access_method,paid_or_membership,mixer6/access_method/01,2026-10-26
 mixer6,collection_status,candidate,mixer6/collection_status/01,2026-10-26
 mixer6,domain,interview,mixer6/domain/01,2026-10-26
