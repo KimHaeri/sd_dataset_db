@@ -2,6 +2,7 @@ challenge_id,name,year,source_url,paper_url,note
 chime6,CHiME-6 Challenge,2020,,https://arxiv.org/abs/2004.09249,
 chime7_dasr,CHiME-7 Distant Automatic Speech Recognition task,2023,,,
 chime8_dasr,CHiME-8 Distant Automatic Speech Recognition task,2024,,,
+chime8_notsofar,NOTSOFAR-1: Distant Meeting Transcription with a Single Device (CHiME-8 Task 2),2024,https://www.chimechallenge.org/challenges/chime8/task2/index,https://www.isca-archive.org/interspeech_2024/vinnikov24_interspeech.pdf,Single-channel and known-geometry multi-channel tracks; ranked by tcpWER
 dihard3,Third DIHARD Speech Diarization Challenge,2020,,https://arxiv.org/abs/2012.01477,
 displace2023,DISPLACE Challenge 2023 - DIarization of SPeaker and LAnguage in Conversational Environments,2023,,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,"Track 1 speaker diarization, Track 2 language diarization; DER with overlap and no collar (paper 4)"
 ego4d_avd_2022,2022 Ego4D Challenges: Audio-Video Diarization and Audio Only Diarization,2022,https://eval.ai/web/challenges/challenge-page/1640/overview,,Audio-only track: https://eval.ai/web/challenges/challenge-page/1641/overview (EGO4D/audio-visual README; deadline 1 Oct 2022)

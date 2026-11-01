@@ -9,13 +9,6 @@ ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
-notsofar1,collection_status,candidate,notsofar1/collection_status/01,2026-10-26
-notsofar1,domain,meeting,notsofar1/domain/01,2026-10-26
-notsofar1,has_transcript,true,notsofar1/has_transcript/01,2026-10-26
-notsofar1,languages,eng,notsofar1/languages/01,2026-10-26
-notsofar1,recording_setup,close_talk;far_field_array;far_field_single,notsofar1/recording_setup/01,2026-10-26
-notsofar1,speech_style,spontaneous,notsofar1/speech_style/01,2026-10-26
-notsofar1,status_reason_codes,unexamined,notsofar1/status_reason_codes/01,2026-10-26
 switchboard1,recording_setup,telephone_channel,switchboard1/recording_setup/01,2026-10-26
 switchboard1,speakers_per_session_reported,2,switchboard1/speakers_per_session_reported/01,2026-10-26
 switchboard1,speech_style,spontaneous,switchboard1/speech_style/01,2026-10-26

@@ -9,6 +9,7 @@ chime8_dasr,dipco,train_dev_eval,seed,assistant background knowledge at reposito
 chime8_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 chime8_dasr,mixer6_chime8,train_dev_eval,primary,https://catalog.ldc.upenn.edu/LDC2025S07,2026-10-31,claude,"Used in CHiME 7 Task 1 and CHiME 8 Task 1 with its own training, development and test sets"
 chime8_dasr,notsofar1,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
+chime8_notsofar,notsofar1,train_dev_eval,primary,https://github.com/microsoft/NOTSOFAR1-Challenge,2026-10-31,claude,"Train-set-1 and 2, Dev-set-1 and 2, and the evaluation set (eval-small); Dev-set-2 is not in the open release"
 dihard3,dihard3,dev,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,"Third DIHARD Challenge dev set (LDC2022S12, listed under Related Works). Replaces a seed row with role train_dev_eval: the challenge has no training set"
 dihard3,dihard3,eval,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,Third DIHARD Challenge eval set (LDC2022S14). Replaces a seed row with role train_dev_eval: the challenge has no training set
 displace2023,displace2023,dev,primary,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,2026-10-31,claude,3.4: only development and evaluation sets were released; no training data
