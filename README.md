@@ -98,9 +98,9 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 - Single-speaker corpora used only to simulate conversations are kept as `excluded` with `single_speaker_only;simulation_source_only`, so that what was considered stays visible.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as`. IDs are never deleted.
 
-## Current state (2026-10-31)
+## Current state (2026-11-01)
 
-31 datasets, 9 challenges. `candidate` 25, `collected` 1 (`aishell4`), `deferred` 1 (`dipco`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 10 canonical evidence rows, in `ava_avd` (6), `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+31 datasets, 9 challenges. `candidate` 26, `collected` 1 (`aishell4`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 10 canonical evidence rows, in `ava_avd` (6), `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
@@ -113,10 +113,10 @@ Licence tiers (`license_tier`; what each dataset may be used for):
 - **`eval`** (10): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
-  - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0; download unreachable), `displace2023` (CC BY 4.0; only Dev released)
+  - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0), `displace2023` (CC BY 4.0; only Dev released)
 - **`licensed_internal`** (13): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
-  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (not on the lab storage), `mixer6_chime8`, `ego4d` (agreement not signed yet), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
+  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `ego4d` (who signed the agreement for the lab copy is not known), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
 - **`hold`** (1): undecided
@@ -130,9 +130,11 @@ Maintainer rules: SA/NC data is evaluation only; published splits are used as de
 
 Open items:
 
-- Decisions: whether AMI may be treated as CC BY 4.0 (to confirm with the PI); which AMI partition to use (scenario-only, full-corpus or full-corpus-ASR; diarization setups such as BUT's use full-corpus-ASR); who signed the agreement for the lab copy of `msp_conversation`; signing the `msdwild` and `ego4d` agreements (for Ego4D, individual or institution).
-- Sources: the remaining seed values above; a working download for `dipco` (the S3 link answers 403).
-- Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting` (Test_Ali only), `msp_conversation`, `seamless_interaction`, `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
+- Decisions: whether AMI may be treated as CC BY 4.0 (to confirm with the PI); which AMI partition to use (scenario-only, full-corpus or full-corpus-ASR; diarization setups such as BUT's use full-corpus-ASR); who signed the agreement for the lab copy of `msp_conversation`; signing the `msdwild` agreement; who signed the agreement for the lab copy of `ego4d` (only an institutional signature covers a shared copy).
+- Licence: the lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00; the CHiME-5 page re-issued it under CC BY-SA 4.0 in 2024. Either way evaluation only.
+- Sources: the remaining seed values above.
+- Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
+- Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `dihard3`, `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 
 Not yet surveyed: DIHARD I/II, NIST RT meeting sets after RT-03, VoxSRC test sets after 2021, DISPLACE 2024, AISHELL-5, CHiME-8 MMCSG, RealMAN, Korean conversational corpora (e.g. AIHub), child-language and clinical corpora.
 
