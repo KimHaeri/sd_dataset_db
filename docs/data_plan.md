@@ -44,7 +44,6 @@ to be copied to permanent storage.
 | [Earnings-21](https://github.com/revdotcom/speech-datasets/tree/main/earnings21) | Eval | Transcripts CC BY-SA 4.0; audio under a fair-use claim | Yes | — |
 | [LibriCSS](https://github.com/chenzhuo1011/libri_css) | Eval | No licence stated for the recordings | Yes | Acceptable for evaluation? |
 | [VoxConverse](https://github.com/joonson/voxconverse) | Eval | CC BY 4.0 (video copyright stays with its owners) | Yes | — |
-| [DiPCo](https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf) | Eval | CDLA-Permissive-1.0 | Yes, but the link in the paper returns 403 | A working download link? |
 | [DISPLACE 2023](https://zenodo.org/records/8375161) | Eval | CC BY 4.0 | Yes (Dev only; Eval not released) | — |
 | [RT-03 evaluation set](https://catalog.ldc.upenn.edu/LDC2007S10) | Eval | LDC | No | — |
 | [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | LDC | LDC | Purchase? |
@@ -58,5 +57,6 @@ to be copied to permanent storage.
 | [MSDWild](https://github.com/X-LANCE/MSDWILD) | Hold | Research-only agreement | Agreement | Sign? |
 | [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Undecided | LDC | LDC | Use it? Train or evaluation? |
 | [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Undecided | Annotations MIT; video rights unclear | Yes (lab storage not checked) | Proposed: hold |
+| [DiPCo](https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf) | Deferred (planned for evaluation) | CDLA-Permissive-1.0 | Not available (the download link in the paper returns 403) | A working download link? |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | CC BY-NC-ND 4.0 | — | — |
 | [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Excluded (no speaker segments) | LDC | — | — |
