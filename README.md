@@ -15,6 +15,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
 | What we downloaded and measured | `data/collections.csv`, `measurements/<dataset_id>.json` |
 | Which challenge used which dataset | `data/challenges.csv`, `data/challenge_membership.csv` |
+| Which data we plan to use, and what is still open | `docs/data_plan.md` (snapshot for discussion) |
 | A guide with the workflows | `docs/manual.md` |
 | How Claude Code maintains the DB | `.claude/skills/maintaining-sd-dataset-db/SKILL.md` |
 
