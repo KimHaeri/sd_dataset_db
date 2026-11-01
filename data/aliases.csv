@@ -12,6 +12,7 @@ dihard3,DIHARD III,short_name,,seed: not checked against a source
 dihard3,LDC2022S12,catalog_id,https://catalog.ldc.upenn.edu/LDC2022S14,"Development set (Third DIHARD Challenge Development), listed under Related Works; its own page not checked"
 dihard3,LDC2022S14,catalog_id,https://catalog.ldc.upenn.edu/LDC2022S14,Evaluation set (Third DIHARD Challenge Evaluation)
 dipco,DiPCo,short_name,https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf,Paper title: DiPCo - Dinner Party Corpus
+displace2023,DISPLACE Corpus 2023,official_name,https://zenodo.org/records/8375161,Zenodo title: DISPLACE Corpus 2023: Dev Set
 fisher_english_part1,LDC2004S13,catalog_id,,seed: not checked against a source
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
 librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source

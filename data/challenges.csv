@@ -3,5 +3,6 @@ chime6,CHiME-6 Challenge,2020,,https://arxiv.org/abs/2004.09249,
 chime7_dasr,CHiME-7 Distant Automatic Speech Recognition task,2023,,,
 chime8_dasr,CHiME-8 Distant Automatic Speech Recognition task,2024,,,
 dihard3,Third DIHARD Speech Diarization Challenge,2020,,https://arxiv.org/abs/2012.01477,
+displace2023,DISPLACE Challenge 2023 - DIarization of SPeaker and LAnguage in Conversational Environments,2023,,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,"Track 1 speaker diarization, Track 2 language diarization; DER with overlap and no collar (paper 4)"
 m2met,Multi-channel Multi-party Meeting Transcription Challenge,2022,,https://arxiv.org/abs/2110.07393,
 voxsrc21,VoxCeleb Speaker Recognition Challenge 2021,2021,,,

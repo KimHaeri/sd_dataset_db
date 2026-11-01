@@ -6,10 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-displace2023,collection_status,candidate,displace2023/collection_status/01,2026-10-26
-displace2023,languages,mul,displace2023/languages/01,2026-10-26
-displace2023,speech_style,spontaneous,displace2023/speech_style/01,2026-10-26
-displace2023,status_reason_codes,unexamined,displace2023/status_reason_codes/01,2026-10-26
 earnings21,access_method,direct_download,earnings21/access_method/01,2026-10-26
 earnings21,collection_status,candidate,earnings21/collection_status/01,2026-10-26
 earnings21,domain,earnings_call,earnings21/domain/01,2026-10-26

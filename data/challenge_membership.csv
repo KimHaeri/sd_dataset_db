@@ -9,6 +9,8 @@ chime8_dasr,mixer6,train_dev_eval,seed,assistant background knowledge at reposit
 chime8_dasr,notsofar1,train_dev_eval,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,
 dihard3,dihard3,dev,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,"Third DIHARD Challenge dev set (LDC2022S12, listed under Related Works). Replaces a seed row with role train_dev_eval: the challenge has no training set"
 dihard3,dihard3,eval,primary,https://catalog.ldc.upenn.edu/LDC2022S14,2026-10-31,claude,Third DIHARD Challenge eval set (LDC2022S14). Replaces a seed row with role train_dev_eval: the challenge has no training set
+displace2023,displace2023,dev,primary,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,2026-10-31,claude,3.4: only development and evaluation sets were released; no training data
+displace2023,displace2023,eval,primary,https://www.isca-archive.org/interspeech_2023/baghel23_interspeech.pdf,2026-10-31,claude,3.4: only development and evaluation sets were released; no training data
 m2met,aishell4,train,primary,https://arxiv.org/abs/2110.07393,2026-10-26,claude,Sec. 1: AISHELL-4 offered as M2MeT training data
 m2met,alimeeting,train_dev_eval,primary,https://www.openslr.org/119/,2026-10-26,claude,OpenSLR: designed for the ICASSP 2022 M2MeT challenge
 voxsrc21,voxconverse,dev,seed,assistant background knowledge at repository creation (no source opened),2026-10-26,claude,Diarization track; a new test set was used for evaluation
