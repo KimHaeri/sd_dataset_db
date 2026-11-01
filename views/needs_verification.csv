@@ -1,11 +1,5 @@
 dataset_id,field,value,evidence_id,checked_on
 ami,languages,eng,ami/languages/01,2026-10-26
-ava_avd,annotation_format,rttm,ava_avd/annotation_format/01,2026-10-26
-ava_avd,collection_status,candidate,ava_avd/collection_status/01,2026-10-26
-ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
-ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
-ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
-ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26

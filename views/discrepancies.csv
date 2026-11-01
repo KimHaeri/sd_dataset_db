@@ -7,6 +7,7 @@ aishell4,n_speakers_reported vs n_speakers_measured,reported_vs_measured,60,see 
 ami,license_spdx,conflicting,CC-BY-4.0,user,CC-BY-NC-SA-2.5,primary,LICENCE.txt in the AMI Manual Annotations release 1.7 (lab copy; file dated 2006),
 ami,license_spdx,superseded,CC-BY-4.0,user,conflicting,primary,ami/license_spdx/02 (official page) and ami/license_spdx/03 (release 1.7 LICENCE.txt),Neither source says it replaces the other; the maintainer decides
 ami,license_tier,superseded,train,user,hold,primary,ami/license_spdx/02 and ami/license_spdx/03,"hold until the maintainer decides which licence applies to the copy we hold; train if CC BY 4.0, eval if CC BY-NC-SA 2.5"
+ava_avd,annotation_format,superseded,rttm;lab,primary,rttm,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 dihard3,annotation_format,superseded,rttm;uem;lab,primary,rttm;uem,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 dihard3,annotation_method,superseded,mixed,primary,manual,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 dipco,license_tier,superseded,eval,user,train,primary,https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf,CDLA-Permissive 1.0: permissive. Usable only once the data can be obtained (see access_method)

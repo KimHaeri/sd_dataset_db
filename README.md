@@ -100,7 +100,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-01)
 
-31 datasets, 9 challenges. `candidate` 25, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 10 canonical evidence rows, in `ava_avd` (6), `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+31 datasets, 9 challenges. `candidate` 25, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 4 canonical evidence rows, in `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
@@ -121,10 +121,9 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
 - **`hold`** (1): undecided
   - `msdwild`: research-only agreement without redistribution, not signed
-- **`excluded`** (1)
+- **`excluded`** (2)
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
-- Not set (1)
-  - `ava_avd`: licence not recorded (labels MIT, audio and video rights unclear)
+  - `ava_avd`: annotations MIT, no licence stated for the movie videos (`none_stated`); excluded by maintainer decision after discussion with the PI (2026-11-01)
 
 Maintainer rules: SA/NC data is evaluation only; published splits are used as defined (train splits for training, development and test splits for evaluation; a dataset with only development and test splits is evaluation only); LDC training corpora are used for training, LDC evaluation sets for evaluation, internal only.
 

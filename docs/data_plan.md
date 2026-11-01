@@ -63,6 +63,6 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | Dataset | Status | Hours | Speakers (total; per session) | Recording condition | Licence | Download needed | To confirm |
 |---|---|---|---|---|---|---|---|
 | [MSDWild](https://github.com/X-LANCE/MSDWILD) | Undecided | 80.05 h (3,143 videos) | 2-10 per video | Web video (vlogs) | Research-only agreement, no redistribution | Agreement | Sign? Use for training or evaluation? |
-| [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Undecided | — | — | Movies (not verified) | Annotations MIT; video rights unclear | Yes | Proposed: hold |
+| [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Excluded | 29.25 h (351 five-minute clips from 117 movies) | 1,500; 2-24 per clip | Movies without dubbing; more than 6 languages | Annotations MIT; no licence stated for the movie videos | — | — |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | 180 h (351 conversations) | 663 | Conversation; mobile phone | CC BY-NC-ND 4.0 | — | — |
 | [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Excluded (no speaker segments) | 15,863 h | 594 | Interviews and telephone calls | LDC | — | — |
