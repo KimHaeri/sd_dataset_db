@@ -26,7 +26,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 
 | Dataset | Use | Hours | Speakers (total; per session) | Recording condition | Licence | Download needed | To confirm |
 |---|---|---|---|---|---|---|---|
-| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | 100 h | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | Licence: may we treat it as CC BY 4.0 (current official page), or must we follow CC BY-NC-SA 2.5 (licence file in release 1.7)? Which partition: full-corpus-ASR (BUT setup, 136 / 18 / 16 meetings) recommended |
+| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | 100 h | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | — |
 | [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | about 70 h (75 meetings) | — | Meeting; close-talk | CC BY 4.0 | Yes | — |
 | [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | — (237 meetings) | 35; 4-8 per meeting | Meeting; close-talk, far-field arrays and single far-field devices | CC BY 4.0 | Yes | — |
 | LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | about 1,004 h (6,000 meetings) | 2,334 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | Copy | — |
@@ -36,7 +36,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | [CALLHOME Spanish](https://catalog.ldc.upenn.edu/LDC96S35) | Train split (devtest and evltest: evaluation) | 38 h (120 calls) | — | Telephone | LDC | No | — |
 | [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | 56 h (120 calls) | — | Telephone | LDC | No | Transcripts (LDC97T14) or RTTM: purchase or find? |
 | [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | 80 h of speech (1,063 h of audio over 13 microphones) | — | Interviews and telephone calls | LDC | Partial | Is the lab copy the same as LDC2025S07? |
-| [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Train partition (development and test: evaluation) | 59.6 h (244 conversations, v1.1) | — | Podcasts | Research-only agreement, no redistribution (held like LDC) | No (outside the shared corpus storage) | Who signed the agreement for the lab copy? It covers only that person and the people they supervise |
+| [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Train partition (development and test: evaluation) | 59.6 h (244 conversations, v1.1) | — | Podcasts | Research-only agreement, no redistribution (held like LDC) | No (outside the shared corpus storage) | — |
 | [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | — | — | Egocentric video; wearable camera | Signed licence agreement | No | Who signed the agreement for the lab copy? Only an institutional signature covers a shared copy |
 
 ## Evaluation data
@@ -57,12 +57,12 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | Eval | 34.15 h (254 recordings) | — | 11 domains (meetings, clinical interviews, telephone, audiobooks, ...) | LDC | No | — |
 | [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | 33.01 h (259 recordings) | — | 11 domains (meetings, clinical interviews, telephone, audiobooks, ...) | LDC | No | — |
 | [DiPCo](https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf) | Eval | 5.32 h (10 sessions) | 32; 4 per session | Dinner party; close-talk and far-field arrays | CDLA-Permissive-1.0 | No | — |
+| [MSDWild](https://github.com/X-LANCE/MSDWILD) | Eval | 80.05 h (3,143 videos) | 2-10 per video | Web video (vlogs) | Research-only agreement, no redistribution | Agreement | Sign? Which splits: few_val and many_val only, or few_train as well? |
 
 ## Not used or undecided
 
 | Dataset | Status | Hours | Speakers (total; per session) | Recording condition | Licence | Download needed | To confirm |
 |---|---|---|---|---|---|---|---|
-| [MSDWild](https://github.com/X-LANCE/MSDWILD) | Undecided | 80.05 h (3,143 videos) | 2-10 per video | Web video (vlogs) | Research-only agreement, no redistribution | Agreement | Sign? Use for training or evaluation? |
 | [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Excluded | 29.25 h (351 five-minute clips from 117 movies) | 1,500; 2-24 per clip | Movies without dubbing; more than 6 languages | Annotations MIT; no licence stated for the movie videos | — | — |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | 180 h (351 conversations) | 663 | Conversation; mobile phone | CC BY-NC-ND 4.0 | — | — |
 | [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Excluded (no speaker segments) | 15,863 h | 594 | Interviews and telephone calls | LDC | — | — |

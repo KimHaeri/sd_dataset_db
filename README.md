@@ -110,17 +110,16 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - `notsofar1`: CC BY 4.0; train split only (dev1, eval_small and eval_full are for evaluation)
   - `librispeech_meetings_sim`: clean and reverb conditions only (LibriSpeech CC BY 4.0 and generated RIRs); the noise conditions are not used
   - `librispeech`: CC BY 4.0; simulation source only (excluded as diarization data)
-- **`eval`** (10): evaluation only
+- **`eval`** (11): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
   - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0), `displace2023` (CC BY 4.0; only Dev released)
+  - Research-only agreement; evaluation only because the video copyright stays with the original creators (maintainer decision 2026-11-01): `msdwild` (agreement not signed yet)
 - **`licensed_internal`** (13): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
   - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `ego4d` (who signed the agreement for the lab copy is not known), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
-- **`hold`** (1): undecided
-  - `msdwild`: research-only agreement without redistribution, not signed
 - **`excluded`** (2)
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
   - `ava_avd`: annotations MIT, no licence stated for the movie videos (`none_stated`); excluded by maintainer decision after discussion with the PI (2026-11-01)
@@ -129,7 +128,7 @@ Maintainer rules: SA/NC data is evaluation only; published splits are used as de
 
 Open items:
 
-- Decisions: whether AMI may be treated as CC BY 4.0 (to confirm with the PI); which AMI partition to use (scenario-only, full-corpus or full-corpus-ASR; diarization setups such as BUT's use full-corpus-ASR); who signed the agreement for the lab copy of `msp_conversation`; signing the `msdwild` agreement; who signed the agreement for the lab copy of `ego4d` (only an institutional signature covers a shared copy).
+- Decisions: signing the `msdwild` agreement and which of its splits to evaluate on; who signed the agreement for the lab copy of `ego4d` (only an institutional signature covers a shared copy).
 - Licence: the lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00; the CHiME-5 page re-issued it under CC BY-SA 4.0 in 2024. Either way evaluation only.
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
