@@ -1,0 +1,37 @@
+{
+  "dataset_id": "dihard3",
+  "data_env_var": "SD_DATA_ROOT",
+  "measured_on": "2026-11-01",
+  "rttm_glob": "*/data/rttm/*.rttm",
+  "uem_glob": "*/data/uem/*.uem",
+  "audio_glob": "*/data/flac/*.flac",
+  "n_rttm_files": 513,
+  "rttm_sha1": "fbac4458a0defd2da344cc69fead994aacd21e19",
+  "n_sessions": 513,
+  "n_speakers": 581,
+  "speakers_per_session": {
+    "min": 1,
+    "max": 10,
+    "histogram": {
+      "1": 31,
+      "2": 316,
+      "3": 43,
+      "4": 34,
+      "5": 23,
+      "6": 22,
+      "7": 22,
+      "8": 15,
+      "9": 5,
+      "10": 2
+    }
+  },
+  "speech_hours": 53.298,
+  "overlap_ratio": 10.08,
+  "audio": {
+    "n_files": 513,
+    "hours": 67.16,
+    "format": {
+      "16000Hz/1ch": 513
+    }
+  }
+}

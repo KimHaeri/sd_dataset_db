@@ -100,7 +100,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-01)
 
-31 datasets, 9 challenges. `candidate` 26, `collected` 1 (`aishell4`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 10 canonical evidence rows, in `ava_avd` (6), `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+31 datasets, 9 challenges. `candidate` 25, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: 10 canonical evidence rows, in `ava_avd` (6), `icsi` (2), `ami` (1) and `ego4d` (1); every other dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
@@ -134,7 +134,7 @@ Open items:
 - Licence: the lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00; the CHiME-5 page re-issued it under CC BY-SA 4.0 in 2024. Either way evaluation only.
 - Sources: the remaining seed values above.
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
-- Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `dihard3`, `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
+- Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 
 Not yet surveyed: DIHARD I/II, NIST RT meeting sets after RT-03, VoxSRC test sets after 2021, DISPLACE 2024, AISHELL-5, CHiME-8 MMCSG, RealMAN, Korean conversational corpora (e.g. AIHub), child-language and clinical corpora.
 
