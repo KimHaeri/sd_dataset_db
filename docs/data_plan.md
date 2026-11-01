@@ -18,8 +18,7 @@ verified figure yet.
 
 Download needed: **No** = already on the lab storage (most still need RTTM converted from their
 transcripts or annotations), **Yes** = to be downloaded (free), **LDC** = needs an LDC licence,
-**Agreement** = needs a signed agreement, **Copy** = lab simulation on purgeable scratch storage,
-to be copied to permanent storage, **Partial** = only part of the release is on the lab storage.
+**Agreement** = needs a signed agreement, **Partial** = only part of the release is on the lab storage.
 Download needed was checked against the lab's shared corpus storage on 2026-11-01.
 
 ## Training data
@@ -29,10 +28,10 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | 100 h | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | — |
 | [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | about 70 h (75 meetings) | — | Meeting; close-talk | CC BY 4.0 | Yes | — |
 | [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | — (237 meetings) | 35; 4-8 per meeting | Meeting; close-talk, far-field arrays and single far-field devices | CC BY 4.0 | Yes | — |
-| LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | about 1,004 h (6,000 meetings) | 2,334 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | Copy | — |
+| LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | about 1,004 h (6,000 meetings) | 2,334 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | No | — |
 | [Switchboard-1 Release 2](https://catalog.ldc.upenn.edu/LDC97S62) | Train | 260 h (2,400 calls) | 543; 2 per call | Telephone | LDC | No | — |
 | Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | 984 h + 975 h (11,699 calls) | 2 per call | Telephone | LDC | No | — |
-| Fisher simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings) | about 1,004 h (6,000 meetings) | 8,400 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | LDC (built from Fisher) + generated RIRs | Copy | — |
+| Fisher simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings) | about 1,004 h (6,000 meetings) | 8,400 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | LDC (built from Fisher) + generated RIRs | No | — |
 | [CALLHOME Spanish](https://catalog.ldc.upenn.edu/LDC96S35) | Train split (devtest and evltest: evaluation) | 38 h (120 calls) | — | Telephone | LDC | No | — |
 | [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | 56 h (120 calls) | — | Telephone | LDC | No | Transcripts (LDC97T14) or RTTM: purchase or find? |
 | [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | 80 h of speech (1,063 h of audio over 13 microphones) | — | Interviews and telephone calls | LDC | Partial | Is the lab copy the same as LDC2025S07? |
