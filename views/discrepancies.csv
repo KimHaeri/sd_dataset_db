@@ -8,6 +8,7 @@ ami,license_spdx,conflicting,CC-BY-4.0,user,CC-BY-NC-SA-2.5,primary,LICENCE.txt 
 ami,license_spdx,superseded,CC-BY-4.0,user,conflicting,primary,ami/license_spdx/02 (official page) and ami/license_spdx/03 (release 1.7 LICENCE.txt),Neither source says it replaces the other; the maintainer decides
 ami,license_tier,superseded,train,user,hold,primary,ami/license_spdx/02 and ami/license_spdx/03,"hold until the maintainer decides which licence applies to the copy we hold; train if CC BY 4.0, eval if CC BY-NC-SA 2.5"
 dihard3,annotation_format,superseded,rttm;uem;lab,primary,rttm;uem,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+dihard3,annotation_method,superseded,mixed,primary,manual,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 magicdata_ramc,domain,superseded,conversation,primary,telephone,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 magicdata_ramc,recording_setup,superseded,mobile_device,primary,telephone_channel,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 magicdata_ramc,speakers_per_session_reported,superseded,unknown,primary,2,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede

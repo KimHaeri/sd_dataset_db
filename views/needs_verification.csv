@@ -6,7 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-dihard3,annotation_method,manual,dihard3/annotation_method/01,2026-10-26
 dipco,collection_status,candidate,dipco/collection_status/01,2026-10-26
 dipco,domain,dinner_party,dipco/domain/01,2026-10-26
 dipco,has_transcript,true,dipco/has_transcript/01,2026-10-26
