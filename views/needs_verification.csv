@@ -6,16 +6,6 @@ ava_avd,domain,movie_tv,ava_avd/domain/01,2026-10-26
 ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
-dipco,collection_status,candidate,dipco/collection_status/01,2026-10-26
-dipco,domain,dinner_party,dipco/domain/01,2026-10-26
-dipco,has_transcript,true,dipco/has_transcript/01,2026-10-26
-dipco,languages,eng,dipco/languages/01,2026-10-26
-dipco,license_spdx,CDLA-Permissive-1.0,dipco/license_spdx/01,2026-10-26
-dipco,n_sessions_reported,10,dipco/n_sessions_reported/01,2026-10-26
-dipco,recording_setup,close_talk;far_field_array,dipco/recording_setup/01,2026-10-26
-dipco,speakers_per_session_reported,4,dipco/speakers_per_session_reported/01,2026-10-26
-dipco,speech_style,spontaneous,dipco/speech_style/01,2026-10-26
-dipco,status_reason_codes,unexamined,dipco/status_reason_codes/01,2026-10-26
 displace2023,collection_status,candidate,displace2023/collection_status/01,2026-10-26
 displace2023,languages,mul,displace2023/languages/01,2026-10-26
 displace2023,speech_style,spontaneous,displace2023/speech_style/01,2026-10-26
