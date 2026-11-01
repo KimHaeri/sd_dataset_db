@@ -11,14 +11,14 @@ Rules:
   evaluation.
 - LDC data is used internally only and never redistributed.
 
-Download: **No** = already on the lab storage (most still need RTTM converted from their
-transcripts or annotations), **Yes** = free download, **LDC** = needs an LDC licence,
+Download needed: **No** = already on the lab storage (most still need RTTM converted from their
+transcripts or annotations), **Yes** = to be downloaded (free), **LDC** = needs an LDC licence,
 **Agreement** = needs a signed agreement, **Copy** = lab simulation on purgeable scratch storage,
 to be copied to permanent storage.
 
 ## Training data
 
-| Dataset | Use | Licence | Download | To confirm |
+| Dataset | Use | Licence | Download needed | To confirm |
 |---|---|---|---|---|
 | [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | Licence: may we treat it as CC BY 4.0 (current official page), or must we follow CC BY-NC-SA 2.5 (licence file in release 1.7)? Which partition: full-corpus-ASR (BUT setup, 136 / 18 / 16 meetings) recommended |
 | [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | CC BY 4.0 | Yes | — |
@@ -33,12 +33,12 @@ to be copied to permanent storage.
 
 ## Evaluation data
 
-| Dataset | Use | Licence | Download | To confirm |
+| Dataset | Use | Licence | Download needed | To confirm |
 |---|---|---|---|---|
 | [AISHELL-4](https://www.openslr.org/111/) | Eval | CC BY-SA 4.0 | No (measured) | — |
 | [AliMeeting](https://www.openslr.org/119/) | Eval | CC BY-SA 4.0 | Partial (only Test on the lab storage) | — |
-| [CHiME-6](https://openslr.org/150/) | Eval | CC BY-SA 4.0 | No | — |
-| [CHiME-5](https://www.chimechallenge.org/datasets/chime5) | Eval | CC BY-SA 4.0 | No (same recordings as CHiME-6, which fixes their audio alignment) | — |
+| [CHiME-6](https://openslr.org/150/) | Eval | CC BY-SA 4.0 | No (re-release of the CHiME-5 recordings with their audio alignment fixed) | — |
+| [CHiME-5](https://www.chimechallenge.org/datasets/chime5) | Eval | CC BY-SA 4.0 | No (use the CHiME-6 copy) | — |
 | [Seamless Interaction](https://huggingface.co/datasets/facebook/seamless-interaction) | Eval | CC BY-NC 4.0 | No (audio, improvised sessions only) | — |
 | [Earnings-21](https://github.com/revdotcom/speech-datasets/tree/main/earnings21) | Eval | Transcripts CC BY-SA 4.0; audio under a fair-use claim | Yes | — |
 | [LibriCSS](https://github.com/chenzhuo1011/libri_css) | Eval | No licence stated for the recordings | Yes | — |
@@ -51,7 +51,7 @@ to be copied to permanent storage.
 
 ## Not used or undecided
 
-| Dataset | Status | Licence | Download | To confirm |
+| Dataset | Status | Licence | Download needed | To confirm |
 |---|---|---|---|---|
 | [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Hold | Research-only agreement | No (v1.1; v2.0 exists) | Who signed the agreement for the lab copy? |
 | [MSDWild](https://github.com/X-LANCE/MSDWILD) | Hold | Research-only agreement | Agreement | Sign? |
