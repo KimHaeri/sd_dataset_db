@@ -7,16 +7,8 @@ ava_avd,languages,mul,ava_avd/languages/01,2026-10-26
 ava_avd,modality,audio_visual,ava_avd/modality/01,2026-10-26
 ava_avd,status_reason_codes,unexamined,ava_avd/status_reason_codes/01,2026-10-26
 ego4d,speech_style,spontaneous,ego4d/speech_style/01,2026-10-26
-icsi,collection_status,candidate,icsi/collection_status/01,2026-10-26
-icsi,domain,meeting,icsi/domain/01,2026-10-26
-icsi,has_transcript,true,icsi/has_transcript/01,2026-10-26
-icsi,hours_reported,72,icsi/hours_reported/01,2026-10-26
 icsi,languages,eng,icsi/languages/01,2026-10-26
-icsi,modality,audio,icsi/modality/01,2026-10-26
-icsi,n_sessions_reported,75,icsi/n_sessions_reported/01,2026-10-26
-icsi,recording_setup,close_talk;far_field_single,icsi/recording_setup/01,2026-10-26
 icsi,speech_style,spontaneous,icsi/speech_style/01,2026-10-26
-icsi,status_reason_codes,unexamined,icsi/status_reason_codes/01,2026-10-26
 libricss,collection_status,candidate,libricss/collection_status/01,2026-10-26
 libricss,domain,simulated,libricss/domain/01,2026-10-26
 libricss,hours_reported,10,libricss/hours_reported/01,2026-10-26

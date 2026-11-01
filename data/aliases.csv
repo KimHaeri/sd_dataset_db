@@ -18,6 +18,7 @@ fisher_english_part1,LDC2004S13,catalog_id,https://catalog.ldc.upenn.edu/LDC2004
 fisher_english_part1,LDC2004T19,catalog_id,https://catalog.ldc.upenn.edu/LDC2004T19,"Transcripts release (Fisher English Training Speech Part 1 Transcripts), DOI 10.35111/w4bk-9b14"
 fisher_english_part2,LDC2005S13,catalog_id,https://catalog.ldc.upenn.edu/LDC2005S13,Speech release
 fisher_english_part2,LDC2005T19,catalog_id,https://catalog.ldc.upenn.edu/LDC2005T19,"Transcripts release, DOI 10.35111/0yyq-cj29"
+icsi,ICSI Meeting Corpus,official_name,https://groups.inf.ed.ac.uk/ami/icsi/,
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
 librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
 magicdata_ramc,OpenSLR 123,catalog_id,https://www.openslr.org/123/,
