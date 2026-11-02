@@ -14,7 +14,7 @@ Rules:
 Hours, speakers and recording condition are the figures the source reports for its whole
 release (paper, official page or LDC catalogue), not what the lab holds; for the two lab
 simulations they cover the clean and reverb conditions we use. **—** means the DB has no
-verified figure yet.
+verified figure yet. Figures with "about" or "over" are the source's own approximations.
 
 Download needed: **No** = already on the lab storage (most still need RTTM converted from their
 transcripts or annotations), **Yes** = to be downloaded (free), **LDC** = needs an LDC licence,
@@ -27,7 +27,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 |---|---|---|---|---|---|---|---|
 | [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | 100 h | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | — |
 | [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | about 70 h (75 meetings) | — | Meeting; close-talk | CC BY 4.0 | Yes | — |
-| [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | — (237 meetings) | 35; 4-8 per meeting | Meeting; close-talk, far-field arrays and single far-field devices | CC BY 4.0 | Yes | — |
+| [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | 237 meetings of about 6 min (about 150 h single-channel and 110 h multi-channel over all devices) | 35; 4-8 per meeting | Meeting; close-talk, far-field arrays and single far-field devices | CC BY 4.0 | Yes | — |
 | LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | about 1,004 h (6,000 meetings) | 2,334 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | No | — |
 | [Switchboard-1 Release 2](https://catalog.ldc.upenn.edu/LDC97S62) | Train | 260 h (2,400 calls) | 543; 2 per call | Telephone | LDC | No | — |
 | Fisher English Training [Part 1](https://catalog.ldc.upenn.edu/LDC2004S13) and [Part 2](https://catalog.ldc.upenn.edu/LDC2005S13) | Train | 984 h + 975 h (11,699 calls) | 2 per call | Telephone | LDC | No | — |
@@ -36,7 +36,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | [CALLHOME American English](https://catalog.ldc.upenn.edu/LDC97S42) | Train split (development and evaluation data: evaluation) | 56 h (120 calls) | — | Telephone | LDC | No | Transcripts (LDC97T14) or RTTM: purchase or find? |
 | [Mixer 6 - CHiME 8](https://catalog.ldc.upenn.edu/LDC2025S07) | Train split (dev and test: evaluation) | 80 h of speech (1,063 h of audio over 13 microphones) | — | Interviews and telephone calls | LDC | Partial | Is the lab copy the same as LDC2025S07? |
 | [MSP-Conversation](https://lab-msp.com/MSP/MSP-Conversation.html) | Train partition (development and test: evaluation) | 59.6 h (244 conversations, v1.1) | — | Podcasts | Research-only agreement, no redistribution (held like LDC) | No (outside the shared corpus storage) | — |
-| [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | — | — | Egocentric video; wearable camera | Signed licence agreement | No | Who signed the agreement for the lab copy? Only an institutional signature covers a shared copy |
+| [Ego4D](https://ego4d-data.org/) Audio-Visual Diarization | Train split (val and test: evaluation) | about 50 h annotated (572 clips of 5 min) | — | Egocentric video; wearable camera | Signed licence agreement | No | Who signed the agreement for the lab copy? Only an institutional signature covers a shared copy |
 
 ## Evaluation data
 
@@ -44,14 +44,14 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 |---|---|---|---|---|---|---|---|
 | [AISHELL-4](https://www.openslr.org/111/) | Eval | 120 h (211 meetings) | 60; 4-8 per meeting | Meeting; far-field array | CC BY-SA 4.0 | No | — |
 | [AliMeeting](https://www.openslr.org/119/) | Eval | 118.75 h (240 meetings) | 2-4 per meeting | Meeting; close-talk and far-field array | CC BY-SA 4.0 | No | — |
-| [CHiME-6](https://openslr.org/150/) | Eval | — (20 sessions) | 4 per session | Dinner party at home; binaural close-talk and far-field arrays | CC BY-SA 4.0 | No | — |
+| [CHiME-6](https://openslr.org/150/) | Eval | 50.2 h (20 sessions; same recordings as CHiME-5) | 4 per session | Dinner party at home; binaural close-talk and far-field arrays | CC BY-SA 4.0 | No | — |
 | [CHiME-5](https://www.chimechallenge.org/datasets/chime5) | Eval | 50.2 h (20 sessions) | 48; 4 per session | Dinner party at home; binaural close-talk and far-field arrays | CC BY-SA 4.0 | No | Licence: the copy's licence file is non-commercial, the plan says CC BY-SA 4.0 |
-| [Seamless Interaction](https://huggingface.co/datasets/facebook/seamless-interaction) | Eval | — | 2 per conversation | Two-person conversation; one channel per participant | CC BY-NC 4.0 | No | — |
+| [Seamless Interaction](https://huggingface.co/datasets/facebook/seamless-interaction) | Eval | over 4,000 h in the full release (the lab copy has the improvised part only) | 2 per conversation | Two-person conversation; one channel per participant | CC BY-NC 4.0 | No | — |
 | [Earnings-21](https://github.com/revdotcom/speech-datasets/tree/main/earnings21) | Eval | 39.25 h (44 calls) | 2-20 per call | Earnings calls | Transcripts CC BY-SA 4.0; audio under a fair-use claim | Yes | — |
 | [LibriCSS](https://github.com/chenzhuo1011/libri_css) | Eval | 10 h (10 sessions) | 40; 8 per session | LibriSpeech replayed in a room; far-field array | No licence stated for the recordings | Yes | — |
 | [VoxConverse](https://github.com/joonson/voxconverse) | Eval | 63.8 h (448 videos) | — | Broadcast and web video | CC BY 4.0 (video copyright stays with its owners) | No | — |
 | [DISPLACE 2023](https://zenodo.org/records/8375161) | Eval | about 31.5 h (Dev about 15.5 h) | 3-5 per session | Conversation; single far-field microphone | CC BY 4.0 | Yes | — |
-| [RT-03 evaluation set](https://catalog.ldc.upenn.edu/LDC2007S10) | Eval | — | — | Broadcast news and telephone | LDC | No | — |
+| [RT-03 evaluation set](https://catalog.ldc.upenn.edu/LDC2007S10) | Eval | about 9 h for diarization (broadcast news about 3 h, telephone about 6 h) | — | Broadcast news and telephone | LDC | No | — |
 | [NIST SRE 2000 CALLHOME](https://catalog.ldc.upenn.edu/LDC2001S97) | Eval | — | — | Telephone | LDC | No | — |
 | [DIHARD III development set](https://catalog.ldc.upenn.edu/LDC2022S12) | Eval | 34.15 h (254 recordings) | — | 11 domains (meetings, clinical interviews, telephone, audiobooks, ...) | LDC | No | — |
 | [DIHARD III evaluation set](https://catalog.ldc.upenn.edu/LDC2022S14) | Eval | 33.01 h (259 recordings) | — | 11 domains (meetings, clinical interviews, telephone, audiobooks, ...) | LDC | No | — |
