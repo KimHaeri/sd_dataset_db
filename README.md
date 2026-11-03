@@ -1,6 +1,6 @@
 # sd_dataset_db
 
-A database of speaker diarization datasets, kept as CSV files under git, together with the tools to download them, measure them from their reference RTTM files and record the results. It is built to be read and maintained by AI assistants (such as Claude Code) as well as people, so every important value carries its source.
+A database of speaker diarization datasets and other conversational speech that can be turned into diarization data, kept as CSV files under git, together with the tools to download them, measure them from their reference RTTM files and record the results. It is built to be read and maintained by AI assistants (such as Claude Code) as well as people, so every important value carries its source.
 
 The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset_db) (the same idea for speech emotion recognition): `data/*.csv` is authoritative, every fact has an evidence row, and `tools/validate.py` enforces the rules before each commit.
 
@@ -95,6 +95,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 ## What counts as one row
 
 - One row per original dataset release. Plain re-uploads (Hugging Face, Kaggle mirrors) go into the original's `aliases`. Re-annotations, re-splits and challenge versions that change the content are separate rows linked with `relations` (e.g. `chime6 shares_recordings_with chime5`).
+- Conversational corpora not made for diarization count too (since 2026-11-03), when speaker turns can be obtained from utterance timestamps with speaker labels or by VAD on per-speaker close-talk channels; `turn_source` says which.
 - Single-speaker corpora used only to simulate conversations are kept as `excluded` with `single_speaker_only;simulation_source_only`, so that what was considered stays visible.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as`. IDs are never deleted.
 

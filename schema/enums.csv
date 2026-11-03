@@ -142,3 +142,7 @@ license_tier,licensed_internal,"Institutional licence (LDC, ELRA): internal use 
 license_tier,excluded,"NoDerivatives, no redistribution, region-bound or paid terms: not used",
 license_tier,hold,"Licence missing, unknown, conflicting, or redistribution terms not known: undecided",
 license_spdx,CC-BY-NC-SA-2.5,CC Attribution-NonCommercial-ShareAlike 2.5,noncommercial
+turn_source,provided_segments,"Segments or utterances with speaker labels and start/end times are distributed (RTTM, TextGrid, CHAT with time bullets, JSON, CTM/STM ...)",
+turn_source,close_talk_vad,"No timed speaker segments, but each speaker has a close-talk microphone or a channel of their own: turns are derived by VAD per channel",
+turn_source,both,Timed speaker segments are distributed and each speaker also has a close-talk or separate channel,
+turn_source,none,Neither: speaker turns cannot be obtained without new annotation,

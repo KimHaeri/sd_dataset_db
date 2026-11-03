@@ -14,6 +14,7 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 | Speaker label | The 8th RTTM field. Labels are not always global across sessions, so `n_speakers_measured` may overcount real people |
 | Far-field array | Microphone array placed away from the speakers (AMI, AISHELL-4, CHiME-6) |
 | Simulated mixture | Conversations built by mixing or replaying single-speaker recordings (LibriCSS, simulation recipes) |
+| Turn source | `turn_source`: where speaker turns come from. `provided_segments`: the release has utterances or segments with speaker labels and times. `close_talk_vad`: it has none, but every speaker has a close-talk microphone or a channel of their own (headset, lapel, one side of a call), so turns are cut by VAD per channel. `both`, or `none` (needs new annotation) |
 | Seed value | A value entered from an assistant's background knowledge at repository creation, without opening a source. Treated as a lead, never as a fact |
 
 ## Lifecycle of a dataset row
@@ -62,6 +63,8 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 4. Fill free-text columns (`license_note`, `notes`) with what you learned, then `python3 tools/views.py && python3 tools/validate.py`.
 
 ## Workflow: add a dataset
+
+Scope (maintainer decision, 2026-11-03): any real multi-speaker conversational speech, not only data released for diarization. It qualifies when speaker turns can be obtained: utterance or segment timestamps with speaker labels (`turn_source=provided_segments`), or one close-talk or separate channel per speaker, cut by VAD (`close_talk_vad`). Record `turn_source` with evidence for every new row; a conversation corpus with neither is `none` and stays a candidate only if someone may annotate it.
 
 1. Search first: `grep -i <name> views/datasets_wide.csv data/aliases.csv`. A mirror is an alias, not a row.
 2. `python3 tools/db.py add datasets dataset_id=<id> name="<name>" collection_status=candidate status_reason_codes=unexamined last_updated_on=<today>`.

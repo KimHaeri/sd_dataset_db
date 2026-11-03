@@ -30,6 +30,7 @@ datasets,speakers_per_session_reported,range,empty;unknown,yes,Speakers per sess
 datasets,overlap_ratio_reported,float,empty;unknown,yes,Overlapped speech as a percentage of total speech per the primary source. Write how it was defined in notes
 datasets,annotation_format,enumlist:annotation_format,empty;unknown;none,yes,Formats in which speaker segments are distributed (;-separated). none = no speaker segments
 datasets,annotation_method,enum:annotation_method,empty;unknown,yes,How speaker segment boundaries were made: manual / forced_alignment / automatic / mixed
+datasets,turn_source,enum:turn_source,empty;unknown,yes,"Where speaker turns for diarization come from: provided_segments (segments or utterances with speaker labels and times are distributed), close_talk_vad (none are, but each speaker has a close-talk or separate channel, so turns come from VAD per channel), both, none"
 datasets,has_transcript,bool,empty;unknown,yes,Whether word-level or segment-level transcripts are distributed
 datasets,has_official_splits,bool,empty;unknown,yes,Whether the source publishes train/dev/test splits (details in splits.csv)
 datasets,hours_measured,float,empty;unknown;NA,yes,Total hours of the audio we obtained (our measurement)

@@ -1,6 +1,6 @@
 ---
 name: maintaining-sd-dataset-db
-description: Maintains the speaker diarization dataset database, a git repository of CSV tables in which every value carries an evidence row (source, date, strength). Verifies seed values against primary sources, adds datasets and challenges, registers copies that already exist on the lab's storage, records simulated mixtures with their speech, noise and RIR sources, measures datasets from their RTTM files, sorts data into license tiers (train / eval / licensed_internal / excluded / hold), validates and commits. Use when someone asks to add, verify, download, measure or reclassify a diarization dataset, asks what diarization data the lab already has, asks whether a dataset may be used for training or only for evaluation, or asks about a dataset's license, access, size, overlap or status.
+description: Maintains the speaker diarization dataset database (diarization datasets and any conversational speech that can become diarization data), a git repository of CSV tables in which every value carries an evidence row (source, date, strength). Verifies seed values against primary sources, adds datasets and challenges, registers copies that already exist on the lab's storage, records simulated mixtures with their speech, noise and RIR sources, measures datasets from their RTTM files, sorts data into license tiers (train / eval / licensed_internal / excluded / hold), validates and commits. Use when someone asks to add, verify, download, measure or reclassify a diarization dataset, asks what diarization data the lab already has, asks whether a dataset may be used for training or only for evaluation, or asks about a dataset's license, access, size, overlap or status.
 ---
 
 # Maintaining the speaker diarization dataset DB
@@ -70,7 +70,7 @@ What you need to know about the surroundings:
 ## Choose the workflow
 
 - "Verify X" / values still seed → manual, "Workflow: verify a seed value".
-- "Add this dataset" / a survey → manual, "Workflow: add a dataset".
+- "Add this dataset" / a survey → manual, "Workflow: add a dataset". The scope is any real multi-speaker conversation whose turns can be obtained (`turn_source`: utterance timestamps with speakers, or VAD on per-speaker close-talk channels), not only diarization releases.
 - "What does the lab already have?" / a directory of corpora → **Register lab copies** below.
 - "Download / measure X" → README, "Collecting a dataset", then manual, "Workflow: collect a dataset".
 - A simulation built from other corpora → **Simulated data** below.
