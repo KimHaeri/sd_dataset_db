@@ -16,6 +16,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 | What we downloaded and measured | `data/collections.csv`, `measurements/<dataset_id>.json` |
 | Which challenge used which dataset | `data/challenges.csv`, `data/challenge_membership.csv` |
 | Which data we plan to use, and what is still open | `docs/data_plan.md` (snapshot for discussion) |
+| Conversational datasets found but not yet added | `docs/conversation_survey.md` (survey of 2026-11-03; leads, grouped by licence) |
 | A guide with the workflows | `docs/manual.md` |
 | How Claude Code maintains the DB | `.claude/skills/maintaining-sd-dataset-db/SKILL.md` |
 
@@ -99,22 +100,23 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 - Single-speaker corpora used only to simulate conversations are kept as `excluded` with `single_speaker_only;simulation_source_only`, so that what was considered stays visible.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as`. IDs are never deleted.
 
-## Current state (2026-11-01)
+## Current state (2026-11-03)
 
-31 datasets, 9 challenges. `candidate` 25, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+36 datasets, 9 challenges. `candidate` 30, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
-- **`train`** (5): permissive licence, used for training
+- **`train`** (9): permissive licence, used for training
   - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); partition not chosen yet
   - `icsi`: CC BY 4.0
   - `notsofar1`: CC BY 4.0; train split only (dev1, eval_small and eval_full are for evaluation)
   - `librispeech_meetings_sim`: clean and reverb conditions only (LibriSpeech CC BY 4.0 and generated RIRs); the noise conditions are not used
   - `librispeech`: CC BY 4.0; simulation source only (excluded as diarization data)
-- **`eval`** (11): evaluation only
+  - Added from the 2026-11-03 conversation survey: `nb_samtale` (CC0 1.0), `hcrc_maptask` (CC BY 4.0), `primock57` (CC BY 4.0), `otospeech_fd_280h` (CC BY 4.0 in the card metadata; gated)
+- **`eval`** (12): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
-  - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0), `displace2023` (CC BY 4.0; only Dev released)
+  - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0), `displace2023` (CC BY 4.0; only Dev released), `indic_diarbench` (CC BY 4.0; test splits only)
   - Research-only agreement; evaluation only because the video copyright stays with the original creators (maintainer decision 2026-11-01): `msdwild` (agreement not signed yet)
 - **`licensed_internal`** (13): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
@@ -130,11 +132,11 @@ Maintainer rules: SA/NC data is evaluation only; published splits are used as de
 Open items:
 
 - Decisions: signing the `msdwild` agreement and which of its splits to evaluate on; who signed the agreement for the lab copy of `ego4d` (only an institutional signature covers a shared copy).
-- Licence: the lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00; the CHiME-5 page re-issued it under CC BY-SA 4.0 in 2024. Either way evaluation only.
+- Licence: the maintainer reports (2026-11-03) that the CHiME organisers decided to drop ShareAlike and plans to train on `chime5`/`chime6` once that is published; on 2026-11-03 the CHiME-5 page and the OpenSLR 150 LICENSE.txt still say CC BY-SA 4.0. The lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00; the CHiME-5 page re-issued it under CC BY-SA 4.0 in 2024. Either way evaluation only.
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 
-Not yet surveyed: DIHARD I/II, NIST RT meeting sets after RT-03, VoxSRC test sets after 2021, DISPLACE 2024, AISHELL-5, CHiME-8 MMCSG, RealMAN, Korean conversational corpora (e.g. AIHub), child-language and clinical corpora.
+Conversation survey (2026-11-03): `docs/conversation_survey.md` lists 162 further candidates found across speech conferences, LREC/*CL and corpus archives, GitHub, Zenodo, OpenSLR and Hugging Face, grouped by licence. They are leads, not DB rows yet, apart from the five added above. Not covered by it: RealMAN, Korean corpora on AIHub (overseas use needs a separate agreement with NIA).
 
 ## License
 
