@@ -102,11 +102,11 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-53 datasets, 9 challenges. `candidate` 48, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 1 (`librispeech`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+100 datasets, 9 challenges. `candidate` 81, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 13. Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
-- **`train`** (14): permissive licence, used for training
+- **`train`** (31): permissive licence, used for training
   - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); partition not chosen yet
   - `icsi`: CC BY 4.0
   - `notsofar1`: CC BY 4.0; train split only (dev1, eval_small and eval_full are for evaluation)
@@ -114,12 +114,14 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - `librispeech`: CC BY 4.0; simulation source only (excluded as diarization data)
   - Added from the 2026-11-03 conversation survey: `nb_samtale` (CC0 1.0), `hcrc_maptask` (CC BY 4.0), `primock57` (CC BY 4.0), `otospeech_fd_280h` (CC BY 4.0 in the card metadata; gated)
   - Lab copies found by the 2026-11-04 re-scan: `harper_valley_bank` (CC BY 4.0; the lab holds the SLUE-HVB subset), `npsc` (CC0 1.0; 140 h of Norwegian parliament meetings with speaker-timed sentences)
+  - Survey candidates checked on 2026-11-04 (verification batches A-C): `spjallromur`, `fearless_steps_challenge`, `otospeech_fd_task_20h`, `otospeech_fd_task_v2`, `spice`, `simsamu`, `kenya_ph_dialogue`, `datahive_conversations_sample`, `ocular_en_fullduplex_sample`, `perit_duplex_support_en`, `real_turnturk`, `humyn_indic_multispeaker`
   - Checked from the survey on 2026-11-04: `egocom` (MIT; 38.5 h, a wearable per participant), `multi_tpc` (CC BY 4.0; a WAV and word timings per participant), `kallaama` (CC BY 4.0; speaker turns not confirmed yet)
-- **`eval`** (16): evaluation only
+- **`eval`** (19): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
   - Only development and test splits published: `voxconverse` (CC BY 4.0), `dipco` (CDLA-Permissive-1.0), `displace2023` (CC BY 4.0; only Dev released), `indic_diarbench` (CC BY 4.0; test splits only)
   - Lab copies found by the 2026-11-04 re-scan: `aishell5`, `earnings22` (CC BY-SA 4.0), `expresso`, `spokenwoz` (CC BY-NC 4.0)
+  - Survey candidates checked on 2026-11-04: `voxmm` (CC BY 4.0, dev/test only), `ascend` (CC BY-SA 4.0)
   - Research-only agreement; evaluation only because the video copyright stays with the original creators (maintainer decision 2026-11-01): `msdwild` (agreement not signed yet)
 - **`licensed_internal`** (18): LDC or signed agreement, internal use only, never redistributed
   - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
@@ -127,10 +129,10 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; who signed it for the lab copy is not known)
   - Re-judged 2026-11-04 under the conversation scope: `mixer6` (its telephone calls have one channel per side, so turns can come from VAD; not on the lab storage). Its interview subset with segments is `mixer6_chime8`
-- **`hold`** (3): undecided
+- **`hold`** (29): undecided
   - `iemocap`: release form with a licence PDF not read yet; who signed it for the lab copy is not known
   - `aphasiabank`, `dementiabank`: TalkBank password-protected clinical banks (CC BY-NC-SA 4.0; the Ground Rules say the data cannot be included in models, and password-protected data cannot be posted on other servers: whether the lab's shared copy is allowed needs checking)
-- **`excluded`** (2)
+- **`excluded`** (3)
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
   - `ava_avd`: annotations MIT, no licence stated for the movie videos (`none_stated`); excluded by maintainer decision after discussion with the PI (2026-11-01)
 
