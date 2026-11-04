@@ -102,11 +102,11 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-50 datasets, 9 challenges. `candidate` 45, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 1 (`librispeech`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+53 datasets, 9 challenges. `candidate` 48, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 1 (`librispeech`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
-- **`train`** (11): permissive licence, used for training
+- **`train`** (14): permissive licence, used for training
   - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); partition not chosen yet
   - `icsi`: CC BY 4.0
   - `notsofar1`: CC BY 4.0; train split only (dev1, eval_small and eval_full are for evaluation)
@@ -114,6 +114,7 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - `librispeech`: CC BY 4.0; simulation source only (excluded as diarization data)
   - Added from the 2026-11-03 conversation survey: `nb_samtale` (CC0 1.0), `hcrc_maptask` (CC BY 4.0), `primock57` (CC BY 4.0), `otospeech_fd_280h` (CC BY 4.0 in the card metadata; gated)
   - Lab copies found by the 2026-11-04 re-scan: `harper_valley_bank` (CC BY 4.0; the lab holds the SLUE-HVB subset), `npsc` (CC0 1.0; 140 h of Norwegian parliament meetings with speaker-timed sentences)
+  - Checked from the survey on 2026-11-04: `egocom` (MIT; 38.5 h, a wearable per participant), `multi_tpc` (CC BY 4.0; a WAV and word timings per participant), `kallaama` (CC BY 4.0; speaker turns not confirmed yet)
 - **`eval`** (16): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
