@@ -2,6 +2,7 @@ dataset_id,alias,alias_type,source_ref,note
 aishell4,OpenSLR 111,catalog_id,https://www.openslr.org/111/,
 alimeeting,OpenSLR 119,catalog_id,https://www.openslr.org/119/,
 ami,AMI,short_name,https://groups.inf.ed.ac.uk/ami/corpus/,
+babel,LDC2016S02,catalog_id,https://catalog.ldc.upenn.edu/LDC2016S02,
 callhome_american_english,LDC97S42,catalog_id,https://catalog.ldc.upenn.edu/LDC97S42,LDC Catalog No. on the catalogue page
 callhome_spanish,LDC96S35,catalog_id,https://catalog.ldc.upenn.edu/LDC96S35,
 callhome_sre2000,CALLHOME,short_name,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,The evaluation plan calls this part the CALLHOME data (section 7)
@@ -18,6 +19,11 @@ fisher_english_part1,LDC2004S13,catalog_id,https://catalog.ldc.upenn.edu/LDC2004
 fisher_english_part1,LDC2004T19,catalog_id,https://catalog.ldc.upenn.edu/LDC2004T19,"Transcripts release (Fisher English Training Speech Part 1 Transcripts), DOI 10.35111/w4bk-9b14"
 fisher_english_part2,LDC2005S13,catalog_id,https://catalog.ldc.upenn.edu/LDC2005S13,Speech release
 fisher_english_part2,LDC2005T19,catalog_id,https://catalog.ldc.upenn.edu/LDC2005T19,"Transcripts release, DOI 10.35111/0yyq-cj29"
+fisher_spanish,LDC2010S01,catalog_id,https://catalog.ldc.upenn.edu/LDC2010S01,
+fisher_spanish,LDC2010T04,catalog_id,https://catalog.ldc.upenn.edu/LDC2010S01,
+harper_valley_bank,SLUE-HVB,catalog_id,https://github.com/cricketclub/gridspace-stanford-harper-valley,
+hub5_2000_eng,LDC2002S09,catalog_id,https://catalog.ldc.upenn.edu/LDC2002S09,
+hub5_2000_eng,LDC2002T43,catalog_id,https://catalog.ldc.upenn.edu/LDC2002S09,
 icsi,ICSI Meeting Corpus,official_name,https://groups.inf.ed.ac.uk/ami/icsi/,
 icsi,LDC2004S02,catalog_id,,seed: not checked against a source
 librispeech,OpenSLR 12,catalog_id,,seed: not checked against a source
@@ -27,4 +33,5 @@ mixer6,LDC2013S03,catalog_id,https://catalog.ldc.upenn.edu/LDC2013S03,Mixer 6 Sp
 mixer6_chime8,LDC2025S07,catalog_id,https://catalog.ldc.upenn.edu/LDC2025S07,
 rt03_eval,LDC2007S10,catalog_id,https://catalog.ldc.upenn.edu/LDC2007S10,
 rt03_eval,RT-03,short_name,index.html of LDC2007S10 (lab copy),
+seame,LDC2015S04,catalog_id,https://catalog.ldc.upenn.edu/LDC2015S04,
 switchboard1,LDC97S62,catalog_id,,seed: not checked against a source
