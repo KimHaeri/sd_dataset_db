@@ -102,7 +102,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-46 datasets, 9 challenges. `candidate` 40, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 2 (`librispeech`, `mixer6`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+46 datasets, 9 challenges. `candidate` 41, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `excluded` 1 (`librispeech`). Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
 Licence tiers (`license_tier`; what each dataset may be used for):
 
@@ -125,7 +125,7 @@ Licence tiers (`license_tier`; what each dataset may be used for):
   - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `ego4d` (who signed the agreement for the lab copy is not known), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
   - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; who signed it for the lab copy is not known)
-  - No speaker segments: `mixer6` (use its subset `mixer6_chime8`)
+  - Re-judged 2026-11-04 under the conversation scope: `mixer6` (its telephone calls have one channel per side, so turns can come from VAD; not on the lab storage). Its interview subset with segments is `mixer6_chime8`
 - **`excluded`** (2)
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
   - `ava_avd`: annotations MIT, no licence stated for the movie videos (`none_stated`); excluded by maintainer decision after discussion with the PI (2026-11-01)
