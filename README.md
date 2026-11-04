@@ -16,7 +16,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 | What we downloaded and measured | `data/collections.csv`, `measurements/<dataset_id>.json` |
 | Which challenge used which dataset | `data/challenges.csv`, `data/challenge_membership.csv` |
 | Which data we plan to use, and what is still open | `docs/data_plan.md` (snapshot for discussion) |
-| Conversational datasets found but not yet added | `docs/conversation_survey.md` (survey of 2026-11-03; leads, grouped by licence) |
+| Conversational datasets found but not yet added | `docs/conversation_survey.md` (survey of 2026-11-03 and 2026-11-04; leads, grouped by licence) |
 | A guide with the workflows | `docs/manual.md` |
 | How Claude Code maintains the DB | `.claude/skills/maintaining-sd-dataset-db/SKILL.md` |
 
@@ -136,7 +136,7 @@ Open items:
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 
-Conversation survey (2026-11-03): `docs/conversation_survey.md` lists 162 further candidates found across speech conferences, LREC/*CL and corpus archives, GitHub, Zenodo, OpenSLR and Hugging Face, grouped by licence. They are leads, not DB rows yet, apart from the five added above. Not covered by it: RealMAN, Korean corpora on AIHub (overseas use needs a separate agreement with NIA).
+Conversation survey (2026-11-03, second pass 2026-11-04): `docs/conversation_survey.md` lists 496 further candidates, grouped by licence. The first pass searched speech conferences, LREC/*CL and corpus archives, GitHub, Zenodo, OpenSLR and Hugging Face. The second went through complete lists: toolkit recipes (ESPnet, Lhotse, icefall, Kaldi, SpeechBrain, NeMo), the LDC by-year catalogue, ELRA, the Hugging Face Hub API, all TalkBank banks and CLARIN archives, and journals and regional platforms; journal coverage is still thin. They are leads, not DB rows yet, apart from the five added above. Not covered by it: RealMAN, Korean corpora on AIHub (overseas use needs a separate agreement with NIA).
 
 ## License
 
