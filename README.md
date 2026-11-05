@@ -9,7 +9,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 | You want | Look at |
 |---|---|
 | All datasets at a glance | `views/datasets_wide.csv` (generated; one row per dataset) |
-| Values nobody has checked yet | `views/needs_verification.csv` (generated; every canonical value backed only by `seed`) |
+| Values nobody has checked yet | `views/needs_verification.csv` (generated; every canonical value backed only by `seed`, or by `secondary` evidence such as a survey lead) |
 | Disagreements between values | `views/discrepancies.csv` (generated; includes reported vs measured) |
 | The source of a value | `data/evidence.csv`, filtered by `dataset_id` and `field` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
@@ -59,6 +59,7 @@ Columns marked `yes` or `status` in the `evidence` column of `schema/columns.csv
 - Each such cell has exactly one row with `is_canonical=true`, and its value equals the cell.
 - Strength of `source_type`: `user` > `measured` > `primary` (paper, official page, LICENSE, LDC catalogue) > `secondary` > `seed`. When a weaker source is canonical while a stronger one exists, `note` must say why.
 - **`seed`** marks values filled from an assistant's background knowledge when the repository was created. Nobody opened a source for them. They are listed in `views/needs_verification.csv`; replace each with a checked source (`tools/db.py ev ...`) before relying on it. A `collected` dataset may not keep any `seed` value, and `validate.py --strict` fails while any remain.
+- **Survey leads** (since 2026-11-04) are datasets found by the conversation survey and entered as `candidate` / `unexamined` with `secondary` evidence: the licence and turn type as the search copied them, everything else in `notes`. Their `status_note` starts with "Survey lead". They are listed in `views/needs_verification.csv` too; checking one means opening its page and replacing each value with `primary` evidence (manual, "Workflow: verify a seed value or survey lead").
 - A new fact never overwrites the old evidence: the old row becomes `superseded`. A value that was simply wrong and has no replacement is withdrawn with `tools/db.py clear`, which empties the cell and keeps the row as `superseded` with the reason; evidence rows are never deleted. When sources disagree and cannot be decided, keep both as `conflicting` and set the cell to `conflicting` (license) or leave the better one canonical with a note.
 - `*_measured` columns take only `measured` evidence; `*_reported` columns cannot use `measured`.
 - Write nothing the sources do not say. Never guess URLs, catalogue numbers or counts.
@@ -102,9 +103,9 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-100 datasets, 9 challenges. `candidate` 81, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 13. Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+550 datasets, 9 challenges: 100 checked against their sources and 450 survey leads not yet checked. `candidate` 531, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 13. Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
 
-Licence tiers (`license_tier`; what each dataset may be used for):
+Licence tiers of the checked datasets (`license_tier`; survey leads have none yet):
 
 - **`train`** (31): permissive licence, used for training
   - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); partition not chosen yet
@@ -145,7 +146,7 @@ Open items:
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.
 
-Conversation survey (2026-11-03, second pass 2026-11-04): `docs/conversation_survey.md` lists 496 further candidates, grouped by licence. The first pass searched speech conferences, LREC/*CL and corpus archives, GitHub, Zenodo, OpenSLR and Hugging Face. The second went through complete lists: toolkit recipes (ESPnet, Lhotse, icefall, Kaldi, SpeechBrain, NeMo), the LDC by-year catalogue, ELRA, the Hugging Face Hub API, all TalkBank banks and CLARIN archives, and journals and regional platforms; journal coverage is still thin. They are leads, not DB rows yet, apart from the five added above. Not covered by it: RealMAN, Korean corpora on AIHub (overseas use needs a separate agreement with NIA).
+Conversation survey (2026-11-03, second pass 2026-11-04): `docs/conversation_survey.md` lists 496 further candidates, grouped by licence. The first pass searched speech conferences, LREC/*CL and corpus archives, GitHub, Zenodo, OpenSLR and Hugging Face. The second went through complete lists: toolkit recipes (ESPnet, Lhotse, icefall, Kaldi, SpeechBrain, NeMo), the LDC by-year catalogue, ELRA, the Hugging Face Hub API, all TalkBank banks and CLARIN archives, and journals and regional platforms; journal coverage is still thin. Since 2026-11-04 every lead is also a DB row (`candidate`, `unexamined`, `secondary` evidence), so it shows in `views/datasets_wide.csv` and `views/needs_verification.csv`; the document keeps the grouping by licence. Not covered by it: RealMAN, Korean corpora on AIHub (overseas use needs a separate agreement with NIA).
 
 ## License
 

@@ -17,7 +17,7 @@ Grouping follows the licence as found, under the current tier rules (`docs/manua
 the DB, and plain mirrors of them, are left out. First pass: 162 datasets; second pass: 334
 more (below); 496 in total.
 
-Checked and added to the DB on 2026-11-03: `indic_diarbench` (CC BY 4.0, test splits only:
+Since 2026-11-04 every lead below is also a row in `data/datasets.csv` (`candidate`, `unexamined`, `secondary` evidence; `status_note` "Survey lead"), so it appears in `views/datasets_wide.csv` and `views/needs_verification.csv`. About 100 have since been checked against their pages and carry `primary` evidence; see `README.md`. Checked and added to the DB on 2026-11-03: `indic_diarbench` (CC BY 4.0, test splits only:
 eval), `nb_samtale` (CC0: train), `hcrc_maptask` (CC BY 4.0: train), `primock57` (CC BY 4.0:
 train), `otospeech_fd_280h` (CC BY 4.0 in the card metadata, gated: train).
 

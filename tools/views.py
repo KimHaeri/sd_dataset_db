@@ -5,7 +5,8 @@ validate.py regenerates them in memory and fails if the files on disk differ.
 
 - views/datasets_wide.csv       one row per dataset with the main columns and joined facts
 - views/discrepancies.csv       evidence that disagrees with the canonical value; reported vs measured
-- views/needs_verification.csv  canonical values that rest only on unchecked `seed` evidence
+- views/needs_verification.csv  canonical values that rest only on unchecked evidence: `seed`, or
+                                `secondary` (survey leads, mirrors, recipes) with no primary or stronger row
 """
 
 import csvio
@@ -24,7 +25,7 @@ WIDE_COLS = [
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
 DISC_KEYS = ("dataset_id", "field", "kind", "other_value", "other_source_ref")
-VERIFY_COLS = ["dataset_id", "field", "value", "evidence_id", "checked_on"]
+VERIFY_COLS = ["dataset_id", "field", "value", "source_type", "evidence_id", "checked_on"]
 PAIRS = [("hours_reported", "hours_measured"), ("n_sessions_reported", "n_sessions_measured"),
          ("n_speakers_reported", "n_speakers_measured"), ("overlap_ratio_reported", "overlap_ratio_measured")]
 
@@ -101,9 +102,9 @@ def discrepancies(db):
 
 
 def needs_verification(db):
-    return [{"dataset_id": e["dataset_id"], "field": e["field"], "value": e["value"],
+    return [{"dataset_id": e["dataset_id"], "field": e["field"], "value": e["value"], "source_type": e["source_type"],
              "evidence_id": e["evidence_id"], "checked_on": e["checked_on"]}
-            for e in db["evidence"][1] if e["is_canonical"] == "true" and e["source_type"] == "seed"]
+            for e in db["evidence"][1] if e["is_canonical"] == "true" and e["source_type"] in ("seed", "secondary")]
 
 
 def build(db):

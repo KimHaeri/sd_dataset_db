@@ -51,9 +51,9 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 - Published splits (maintainer rule, 2026-10-31): where the source defines train, development and test splits, use them as defined: train splits for training, development and test splits for evaluation (a development split may tune). A dataset that publishes only development and test or evaluation splits is evaluation only. Record the use per split in `splits.csv` notes and as `source_type=user` evidence on `license_tier`; a decision that departs from the rule is marked as needing confirmation.
 - A tier says what data may be used for, not that an evaluation set is clean: check that it shares no recordings or speakers with the training data.
 
-## Workflow: verify a seed value
+## Workflow: verify a seed value or survey lead
 
-1. Open `views/needs_verification.csv` and pick a dataset.
+1. Open `views/needs_verification.csv` and pick a dataset. Its `source_type` column says whether a value is `seed` or `secondary` (a survey lead, whose `notes` keep what the search found).
 2. Open the primary source (paper, official page, LICENSE, LDC catalogue entry).
 3. For each value:
    - The source agrees → `python3 tools/db.py ev <id> <field> <value> source_type=primary source_ref=<url> locator="<where in the source>"`. The seed row becomes superseded.

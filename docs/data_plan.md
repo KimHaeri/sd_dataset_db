@@ -65,3 +65,86 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 | [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Excluded | 29.25 h (351 five-minute clips from 117 movies) | 1,500; 2-24 per clip | Movies without dubbing; more than 6 languages | Annotations MIT; no licence stated for the movie videos | — | — |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | 180 h (351 conversations) | 663 | Conversation; mobile phone | CC BY-NC-ND 4.0 | — | — |
 | [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Excluded (no speaker segments) | 15,863 h | 594 | Interviews and telephone calls | LDC | — | — |
+
+## New candidates checked on 2026-11-03 and 2026-11-04 (not discussed yet)
+
+Found by the conversation survey and the re-scan of the lab storage, and checked against their pages; the use follows the licence under the current rules and still needs the maintainer's decision. Hours as stated by the source ("—": only approximate figures, see the DB). Unchecked leads are in `docs/conversation_survey.md` and `views/needs_verification.csv`.
+
+### Train (22)
+
+| Dataset | Hours | Speaker turns | Licence | Download needed |
+|---|---|---|---|---|
+| [AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI)](https://huggingface.co/datasets/OcularAIInc/AMERICAN-ENGLISH-TRANSCRIBED-HIFI-FULL-DUPLEX-TWO-SPEAKER-CONVERSATIONAL-DATASET-SAMPLE) | 1.01 h | timed segments and channel per speaker | CC BY 4.0 | Yes (gated) |
+| [DataHive Conversations samples](https://huggingface.co/datasets/datahiveai/multilingual-conversations-sample) | 19.53 h | channel per speaker (VAD) | CC BY 4.0 | Yes |
+| [EgoCom (Egocentric Communications)](https://github.com/facebookresearch/EgoCom-Dataset) | — | timed segments and channel per speaker | MIT | Yes |
+| [Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)](https://fearless-steps.github.io/ChallengePhase4/) | 100 h | timed segments | CC BY 4.0 | Request |
+| [Gridspace-Stanford Harper Valley speech dataset](https://github.com/cricketclub/gridspace-stanford-harper-valley) | — | timed segments | CC BY 4.0 | No (lab copy) |
+| [HCRC Map Task Corpus](https://groups.inf.ed.ac.uk/maptask/) | — | timed segments and channel per speaker | CC BY 4.0 | Yes |
+| [Indic High-Fidelity MultiSpeaker ASR (Humyn Labs)](https://huggingface.co/datasets/humyn-labs/Indic-High-Fidelity-MultiSpeaker-ASR) | — | timed segments | CC BY 4.0 | Yes |
+| [Kallaama (Wolof, Pulaar, Sereer)](https://www.openslr.org/151/) | — | not confirmed | CC BY 4.0 | Yes |
+| [Kenya/Philippines English Dialogue (Reord-AI)](https://huggingface.co/datasets/Reord-AI/kenya-philippines-twospeaker-english-dialogue) | — | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
+| [Multi-TPC (three-party conversations)](https://zenodo.org/records/17935560) | — | timed segments and channel per speaker | CC BY 4.0 | Yes |
+| [NB Samtale (Norwegian Conversation Speech Corpus)](https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-85/) | 24 h | timed segments | CC0 1.0 | Yes |
+| [Norwegian Parliamentary Speech Corpus (NPSC)](https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-58/) | 140.3 h | timed segments | CC0 1.0 | No (lab copy) |
+| [otoSpeech-full-duplex-280h](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h) | — | not confirmed | CC BY 4.0 | Yes (gated) |
+| [otoSpeech-full-duplex-task-oriented-20h](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-task-oriented-20h) | 20.005954 h | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
+| [otoSpeech-full-duplex-task-oriented-v2](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-task-oriented-v2) | 17.376131 h | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
+| [Perit Duplex Support Conversations (English)](https://huggingface.co/datasets/perit-ai/perit-duplex-support-en) | 5.10 h | channel per speaker (VAD) | CC BY 4.0 | Yes |
+| [PriMock57](https://github.com/babylonhealth/primock57) | — | timed segments | CC BY 4.0 | Yes |
+| [Real-TurnTurk](https://huggingface.co/datasets/tugrulbayrak/Real-TurnTurk) | 1.94 h | timed segments and channel per speaker | Apache 2.0 | Yes |
+| [Simsamu](https://huggingface.co/datasets/medkit/simsamu) | 3.25 h | timed segments | MIT | Yes |
+| [SpiCE: Speech in Cantonese and English](https://doi.org/10.5683/SP2/MJOXP3) | — | channel per speaker (VAD) | CC BY 4.0 | Yes |
+| [Spjallrómur - Icelandic Conversational Speech](https://repository.clarin.is/repository/xmlui/handle/20.500.12537/379) | 21.33 h | timed segments and channel per speaker | CC BY 4.0 | Yes |
+| synth-librispeech-meetings | 2008.66 h | timed segments |  | No (lab copy) |
+
+### Eval (8)
+
+| Dataset | Hours | Speaker turns | Licence | Download needed |
+|---|---|---|---|---|
+| [AISHELL-5](https://www.openslr.org/159/) | — | timed segments and channel per speaker | CC BY-SA 4.0 | No (lab copy) |
+| [ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation](https://huggingface.co/datasets/CAiRE/ASCEND) | 10.62 h | timed segments | CC BY-SA 4.0 | Yes |
+| Dinner Party Corpus (DiPCo) | 5.32 h | timed segments and channel per speaker | CDLA-Permissive-1.0 | No (lab copy) |
+| [Earnings-22](https://huggingface.co/datasets/revdotcom/earnings22) | — | not confirmed | CC BY-SA 4.0 | No (lab copy) |
+| [Expresso](https://speechbot.github.io/expresso/) | — | not confirmed | CC BY-NC 4.0 | No (lab copy) |
+| [Indic DiarBench](https://huggingface.co/datasets/sarvamai/indic-diarbench) | — | timed segments | CC BY 4.0 | Yes |
+| [SpokenWOZ](https://spokenwoz.github.io/SpokenWOZ-github.io/) | 249 h | timed segments | CC BY-NC 4.0 | No (lab copy) |
+| [VoxMM](https://mm.kaist.ac.kr/projects/voxmm/) | — | timed segments | CC BY 4.0 | Request |
+
+### Internal (LDC or agreement) (7)
+
+| Dataset | Hours | Speaker turns | Licence | Download needed |
+|---|---|---|---|---|
+| [2000 HUB5 English Evaluation Speech and Transcripts](https://catalog.ldc.upenn.edu/LDC2002S09) | — | timed segments and channel per speaker | LDC | No (lab copy) |
+| [Fisher Spanish Speech](https://catalog.ldc.upenn.edu/LDC2010S01) | 163 h | timed segments and channel per speaker | LDC | No (lab copy) |
+| [IARPA Babel language packs](https://catalog.ldc.upenn.edu/LDC2016S02) | — | timed segments and channel per speaker | LDC | No (lab copy) |
+| [Mandarin-English Code-Switching in South-East Asia (SEAME)](https://catalog.ldc.upenn.edu/LDC2015S04) | 192 h | not confirmed | LDC | No (lab copy) |
+| [Open Yap 1K](https://theagenticdatacompany.com/open-yap-1k) | 1000.245 h | timed segments and channel per speaker | Signed agreement, no redistribution | No (lab copy) |
+| Switchboard-1 Release 2 | 260 h | timed segments and channel per speaker | LDC | No (lab copy) |
+| synth-fisher-meetings | 2007.24 h | timed segments |  | No (lab copy) |
+
+### Undecided (22)
+
+| Dataset | Hours | Speaker turns | Licence | Download needed |
+|---|---|---|---|---|
+| [AphasiaBank](https://talkbank.org/aphasia/) | — | timed segments | CC BY-NC-SA 4.0 | No (lab copy) |
+| [Australian Parliamentary Speech Corpus - Proof of Concept (turns, 2026-03-30)](https://huggingface.co/datasets/stcoats/au-parliament-poc-turns-2026-03-30) | — | timed segments | CC BY 4.0 | Yes |
+| [Bangla-10K (multi_speaker config)](https://huggingface.co/datasets/psdn-ai/bangla-10k) | 3534 h | timed segments and channel per speaker | Other (see DB) | Agreement |
+| [Bengali-Loop speaker diarization benchmark (DL Sprint 4.0; HF copy AdilShamim8/Bengali-Speaker-Diarization_dataset)](https://www.kaggle.com/competitions/dl-sprint-4-0-bengali-speaker-diarization-challenge/data) | 22.0 h | timed segments | Conflicting statements | Yes |
+| [CantoMap (Cantonese MapTask corpus)](https://github.com/gwinterstein/CantoMap) | 12.8 h | timed segments and channel per speaker | Other (see DB) | Request |
+| [DementiaBank](https://talkbank.org/dementia/) | — | not confirmed | CC BY-NC-SA 4.0 | No (lab copy) |
+| [DISPLACE-M 2026](https://displace2026.github.io/) | — | timed segments | Conflicting statements | Agreement |
+| [Earnings25](https://doi.org/10.5281/zenodo.18762167) | — | timed segments | CC BY 4.0 | Yes |
+| [GaMMA Corpus (Gaze, Motion, and Multi-talker Audio)](https://zenodo.org/records/18343509) | — | channel per speaker (VAD) | Conflicting statements | Yes |
+| [Highland Puebla Nahuatl Speech with Transcription (OpenSLR 92)](https://www.openslr.org/92/) | — | timed segments and channel per speaker | Conflicting statements | No (lab copy) |
+| [IFA Dialog Video corpus (IFADV)](https://www.fon.hum.uva.nl/IFA-SpokenLanguageCorpora/IFADVcorpus/) | 5 h | timed segments and channel per speaker | Other (see DB) | Yes |
+| [IMDA National Speech Corpus (NSC), conversational part (Part 3)](https://www.imda.gov.sg/how-we-can-help/national-speech-corpus) | — | channel per speaker (VAD) | Other (see DB) | Request |
+| [Maleo Short](https://huggingface.co/datasets/maleo-ai/maleo-short) | — | timed segments | CC BY 4.0 | Yes (gated) |
+| [MISP-M3SD](https://huggingface.co/datasets/Igor97/MISP-M3SD) | 770.55 h | timed segments | Apache 2.0 | Yes (gated) |
+| [Multimodal Earnings Call Dataset (2018–2024)](https://zenodo.org/records/19032377) | — | timed segments | CC BY 4.0 | Yes |
+| [Rhapsodie (Treebank Rhapsodie)](https://www.ortolang.fr/market/corpora/rhapsodie) | — | timed segments | Conflicting statements | Yes |
+| [Tamil-English Code-Mixed Podcast Diarization Dataset](https://huggingface.co/datasets/Rangasuthan/tamil-english-podcast-diarization) | — | timed segments | Conflicting statements | Yes |
+| [USC IEMOCAP](https://sail.usc.edu/iemocap/) | — | timed segments | Unknown | No (lab copy) |
+| [ViYT-Diar (Vietnamese YouTube Diarization Dataset)](https://huggingface.co/datasets/tuanduy1612/ViYT-Diar) | — | timed segments | Apache 2.0 | Yes |
+| [Who Speaks When? (LIAS, French)](https://github.com/lias-laboratory/who-speaks-when-speaker-diarization-dataset) | — | timed segments | MIT | Yes |
+| [Yoloxóchitl Mixtec Speech with Transcription (OpenSLR 89)](https://www.openslr.org/89/) | — | timed segments and channel per speaker | Conflicting statements | No (lab copy) |
+| [아동·청소년 상담데이터 (Children & Adolescent Counselling Data, AIHub 71680)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71680) | — | timed segments | Conflicting statements | Yes |

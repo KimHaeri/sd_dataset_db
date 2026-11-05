@@ -69,7 +69,7 @@ What you need to know about the surroundings:
 
 ## Choose the workflow
 
-- "Verify X" / values still seed → manual, "Workflow: verify a seed value".
+- "Verify X" / values still seed or a survey lead → manual, "Workflow: verify a seed value or survey lead". Survey leads (`status_note` starts with "Survey lead") rest on `secondary` evidence copied by a search: open the page before trusting any of it.
 - "Add this dataset" / a survey → manual, "Workflow: add a dataset". The scope is any real multi-speaker conversation whose turns can be obtained (`turn_source`: utterance timestamps with speakers, or VAD on per-speaker close-talk channels), not only diarization releases.
 - "What does the lab already have?" / a directory of corpora → **Register lab copies** below.
 - "Download / measure X" → README, "Collecting a dataset", then manual, "Workflow: collect a dataset".
