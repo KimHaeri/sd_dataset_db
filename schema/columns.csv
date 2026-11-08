@@ -31,7 +31,7 @@ datasets,overlap_ratio_reported,float,empty;unknown,yes,Overlapped speech as a p
 datasets,annotation_format,enumlist:annotation_format,empty;unknown;none,yes,Formats in which speaker segments are distributed (;-separated). none = no speaker segments
 datasets,annotation_method,enum:annotation_method,empty;unknown,yes,How speaker segment boundaries were made: manual / forced_alignment / automatic / mixed
 datasets,turn_source,enum:turn_source,empty;unknown,yes,"Where speaker turns for diarization come from: provided_segments (segments or utterances with speaker labels and times are distributed), close_talk_vad (none are, but each speaker has a close-talk or separate channel, so turns come from VAD per channel), both, none"
-datasets,usable_as,enum:usable_as,empty,yes,"What the dataset counts as under the current rules and maintainer decisions: train (all of it trains), train_split (train split trains; dev/test evaluate), eval (evaluation only), hold (undecided), not_used. Feeds views/usable_hours.*"
+datasets,usable_as,enum:usable_as,empty,yes,"What the dataset counts as under the current rules and maintainer decisions: train (all of it trains), train_split (train split trains; dev/test evaluate), eval (evaluation only), eval_splits_only (dev/test evaluate; train split on hold), hold (undecided), not_used. Feeds views/usable_hours.*"
 datasets,has_transcript,bool,empty;unknown,yes,Whether word-level or segment-level transcripts are distributed
 datasets,has_official_splits,bool,empty;unknown,yes,Whether the source publishes train/dev/test splits (details in splits.csv)
 datasets,hours_measured,float,empty;unknown;NA,yes,Total hours of the audio we obtained (our measurement)

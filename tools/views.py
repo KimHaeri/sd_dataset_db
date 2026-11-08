@@ -132,7 +132,7 @@ def usable_hours(db):
     """Split each usable dataset's hours into training and evaluation hours.
 
     train: all hours train; conditions marked "Used"/"Not used" in splits.csv keep only the used share.
-    train_split: train splits train, the other splits evaluate; when split hours are missing, use total minus
+    train_split: train splits train, the other splits evaluate (eval_splits_only: only the evaluation part counts); when split hours are missing, use total minus
     train, or the share of sessions; otherwise the hours stay unsplit. eval: all hours evaluate.
     """
     splits = {}
@@ -141,7 +141,7 @@ def usable_hours(db):
     out = []
     for d in db["datasets"][1]:
         use = d["usable_as"]
-        if use not in ("train", "train_split", "eval"):
+        if use not in ("train", "train_split", "eval", "eval_splits_only"):
             continue
         total = _num(d["hours_reported"])
         rows = splits.get(d["dataset_id"], [])
@@ -162,7 +162,7 @@ def usable_hours(db):
                                                   if parts and all(_num(r["hours_reported"]) is not None for r in parts) else None)
             if total is None and ev is not None:
                 basis = "split hours summed"
-        else:
+        else:  # train_split, eval_splits_only
             tr = [r for r in parts if "train" in r["split"] or "fine" in r["split"]]
             te = [r for r in parts if r not in tr]
             if tr and all(_num(r["hours_reported"]) is not None for r in parts):
@@ -180,9 +180,11 @@ def usable_hours(db):
                 ev = total - train
                 basis = "derived: share of sessions"
             else:
-                unsplit = total
+                unsplit = total if use == "train_split" else None
                 if total is not None:
                     basis = "reported total; split hours not recorded"
+            if use == "eval_splits_only":
+                train = None
         fmt = lambda x: "" if x is None else f"{x:.2f}"
         out.append({"dataset_id": d["dataset_id"], "name": d["name"], "usable_as": use, "license_tier": d["license_tier"],
                     "on_lab_storage": on_lab(d), "train_hours": fmt(train), "eval_hours": fmt(ev),
@@ -192,7 +194,7 @@ def usable_hours(db):
 
 def usable_hours_md(rows, db):
     groups = [("Training, permissive licence", lambda r: r["license_tier"] == "train", "train_hours"),
-              ("Training, LDC or agreement (internal only)", lambda r: r["license_tier"] == "licensed_internal", "train_hours"),
+              ("Training, signed agreement (internal only; LDC training is on hold for review)", lambda r: r["license_tier"] == "licensed_internal", "train_hours"),
               ("Evaluation (all licences)", lambda r: True, "eval_hours")]
     lab = ("yes", "no", "unknown")
     lines = ["# Usable hours", "",

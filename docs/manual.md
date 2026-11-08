@@ -15,7 +15,7 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 | Far-field array | Microphone array placed away from the speakers (AMI, AISHELL-4, CHiME-6) |
 | Simulated mixture | Conversations built by mixing or replaying single-speaker recordings (LibriCSS, simulation recipes) |
 | Turn source | `turn_source`: where speaker turns come from. `provided_segments`: the release has utterances or segments with speaker labels and times. `close_talk_vad`: it has none, but every speaker has a close-talk microphone or a channel of their own (headset, lapel, one side of a call), so turns are cut by VAD per channel. `both`, or `none` (needs new annotation) |
-| Usable as | `usable_as`: what a dataset counts as for the hour totals in `views/usable_hours.*`: `train`, `train_split` (train split trains, dev/test evaluate), `eval`, `hold`, `not_used`. Maintainer decisions are `source_type=user`; otherwise it follows from the licence and the published-splits rule. Simulation conditions that are not used are rows in `splits.csv` whose note starts with "Not used" |
+| Usable as | `usable_as`: what a dataset counts as for the hour totals in `views/usable_hours.*`: `train`, `train_split` (train split trains, dev/test evaluate), `eval`, `eval_splits_only` (dev/test evaluate, train split on hold: used for LDC training corpora while the PI reviews LDC training use), `hold`, `not_used`. Maintainer decisions are `source_type=user`; otherwise it follows from the licence and the published-splits rule. Simulation conditions that are not used are rows in `splits.csv` whose note starts with "Not used" |
 | Seed value | A value entered from an assistant's background knowledge at repository creation, without opening a source. Treated as a lead, never as a fact |
 
 ## Lifecycle of a dataset row
@@ -41,7 +41,7 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 |---|---|---|
 | `train` | CC0, CC BY, MIT, Apache-2.0, CDLA-Permissive, public domain | Training and evaluation |
 | `eval` | CC BY-SA, CC BY-NC, CC BY-NC-SA, research-only, if redistribution is allowed | Open-set evaluation only |
-| `licensed_internal` | LDC, ELRA and other institutional licences; research-only agreements the lab has signed, by maintainer decision | Internal use where the lab holds the licence; the maintainer decides the use |
+| `licensed_internal` | LDC, ELRA and other institutional licences; research-only agreements the lab has signed, by maintainer decision | Internal use where the lab holds the licence. LDC data for training needs the PI's review first (2026-11-08): until then `usable_as` is `hold`; the maintainer decides the use |
 | `excluded` | NoDerivatives, no redistribution, region-bound or paid terms | Not used |
 | `hold` | No licence, `unknown`, `conflicting`, or redistribution terms not known | Undecided |
 

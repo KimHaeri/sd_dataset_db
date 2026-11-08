@@ -10,11 +10,17 @@ ami,license_tier,superseded,train,user,hold,primary,ami/license_spdx/02 and ami/
 annomi,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/uccollab/AnnoMI,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 annomi,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/uccollab/AnnoMI,Copied by a survey search from the page it opened; not re-checked
 ava_avd,annotation_format,superseded,rttm;lab,primary,rttm,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+babel,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+babel,usable_as,superseded,eval_splits_only,user,train_split,primary,https://catalog.ldc.upenn.edu/LDC2016S02,Follows from the licence and the rules; not a separate maintainer decision
 big_c,license_spdx,superseded,CC-BY-NC-ND-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/csikasote/bigc,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 big_c,license_tier,superseded,excluded,secondary,hold,primary,HTTP API https://api.github.com/repos/csikasote/bigc,Tier from the licence alone; the other values of this row are still survey leads
 cabnc,license_spdx,superseded,conflicting,secondary,CC-BY-NC-SA-4.0,primary,https://talkbank.org/0share/rules.html,
 cabnc,license_spdx,superseded,conflicting,secondary,LicenseRef-other,secondary,https://talkbank.org/ca/access/CABNC.html,Copied by a survey search from the page it opened; not re-checked
 cabnc,license_tier,superseded,hold,secondary,eval,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
+callhome_american_english,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+callhome_american_english,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
+callhome_spanish,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+callhome_spanish,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
 candor,license_spdx,superseded,CC-BY-NC-SA-4.0,primary,none_stated,secondary,https://talkbank.org/ca/access/CANDOR.html,Copied by a survey search from the page it opened; not re-checked
 cantomap,license_spdx,superseded,unknown,primary,LicenseRef-other,primary,HTTP API https://api.github.com/repos/gwinterstein/CantoMap,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 childes_clinical_media_corpora,license_tier,superseded,hold,primary,eval,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
@@ -34,6 +40,10 @@ earnings21,speech_style,superseded,unknown,primary,spontaneous,seed,assistant ba
 easycom,license_spdx,superseded,LicenseRef-other,secondary,none_stated,primary,HTTP API https://api.github.com/repos/facebookresearch/EasyComDataset,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 ego4d,license_tier,superseded,licensed_internal,user,hold,primary,https://ego4d-data.org/docs/start-here/,"The agreement text could not be read (ego4d.dev answered HTTP 429, a bot checkpoint, on 2026-10-31), so license_spdx stays empty"
 eslo_eslo_md,license_spdx,superseded,conflicting,secondary,CC-BY-NC-SA-4.0,secondary,https://cocoon.huma-num.fr/exist/crdo/meta/cocoon-5569b8dc-b40f-3ccd-95d1-86d20a1a836c,Copied by a survey search from the page it opened; not re-checked
+fisher_english_part1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
+fisher_english_part2,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
+fisher_meetings_sim,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-31,
+fisher_spanish,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2010S01,Follows from the licence and the rules; not a separate maintainer decision
 homebank_public_corpora,license_spdx,superseded,conflicting,secondary,CC-BY-NC-SA-4.0,primary,https://talkbank.org/0share/rules.html,TalkBank clinical bank: access restricted to faculty members by password; password-protected data cannot be posted on other servers or included in models
 homebank_public_corpora,license_spdx,superseded,conflicting,secondary,LicenseRef-other,secondary,https://talkbank.org/homebank/access/,Copied by a survey search from the page it opened; not re-checked
 humdial_fdbench,license_spdx,superseded,Apache-2.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/HumDial-FDBench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
@@ -55,6 +65,8 @@ meetingbank,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-NC-SA-4.0,secondary,
 melati,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/Scicom-AI-Enterprise-Organization/Melati,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 mixer6,domain,superseded,interview;telephone,primary,interview,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 mixer6,usable_as,superseded,hold,primary,train,primary,https://catalog.ldc.upenn.edu/LDC2013S03,Follows from the licence and the rules; not a separate maintainer decision
+mixer6_chime8,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+mixer6_chime8,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
 ms_bench_weak,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/MS-Bench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 ms_bench_weak,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/ASLP-lab/MS-Bench,Copied by a survey search from the page it opened; not re-checked
 msdwild,license_tier,superseded,eval,user,excluded,user,maintainer decision 2026-11-01,Same reasoning as ava_avd (excluded 2026-11-01). Replaces hold; the agreement will not be signed
@@ -67,9 +79,11 @@ msu_bench_weak,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primar
 notsofar1,speech_style,superseded,scripted;spontaneous,primary,spontaneous,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 otospeech_fd_280h,license_tier,superseded,hold,primary,train,primary,HTTP API https://huggingface.co/api/datasets/otoearth/otoSpeech-full-duplex-280h,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 saslaw,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,"Repository licence from the GitHub API; it may cover code only, not the recordings"
+seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/zedavid/SpotTheDifferenceData,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/zedavid/SpotTheDifferenceData,Copied by a survey search from the page it opened; not re-checked
+switchboard1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
 this_american_life_podcast_set,license_spdx,superseded,MIT,secondary,none_stated,primary,HTTP API https://api.github.com/repos/jovistos/TALAD,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 uwb_atcc,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,MIT,primary,HTTP API https://api.github.com/repos/idiap/atco2-corpus,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 voxconverse,languages,superseded,unknown,primary,eng,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede

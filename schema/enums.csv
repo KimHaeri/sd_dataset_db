@@ -151,3 +151,4 @@ usable_as,train_split,The train split is used for training; development and test
 usable_as,eval,Evaluation only,
 usable_as,hold,"Undecided: licence, rights or access not settled",
 usable_as,not_used,"Not used (excluded, a duplicate of another row, or simulation source only)",
+usable_as,eval_splits_only,"Only the development and test splits are used, for evaluation; the train split is on hold",

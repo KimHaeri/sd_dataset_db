@@ -138,7 +138,7 @@ Licence tiers of the checked datasets (`license_tier`; survey leads have none ye
   - `magicdata_ramc`: CC BY-NC-ND 4.0 (NoDerivatives)
   - `ava_avd`: annotations MIT, no licence stated for the movie videos (`none_stated`); excluded by maintainer decision after discussion with the PI (2026-11-01)
 
-Maintainer rules: SA/NC data is evaluation only; published splits are used as defined (train splits for training, development and test splits for evaluation; a dataset with only development and test splits is evaluation only); LDC training corpora are used for training, LDC evaluation sets for evaluation, internal only.
+Maintainer rules: SA/NC data is evaluation only; published splits are used as defined (train splits for training, development and test splits for evaluation; a dataset with only development and test splits is evaluation only); LDC evaluation sets are used for evaluation, internal only. LDC training use is on hold until the PI has reviewed it (2026-11-08; this replaces the 2026-10-30 rule that LDC training corpora are used for training): `usable_as` is `hold` for the LDC training corpora and `fisher_meetings_sim` (built from Fisher), and `eval_splits_only` for those whose development and test splits still serve evaluation (`callhome_spanish`, `callhome_american_english`, `mixer6_chime8`, `babel`).
 
 Open items:
 
