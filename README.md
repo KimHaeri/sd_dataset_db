@@ -8,6 +8,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 
 | You want | Look at |
 |---|---|
+| **How many hours we can train and evaluate on** | `views/usable_hours.md` (generated; totals by licence and lab storage, then per dataset) and `views/usable_hours.csv` |
 | All datasets at a glance | `views/datasets_wide.csv` (generated; one row per dataset) |
 | Values nobody has checked yet | `views/needs_verification.csv` (generated; every canonical value backed only by `seed`, or by `secondary` evidence such as a survey lead) |
 | Disagreements between values | `views/discrepancies.csv` (generated; includes reported vs measured) |

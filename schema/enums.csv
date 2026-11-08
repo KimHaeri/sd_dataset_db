@@ -146,3 +146,8 @@ turn_source,provided_segments,"Segments or utterances with speaker labels and st
 turn_source,close_talk_vad,"No timed speaker segments, but each speaker has a close-talk microphone or a channel of their own: turns are derived by VAD per channel",
 turn_source,both,Timed speaker segments are distributed and each speaker also has a close-talk or separate channel,
 turn_source,none,Neither: speaker turns cannot be obtained without new annotation,
+usable_as,train,All of it may be used for training,
+usable_as,train_split,The train split is used for training; development and test splits for evaluation,
+usable_as,eval,Evaluation only,
+usable_as,hold,"Undecided: licence, rights or access not settled",
+usable_as,not_used,"Not used (excluded, a duplicate of another row, or simulation source only)",

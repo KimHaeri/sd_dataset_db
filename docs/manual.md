@@ -15,6 +15,7 @@ A guide for people and assistants who maintain `sd_dataset_db`. The README state
 | Far-field array | Microphone array placed away from the speakers (AMI, AISHELL-4, CHiME-6) |
 | Simulated mixture | Conversations built by mixing or replaying single-speaker recordings (LibriCSS, simulation recipes) |
 | Turn source | `turn_source`: where speaker turns come from. `provided_segments`: the release has utterances or segments with speaker labels and times. `close_talk_vad`: it has none, but every speaker has a close-talk microphone or a channel of their own (headset, lapel, one side of a call), so turns are cut by VAD per channel. `both`, or `none` (needs new annotation) |
+| Usable as | `usable_as`: what a dataset counts as for the hour totals in `views/usable_hours.*`: `train`, `train_split` (train split trains, dev/test evaluate), `eval`, `hold`, `not_used`. Maintainer decisions are `source_type=user`; otherwise it follows from the licence and the published-splits rule. Simulation conditions that are not used are rows in `splits.csv` whose note starts with "Not used" |
 | Seed value | A value entered from an assistant's background knowledge at repository creation, without opening a source. Treated as a lead, never as a fact |
 
 ## Lifecycle of a dataset row
