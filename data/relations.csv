@@ -1,6 +1,8 @@
 dataset_id,relation,other_dataset_id,source_ref,note
+bengali_speaker_diarization_dataset_weak,possibly_same_as,bengali_loop_diar,https://huggingface.co/datasets/AdilShamim8/Bengali-Speaker-Diarization_dataset,Same Hugging Face repository entered twice by the survey
 callhome_spanish,distinct_from,callhome_sre2000,https://catalog.ldc.upenn.edu/LDC96S35,Both are called CALLHOME; the SRE 2000 diarization set is multilingual and separate
 callhome_sre2000,distinct_from,callhome_american_english,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,"Different releases. The segmentation data is drawn from the CALLHOME Corpus (plan section 6), so it may share calls or speakers with CALLHOME American English; not checked"
+children_adolescent_counselling,possibly_same_as,aihub_child_counsel,https://huggingface.co/datasets/ironDong/Children_Counsel,Same Hugging Face repository entered twice by the survey
 chime6,shares_recordings_with,chime5,https://www.chimechallenge.org/datasets/chime5,"The CHiME-5 page: CHiME-5 is superseded by the CHiME-6 release, which fixes audio alignment issues in the original data"
 dihard3,shares_recordings_with,mixer6,https://catalog.ldc.upenn.edu/LDC2022S14,Catalogue: LDC2022S14 isAnnotationOf Mixer 6 Speech (LDC2013S03); its data sources include Mixer 6
 fisher_meetings_sim,shares_recordings_with,fisher_english_part1,clean supervisions manifest,Built from Fisher English utterances (original_cut_id fe_03_*); Part 1 holds fe_03_00001 to fe_03_05850
