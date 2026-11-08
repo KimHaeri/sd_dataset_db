@@ -126,10 +126,10 @@ Licence tiers of the checked datasets (`license_tier`; survey leads have none ye
   - Survey candidates checked on 2026-11-04: `voxmm` (CC BY 4.0, dev/test only), `ascend` (CC BY-SA 4.0)
   - Research-only agreement; evaluation only because the video copyright stays with the original creators (maintainer decision 2026-11-01): `msdwild` (agreement not signed yet)
 - **`licensed_internal`** (18): LDC or signed agreement, internal use only, never redistributed
-  - Training: `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (clean and reverb conditions only; the noise conditions are not used)
-  - Train split for training, other splits for evaluation: `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `ego4d` (who signed the agreement for the lab copy is not known), `msp_conversation` (research-only agreement; who signed for the lab copy is not known)
+  - Training on hold until the PI reviews LDC training use (2026-11-08): `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_meetings_sim` (built from Fisher), `fisher_spanish`, `seame`; train split on hold, development and test splits for evaluation: `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `babel`
+  - Train split for training, other splits for evaluation (signed agreements): `msp_conversation` (usable, maintainer decision 2026-11-08), `ego4d` (who signed the agreement for the lab copy is not known)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
-  - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; who signed it for the lab copy is not known)
+  - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC, training on hold as above); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; who signed it for the lab copy is not known)
   - Re-judged 2026-11-04 under the conversation scope: `mixer6` (its telephone calls have one channel per side, so turns can come from VAD; not on the lab storage). Its interview subset with segments is `mixer6_chime8`
 - **`hold`** (29): undecided
   - `iemocap`: release form with a licence PDF not read yet; who signed it for the lab copy is not known
