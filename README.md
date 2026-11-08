@@ -103,7 +103,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-570 datasets, 9 challenges: 100 checked against their sources and 470 survey leads not yet checked. `candidate` 551, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 13. Seed values left: none; every dataset has been checked against primary sources (papers, official pages, LICENSE files, LDC catalogue pages, lab copies). The history of each change is in `git log`.
+570 datasets, 9 challenges: 100 checked against their sources, 312 survey leads whose licence was checked on 2026-11-07, 150 survey leads not checked at all, and 8 leads excluded as duplicates or for automatic labels. `candidate` 543, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 21. Seed values left: none. Survey-lead values rest on `secondary` evidence and are listed in `views/needs_verification.csv`. The history of each change is in `git log`.
 
 Licence tiers of the checked datasets (`license_tier`; survey leads have none yet):
 

@@ -164,6 +164,8 @@ bea_dialogue_bea_dialogue,status_reason_codes,unexamined,secondary,bea_dialogue_
 bea_dialogue_bea_dialogue,turn_source,provided_segments,secondary,bea_dialogue_bea_dialogue/turn_source/01,2026-11-04
 bengali_speaker_diarization_dataset_weak,turn_source,provided_segments,secondary,bengali_speaker_diarization_dataset_weak/turn_source/01,2026-11-04
 big_c,collection_status,candidate,secondary,big_c/collection_status/01,2026-11-04
+big_c,license_spdx,CC-BY-NC-ND-4.0,secondary,big_c/license_spdx/03,2026-11-08
+big_c,license_tier,excluded,secondary,big_c/license_tier/02,2026-11-08
 big_c,status_reason_codes,unexamined,secondary,big_c/status_reason_codes/01,2026-11-04
 bilingbank_bangor_miami,collection_status,candidate,secondary,bilingbank_bangor_miami/collection_status/01,2026-11-04
 bilingbank_bangor_miami,status_reason_codes,unexamined,secondary,bilingbank_bangor_miami/status_reason_codes/01,2026-11-04
@@ -209,8 +211,6 @@ cabank_grimshaw,collection_status,candidate,secondary,cabank_grimshaw/collection
 cabank_grimshaw,status_reason_codes,unexamined,secondary,cabank_grimshaw/status_reason_codes/01,2026-11-04
 cabank_gulf_war_radio_call_in,collection_status,candidate,secondary,cabank_gulf_war_radio_call_in/collection_status/01,2026-11-04
 cabank_gulf_war_radio_call_in,status_reason_codes,unexamined,secondary,cabank_gulf_war_radio_call_in/status_reason_codes/01,2026-11-04
-cabank_isl_meeting_corpus,collection_status,candidate,secondary,cabank_isl_meeting_corpus/collection_status/01,2026-11-04
-cabank_isl_meeting_corpus,status_reason_codes,unexamined,secondary,cabank_isl_meeting_corpus/status_reason_codes/01,2026-11-04
 cabank_jefferson_collections_nb_watergat,collection_status,candidate,secondary,cabank_jefferson_collections_nb_watergat/collection_status/01,2026-11-04
 cabank_jefferson_collections_nb_watergat,status_reason_codes,unexamined,secondary,cabank_jefferson_collections_nb_watergat/status_reason_codes/01,2026-11-04
 cabank_joc,collection_status,candidate,secondary,cabank_joc/collection_status/01,2026-11-04
@@ -224,6 +224,8 @@ cabank_taiwan_hakka,status_reason_codes,unexamined,secondary,cabank_taiwan_hakka
 cabank_yiddish,collection_status,candidate,secondary,cabank_yiddish/collection_status/01,2026-11-04
 cabank_yiddish,status_reason_codes,unexamined,secondary,cabank_yiddish/status_reason_codes/01,2026-11-04
 cabnc,collection_status,candidate,secondary,cabnc/collection_status/01,2026-11-04
+cabnc,license_spdx,conflicting,secondary,cabnc/license_spdx/03,2026-11-08
+cabnc,license_tier,hold,secondary,cabnc/license_tier/02,2026-11-08
 cabnc,status_reason_codes,unexamined,secondary,cabnc/status_reason_codes/01,2026-11-04
 cabnc,turn_source,provided_segments,secondary,cabnc/turn_source/01,2026-11-04
 call_my_net_1,collection_status,candidate,secondary,call_my_net_1/collection_status/01,2026-11-04
@@ -315,8 +317,6 @@ callhome_german,turn_source,both,secondary,callhome_german/turn_source/01,2026-1
 callhome_german_second_edition,collection_status,candidate,secondary,callhome_german_second_edition/collection_status/01,2026-11-04
 callhome_german_second_edition,status_reason_codes,unexamined,secondary,callhome_german_second_edition/status_reason_codes/01,2026-11-04
 callhome_german_second_edition,turn_source,both,secondary,callhome_german_second_edition/turn_source/01,2026-11-04
-callhome_german_speech,collection_status,candidate,secondary,callhome_german_speech/collection_status/01,2026-11-04
-callhome_german_speech,status_reason_codes,unexamined,secondary,callhome_german_speech/status_reason_codes/01,2026-11-04
 callhome_german_speech,turn_source,both,secondary,callhome_german_speech/turn_source/01,2026-11-04
 callhome_japanese,collection_status,candidate,secondary,callhome_japanese/collection_status/01,2026-11-04
 callhome_japanese,status_reason_codes,unexamined,secondary,callhome_japanese/status_reason_codes/01,2026-11-04
@@ -387,6 +387,7 @@ childes_other_language_media_corpora,collection_status,candidate,secondary,child
 childes_other_language_media_corpora,status_reason_codes,unexamined,secondary,childes_other_language_media_corpora/status_reason_codes/01,2026-11-04
 children_adolescent_counselling,turn_source,provided_segments,secondary,children_adolescent_counselling/turn_source/01,2026-11-04
 childtalk,collection_status,candidate,secondary,childtalk/collection_status/01,2026-11-04
+childtalk,license_spdx,CC-BY-NC-SA-4.0,secondary,childtalk/license_spdx/03,2026-11-08
 childtalk,status_reason_codes,unexamined,secondary,childtalk/status_reason_codes/01,2026-11-04
 childtalk,turn_source,provided_segments,secondary,childtalk/turn_source/01,2026-11-04
 chime_8_mmcsg,collection_status,candidate,secondary,chime_8_mmcsg/collection_status/01,2026-11-04
@@ -513,6 +514,7 @@ duplexconv,collection_status,candidate,secondary,duplexconv/collection_status/01
 duplexconv,status_reason_codes,unexamined,secondary,duplexconv/status_reason_codes/01,2026-11-04
 duplexconv,turn_source,both,secondary,duplexconv/turn_source/01,2026-11-04
 easycom,collection_status,candidate,secondary,easycom/collection_status/01,2026-11-04
+easycom,license_spdx,LicenseRef-other,secondary,easycom/license_spdx/03,2026-11-08
 easycom,status_reason_codes,unexamined,secondary,easycom/status_reason_codes/01,2026-11-04
 easycom,turn_source,provided_segments,secondary,easycom/turn_source/01,2026-11-04
 echi,collection_status,candidate,secondary,echi/collection_status/01,2026-11-04
@@ -542,7 +544,7 @@ english_broadcast_news_speech_ldc98_1997,license_spdx,none_stated,secondary,engl
 english_broadcast_news_speech_ldc98_1997,status_reason_codes,unexamined,secondary,english_broadcast_news_speech_ldc98_1997/status_reason_codes/01,2026-11-04
 english_broadcast_news_speech_ldc98_1997,turn_source,provided_segments,secondary,english_broadcast_news_speech_ldc98_1997/turn_source/01,2026-11-04
 eslo_eslo_md,collection_status,candidate,secondary,eslo_eslo_md/collection_status/01,2026-11-04
-eslo_eslo_md,license_spdx,CC-BY-NC-SA-4.0,secondary,eslo_eslo_md/license_spdx/01,2026-11-04
+eslo_eslo_md,license_spdx,conflicting,secondary,eslo_eslo_md/license_spdx/02,2026-11-08
 eslo_eslo_md,status_reason_codes,unexamined,secondary,eslo_eslo_md/status_reason_codes/01,2026-11-04
 eslo_eslo_md,turn_source,provided_segments,secondary,eslo_eslo_md/turn_source/01,2026-11-04
 ester_2_corpus,collection_status,candidate,secondary,ester_2_corpus/collection_status/01,2026-11-04
@@ -642,6 +644,8 @@ hoesi,license_spdx,unknown,secondary,hoesi/license_spdx/01,2026-11-04
 hoesi,status_reason_codes,unexamined,secondary,hoesi/status_reason_codes/01,2026-11-04
 hoesi,turn_source,close_talk_vad,secondary,hoesi/turn_source/01,2026-11-04
 homebank_public_corpora,collection_status,candidate,secondary,homebank_public_corpora/collection_status/01,2026-11-04
+homebank_public_corpora,license_spdx,conflicting,secondary,homebank_public_corpora/license_spdx/03,2026-11-08
+homebank_public_corpora,license_tier,hold,secondary,homebank_public_corpora/license_tier/02,2026-11-08
 homebank_public_corpora,status_reason_codes,unexamined,secondary,homebank_public_corpora/status_reason_codes/01,2026-11-04
 homebank_public_corpora,turn_source,provided_segments,secondary,homebank_public_corpora/turn_source/01,2026-11-04
 hral_croatian_adult_spoken_language_corp,collection_status,candidate,secondary,hral_croatian_adult_spoken_language_corp/collection_status/01,2026-11-04
@@ -668,6 +672,7 @@ hub5_spanish_telephone_speech_corpus,collection_status,candidate,secondary,hub5_
 hub5_spanish_telephone_speech_corpus,status_reason_codes,unexamined,secondary,hub5_spanish_telephone_speech_corpus/status_reason_codes/01,2026-11-04
 hub5_spanish_telephone_speech_corpus,turn_source,both,secondary,hub5_spanish_telephone_speech_corpus/turn_source/01,2026-11-04
 humdial_fdbench,collection_status,candidate,secondary,humdial_fdbench/collection_status/01,2026-11-04
+humdial_fdbench,license_spdx,Apache-2.0,secondary,humdial_fdbench/license_spdx/03,2026-11-08
 humdial_fdbench,status_reason_codes,unexamined,secondary,humdial_fdbench/status_reason_codes/01,2026-11-04
 icmc_asr,collection_status,candidate,secondary,icmc_asr/collection_status/01,2026-11-04
 icmc_asr,license_spdx,unknown,secondary,icmc_asr/license_spdx/01,2026-11-04
@@ -676,7 +681,7 @@ idiap_wolf_corpus,collection_status,candidate,secondary,idiap_wolf_corpus/collec
 idiap_wolf_corpus,status_reason_codes,unexamined,secondary,idiap_wolf_corpus/status_reason_codes/01,2026-11-04
 idiap_wolf_corpus,turn_source,close_talk_vad,secondary,idiap_wolf_corpus/turn_source/01,2026-11-04
 iit_delhi_dialogue_corpus,collection_status,candidate,secondary,iit_delhi_dialogue_corpus/collection_status/01,2026-11-04
-iit_delhi_dialogue_corpus,license_spdx,CC0-1.0,secondary,iit_delhi_dialogue_corpus/license_spdx/01,2026-11-04
+iit_delhi_dialogue_corpus,license_spdx,none_stated,secondary,iit_delhi_dialogue_corpus/license_spdx/02,2026-11-08
 iit_delhi_dialogue_corpus,status_reason_codes,unexamined,secondary,iit_delhi_dialogue_corpus/status_reason_codes/01,2026-11-04
 iit_delhi_dialogue_corpus,turn_source,provided_segments,secondary,iit_delhi_dialogue_corpus/turn_source/01,2026-11-04
 incromin_1_0,collection_status,candidate,secondary,incromin_1_0/collection_status/01,2026-11-04
@@ -747,12 +752,15 @@ levantine_arabic_qt_training_data_set_5,collection_status,candidate,secondary,le
 levantine_arabic_qt_training_data_set_5,status_reason_codes,unexamined,secondary,levantine_arabic_qt_training_data_set_5/status_reason_codes/01,2026-11-04
 levantine_arabic_qt_training_data_set_5,turn_source,both,secondary,levantine_arabic_qt_training_data_set_5/turn_source/01,2026-11-04
 lipi_ghor,collection_status,candidate,secondary,lipi_ghor/collection_status/01,2026-11-04
+lipi_ghor,license_spdx,conflicting,secondary,lipi_ghor/license_spdx/03,2026-11-08
+lipi_ghor,license_tier,hold,secondary,lipi_ghor/license_tier/01,2026-11-08
 lipi_ghor,status_reason_codes,unexamined,secondary,lipi_ghor/status_reason_codes/01,2026-11-04
 lipi_ghor,turn_source,provided_segments,secondary,lipi_ghor/turn_source/01,2026-11-04
 longitudinal_multimodal_dementia_dataset,collection_status,candidate,secondary,longitudinal_multimodal_dementia_dataset/collection_status/01,2026-11-04
 longitudinal_multimodal_dementia_dataset,license_spdx,none_stated,secondary,longitudinal_multimodal_dementia_dataset/license_spdx/01,2026-11-04
 longitudinal_multimodal_dementia_dataset,status_reason_codes,unexamined,secondary,longitudinal_multimodal_dementia_dataset/status_reason_codes/01,2026-11-04
 lotusdis,collection_status,candidate,secondary,lotusdis/collection_status/01,2026-11-04
+lotusdis,license_spdx,CC-BY-SA-4.0,secondary,lotusdis/license_spdx/03,2026-11-08
 lotusdis,status_reason_codes,unexamined,secondary,lotusdis/status_reason_codes/01,2026-11-04
 lotusdis,turn_source,provided_segments,secondary,lotusdis/turn_source/01,2026-11-04
 loup_garou,collection_status,candidate,secondary,loup_garou/collection_status/01,2026-11-04
@@ -844,9 +852,11 @@ medial_speech,status_reason_codes,unexamined,secondary,medial_speech/status_reas
 meetingbank,collection_status,excluded,secondary,meetingbank/collection_status/02,2026-11-07
 meetingbank,status_reason_codes,no_speaker_segments,secondary,meetingbank/status_reason_codes/02,2026-11-07
 melati,collection_status,candidate,secondary,melati/collection_status/01,2026-11-04
+melati,license_spdx,CC-BY-NC-4.0,secondary,melati/license_spdx/03,2026-11-08
 melati,status_reason_codes,unexamined,secondary,melati/status_reason_codes/01,2026-11-04
 melati,turn_source,provided_segments,secondary,melati/turn_source/01,2026-11-04
 meld,collection_status,candidate,secondary,meld/collection_status/01,2026-11-04
+meld,license_spdx,LicenseRef-other,secondary,meld/license_spdx/03,2026-11-08
 meld,status_reason_codes,unexamined,secondary,meld/status_reason_codes/01,2026-11-04
 meld,turn_source,provided_segments,secondary,meld/turn_source/01,2026-11-04
 merlion_ccs_corpus,collection_status,candidate,secondary,merlion_ccs_corpus/collection_status/01,2026-11-04
@@ -912,6 +922,7 @@ ms_bench_weak,collection_status,candidate,secondary,ms_bench_weak/collection_sta
 ms_bench_weak,status_reason_codes,unexamined,secondary,ms_bench_weak/status_reason_codes/01,2026-11-04
 ms_bench_weak,turn_source,provided_segments,secondary,ms_bench_weak/turn_source/01,2026-11-04
 msu_bench_weak,collection_status,candidate,secondary,msu_bench_weak/collection_status/01,2026-11-04
+msu_bench_weak,license_spdx,CC-BY-NC-4.0,secondary,msu_bench_weak/license_spdx/03,2026-11-08
 msu_bench_weak,status_reason_codes,unexamined,secondary,msu_bench_weak/status_reason_codes/01,2026-11-04
 msu_bench_weak,turn_source,provided_segments,secondary,msu_bench_weak/turn_source/01,2026-11-04
 multi_language_conversational_telephone,collection_status,candidate,secondary,multi_language_conversational_telephone/collection_status/01,2026-11-04
@@ -957,6 +968,7 @@ multi_language_dialogue_episodes,collection_status,candidate,secondary,multi_lan
 multi_language_dialogue_episodes,status_reason_codes,unexamined,secondary,multi_language_dialogue_episodes/status_reason_codes/01,2026-11-04
 multi_language_dialogue_episodes,turn_source,close_talk_vad,secondary,multi_language_dialogue_episodes/turn_source/01,2026-11-04
 naturalvoices,collection_status,candidate,secondary,naturalvoices/collection_status/01,2026-11-04
+naturalvoices,license_spdx,MIT,secondary,naturalvoices/license_spdx/03,2026-11-08
 naturalvoices,status_reason_codes,unexamined,secondary,naturalvoices/status_reason_codes/01,2026-11-04
 naturalvoices,turn_source,provided_segments,secondary,naturalvoices/turn_source/01,2026-11-04
 nautilus_speaker_characterization,collection_status,candidate,secondary,nautilus_speaker_characterization/collection_status/01,2026-11-04
@@ -978,8 +990,6 @@ nijmegen_corpus_of_casual_spanish,turn_source,close_talk_vad,secondary,nijmegen_
 nist_meeting_pilot_corpus,collection_status,candidate,secondary,nist_meeting_pilot_corpus/collection_status/01,2026-11-04
 nist_meeting_pilot_corpus,status_reason_codes,unexamined,secondary,nist_meeting_pilot_corpus/status_reason_codes/01,2026-11-04
 nist_meeting_pilot_corpus,turn_source,close_talk_vad,secondary,nist_meeting_pilot_corpus/turn_source/01,2026-11-04
-nist_meeting_pilot_corpus_speech,collection_status,candidate,secondary,nist_meeting_pilot_corpus_speech/collection_status/01,2026-11-04
-nist_meeting_pilot_corpus_speech,status_reason_codes,unexamined,secondary,nist_meeting_pilot_corpus_speech/status_reason_codes/01,2026-11-04
 nist_opensat_pilot_sssf_2017,collection_status,candidate,secondary,nist_opensat_pilot_sssf_2017/collection_status/01,2026-11-04
 nist_opensat_pilot_sssf_2017,status_reason_codes,unexamined,secondary,nist_opensat_pilot_sssf_2017/status_reason_codes/01,2026-11-04
 nist_speaker_recognition_evaluation_2001,collection_status,candidate,secondary,nist_speaker_recognition_evaluation_2001/collection_status/01,2026-11-04
@@ -1159,6 +1169,7 @@ santa_barbara_corpus_of_spoken_american_3,license_spdx,MIT,secondary,santa_barba
 santa_barbara_corpus_of_spoken_american_3,status_reason_codes,unexamined,secondary,santa_barbara_corpus_of_spoken_american_3/status_reason_codes/01,2026-11-04
 santa_barbara_corpus_of_spoken_american_3,turn_source,provided_segments,secondary,santa_barbara_corpus_of_spoken_american_3/turn_source/01,2026-11-04
 saslaw,collection_status,candidate,secondary,saslaw/collection_status/01,2026-11-04
+saslaw,license_spdx,CC-BY-NC-4.0,secondary,saslaw/license_spdx/03,2026-11-08
 saslaw,status_reason_codes,unexamined,secondary,saslaw/status_reason_codes/01,2026-11-04
 saslaw,turn_source,close_talk_vad,secondary,saslaw/turn_source/01,2026-11-04
 scose,collection_status,candidate,secondary,scose/collection_status/01,2026-11-04
@@ -1173,6 +1184,7 @@ second_mlc_slm_challenge_data,license_spdx,unknown,secondary,second_mlc_slm_chal
 second_mlc_slm_challenge_data,status_reason_codes,unexamined,secondary,second_mlc_slm_challenge_data/status_reason_codes/01,2026-11-04
 second_mlc_slm_challenge_data,turn_source,provided_segments,secondary,second_mlc_slm_challenge_data/turn_source/01,2026-11-04
 seniortalk,collection_status,candidate,secondary,seniortalk/collection_status/01,2026-11-04
+seniortalk,license_spdx,CC-BY-NC-SA-4.0,secondary,seniortalk/license_spdx/03,2026-11-08
 seniortalk,status_reason_codes,unexamined,secondary,seniortalk/status_reason_codes/01,2026-11-04
 seniortalk,turn_source,provided_segments,secondary,seniortalk/turn_source/01,2026-11-04
 seoul_corpus_openslr_113,collection_status,candidate,secondary,seoul_corpus_openslr_113/collection_status/01,2026-11-04
@@ -1316,8 +1328,6 @@ talkbank_callfriend,turn_source,provided_segments,secondary,talkbank_callfriend/
 talkbank_callhome_chinese_german_japanes,collection_status,candidate,secondary,talkbank_callhome_chinese_german_japanes/collection_status/01,2026-11-04
 talkbank_callhome_chinese_german_japanes,status_reason_codes,unexamined,secondary,talkbank_callhome_chinese_german_japanes/status_reason_codes/01,2026-11-04
 talkbank_callhome_chinese_german_japanes,turn_source,provided_segments,secondary,talkbank_callhome_chinese_german_japanes/turn_source/01,2026-11-04
-talkbank_sakura,collection_status,candidate,secondary,talkbank_sakura/collection_status/01,2026-11-04
-talkbank_sakura,status_reason_codes,unexamined,secondary,talkbank_sakura/status_reason_codes/01,2026-11-04
 talkbank_sakura,turn_source,provided_segments,secondary,talkbank_sakura/turn_source/01,2026-11-04
 taxi_multilingual_telephone_dialog_datab,collection_status,candidate,secondary,taxi_multilingual_telephone_dialog_datab/collection_status/01,2026-11-04
 taxi_multilingual_telephone_dialog_datab,status_reason_codes,unexamined,secondary,taxi_multilingual_telephone_dialog_datab/status_reason_codes/01,2026-11-04
@@ -1333,6 +1343,7 @@ the_walking_around_corpus,collection_status,candidate,secondary,the_walking_arou
 the_walking_around_corpus,status_reason_codes,unexamined,secondary,the_walking_around_corpus/status_reason_codes/01,2026-11-04
 the_walking_around_corpus,turn_source,provided_segments,secondary,the_walking_around_corpus/turn_source/01,2026-11-04
 this_american_life_podcast_set,collection_status,candidate,secondary,this_american_life_podcast_set/collection_status/01,2026-11-04
+this_american_life_podcast_set,license_spdx,MIT,secondary,this_american_life_podcast_set/license_spdx/03,2026-11-08
 this_american_life_podcast_set,status_reason_codes,unexamined,secondary,this_american_life_podcast_set/status_reason_codes/01,2026-11-04
 this_american_life_podcast_set,turn_source,provided_segments,secondary,this_american_life_podcast_set/turn_source/01,2026-11-04
 tooltalk_samples,collection_status,candidate,secondary,tooltalk_samples/collection_status/01,2026-11-04
@@ -1343,6 +1354,7 @@ totonac,status_reason_codes,unexamined,secondary,totonac/status_reason_codes/01,
 trains_spoken_dialog_corpus,collection_status,candidate,secondary,trains_spoken_dialog_corpus/collection_status/01,2026-11-04
 trains_spoken_dialog_corpus,status_reason_codes,unexamined,secondary,trains_spoken_dialog_corpus/status_reason_codes/01,2026-11-04
 ttrpg_diarization_set,collection_status,candidate,secondary,ttrpg_diarization_set/collection_status/01,2026-11-04
+ttrpg_diarization_set,license_spdx,MIT,secondary,ttrpg_diarization_set/license_spdx/03,2026-11-08
 ttrpg_diarization_set,status_reason_codes,unexamined,secondary,ttrpg_diarization_set/status_reason_codes/01,2026-11-04
 ttrpg_diarization_set,turn_source,provided_segments,secondary,ttrpg_diarization_set/turn_source/01,2026-11-04
 turnbench,collection_status,candidate,secondary,turnbench/collection_status/01,2026-11-04
@@ -1367,8 +1379,8 @@ usergyai_global_conversational_speech_we,collection_status,candidate,secondary,u
 usergyai_global_conversational_speech_we,status_reason_codes,unexamined,secondary,usergyai_global_conversational_speech_we/status_reason_codes/01,2026-11-04
 usergyai_global_conversational_speech_we,turn_source,both,secondary,usergyai_global_conversational_speech_we/turn_source/01,2026-11-04
 uwb_atcc,collection_status,candidate,secondary,uwb_atcc/collection_status/01,2026-11-04
+uwb_atcc,license_spdx,CC-BY-NC-SA-4.0,secondary,uwb_atcc/license_spdx/03,2026-11-08
 uwb_atcc,status_reason_codes,unexamined,secondary,uwb_atcc/status_reason_codes/01,2026-11-04
-uwb_atcc,turn_source,provided_segments,secondary,uwb_atcc/turn_source/01,2026-11-04
 vehicle_city_voices_corpus_part_i,collection_status,candidate,secondary,vehicle_city_voices_corpus_part_i/collection_status/01,2026-11-04
 vehicle_city_voices_corpus_part_i,status_reason_codes,unexamined,secondary,vehicle_city_voices_corpus_part_i/status_reason_codes/01,2026-11-04
 verbmobil_ii,collection_status,candidate,secondary,verbmobil_ii/collection_status/01,2026-11-04

@@ -1,5 +1,7 @@
 dataset_id,relation,other_dataset_id,source_ref,note
 bengali_speaker_diarization_dataset_weak,possibly_same_as,bengali_loop_diar,https://huggingface.co/datasets/AdilShamim8/Bengali-Speaker-Diarization_dataset,Same Hugging Face repository entered twice by the survey
+cabank_isl_meeting_corpus,possibly_same_as,isl_meeting_corpus,https://talkbank.org/ca/access/ISL.html,Entered twice by the survey (found by the Codex review)
+callhome_german_speech,possibly_same_as,callhome_german,https://catalog.ldc.upenn.edu/LDC97S43,Entered twice by the survey (found by the Codex review)
 callhome_spanish,distinct_from,callhome_sre2000,https://catalog.ldc.upenn.edu/LDC96S35,Both are called CALLHOME; the SRE 2000 diarization set is multilingual and separate
 callhome_sre2000,distinct_from,callhome_american_english,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,"Different releases. The segmentation data is drawn from the CALLHOME Corpus (plan section 6), so it may share calls or speakers with CALLHOME American English; not checked"
 children_adolescent_counselling,possibly_same_as,aihub_child_counsel,https://huggingface.co/datasets/ironDong/Children_Counsel,Same Hugging Face repository entered twice by the survey
@@ -10,3 +12,5 @@ fisher_meetings_sim,shares_recordings_with,fisher_english_part2,clean supervisio
 libricss,shares_recordings_with,librispeech,https://arxiv.org/abs/2001.11482,Replays LibriSpeech test-clean utterances (40 speakers) through loudspeakers (paper 3.1)
 librispeech_meetings_sim,shares_recordings_with,librispeech,clean supervisions manifest,Built from LibriSpeech training utterances (original_cut_id)
 mixer6_chime8,subset_of,mixer6,https://catalog.ldc.upenn.edu/LDC2025S07,80 hours of interviews and calls from Mixer 6 Speech (LDC2013S03) with new transcripts
+nist_meeting_pilot_corpus_speech,possibly_same_as,nist_meeting_pilot_corpus,https://catalog.ldc.upenn.edu/LDC2004S09,Entered twice by the survey (found by the Codex review)
+talkbank_sakura,possibly_same_as,sakura,https://huggingface.co/datasets/talkbank/sakura,Entered twice by the survey (found by the Codex review)

@@ -64,7 +64,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 |---|---|---|---|---|---|---|---|
 | [AVA-AVD](https://github.com/zcxu-eric/AVA-AVD) | Excluded | 29.25 h (351 five-minute clips from 117 movies) | 1,500; 2-24 per clip | Movies without dubbing; more than 6 languages | Annotations MIT; no licence stated for the movie videos | — | — |
 | [MagicData-RAMC](https://www.openslr.org/123/) | Excluded | 180 h (351 conversations) | 663 | Conversation; mobile phone | CC BY-NC-ND 4.0 | — | — |
-| [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Excluded (no speaker segments) | 15,863 h | 594 | Interviews and telephone calls | LDC | — | — |
+| [Mixer 6 Speech](https://catalog.ldc.upenn.edu/LDC2013S03) | Candidate since 2026-11-04 (telephone calls: one channel per side, turns by VAD); not on the lab storage | 15,863 h | 594 | Interviews and telephone calls | LDC | — | — |
 
 ## New candidates checked on 2026-11-03 and 2026-11-04 (not discussed yet)
 
@@ -95,7 +95,6 @@ Found by the conversation survey and the re-scan of the lab storage, and checked
 | [Simsamu](https://huggingface.co/datasets/medkit/simsamu) | 3.25 h | timed segments | MIT | Yes |
 | [SpiCE: Speech in Cantonese and English](https://doi.org/10.5683/SP2/MJOXP3) | — | channel per speaker (VAD) | CC BY 4.0 | Yes |
 | [Spjallrómur - Icelandic Conversational Speech](https://repository.clarin.is/repository/xmlui/handle/20.500.12537/379) | 21.33 h | timed segments and channel per speaker | CC BY 4.0 | Yes |
-| synth-librispeech-meetings | 2008.66 h | timed segments |  | No (lab copy) |
 
 ### Eval (8)
 
