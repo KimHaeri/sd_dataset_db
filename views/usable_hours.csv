@@ -1,6 +1,7 @@
 dataset_id,name,usable_as,license_tier,on_lab_storage,train_hours,eval_hours,unsplit_hours,basis
 aishell4,AISHELL-4,eval,eval,yes,,120.00,,reported
 aishell5,AISHELL-5,eval,eval,yes,,,,no hours recorded
+aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,,,100.00,reported total; split hours not recorded
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,unknown,,10.62,,reported

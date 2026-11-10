@@ -19,10 +19,6 @@ aida_ukrainian_broadcast_and_telephone_s,turn_source,provided_segments,secondary
 ailla_aggregate,collection_status,candidate,secondary,ailla_aggregate/collection_status/01,2026-11-04
 ailla_aggregate,license_spdx,unknown,secondary,ailla_aggregate/license_spdx/01,2026-11-04
 ailla_aggregate,status_reason_codes,unexamined,secondary,ailla_aggregate/status_reason_codes/01,2026-11-04
-aishell8_realscene,collection_status,candidate,secondary,aishell8_realscene/collection_status/01,2026-11-04
-aishell8_realscene,license_spdx,CC-BY-NC-SA-4.0,secondary,aishell8_realscene/license_spdx/01,2026-11-04
-aishell8_realscene,status_reason_codes,unexamined,secondary,aishell8_realscene/status_reason_codes/01,2026-11-04
-aishell8_realscene,turn_source,close_talk_vad,secondary,aishell8_realscene/turn_source/01,2026-11-04
 allies,collection_status,candidate,secondary,allies/collection_status/01,2026-11-04
 allies,status_reason_codes,unexamined,secondary,allies/status_reason_codes/01,2026-11-04
 allies,turn_source,provided_segments,secondary,allies/turn_source/01,2026-11-04
