@@ -160,7 +160,10 @@ def usable_hours(db):
         train = ev = unsplit = None
         basis = ("measured: each session once" if session_hours is not None else "measured" if measured
                  else "reported" if total is not None else "no hours recorded")
-        if cond and total is not None:
+        if cond and all(_num(r["hours_reported"]) is not None for r in cond):
+            total = sum(_num(r["hours_reported"]) for r in cond if r["note"].startswith("Used"))
+            basis = "used conditions' hours"
+        elif cond and total is not None:
             used = sum(_num(r["n_sessions_reported"]) or 0 for r in cond if r["note"].startswith("Used"))
             alls = sum(_num(r["n_sessions_reported"]) or 0 for r in cond)
             if alls:

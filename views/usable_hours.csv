@@ -44,7 +44,7 @@ real_turnturk,Real-TurnTurk,train,train,no,1.94,,,reported
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,,,no hours recorded
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
 simsamu,Simsamu,train,train,no,3.25,,,reported
-spice,SpiCE: Speech in Cantonese and English,train,train,no,,,,no hours recorded
+spice,SpiCE: Speech in Cantonese and English,train,train,yes,28.13,,,used conditions' hours
 spjallromur,Spjallrómur - Icelandic Conversational Speech,train_split,train,no,,,21.33,reported total; split hours not recorded
 spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported
 voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported
