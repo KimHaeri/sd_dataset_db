@@ -37,7 +37,7 @@ ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-S
 open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported
 otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,yes,20.01,,,reported
 otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,yes,17.38,,,reported
-otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,train,no,,,,no hours recorded
+otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,train,yes,141.56,,,measured
 perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,no,5.10,,,reported
 primock57,PriMock57,train,train,no,,,,no hours recorded
 real_turnturk,Real-TurnTurk,train,train,no,1.94,,,reported
