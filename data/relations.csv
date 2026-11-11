@@ -21,6 +21,8 @@ mcorec,possibly_same_as,chime_9_mcorec,https://www.chimechallenge.org/challenges
 mixer6_chime8,subset_of,mixer6,https://catalog.ldc.upenn.edu/LDC2025S07,80 hours of interviews and calls from Mixer 6 Speech (LDC2013S03) with new transcripts
 mmcsg,possibly_same_as,chime_8_mmcsg,https://www.chimechallenge.org/challenges/chime8/task3/data,"Same source page, entered twice by the survey"
 nist_meeting_pilot_corpus_speech,possibly_same_as,nist_meeting_pilot_corpus,https://catalog.ldc.upenn.edu/LDC2004S09,Entered twice by the survey (found by the Codex review)
+otospeech_fd_task_v2,distinct_from,otospeech_fd_task_20h,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-task-oriented-v2,v2 card: sessions collected after the latest session in the 20h release; the 58 sessions from that release are not duplicated in v2
+otospeech_full_duplex_processed_141h,version_of,otospeech_fd_280h,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h,280h card notice: We released a new processed version of otoSpeech (the 141h repository). Overlap in recordings likely; not checked
 rtve_2018_2020_2022,contains,rtve2018,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
 rtve_2018_2020_2022,contains,rtve2020,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
 talkbank_sakura,possibly_same_as,sakura,https://huggingface.co/datasets/talkbank/sakura,Entered twice by the survey (found by the Codex review)
