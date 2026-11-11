@@ -37,7 +37,7 @@ The totals leave out 145 h in 3 datasets whose train/evaluation split hours are 
 | `kallaama` | — | train | no | no hours recorded |
 | `kenya_ph_dialogue` | — | train | no | no hours recorded |
 | `multi_tpc` | — | train | no | no hours recorded |
-| `nb_samtale` | — (24.0 h in all; split not recorded) | train | no | reported total; split hours not recorded |
+| `nb_samtale` | — (24.0 h in all; split not recorded) | train | yes | reported total; split hours not recorded |
 | `primock57` | — | train | no | no hours recorded |
 | `spice` | — | train | no | no hours recorded |
 | `spjallromur` | — (21.3 h in all; split not recorded) | train | no | reported total; split hours not recorded |
@@ -72,7 +72,7 @@ The totals leave out 145 h in 3 datasets whose train/evaluation split hours are 
 | `harper_valley_bank` | — | train | yes | no hours recorded |
 | `hub5_2000_eng` | — | licensed_internal | yes | no hours recorded |
 | `indic_diarbench` | — | eval | no | no hours recorded |
-| `nb_samtale` | — (24.0 h in all; split not recorded) | train | no | reported total; split hours not recorded |
+| `nb_samtale` | — (24.0 h in all; split not recorded) | train | yes | reported total; split hours not recorded |
 | `rt03_eval` | — | licensed_internal | yes | no hours recorded |
 | `seamless_interaction` | — | eval | yes | no hours recorded |
 | `spjallromur` | — (21.3 h in all; split not recorded) | train | no | reported total; split hours not recorded |
