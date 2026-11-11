@@ -24,7 +24,7 @@ humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
 kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,no,,,,no hours recorded
-kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,no,,,,no hours recorded
+kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured
 libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions
 msdwild,MSDWild,eval,eval,no,,80.05,,reported
