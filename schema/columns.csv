@@ -35,6 +35,7 @@ datasets,usable_as,enum:usable_as,empty,yes,"What the dataset counts as under th
 datasets,has_transcript,bool,empty;unknown,yes,Whether word-level or segment-level transcripts are distributed
 datasets,has_official_splits,bool,empty;unknown,yes,Whether the source publishes train/dev/test splits (details in splits.csv)
 datasets,hours_measured,float,empty;unknown;NA,yes,Total hours of the audio we obtained (our measurement)
+datasets,session_hours_measured,float,empty;unknown;NA,yes,"Hours of distinct sessions when the release holds several recordings of each session (e.g. one per wearer), each session counted once at its longest recording; views/usable_hours prefers it over hours_reported and hours_measured"
 datasets,n_sessions_measured,int,empty;unknown;NA,yes,Number of sessions in what we obtained (our measurement)
 datasets,n_speakers_measured,int,empty;unknown;NA,yes,Number of distinct speaker labels in what we obtained (our measurement; labels may not be global across sessions)
 datasets,overlap_ratio_measured,float,empty;unknown;NA,yes,"Overlapped speech as a percentage of total speech, computed by tools/measure.py from the reference RTTM"

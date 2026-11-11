@@ -22,7 +22,7 @@ WIDE_COLS = [
     "recording_setup", "modality", "license_spdx", "license_class", "license_tier", "access_method", "raw_audio_available",
     "hours_reported", "n_sessions_reported", "n_speakers_reported", "speakers_per_session_reported",
     "overlap_ratio_reported", "annotation_format", "annotation_method", "turn_source", "usable_as", "has_transcript", "has_official_splits",
-    "hours_measured", "n_sessions_measured", "n_speakers_measured", "overlap_ratio_measured",
+    "hours_measured", "session_hours_measured", "n_sessions_measured", "n_speakers_measured", "overlap_ratio_measured",
     "splits", "challenges", "annotation_items", "aliases", "relations", "source_url", "paper_url",
     "status_note", "notes", "n_seed_values", "license_source_type", "license_checked_on",
     "oldest_checked_on", "latest_checked_on",
@@ -150,12 +150,16 @@ def usable_hours(db):
         measured = total is None and _num(d["hours_measured"]) is not None
         if measured:
             total = _num(d["hours_measured"])
+        session_hours = _num(d.get("session_hours_measured"))
+        if session_hours is not None:
+            total, measured = session_hours, False
         rows = splits.get(d["dataset_id"], [])
         cond = [r for r in rows if r["note"].startswith(("Used", "Not used"))]
         # Split rows of a published partition the project does not use (e.g. AMI scenario-only) are left out.
         parts = [r for r in rows if r not in cond and not r["note"].startswith("Partition not used")]
         train = ev = unsplit = None
-        basis = "measured" if measured else "reported" if total is not None else "no hours recorded"
+        basis = ("measured: each session once" if session_hours is not None else "measured" if measured
+                 else "reported" if total is not None else "no hours recorded")
         if cond and total is not None:
             used = sum(_num(r["n_sessions_reported"]) or 0 for r in cond if r["note"].startswith("Used"))
             alls = sum(_num(r["n_sessions_reported"]) or 0 for r in cond)
