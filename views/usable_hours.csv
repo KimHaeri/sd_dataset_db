@@ -24,7 +24,7 @@ hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_
 humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
-kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,no,,,,no hours recorded
+kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,yes,125.00,,,reported
 kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured
 libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions

@@ -81,7 +81,7 @@ Found by the conversation survey and the re-scan of the lab storage, and checked
 | [Gridspace-Stanford Harper Valley speech dataset](https://github.com/cricketclub/gridspace-stanford-harper-valley) | — | timed segments | CC BY 4.0 | No (lab copy) |
 | [HCRC Map Task Corpus](https://groups.inf.ed.ac.uk/maptask/) | — | timed segments and channel per speaker | CC BY 4.0 | Yes |
 | [Indic High-Fidelity MultiSpeaker ASR (Humyn Labs)](https://huggingface.co/datasets/humyn-labs/Indic-High-Fidelity-MultiSpeaker-ASR) | — | timed segments | CC BY 4.0 | Yes |
-| [Kallaama (Wolof, Pulaar, Sereer)](https://www.openslr.org/151/) | — | not confirmed | CC BY 4.0 | Yes |
+| [Kallaama (Wolof, Pulaar, Sereer)](https://www.openslr.org/151/) | 125 h | timed segments | CC BY 4.0 | No (lab copy) |
 | [Kenya/Philippines English Dialogue (Reord-AI)](https://huggingface.co/datasets/Reord-AI/kenya-philippines-twospeaker-english-dialogue) | — | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
 | [Multi-TPC (three-party conversations)](https://zenodo.org/records/17935560) | — | timed segments and channel per speaker | CC BY 4.0 | Yes |
 | [NB Samtale (Norwegian Conversation Speech Corpus)](https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-85/) | 24 h | timed segments | CC0 1.0 | Yes |

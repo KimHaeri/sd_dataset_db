@@ -118,7 +118,7 @@ Licence tiers of the checked datasets (`license_tier`; survey leads have none ye
   - Added from the 2026-11-03 conversation survey: `nb_samtale` (CC0 1.0), `hcrc_maptask` (CC BY 4.0), `primock57` (CC BY 4.0), `otospeech_fd_280h` (CC BY 4.0 in the card metadata; gated)
   - Lab copies found by the 2026-11-04 re-scan: `harper_valley_bank` (CC BY 4.0; the lab holds the SLUE-HVB subset), `npsc` (CC0 1.0; 140 h of Norwegian parliament meetings with speaker-timed sentences)
   - Survey candidates checked on 2026-11-04 (verification batches A-C): `spjallromur`, `fearless_steps_challenge`, `otospeech_fd_task_20h`, `otospeech_fd_task_v2`, `spice`, `simsamu`, `kenya_ph_dialogue`, `datahive_conversations_sample`, `ocular_en_fullduplex_sample`, `perit_duplex_support_en`, `real_turnturk`, `humyn_indic_multispeaker`
-  - Checked from the survey on 2026-11-04: `egocom` (MIT; 38.5 h, a wearable per participant), `multi_tpc` (CC BY 4.0; a WAV and word timings per participant), `kallaama` (CC BY 4.0; speaker turns not confirmed yet)
+  - Checked from the survey on 2026-11-04: `egocom` (MIT; 38.5 h, a wearable per participant), `multi_tpc` (CC BY 4.0; a WAV and word timings per participant), `kallaama` (CC BY 4.0; 124.85 h measured, Transcriber speaker turns in every file)
 - **`eval`** (19): evaluation only
   - ShareAlike or NonCommercial: `aishell4`, `alimeeting`, `chime5`, `chime6` (CC BY-SA 4.0), `seamless_interaction` (CC BY-NC 4.0)
   - Built as evaluation sets, audio without a licence of its own (maintainer decision): `earnings21` (fair-use claim), `libricss` (LibriSpeech test-clean re-recordings)
