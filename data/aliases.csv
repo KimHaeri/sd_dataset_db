@@ -32,6 +32,10 @@ magicdata_ramc,RAMC,short_name,https://arxiv.org/abs/2203.16844,
 mixer6,LDC2013S03,catalog_id,https://catalog.ldc.upenn.edu/LDC2013S03,Mixer 6 Speech
 mixer6_chime8,LDC2025S07,catalog_id,https://catalog.ldc.upenn.edu/LDC2025S07,
 open_yap_1k,TheAgenticDataCompany/open-yap-1k,other_source_name,https://huggingface.co/datasets/TheAgenticDataCompany/open-yap-1k,"Hugging Face sample only (8.92 h, CC BY 4.0), not the full corpus"
+otospeech_1125,otoearth/otoSpeech-1125-100h,other_source_name,https://huggingface.co/datasets/otoearth/otoSpeech-1125-100h,"Pack of the 1,125 h set"
+otospeech_1125,otoearth/otoSpeech-1125-250h,other_source_name,https://huggingface.co/datasets/otoearth/otoSpeech-1125-250h,"Pack of the 1,125 h set"
+otospeech_1125,otoearth/otoSpeech-1125-500h,other_source_name,https://huggingface.co/datasets/otoearth/otoSpeech-1125-500h,"Pack of the 1,125 h set"
+otospeech_1125,otoearth/otoSpeech-1125-750h,other_source_name,https://huggingface.co/datasets/otoearth/otoSpeech-1125-750h,"Pack of the 1,125 h set"
 rt03_eval,LDC2007S10,catalog_id,https://catalog.ldc.upenn.edu/LDC2007S10,
 rt03_eval,RT-03,short_name,index.html of LDC2007S10 (lab copy),
 seame,LDC2015S04,catalog_id,https://catalog.ldc.upenn.edu/LDC2015S04,
