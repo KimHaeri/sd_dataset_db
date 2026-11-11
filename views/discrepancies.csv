@@ -90,6 +90,9 @@ saslaw,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP A
 seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spice,turn_source,superseded,both,primary,close_talk_vad,primary,https://spice-corpus.readthedocs.io/en/latest/procedures/,
+spjallromur,annotation_format,superseded,rttm;json,measured,json;rttm,primary,https://github.com/icelandic-lt/spjallromur#readme,
+spjallromur,hours_reported vs hours_measured,reported_vs_measured,21.33,see evidence,39.98,measured,measurements/spjallromur.json,the release we obtained or the RTTM version may differ from the paper
+spjallromur,n_sessions_reported vs n_sessions_measured,reported_vs_measured,54,see evidence,46,measured,measurements/spjallromur.json,the release we obtained or the RTTM version may differ from the paper
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/zedavid/SpotTheDifferenceData,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/zedavid/SpotTheDifferenceData,Copied by a survey search from the page it opened; not re-checked
 switchboard1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
