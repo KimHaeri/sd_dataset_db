@@ -1,5 +1,6 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
 aalto_dsp_course_conversation_corpus,license_spdx,superseded,LicenseRef-custom-research-only,user,LicenseRef-other,secondary,https://www.kielipankki.fi/corpora/dspcon/,Copied by a survey search from the page it opened; not re-checked
+aalto_dsp_course_conversation_corpus,license_tier,superseded,eval,user,hold,user,"META-SHARE metadata of the resource (Distribution and Licence info), as pasted by the maintainer","NonCommercial and no redistribution: not train; eval under the current rules expects redistribution to be allowed, so held until the maintainer decides between eval and licensed_internal"
 aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,primary,https://arxiv.org/abs/2104.03603,
 aishell4,hours_reported vs hours_measured,reported_vs_measured,120,see evidence,89.485,measured,measurements/aishell4.json,the release we obtained or the RTTM version may differ from the paper
