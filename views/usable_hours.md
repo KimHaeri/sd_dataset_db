@@ -37,7 +37,7 @@ The totals leave out 245 h in 4 datasets whose train/evaluation split hours are 
 | `multi_tpc` | — | train | no | no hours recorded |
 | `nb_samtale` | — (24.0 h in all; split not recorded) | train | no | reported total; split hours not recorded |
 | `notsofar1` | — | train | no | no hours recorded |
-| `otospeech_fd_280h` | — | train | no | no hours recorded |
+| `otospeech_full_duplex_processed_141h` | — | train | no | no hours recorded |
 | `primock57` | — | train | no | no hours recorded |
 | `spice` | — | train | no | no hours recorded |
 | `spjallromur` | — (21.3 h in all; split not recorded) | train | no | reported total; split hours not recorded |
