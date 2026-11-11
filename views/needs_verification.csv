@@ -1,6 +1,5 @@
 dataset_id,field,value,source_type,evidence_id,checked_on
 aalto_dsp_course_conversation_corpus,collection_status,candidate,secondary,aalto_dsp_course_conversation_corpus/collection_status/01,2026-11-04
-aalto_dsp_course_conversation_corpus,license_spdx,LicenseRef-other,secondary,aalto_dsp_course_conversation_corpus/license_spdx/01,2026-11-04
 aalto_dsp_course_conversation_corpus,status_reason_codes,unexamined,secondary,aalto_dsp_course_conversation_corpus/status_reason_codes/01,2026-11-04
 aalto_dsp_course_conversation_corpus,turn_source,provided_segments,secondary,aalto_dsp_course_conversation_corpus/turn_source/01,2026-11-04
 accueil_ubs,collection_status,candidate,secondary,accueil_ubs/collection_status/01,2026-11-04
