@@ -21,7 +21,7 @@ harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,t
 hcrc_maptask,HCRC Map Task Corpus,train,train,no,,,,no hours recorded
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,,,no hours recorded
 humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,no,,,,no hours recorded
-icsi,ICSI Meeting Corpus,train,train,no,70.00,,,reported
+icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
 kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,no,,,,no hours recorded
 kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,no,,,,no hours recorded
