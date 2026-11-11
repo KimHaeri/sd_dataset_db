@@ -4,7 +4,7 @@ annodifp_cts_audio_and_transcripts,AnnoDIFP CTS Audio and Transcripts,LDC2025S10
 annodifp_session_audio_and_transcripts,AnnoDIFP Session Audio and Transcripts,LDC2025S06,licence checked,,unknown,,~438.34,,,,https://catalog.ldc.upenn.edu/LDC2025S06
 arabic_cts_levantine_fisher_training_dat,Arabic CTS Levantine Fisher Training Data Set 3,LDC2005S07,licence checked,,unknown,,~50,,,both,https://catalog.ldc.upenn.edu/LDC2005S07
 aspire_development_and_development_test,ASpIRE Development and Development Test Sets,LDC2017S21,licence checked,,unknown,,~226,,,,https://catalog.ldc.upenn.edu/LDC2017S21
-babel,IARPA Babel language packs,LDC2016S02,checked,eval_splits_only,yes,,,mul,telephone,both,https://catalog.ldc.upenn.edu/LDC2016S02
+babel,IARPA Babel language packs,LDC2016S02,checked,hold,yes,,,mul,telephone,both,https://catalog.ldc.upenn.edu/LDC2016S02
 bolt_cts_callfriend_callhome_egyptian_ar,BOLT CTS CALLFRIEND CALLHOME Egyptian Arabic Audio,LDC2025S09,licence checked,,unknown,,~116,,,both,https://catalog.ldc.upenn.edu/LDC2025S09
 bolt_cts_callfriend_callhome_mainland_ma,BOLT CTS CALLFRIEND CALLHOME Mainland Mandarin Chinese Audio,LDC2025S04,licence checked,,unknown,,~93,,,both,https://catalog.ldc.upenn.edu/LDC2025S04
 call_my_net_1,Call My Net 1 (LDC2024S05),LDC2024S05,licence checked,,unknown,,364,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2024S05
@@ -31,7 +31,7 @@ callfriend_spanish_caribbean_dialect,CALLFRIEND Spanish-Caribbean Dialect,LDC96S
 callfriend_spanish_non_caribbean_dialect,CALLFRIEND Spanish-Non-Caribbean Dialect,LDC96S58,licence checked,,unknown,,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S58
 callfriend_tamil,CALLFRIEND Tamil,LDC96S59,licence checked,,unknown,,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S59
 callfriend_vietnamese,CALLFRIEND Vietnamese,LDC96S60,licence checked,,unknown,,~25,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S60
-callhome_american_english,CALLHOME American English Speech,LDC97S42,checked,eval_splits_only,yes,56,,eng,telephone,both,https://catalog.ldc.upenn.edu/LDC97S42
+callhome_american_english,CALLHOME American English Speech,LDC97S42,checked,hold,yes,56,,eng,telephone,both,https://catalog.ldc.upenn.edu/LDC97S42
 callhome_egyptian_arabic,CALLHOME Egyptian Arabic (LDC97S45 + LDC97T19),LDC97S45,licence checked,,unknown,,unknown (120 calls up to 30 min),,,both,https://catalog.ldc.upenn.edu/LDC97S45
 callhome_egyptian_arabic_speech,CALLHOME Egyptian Arabic Speech,LDC97S45,excluded,,unknown,,not stated,,,both,https://catalog.ldc.upenn.edu/LDC97S45
 callhome_egyptian_arabic_speech_suppleme,CALLHOME Egyptian Arabic Speech Supplement,LDC2002S37,licence checked,,unknown,,unknown (20 calls),,,both,https://catalog.ldc.upenn.edu/LDC2002S37
@@ -43,7 +43,7 @@ callhome_japanese_second_edition,CALLHOME Japanese Second Edition,LDC2026S02,lic
 callhome_mandarin_chinese,CALLHOME Mandarin Chinese (LDC96S34 + LDC96T16),LDC96S34,licence checked,,unknown,,~38 h,,,both,https://catalog.ldc.upenn.edu/LDC96S34
 callhome_mandarin_chinese_second_edition,CALLHOME Mandarin Chinese Second Edition,LDC2026S11,licence checked,,unknown,,~38,,,both,https://catalog.ldc.upenn.edu/LDC2026S11
 callhome_mandarin_chinese_speech,CALLHOME Mandarin Chinese Speech,LDC96S34,excluded,,unknown,,~38,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S34
-callhome_spanish,CALLHOME Spanish Speech,LDC96S35,checked,eval_splits_only,yes,38,,spa,telephone,both,https://catalog.ldc.upenn.edu/LDC96S35
+callhome_spanish,CALLHOME Spanish Speech,LDC96S35,checked,hold,yes,38,,spa,telephone,both,https://catalog.ldc.upenn.edu/LDC96S35
 callhome_spanish_second_edition,CALLHOME Spanish Second Edition,LDC2026S04,licence checked,,unknown,,~38,,,both,https://catalog.ldc.upenn.edu/LDC2026S04
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),LDC2001S97,checked,eval,yes,,,mul,telephone,,https://catalog.ldc.upenn.edu/LDC2001S97
 ciempiess,CIEMPIESS,LDC2015S07,licence checked,,unknown,,~18,,,,https://catalog.ldc.upenn.edu/LDC2015S07
@@ -102,7 +102,7 @@ material_swahili_english_language_pack,MATERIAL Swahili-English Language Pack,LD
 material_tagalog_english_language_pack,MATERIAL Tagalog-English Language Pack,LDC2026S05,licence checked,,unknown,,~100,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2026S05
 metalogue_multi_issue_bargaining_dialogu,Metalogue Multi-Issue Bargaining Dialogue,LDC2017S11,licence checked,,unknown,,~2.5,,,both,https://catalog.ldc.upenn.edu/LDC2017S11
 mixer6,Mixer 6 Speech,LDC2013S03,checked,hold,no,15863,,eng,interview;telephone,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2013S03
-mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,LDC2025S07,checked,eval_splits_only,yes,80,,eng,interview;telephone,provided_segments,https://catalog.ldc.upenn.edu/LDC2025S07
+mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,LDC2025S07,checked,hold,yes,80,,eng,interview;telephone,provided_segments,https://catalog.ldc.upenn.edu/LDC2025S07
 mixer_3_speech,Mixer 3 Speech,LDC2023S02,survey lead,,unknown,,"~3,200",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2023S02
 mixer_4_and_5_speech,Mixer 4 and 5 Speech (LDC2020S03),LDC2020S03,survey lead,,unknown,,"~14,185",,,,https://catalog.ldc.upenn.edu/LDC2020S03
 mixer_7_english_speech,Mixer 7 English Speech,LDC2025S08,survey lead,,unknown,,"~12,321",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2025S08

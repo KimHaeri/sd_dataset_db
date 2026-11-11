@@ -5,9 +5,6 @@ aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,,,100.00,reported total; split hours not recorded
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
-babel,IARPA Babel language packs,eval_splits_only,licensed_internal,yes,,,,no hours recorded
-callhome_american_english,CALLHOME American English Speech,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
-callhome_spanish,CALLHOME Spanish Speech,eval_splits_only,licensed_internal,yes,,12.67,,derived: share of sessions
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,eval,eval,yes,,,,no hours recorded
 datahive_conversations_sample,DataHive Conversations samples,train,train,no,19.53,,,reported
@@ -30,7 +27,6 @@ kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,no,,,,no hours recorded
 kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,no,,,,no hours recorded
 libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions
-mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
 msdwild,MSDWild,eval,eval,no,,80.05,,reported
 msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,,split hours
 multi_tpc,Multi-TPC (three-party conversations),train,train,no,,,,no hours recorded
