@@ -29,7 +29,7 @@ libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions
 msdwild,MSDWild,eval,eval,no,,80.05,,reported
 msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,,split hours
-multi_tpc,Multi-TPC (three-party conversations),train,train,no,,,,no hours recorded
+multi_tpc,Multi-TPC (three-party conversations),train,train,yes,4.71,,,measured: each session once
 nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train_split,train,yes,,,24.00,reported total; split hours not recorded
 notsofar1,NOTSOFAR-1,train_split,train,yes,11.14,11.78,,derived: total minus train split
 npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours
