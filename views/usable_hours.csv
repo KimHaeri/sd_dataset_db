@@ -31,7 +31,7 @@ msdwild,MSDWild,eval,eval,no,,80.05,,reported
 msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,,split hours
 multi_tpc,Multi-TPC (three-party conversations),train,train,no,,,,no hours recorded
 nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train_split,train,no,,,24.00,reported total; split hours not recorded
-notsofar1,NOTSOFAR-1,train_split,train,no,,,,no hours recorded
+notsofar1,NOTSOFAR-1,train_split,train,yes,11.14,11.78,,derived: total minus train split
 npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours
 ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,no,1.01,,,reported
 open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported
