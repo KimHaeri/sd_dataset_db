@@ -31,6 +31,7 @@ magicdata_ramc,OpenSLR 123,catalog_id,https://www.openslr.org/123/,
 magicdata_ramc,RAMC,short_name,https://arxiv.org/abs/2203.16844,
 mixer6,LDC2013S03,catalog_id,https://catalog.ldc.upenn.edu/LDC2013S03,Mixer 6 Speech
 mixer6_chime8,LDC2025S07,catalog_id,https://catalog.ldc.upenn.edu/LDC2025S07,
+open_yap_1k,TheAgenticDataCompany/open-yap-1k,other_source_name,https://huggingface.co/datasets/TheAgenticDataCompany/open-yap-1k,"Hugging Face sample only (8.92 h, CC BY 4.0), not the full corpus"
 rt03_eval,LDC2007S10,catalog_id,https://catalog.ldc.upenn.edu/LDC2007S10,
 rt03_eval,RT-03,short_name,index.html of LDC2007S10 (lab copy),
 seame,LDC2015S04,catalog_id,https://catalog.ldc.upenn.edu/LDC2015S04,
