@@ -196,8 +196,7 @@ def usable_hours(db):
 
 
 def usable_hours_md(rows, db):
-    groups = [("Training, permissive licence", lambda r: r["license_tier"] == "train", "train_hours"),
-              ("Training, signed agreement (internal only; LDC training is on hold for review)", lambda r: r["license_tier"] == "licensed_internal", "train_hours"),
+    groups = [("Training (all licences)", lambda r: True, "train_hours"),
               ("Evaluation (all licences)", lambda r: True, "eval_hours")]
     lab = ("yes", "no", "unknown")
     lines = ["# Usable hours", "",
@@ -218,8 +217,8 @@ def usable_hours_md(rows, db):
         sel = sorted((r for r in rows if keep(r) and _num(r[col])), key=lambda r: -_num(r[col]))
         if not sel:
             continue
-        lines += [f"## {title}", "", "| Dataset | Hours | On the lab storage | Basis |", "|---|---|---|---|"]
-        lines += [f"| `{r['dataset_id']}` | {_num(r[col]):,.1f} | {r['on_lab_storage']} | {r['basis']} |" for r in sel]
+        lines += [f"## {title}", "", "| Dataset | Hours | Licence tier | On the lab storage | Basis |", "|---|---|---|---|---|"]
+        lines += [f"| `{r['dataset_id']}` | {_num(r[col]):,.1f} | {r['license_tier']} | {r['on_lab_storage']} | {r['basis']} |" for r in sel]
         lines.append("")
     return "\n".join(lines)
 
