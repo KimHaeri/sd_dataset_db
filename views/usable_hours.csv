@@ -4,30 +4,30 @@ aishell5,AISHELL-5,eval,eval,yes,,,,no hours recorded
 aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,,,100.00,reported total; split hours not recorded
-ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,unknown,,10.62,,reported
+ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
 babel,IARPA Babel language packs,eval_splits_only,licensed_internal,yes,,,,no hours recorded
 callhome_american_english,CALLHOME American English Speech,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
 callhome_spanish,CALLHOME Spanish Speech,eval_splits_only,licensed_internal,yes,,12.67,,derived: share of sessions
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,eval,eval,yes,,,,no hours recorded
-datahive_conversations_sample,DataHive Conversations samples,train,train,unknown,19.53,,,reported
+datahive_conversations_sample,DataHive Conversations samples,train,train,no,19.53,,,reported
 dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported
 dipco,Dinner Party Corpus (DiPCo),eval,eval,yes,,5.32,,reported
 displace2023,DISPLACE 2023,eval,eval,no,,31.50,,reported
 earnings21,Earnings-21,eval,eval,no,,39.25,,reported
 earnings22,Earnings-22,eval,eval,yes,,,,no hours recorded
 ego4d,Ego4D,train_split,licensed_internal,yes,,,,no hours recorded
-egocom,EgoCom (Egocentric Communications),train,train,no,,,,no hours recorded
+egocom,EgoCom (Egocentric Communications),train,train,no,38.50,,,reported
 expresso,Expresso,eval,eval,yes,,,,no hours recorded
-fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,unknown,,,100.00,reported total; split hours not recorded
+fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded
 harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded
 hcrc_maptask,HCRC Map Task Corpus,train,train,no,,,,no hours recorded
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,,,no hours recorded
-humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,unknown,,,,no hours recorded
+humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,no,,,,no hours recorded
 icsi,ICSI Meeting Corpus,train,train,no,70.00,,,reported
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
 kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,no,,,,no hours recorded
-kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,unknown,,,,no hours recorded
+kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,no,,,,no hours recorded
 libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions
 mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
@@ -36,19 +36,19 @@ msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,
 multi_tpc,Multi-TPC (three-party conversations),train,train,no,,,,no hours recorded
 nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train_split,train,no,,,24.00,reported total; split hours not recorded
 notsofar1,NOTSOFAR-1,train_split,train,no,,,,no hours recorded
-npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,,,140.30,reported total; split hours not recorded
-ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,unknown,1.01,,,reported
+npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours
+ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,no,1.01,,,reported
 open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported
-otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,unknown,20.01,,,reported
-otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,unknown,17.38,,,reported
-perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,unknown,5.10,,,reported
+otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,no,20.01,,,reported
+otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,no,17.38,,,reported
+perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,no,5.10,,,reported
 primock57,PriMock57,train,train,no,,,,no hours recorded
-real_turnturk,Real-TurnTurk,train,train,unknown,1.94,,,reported
+real_turnturk,Real-TurnTurk,train,train,no,1.94,,,reported
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,,,no hours recorded
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
-simsamu,Simsamu,train,train,unknown,3.25,,,reported
-spice,SpiCE: Speech in Cantonese and English,train,train,unknown,,,,no hours recorded
-spjallromur,Spjallrómur - Icelandic Conversational Speech,train_split,train,unknown,,,21.33,reported total; split hours not recorded
+simsamu,Simsamu,train,train,no,3.25,,,reported
+spice,SpiCE: Speech in Cantonese and English,train,train,no,,,,no hours recorded
+spjallromur,Spjallrómur - Icelandic Conversational Speech,train_split,train,no,,,21.33,reported total; split hours not recorded
 spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported
 voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported
-voxmm,VoxMM,eval,eval,unknown,,,,no hours recorded
+voxmm,VoxMM,eval,eval,no,,,,no hours recorded

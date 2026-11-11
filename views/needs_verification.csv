@@ -301,8 +301,6 @@ callfriend_vietnamese,turn_source,close_talk_vad,secondary,callfriend_vietnamese
 callhome_egyptian_arabic,collection_status,candidate,secondary,callhome_egyptian_arabic/collection_status/01,2026-11-04
 callhome_egyptian_arabic,status_reason_codes,unexamined,secondary,callhome_egyptian_arabic/status_reason_codes/01,2026-11-04
 callhome_egyptian_arabic,turn_source,both,secondary,callhome_egyptian_arabic/turn_source/01,2026-11-04
-callhome_egyptian_arabic_speech,collection_status,candidate,secondary,callhome_egyptian_arabic_speech/collection_status/01,2026-11-04
-callhome_egyptian_arabic_speech,status_reason_codes,unexamined,secondary,callhome_egyptian_arabic_speech/status_reason_codes/01,2026-11-04
 callhome_egyptian_arabic_speech,turn_source,both,secondary,callhome_egyptian_arabic_speech/turn_source/01,2026-11-04
 callhome_egyptian_arabic_speech_suppleme,collection_status,candidate,secondary,callhome_egyptian_arabic_speech_suppleme/collection_status/01,2026-11-04
 callhome_egyptian_arabic_speech_suppleme,status_reason_codes,unexamined,secondary,callhome_egyptian_arabic_speech_suppleme/status_reason_codes/01,2026-11-04
@@ -326,8 +324,6 @@ callhome_mandarin_chinese,turn_source,both,secondary,callhome_mandarin_chinese/t
 callhome_mandarin_chinese_second_edition,collection_status,candidate,secondary,callhome_mandarin_chinese_second_edition/collection_status/01,2026-11-04
 callhome_mandarin_chinese_second_edition,status_reason_codes,unexamined,secondary,callhome_mandarin_chinese_second_edition/status_reason_codes/01,2026-11-04
 callhome_mandarin_chinese_second_edition,turn_source,both,secondary,callhome_mandarin_chinese_second_edition/turn_source/01,2026-11-04
-callhome_mandarin_chinese_speech,collection_status,candidate,secondary,callhome_mandarin_chinese_speech/collection_status/01,2026-11-04
-callhome_mandarin_chinese_speech,status_reason_codes,unexamined,secondary,callhome_mandarin_chinese_speech/status_reason_codes/01,2026-11-04
 callhome_mandarin_chinese_speech,turn_source,close_talk_vad,secondary,callhome_mandarin_chinese_speech/turn_source/01,2026-11-04
 callhome_spanish_second_edition,collection_status,candidate,secondary,callhome_spanish_second_edition/collection_status/01,2026-11-04
 callhome_spanish_second_edition,status_reason_codes,unexamined,secondary,callhome_spanish_second_edition/status_reason_codes/01,2026-11-04
@@ -829,9 +825,7 @@ material_swahili_english_language_pack,turn_source,close_talk_vad,secondary,mate
 material_tagalog_english_language_pack,collection_status,candidate,secondary,material_tagalog_english_language_pack/collection_status/01,2026-11-04
 material_tagalog_english_language_pack,status_reason_codes,unexamined,secondary,material_tagalog_english_language_pack/status_reason_codes/01,2026-11-04
 material_tagalog_english_language_pack,turn_source,close_talk_vad,secondary,material_tagalog_english_language_pack/turn_source/01,2026-11-04
-mcorec,collection_status,candidate,secondary,mcorec/collection_status/01,2026-11-04
 mcorec,license_spdx,none_stated,secondary,mcorec/license_spdx/01,2026-11-04
-mcorec,status_reason_codes,unexamined,secondary,mcorec/status_reason_codes/01,2026-11-04
 mcorec,turn_source,provided_segments,secondary,mcorec/turn_source/01,2026-11-04
 md3_english_subcorpus_md3_en,collection_status,candidate,secondary,md3_english_subcorpus_md3_en/collection_status/01,2026-11-04
 md3_english_subcorpus_md3_en,license_spdx,CC-BY-SA-4.0,secondary,md3_english_subcorpus_md3_en/license_spdx/01,2026-11-04
@@ -853,7 +847,6 @@ melati,status_reason_codes,unexamined,secondary,melati/status_reason_codes/01,20
 melati,turn_source,provided_segments,secondary,melati/turn_source/01,2026-11-04
 meld,collection_status,candidate,secondary,meld/collection_status/01,2026-11-04
 meld,license_spdx,LicenseRef-other,secondary,meld/license_spdx/03,2026-11-08
-meld,status_reason_codes,unexamined,secondary,meld/status_reason_codes/01,2026-11-04
 meld,turn_source,provided_segments,secondary,meld/turn_source/01,2026-11-04
 merlion_ccs_corpus,collection_status,candidate,secondary,merlion_ccs_corpus/collection_status/01,2026-11-04
 merlion_ccs_corpus,license_spdx,LicenseRef-other,secondary,merlion_ccs_corpus/license_spdx/01,2026-11-04
@@ -901,9 +894,7 @@ mlc_slm_challenge_data,collection_status,candidate,secondary,mlc_slm_challenge_d
 mlc_slm_challenge_data,license_spdx,CC-BY-SA-4.0,secondary,mlc_slm_challenge_data/license_spdx/01,2026-11-04
 mlc_slm_challenge_data,status_reason_codes,unexamined,secondary,mlc_slm_challenge_data/status_reason_codes/01,2026-11-04
 mlc_slm_challenge_data,turn_source,provided_segments,secondary,mlc_slm_challenge_data/turn_source/01,2026-11-04
-mmcsg,collection_status,candidate,secondary,mmcsg/collection_status/01,2026-11-04
 mmcsg,license_spdx,none_stated,secondary,mmcsg/license_spdx/01,2026-11-04
-mmcsg,status_reason_codes,unexamined,secondary,mmcsg/status_reason_codes/01,2026-11-04
 mmcsg,turn_source,provided_segments,secondary,mmcsg/turn_source/01,2026-11-04
 mock_sales,collection_status,candidate,secondary,mock_sales/collection_status/01,2026-11-04
 mock_sales,status_reason_codes,unexamined,secondary,mock_sales/status_reason_codes/01,2026-11-04
@@ -1184,7 +1175,6 @@ seniortalk,license_spdx,CC-BY-NC-SA-4.0,secondary,seniortalk/license_spdx/03,202
 seniortalk,status_reason_codes,unexamined,secondary,seniortalk/status_reason_codes/01,2026-11-04
 seniortalk,turn_source,provided_segments,secondary,seniortalk/turn_source/01,2026-11-04
 seoul_corpus_openslr_113,collection_status,candidate,secondary,seoul_corpus_openslr_113/collection_status/01,2026-11-04
-seoul_corpus_openslr_113,status_reason_codes,unexamined,secondary,seoul_corpus_openslr_113/status_reason_codes/01,2026-11-04
 silencio_conversational_speech,collection_status,candidate,secondary,silencio_conversational_speech/collection_status/01,2026-11-04
 silencio_conversational_speech,license_spdx,CC-BY-NC-4.0,secondary,silencio_conversational_speech/license_spdx/01,2026-11-04
 silencio_conversational_speech,status_reason_codes,unexamined,secondary,silencio_conversational_speech/status_reason_codes/01,2026-11-04
