@@ -210,15 +210,25 @@ def usable_hours_md(rows, db):
         lines.append(f"| {title} | {vals[0]:,.0f} h | {vals[1]:,.0f} h | {vals[2]:,.0f} h | **{sum(vals):,.0f} h** |")
     uns = [r for r in rows if r["unsplit_hours"]]
     nohours = [r for r in rows if not (r["train_hours"] or r["eval_hours"] or r["unsplit_hours"])]
-    lines += ["", f"Not in the table: {sum(_num(r['unsplit_hours']) for r in uns):,.0f} h in {len(uns)} datasets whose "
-              "train/evaluation split hours are not recorded (" + ", ".join(f"`{r['dataset_id']}`" for r in uns) + "), and "
-              f"{len(nohours)} usable datasets with no hours recorded (" + ", ".join(f"`{r['dataset_id']}`" for r in nohours) + ").", ""]
+    lines += ["", f"The totals leave out {sum(_num(r['unsplit_hours']) for r in uns):,.0f} h in {len(uns)} datasets whose "
+              f"train/evaluation split hours are not recorded, and {len(nohours)} datasets with no hours recorded; "
+              "they are in the tables below with \"—\".", ""]
+    uses = {"train_hours": ("train", "train_split"), "eval_hours": ("eval", "train_split")}
     for title, keep, col in groups:
-        sel = sorted((r for r in rows if keep(r) and _num(r[col])), key=lambda r: -_num(r[col]))
+        sel = [r for r in rows if keep(r) and r["usable_as"] in uses[col]]
+        sel = sorted(sel, key=lambda r: (-(_num(r[col]) or -1), r["dataset_id"]))
         if not sel:
             continue
         lines += [f"## {title}", "", "| Dataset | Hours | Licence tier | On the lab storage | Basis |", "|---|---|---|---|---|"]
-        lines += [f"| `{r['dataset_id']}` | {_num(r[col]):,.1f} | {r['license_tier']} | {r['on_lab_storage']} | {r['basis']} |" for r in sel]
+        for r in sel:
+            h = _num(r[col])
+            if h is not None:
+                hs = f"{h:,.1f}"
+            elif r["unsplit_hours"]:
+                hs = f"— ({_num(r['unsplit_hours']):,.1f} h in all; split not recorded)"
+            else:
+                hs = "—"
+            lines.append(f"| `{r['dataset_id']}` | {hs} | {r['license_tier']} | {r['on_lab_storage']} | {r['basis']} |")
         lines.append("")
     return "\n".join(lines)
 
