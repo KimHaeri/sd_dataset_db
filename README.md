@@ -110,7 +110,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 Licence tiers of the checked datasets (`license_tier`; survey leads have none yet):
 
 - **`train`** (31): permissive licence, used for training
-  - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); partition not chosen yet
+  - `ami`: CC BY 4.0 by maintainer decision (the release 1.7 licence file says CC BY-NC-SA 2.5; kept as conflicting evidence); full-corpus-ASR partition (maintainer decision 2026-11-11): train 80.67 h, dev 9.67 h, eval 9.06 h measured from the lab copy
   - `icsi`: CC BY 4.0
   - `notsofar1`: CC BY 4.0; train split only (dev1, eval_small and eval_full are for evaluation)
   - `librispeech_meetings_sim`: clean and reverb conditions only (LibriSpeech CC BY 4.0 and generated RIRs); the noise conditions are not used

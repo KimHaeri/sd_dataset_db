@@ -3,7 +3,7 @@ aishell4,AISHELL-4,eval,eval,yes,,120.00,,reported
 aishell5,AISHELL-5,eval,eval,yes,,,,no hours recorded
 aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
-ami,AMI Meeting Corpus,train_split,train,yes,,,100.00,reported total; split hours not recorded
+ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,eval,eval,yes,,,,no hours recorded

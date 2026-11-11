@@ -25,7 +25,7 @@ Download needed was checked against the lab's shared corpus storage on 2026-11-0
 
 | Dataset | Use | Hours | Speakers (total; per session) | Recording condition | Licence | Download needed | To confirm |
 |---|---|---|---|---|---|---|---|
-| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split | 100 h | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | — |
+| [AMI](https://groups.inf.ed.ac.uk/ami/corpus/) | Train split of the full-corpus-ASR partition (dev and eval: evaluation) | 100 h (lab copy: 99.97 h; train 80.67, dev 9.67, eval 9.06) | — | Meeting; close-talk and far-field arrays | CC BY 4.0 (the release 1.7 licence file says CC BY-NC-SA 2.5) | No | — |
 | [ICSI](https://groups.inf.ed.ac.uk/ami/icsi/) | Train | about 70 h (75 meetings) | — | Meeting; close-talk | CC BY 4.0 | Yes | — |
 | [NOTSOFAR-1](https://github.com/microsoft/NOTSOFAR1-Challenge) | Train split | 237 meetings of about 6 min (about 150 h single-channel and 110 h multi-channel over all devices) | 35; 4-8 per meeting | Meeting; close-talk, far-field arrays and single far-field devices | CC BY 4.0 | Yes | — |
 | LibriSpeech simulated meetings (lab) | Train, clean and reverb conditions only (6,000 meetings, about 1,004 h) | about 1,004 h (6,000 meetings) | 2,334 source speakers; 3-8 per meeting | Simulated meetings; clean and simulated-room reverb | [LibriSpeech](https://www.openslr.org/12/) CC BY 4.0 + generated RIRs | No | — |

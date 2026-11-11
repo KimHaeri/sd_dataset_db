@@ -152,7 +152,8 @@ def usable_hours(db):
             total = _num(d["hours_measured"])
         rows = splits.get(d["dataset_id"], [])
         cond = [r for r in rows if r["note"].startswith(("Used", "Not used"))]
-        parts = [r for r in rows if r not in cond]
+        # Split rows of a published partition the project does not use (e.g. AMI scenario-only) are left out.
+        parts = [r for r in rows if r not in cond and not r["note"].startswith("Partition not used")]
         train = ev = unsplit = None
         basis = "measured" if measured else "reported" if total is not None else "no hours recorded"
         if cond and total is not None:
