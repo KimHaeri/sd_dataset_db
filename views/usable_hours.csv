@@ -35,6 +35,7 @@ notsofar1,NOTSOFAR-1,train_split,train,no,,,,no hours recorded
 npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours
 ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,no,1.01,,,reported
 open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported
+otospeech_fd_280h,otoSpeech-full-duplex-280h,train,train,no,,,,no hours recorded
 otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,no,20.01,,,reported
 otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,no,17.38,,,reported
 perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,no,5.10,,,reported
