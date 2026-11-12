@@ -69,12 +69,16 @@ magicdata_ramc,speakers_per_session_reported,superseded,unknown,primary,2,seed,a
 meetingbank,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-NC-SA-4.0,secondary,https://zenodo.org/record/7989108,Copied by a survey search from the page it opened; not re-checked
 melati,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/Scicom-AI-Enterprise-Organization/Melati,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 mixer6,domain,superseded,interview;telephone,primary,interview,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
+mixer6,hours_reported,superseded,1090,primary,15863,primary,https://catalog.ldc.upenn.edu/LDC2013S03,
 mixer6,usable_as,superseded,hold,primary,train,primary,https://catalog.ldc.upenn.edu/LDC2013S03,Follows from the licence and the rules; not a separate maintainer decision
 mixer6_chime8,usable_as,superseded,hold,user,eval_splits_only,user,maintainer decision 2026-11-08 (PI),Train split on hold; dev/test splits evaluate (published-splits rule)
 mixer6_chime8,usable_as,superseded,hold,user,train_split,user,maintainer decision 2026-10-31,
 mixer_3_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2023S02,Copied by a survey search from the page it opened; not re-checked
+mixer_4_and_5_speech,hours_reported,superseded,430,primary,14185,primary,https://catalog.ldc.upenn.edu/LDC2020S03,Approximate figure from the catalogue page.
 mixer_4_and_5_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2020S03,Copied by a survey search from the page it opened; not re-checked
+mixer_7_english_speech,hours_reported,superseded,780,primary,12321,primary,https://catalog.ldc.upenn.edu/LDC2025S08,Approximate figure from the catalogue page.
 mixer_7_english_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2025S08,Copied by a survey search from the page it opened; not re-checked
+mixer_7_spanish_speech,hours_reported,superseded,600,primary,9600,primary,https://catalog.ldc.upenn.edu/LDC2023S04,Approximate figure from the catalogue page.
 mixer_7_spanish_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2023S04,Copied by a survey search from the page it opened; not re-checked
 ms_bench_weak,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/MS-Bench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 ms_bench_weak,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/ASLP-lab/MS-Bench,Copied by a survey search from the page it opened; not re-checked

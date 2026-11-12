@@ -101,12 +101,12 @@ material_somali_english_language_pack,MATERIAL Somali-English Language Pack,LDC2
 material_swahili_english_language_pack,MATERIAL Swahili-English Language Pack,LDC2026S01,licence checked,,unknown,112,"catalogue, approximate",~112,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2026S01
 material_tagalog_english_language_pack,MATERIAL Tagalog-English Language Pack,LDC2026S05,licence checked,,unknown,100,"catalogue, approximate",~100,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2026S05
 metalogue_multi_issue_bargaining_dialogu,Metalogue Multi-Issue Bargaining Dialogue,LDC2017S11,licence checked,,unknown,2.5,"catalogue, approximate",~2.5,,,both,https://catalog.ldc.upenn.edu/LDC2017S11
-mixer6,Mixer 6 Speech,LDC2013S03,checked,hold,yes,15863,catalogue,,eng,interview;telephone,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2013S03
+mixer6,Mixer 6 Speech,LDC2013S03,checked,hold,yes,1090,estimate,,eng,interview;telephone,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2013S03
 mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,LDC2025S07,checked,hold,yes,80,catalogue,,eng,interview;telephone,provided_segments,https://catalog.ldc.upenn.edu/LDC2025S07
-mixer_3_speech,Mixer 3 Speech,LDC2023S02,licence checked,,unknown,3200,"catalogue, approximate","~3,200",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2023S02
-mixer_4_and_5_speech,Mixer 4 and 5 Speech (LDC2020S03),LDC2020S03,licence checked,,unknown,14185,"catalogue, approximate","~14,185",,,,https://catalog.ldc.upenn.edu/LDC2020S03
-mixer_7_english_speech,Mixer 7 English Speech,LDC2025S08,licence checked,,unknown,12321,"catalogue, approximate","~12,321",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2025S08
-mixer_7_spanish_speech,Mixer 7 Spanish Speech,LDC2023S04,licence checked,,unknown,9600,"catalogue, approximate","~9,600",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2023S04
+mixer_3_speech,Mixer 3 Speech,LDC2023S02,licence checked,,unknown,3200,catalogue,"~3,200",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2023S02
+mixer_4_and_5_speech,Mixer 4 and 5 Speech (LDC2020S03),LDC2020S03,licence checked,,unknown,430,estimate,"~14,185",,,,https://catalog.ldc.upenn.edu/LDC2020S03
+mixer_7_english_speech,Mixer 7 English Speech,LDC2025S08,licence checked,,unknown,780,estimate,"~12,321",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2025S08
+mixer_7_spanish_speech,Mixer 7 Spanish Speech,LDC2023S04,licence checked,,unknown,600,estimate,"~9,600",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2023S04
 multi_language_conversational_telephone,Multi-Language Conversational Telephone Speech 2011 -- Slavic Group,LDC2016S11,licence checked,,unknown,180,"catalogue, approximate",~60 per language,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2016S11
 multi_language_conversational_telephone_10,Multi-Language Conversational Telephone Speech 2011 -- Mandarin Chinese,LDC2020S05,licence checked,,unknown,25,"catalogue, approximate",~25,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2020S05
 multi_language_conversational_telephone_11,Multi-Language Conversational Telephone Speech 2014 - Spanish & Portuguese,LDC2026S07,licence checked,,unknown,123.8,"catalogue, approximate",~123.8 (569 recordings),,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2026S07
