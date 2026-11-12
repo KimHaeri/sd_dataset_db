@@ -288,7 +288,80 @@ def ldc(db):
     return out
 
 
-def ldc_md(rows):
+def ldc_hours_summary(rows, db):
+    """Hours of the LDC rows, on and off the lab storage, each recording counted once where the DB knows the overlap."""
+    D = {d["dataset_id"]: d for d in db["datasets"][1]}
+    live = [r for r in rows if r["check_level"] != "excluded"]
+    ids = {r["dataset_id"] for r in live}
+    inside = {r["dataset_id"] for r in db["relations"][1] if r["relation"] == "subset_of" and r["other_dataset_id"] in ids}
+    inside |= {r["other_dataset_id"] for r in db["relations"][1] if r["relation"] == "contains" and r["dataset_id"] in ids}
+
+    def hours(d):
+        for f in ("session_hours_measured", "hours_measured", "hours_reported"):
+            if d[f]:
+                return float(d[f]), f
+        return None, ""
+
+    groups = {}
+    sims, skipped, partial = [], [], []
+    for r in live:
+        d = D[r["dataset_id"]]
+        if d["speech_style"] == "simulated_mixture":
+            sims.append(r)
+            continue
+        if r["dataset_id"] in inside:
+            skipped.append(r["dataset_id"])
+            continue
+        h, f = hours(d)
+        on = "yes" if r["on_lab_storage"] == "yes" else "no"
+        use = {"eval": "evaluation", "hold": "on hold (training)"}.get(r["usable_as"], "not yet assigned")
+        g = groups.setdefault((on, use), [0, 0, 0.0])
+        g[0] += 1
+        if h is not None:
+            g[1] += 1
+            g[2] += h
+        if on == "yes" and f != "hours_reported" and d["hours_reported"]:
+            rest = float(d["hours_reported"]) - h
+            if rest > 0:
+                partial.append((r["dataset_id"], h, float(d["hours_reported"])))
+                g2 = groups.setdefault(("no", use), [0, 0, 0.0])
+                g2[2] += rest
+    lines = ["## Hours on and off the lab storage", "",
+             "Hours usable for diarization, each recording counted once as far as the DB knows: a lab copy uses its measured "
+             "session hours, otherwise the hours above; rows inside another counted row (relations subset_of/contains) and "
+             "simulated mixtures are left out. Partial overlaps that remain (BOLT with CALLFRIEND/CALLHOME, DIHARD editions, "
+             "ASpIRE with Mixer 6) still make the totals slightly high, and estimates are rough.", "",
+             "| Where | Use | Rows | Rows with hours | Hours |", "|---|---|---|---|---|"]
+    tot = {"yes": [0, 0, 0.0], "no": [0, 0, 0.0]}
+    for on in ("yes", "no"):
+        for use in ("evaluation", "on hold (training)", "not yet assigned"):
+            g = groups.get((on, use))
+            if not g or not g[0] and not g[2]:
+                continue
+            where = "On the lab storage" if on == "yes" else "Not on the lab storage (needs a licence or order)"
+            lines.append(f"| {where} | {use} | {g[0]} | {g[1]} | {g[2]:,.0f} h |")
+            for i in range(3):
+                tot[on][i] += g[i]
+    for on, label in (("yes", "On the lab storage, all"), ("no", "Not on the lab storage, all")):
+        t = tot[on]
+        lines.append(f"| **{label}** | | {t[0]} | {t[1]} | **{t[2]:,.0f} h** |")
+    a = [tot["yes"][i] + tot["no"][i] for i in range(3)]
+    lines += [f"| **All LDC rows** | | {a[0]} | {a[1]} | **{a[2]:,.0f} h** |", ""]
+    for did, h, full in partial:
+        lines.append(f"- `{did}`: the lab copy is partial ({h:,.0f} h measured); the rest of the release "
+                     f"({full - h:,.0f} h of the {full:,.0f} h above) is counted as not on the lab storage.")
+    for r in sims:
+        lines.append(f"- Simulated, not counted: `{r['dataset_id']}` ({r['hours_reported'] or '—'} h), built from LDC recordings.")
+    if skipped:
+        lines.append("- Counted inside another row: " + ", ".join(f"`{x}`" for x in sorted(skipped)) + ".")
+    nohours = [r["dataset_id"] for r in live if r["dataset_id"] not in inside and D[r["dataset_id"]]["speech_style"] != "simulated_mixture"
+               and hours(D[r["dataset_id"]])[0] is None]
+    if nohours:
+        lines.append("- Without hours (not in the totals): " + ", ".join(f"`{x}`" for x in sorted(nohours)) + ".")
+    return lines + [""]
+
+
+def ldc_md(rows, db):
     rows = sorted(rows, key=lambda r: r["dataset_id"])
     by = {}
     for r in rows:
@@ -308,7 +381,7 @@ def ldc_md(rows):
              "Each table is sorted by hours, largest first; rows without hours come last.", "",
              f"{len(rows)} rows: " + ", ".join(f"{sum(1 for r in rows if r['check_level'] == k)} {k}" for k in
                                             ("checked", "licence checked", "survey lead", "excluded")) +
-             f"; {sum(1 for r in rows if r['on_lab_storage'] == 'yes')} on the lab storage.", ""]
+             f"; {sum(1 for r in rows if r['on_lab_storage'] == 'yes')} on the lab storage.", ""] + ldc_hours_summary(rows, db)
     def table(title, sel, note=""):
         if not sel:
             return []
@@ -343,7 +416,7 @@ def build(db):
         "views/discrepancies.csv": csvio.format_rows(DISC_COLS, discrepancies(db), DISC_KEYS),
         "views/needs_verification.csv": csvio.format_rows(VERIFY_COLS, needs_verification(db), ("dataset_id", "field")),
         "views/ldc.csv": csvio.format_rows(LDC_COLS, ldc(db), ("dataset_id",)),
-        "views/ldc.md": ldc_md(ldc(db)),
+        "views/ldc.md": ldc_md(ldc(db), db),
         "views/usable_hours.csv": csvio.format_rows(HOURS_COLS, usable_hours(db), ("dataset_id",)),
         "views/usable_hours.md": usable_hours_md(sorted(usable_hours(db), key=lambda r: r["dataset_id"]), db),
     }

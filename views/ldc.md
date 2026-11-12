@@ -6,6 +6,25 @@ Hours basis: `catalogue` is the figure the catalogue page states; `catalogue, ap
 
 172 rows: 15 checked, 137 licence checked, 0 survey lead, 20 excluded; 15 on the lab storage.
 
+## Hours on and off the lab storage
+
+Hours usable for diarization, each recording counted once as far as the DB knows: a lab copy uses its measured session hours, otherwise the hours above; rows inside another counted row (relations subset_of/contains) and simulated mixtures are left out. Partial overlaps that remain (BOLT with CALLFRIEND/CALLHOME, DIHARD editions, ASpIRE with Mixer 6) still make the totals slightly high, and estimates are rough.
+
+| Where | Use | Rows | Rows with hours | Hours |
+|---|---|---|---|---|
+| On the lab storage | evaluation | 4 | 3 | 91 h |
+| On the lab storage | on hold (training) | 9 | 8 | 2,901 h |
+| Not on the lab storage (needs a licence or order) | on hold (training) | 0 | 0 | 857 h |
+| Not on the lab storage (needs a licence or order) | not yet assigned | 137 | 128 | 16,139 h |
+| **On the lab storage, all** | | 13 | 11 | **2,992 h** |
+| **Not on the lab storage, all** | | 137 | 128 | **16,995 h** |
+| **All LDC rows** | | 150 | 139 | **19,988 h** |
+
+- `mixer6`: the lab copy is partial (233 h measured); the rest of the release (857 h of the 1,090 h above) is counted as not on the lab storage.
+- Simulated, not counted: `fisher_meetings_sim` (2007.24 h), built from LDC recordings.
+- Counted inside another row: `mixer6_chime8`.
+- Without hours (not in the totals): `babel`, `callhome_sre2000`, `nist_speaker_recognition_evaluation_2001`, `nist_speaker_recognition_evaluation_2003`, `nist_speaker_recognition_evaluation_2004`, `nist_speaker_recognition_evaluation_2010`, `nist_speaker_recognition_evaluation_2012`, `nist_sre_training_data_2005`, `nist_sre_training_set_2006`, `nist_sre_training_set_part_1_2008`, `spring_nist_rt_04s_evaluation_data_2004`.
+
 ## On the lab storage (15)
 
 | Dataset | Catalogue | Use | Hours | Hours basis | Turns | Languages |
