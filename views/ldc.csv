@@ -4,7 +4,7 @@ annodifp_cts_audio_and_transcripts,AnnoDIFP CTS Audio and Transcripts,LDC2025S10
 annodifp_session_audio_and_transcripts,AnnoDIFP Session Audio and Transcripts,LDC2025S06,licence checked,,unknown,438.34,"catalogue, approximate",~438.34,,,,https://catalog.ldc.upenn.edu/LDC2025S06
 arabic_cts_levantine_fisher_training_dat,Arabic CTS Levantine Fisher Training Data Set 3,LDC2005S07,licence checked,,unknown,50,"catalogue, approximate",~50,,,both,https://catalog.ldc.upenn.edu/LDC2005S07
 aspire_development_and_development_test,ASpIRE Development and Development Test Sets,LDC2017S21,licence checked,,unknown,226,"catalogue, approximate",~226,,,,https://catalog.ldc.upenn.edu/LDC2017S21
-babel,IARPA Babel language packs,LDC2016S02,checked,hold,yes,,,,mul,telephone,both,https://catalog.ldc.upenn.edu/LDC2016S02
+babel,IARPA Babel language packs,LDC2016S02,checked,hold,yes,1683.33,measured,,mul,telephone,both,https://catalog.ldc.upenn.edu/LDC2016S02
 bolt_cts_callfriend_callhome_egyptian_ar,BOLT CTS CALLFRIEND CALLHOME Egyptian Arabic Audio,LDC2025S09,licence checked,,unknown,116,"catalogue, approximate",~116,,,both,https://catalog.ldc.upenn.edu/LDC2025S09
 bolt_cts_callfriend_callhome_mainland_ma,BOLT CTS CALLFRIEND CALLHOME Mainland Mandarin Chinese Audio,LDC2025S04,licence checked,,unknown,93,"catalogue, approximate",~93,,,both,https://catalog.ldc.upenn.edu/LDC2025S04
 call_my_net_1,Call My Net 1 (LDC2024S05),LDC2024S05,licence checked,,unknown,364,"catalogue, approximate",364,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2024S05
