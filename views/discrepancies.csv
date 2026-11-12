@@ -99,6 +99,7 @@ msp_conversation,license_tier,superseded,licensed_internal,user,hold,primary,htt
 msp_conversation,license_tier,superseded,licensed_internal,user,hold,secondary,https://www.lab-msp.com/MSP/MSP-Podcast.html,"Page of MSP-Podcast, whose podcasts MSP-Conversation uses; MSP-Conversation's own terms and redistribution rights not checked"
 msu_bench_weak,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/MSU-Bench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 nb_samtale,hours_reported vs hours_measured,reported_vs_measured,24,see evidence,23.75,measured,measurements/nb_samtale.json,the release we obtained or the RTTM version may differ from the paper
+nb_samtale,usable_as,superseded,train,user,train_split,primary,https://huggingface.co/datasets/Sprakbanken/nb_samtale,Follows from the licence and the rules; not a separate maintainer decision
 nist_speaker_recognition_evaluation_2002,hours_reported,superseded,15,primary,157,primary,https://catalog.ldc.upenn.edu/LDC2004S04,Approximate figure from the catalogue page.
 notsofar1,n_sessions_reported vs n_sessions_measured,reported_vs_measured,237,see evidence,221,measured,measurements/notsofar1.json,the release we obtained or the RTTM version may differ from the paper
 notsofar1,speech_style,superseded,scripted;spontaneous,primary,spontaneous,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
