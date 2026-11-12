@@ -47,6 +47,7 @@ fisher_english_part1,usable_as,superseded,hold,user,train,user,maintainer decisi
 fisher_english_part2,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
 fisher_meetings_sim,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-31,
 fisher_spanish,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2010S01,Follows from the licence and the rules; not a separate maintainer decision
+gulf_arabic_conversational_telephone_spe,hours_reported,superseded,43,primary,47,primary,https://catalog.ldc.upenn.edu/LDC2006S43,"Approximate figure from the catalogue page. 2,800 min = 46.7 h"
 homebank_public_corpora,license_spdx,superseded,conflicting,secondary,CC-BY-NC-SA-4.0,primary,https://talkbank.org/0share/rules.html,TalkBank clinical bank: access restricted to faculty members by password; password-protected data cannot be posted on other servers or included in models
 homebank_public_corpora,license_spdx,superseded,conflicting,secondary,LicenseRef-other,secondary,https://talkbank.org/homebank/access/,Copied by a survey search from the page it opened; not re-checked
 humdial_fdbench,license_spdx,superseded,Apache-2.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/HumDial-FDBench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
@@ -55,7 +56,9 @@ icsi,hours_reported,superseded,70,primary,72,seed,assistant background knowledge
 icsi,recording_setup,superseded,close_talk,primary,close_talk;far_field_single,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 iemocap,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,primary,https://sail.usc.edu/iemocap/,
 iit_delhi_dialogue_corpus,license_spdx,superseded,none_stated,secondary,CC0-1.0,secondary,https://osf.io/preprints/osf/tc7f5_v1,Copied by a survey search from the page it opened; not re-checked
+iraqi_arabic_conversational_telephone_sp,hours_reported,superseded,20,primary,50,primary,https://catalog.ldc.upenn.edu/LDC2006S45,"Approximate figure from the catalogue page. 3,000 min = 50 h"
 kenya_ph_dialogue,turn_source,superseded,provided_segments,measured,close_talk_vad,primary,https://huggingface.co/datasets/Reord-AI/kenya-philippines-twospeaker-english-dialogue,
+levantine_arabic_conversational_telephon,hours_reported,superseded,42,primary,45,primary,https://catalog.ldc.upenn.edu/LDC2007S01,"Approximate figure from the catalogue page. Estimate: 985 sides x 5.5 min = about 90 h of side audio; if most sides pair into two-channel calls, as in the Gulf and Iraqi Appen releases, about 45 h of calls"
 lias_who_speaks_when,license_spdx,superseded,unknown,primary,MIT,primary,HTTP API https://api.github.com/repos/lias-laboratory/who-speaks-when-speaker-diarization-dataset,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 libricss,license_tier,superseded,eval,user,hold,primary,https://github.com/chenzhuo1011/libri_css/blob/master/LICENSE,"Built from LibriSpeech test-clean as an evaluation set, so never for training; evaluation use is undecided because the recordings' terms are not stated"
 librispeech_meetings_sim,license_tier,superseded,train,user,hold,primary,https://huggingface.co/datasets/popcornell/BFND,"Most restrictive source decides. Clean and reverb conditions would be train (LibriSpeech CC BY 4.0 + generated RIRs); noise and noise_reverb use BFND, whose licence is not stated"
@@ -90,6 +93,7 @@ msp_conversation,license_tier,superseded,licensed_internal,user,hold,primary,htt
 msp_conversation,license_tier,superseded,licensed_internal,user,hold,secondary,https://www.lab-msp.com/MSP/MSP-Podcast.html,"Page of MSP-Podcast, whose podcasts MSP-Conversation uses; MSP-Conversation's own terms and redistribution rights not checked"
 msu_bench_weak,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/ASLP-lab/MSU-Bench,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 nb_samtale,hours_reported vs hours_measured,reported_vs_measured,24,see evidence,23.75,measured,measurements/nb_samtale.json,the release we obtained or the RTTM version may differ from the paper
+nist_speaker_recognition_evaluation_2002,hours_reported,superseded,15,primary,157,primary,https://catalog.ldc.upenn.edu/LDC2004S04,Approximate figure from the catalogue page.
 notsofar1,n_sessions_reported vs n_sessions_measured,reported_vs_measured,237,see evidence,221,measured,measurements/notsofar1.json,the release we obtained or the RTTM version may differ from the paper
 notsofar1,speech_style,superseded,scripted;spontaneous,primary,spontaneous,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 otospeech_fd_280h,license_tier,superseded,train,user,hold,primary,https://huggingface.co/api/datasets/otoearth/otoSpeech-full-duplex-280h,Held until the gated card and its terms are read (the earlier train rested on metadata only)
@@ -101,12 +105,16 @@ seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spanish_broadcast_news_speech_ldc98_1997,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC98S74,Copied by a survey search from the page it opened; not re-checked
 spice,turn_source,superseded,both,primary,close_talk_vad,primary,https://spice-corpus.readthedocs.io/en/latest/procedures/,
+spine2_part_1_audio,hours_reported,superseded,3.5,primary,7,primary,https://catalog.ldc.upenn.edu/LDC2001S04,Approximate figure from the catalogue page.
+spine2_part_2_audio,hours_reported,superseded,1.7,primary,3.5,primary,https://catalog.ldc.upenn.edu/LDC2001S06,Approximate figure from the catalogue page.
+spine2_part_3_audio,hours_reported,superseded,3.5,primary,7,primary,https://catalog.ldc.upenn.edu/LDC2001S08,Approximate figure from the catalogue page.
 spjallromur,annotation_format,superseded,rttm;json,measured,json;rttm,primary,https://github.com/icelandic-lt/spjallromur#readme,
 spjallromur,hours_reported vs hours_measured,reported_vs_measured,21.33,see evidence,39.98,measured,measurements/spjallromur.json,the release we obtained or the RTTM version may differ from the paper
 spjallromur,n_sessions_reported vs n_sessions_measured,reported_vs_measured,54,see evidence,46,measured,measurements/spjallromur.json,the release we obtained or the RTTM version may differ from the paper
 spjallromur,usable_as,superseded,train,user,train_split,primary,https://repository.clarin.is/repository/xmlui/handle/20.500.12537/379,Follows from the licence and the rules; not a separate maintainer decision
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/zedavid/SpotTheDifferenceData,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spot_the_difference_corpus,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/zedavid/SpotTheDifferenceData,Copied by a survey search from the page it opened; not re-checked
+spring_nist_rt_05s_evaluation_set_2005,hours_reported,superseded,2,primary,78,primary,https://catalog.ldc.upenn.edu/LDC2011S06,"Approximate figure from the catalogue page. As stated on the page; RT-05S evaluation meetings are short excerpts, so this figure most likely counts every microphone channel. Session hours are much smaller; measure before use"
 switchboard1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
 this_american_life_podcast_set,license_spdx,superseded,MIT,secondary,none_stated,primary,HTTP API https://api.github.com/repos/jovistos/TALAD,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 uwb_atcc,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,MIT,primary,HTTP API https://api.github.com/repos/idiap/atco2-corpus,"Repository licence from the GitHub API; it may cover code only, not the recordings"

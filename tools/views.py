@@ -278,10 +278,12 @@ def ldc(db):
             continue
         cat = set(re.findall(r"LDC\d{2,4}[A-Z]\d{2,3}", d["source_url"])) | ids.get(d["dataset_id"], set())
         m = re.search(r"; hours ([^;]*);", d["notes"])
+        nd = not d["hours_reported"] and "Diarization hours not derivable" in d["notes"]
         out.append({"dataset_id": d["dataset_id"], "name": d["name"], "catalogue_ids": ";".join(sorted(cat)),
                     "check_level": check_level(d), "usable_as": d["usable_as"], "on_lab_storage": on_lab(d),
                     "hours_reported": d["hours_reported"],
-                    "hours_basis": basis.get(d["dataset_id"], "") if d["hours_reported"] else "", "hours_as_found": m.group(1).strip()[:60] if m else "",
+                    "hours_basis": "not derivable" if nd else basis.get(d["dataset_id"], "") if d["hours_reported"] else "",
+                    "hours_as_found": m.group(1).strip()[:60] if m and not nd else "",
                     "languages": d["languages"], "domain": d["domain"], "turn_source": d["turn_source"], "source_url": d["source_url"]})
     return out
 
@@ -297,7 +299,9 @@ def ldc_md(rows):
              "on hold until the PI has reviewed it (2026-11-08); LDC evaluation sets are used for evaluation.", "",
              "Hours basis: `catalogue` is the figure the catalogue page states; `catalogue, approximate` is a page that says "
              "approximately, or gives minutes, file sizes or several parts that were summed; `estimate` is derived from call counts "
-             "and durations (method in the evidence note) and is only a rough size. For the Mixer releases the hours are the "
+             "and durations (method in the evidence note) and is only a rough size; `not derivable` means the catalogue total counts "
+             "the same conversations several times (segments, summed and separate channels, extra microphones) and the distinct "
+             "conversation hours are not stated (reason in the row notes). For the Mixer releases the hours are the "
              "conversation usable for diarization (telephone calls plus informal conversation, each counted once), not the "
              "catalogue total, which counts each of the 14 room microphones separately. Some rows still overlap partly (BOLT and "
              "CALLFRIEND/CALLHOME, the DIHARD editions, ASpIRE and the SRE test sets with Mixer), so a column total overstates. "
