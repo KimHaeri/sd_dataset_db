@@ -27,6 +27,11 @@ candor,license_spdx,superseded,CC-BY-NC-SA-4.0,primary,none_stated,secondary,htt
 cantomap,license_spdx,superseded,unknown,primary,LicenseRef-other,primary,HTTP API https://api.github.com/repos/gwinterstein/CantoMap,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 childes_clinical_media_corpora,license_tier,superseded,hold,primary,eval,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
 childtalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/NKU-HLT/ChildTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
+chime5,license_spdx,superseded,CC-BY-4.0,user,CC-BY-SA-4.0,primary,https://www.chimechallenge.org/datasets/chime5,
+chime5,license_tier,superseded,train,user,eval,primary,https://www.chimechallenge.org/datasets/chime5,"CC BY-SA 4.0: ShareAlike, redistribution allowed"
+chime6,license_spdx,superseded,CC-BY-4.0,user,CC-BY-SA-4.0,primary,LICENSE.txt of the CHiME-6 release (lab copy),
+chime6,license_tier,superseded,train,user,eval,primary,LICENSE.txt of the CHiME-6 release (lab copy),"CC BY-SA 4.0: ShareAlike, redistribution allowed"
+chime6,usable_as,superseded,train_split,user,eval,primary,LICENSE.txt of the CHiME-6 release (lab copy),Follows from the licence and the rules; not a separate maintainer decision
 chime_9_echi,license_spdx,superseded,none_stated,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/CHiME9-ECHI/CHiME9-ECHI,Copied by a survey search from the page it opened; not re-checked
 cinesrd_subtitlesd_benchmark,license_spdx,superseded,unknown,primary,none_stated,primary,HTTP API https://api.github.com/repos/BSTLL/CineSRD,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 cinesrd_subtitlesd_benchmark,license_spdx,superseded,unknown,primary,none_stated,secondary,https://github.com/BSTLL/CineSRD,Copied by a survey search from the page it opened; not re-checked

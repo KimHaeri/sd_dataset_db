@@ -7,7 +7,7 @@ alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
-chime6,CHiME-6,eval,eval,yes,,,,no hours recorded
+chime6,CHiME-6,train_split,train,yes,40.55,9.65,,split hours
 datahive_conversations_sample,DataHive Conversations samples,train,train,no,19.53,,,reported
 dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported
 dipco,Dinner Party Corpus (DiPCo),eval,eval,yes,,5.32,,reported
