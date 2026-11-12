@@ -3,8 +3,18 @@ aphasiabank_english_protocol_data,subset_of,aphasiabank,directory listing of the
 aphasiabank_group_therapy_sessions,subset_of,aphasiabank,directory listing of the lab's shared corpus storage,The lab copy of AphasiaBank holds the English Group directory
 bengali_speaker_diarization_dataset_weak,possibly_same_as,bengali_loop_diar,https://huggingface.co/datasets/AdilShamim8/Bengali-Speaker-Diarization_dataset,Same Hugging Face repository entered twice by the survey
 cabank_isl_meeting_corpus,possibly_same_as,isl_meeting_corpus,https://talkbank.org/ca/access/ISL.html,Entered twice by the survey (found by the Codex review)
+callfriend_american_english_non_southern,version_of,callfriend_american_english_non_southern_2,https://catalog.ldc.upenn.edu/LDC2019S21,First edition; the second edition holds the same 60 calls in WAV with added metadata
+callfriend_american_english_southern_dia,version_of,callfriend_american_english_southern_dia_2,https://catalog.ldc.upenn.edu/LDC2020S08,First edition; the second edition holds the same 60 calls
+callfriend_canadian_french,version_of,callfriend_canadian_french_second_editio,https://catalog.ldc.upenn.edu/LDC2019S18,First edition; the second edition holds the same 60 calls
+callfriend_egyptian_arabic,version_of,callfriend_egyptian_arabic_second_editio,https://catalog.ldc.upenn.edu/LDC2019S04,First edition; the second edition holds the same calls in WAV
+callfriend_farsi,subset_of,callfriend_farsi_second_edition_speech,https://catalog.ldc.upenn.edu/LDC2014S01,The 60 first-edition calls are among the 100 calls of the second edition
+callfriend_mandarin_chinese_mainland_dia,version_of,callfriend_mandarin_chinese_mainland_dia_2,https://catalog.ldc.upenn.edu/LDC2018S09,First edition; the second edition holds the same calls in WAV
+callfriend_mandarin_chinese_taiwan_diale,version_of,callfriend_mandarin_chinese_taiwan_diale_2,https://catalog.ldc.upenn.edu/LDC2020S06,First edition; the second edition holds the same calls in WAV
 callhome_egyptian_arabic_speech,possibly_same_as,callhome_egyptian_arabic,https://catalog.ldc.upenn.edu/LDC97S45,"Same source page, entered twice by the survey"
+callhome_german,version_of,callhome_german_second_edition,https://catalog.ldc.upenn.edu/LDC2026S06,"First edition (speech + transcripts); the second edition holds the same 100 calls and transcripts, with more transcription"
 callhome_german_speech,possibly_same_as,callhome_german,https://catalog.ldc.upenn.edu/LDC97S43,Entered twice by the survey (found by the Codex review)
+callhome_japanese,version_of,callhome_japanese_second_edition,https://catalog.ldc.upenn.edu/LDC2026S02,"First edition; the second edition holds the same 120 calls and transcripts, with more transcription"
+callhome_mandarin_chinese,version_of,callhome_mandarin_chinese_second_edition,https://catalog.ldc.upenn.edu/LDC2026S11,"First edition; the second edition holds the same 120 calls and transcripts, with more transcription"
 callhome_mandarin_chinese_speech,possibly_same_as,callhome_mandarin_chinese,https://catalog.ldc.upenn.edu/LDC96S34,"Same source page, entered twice by the survey"
 callhome_spanish,distinct_from,callhome_sre2000,https://catalog.ldc.upenn.edu/LDC96S35,Both are called CALLHOME; the SRE 2000 diarization set is multilingual and separate
 callhome_sre2000,distinct_from,callhome_american_english,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,"Different releases. The segmentation data is drawn from the CALLHOME Corpus (plan section 6), so it may share calls or speakers with CALLHOME American English; not checked"
@@ -12,9 +22,11 @@ children_adolescent_counselling,possibly_same_as,aihub_child_counsel,https://hug
 chime6,shares_recordings_with,chime5,https://www.chimechallenge.org/datasets/chime5,"The CHiME-5 page: CHiME-5 is superseded by the CHiME-6 release, which fixes audio alignment issues in the original data"
 dementiabank_conversational_subsets,subset_of,dementiabank,directory listing of the lab's shared corpus storage,Subset of DementiaBank; the lab copy holds English Pitt and ADReSS2020
 dihard3,shares_recordings_with,mixer6,https://catalog.ldc.upenn.edu/LDC2022S14,Catalogue: LDC2022S14 isAnnotationOf Mixer 6 Speech (LDC2013S03); its data sources include Mixer 6
+fisher_levantine_arabic_cts,subset_of,levantine_arabic_qt_training_data_set_5,https://catalog.ldc.upenn.edu/LDC2007S02,All conversations are in Levantine Arabic QT Training Data Set 5
 fisher_meetings_sim,shares_recordings_with,fisher_english_part1,clean supervisions manifest,Built from Fisher English utterances (original_cut_id fe_03_*); Part 1 holds fe_03_00001 to fe_03_05850
 fisher_meetings_sim,shares_recordings_with,fisher_english_part2,clean supervisions manifest,Source calls run to fe_03_11699; Part 2 holds fe_03_05851 to fe_03_11699 (lab copy of LDC2005T19)
 gale_chinese_broadcast_conversation_spee,contains,gale_phase_2_chinese_broadcast_conversat,https://catalog.ldc.upenn.edu/LDC2013S04,The survey row groups several releases; the other row is one of them
+gale_phase_3_arabic_broadcast_conversati,subset_of,gale_arabic_broadcast_conversation_speec,https://catalog.ldc.upenn.edu/LDC2016S01,"One of the releases grouped in gale_arabic_broadcast_conversation_speec (LDC2013S02, LDC2015S11, LDC2016S01, LDC2017S15)"
 libricss,shares_recordings_with,librispeech,https://arxiv.org/abs/2001.11482,Replays LibriSpeech test-clean utterances (40 speakers) through loudspeakers (paper 3.1)
 librispeech_meetings_sim,shares_recordings_with,librispeech,clean supervisions manifest,Built from LibriSpeech training utterances (original_cut_id)
 mcorec,possibly_same_as,chime_9_mcorec,https://www.chimechallenge.org/challenges/chime9/task1/data,"Same source page, entered twice by the survey"
@@ -25,4 +37,9 @@ otospeech_fd_task_v2,distinct_from,otospeech_fd_task_20h,https://huggingface.co/
 otospeech_full_duplex_processed_141h,version_of,otospeech_fd_280h,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h,280h card notice: We released a new processed version of otoSpeech (the 141h repository). Overlap in recordings likely; not checked
 rtve_2018_2020_2022,contains,rtve2018,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
 rtve_2018_2020_2022,contains,rtve2020,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
+santa_barbara_corpus_of_spoken_american_2,version_of,santa_barbara_corpus_of_spoken_american,https://www.openslr.org/155/,The same corpus redistributed on OpenSLR; one row for SBCSAE is enough (the JHU diarization release stays its own row)
+spjallr_mur_ab_diarization_test_set,subset_of,spjallromur,http://hdl.handle.net/20.500.12537/379,"Built from Spjallromur, whose full release (all 46 full conversations) is on the lab storage"
+switchboard_cellular_part_1_transcribed,subset_of,switchboard_cellular_part_1,https://catalog.ldc.upenn.edu/LDC2001S15,The transcribed 24 h are part of the 109 h of Part 1 Audio; that row also covers the transcripts LDC2001T14
+switchboard_credit_card,subset_of,switchboard1,https://catalog.ldc.upenn.edu/LDC93S8,"Conversations from Switchboard-1 (LDC97S62), which the lab already holds"
 talkbank_sakura,possibly_same_as,sakura,https://huggingface.co/datasets/talkbank/sakura,Entered twice by the survey (found by the Codex review)
+usc_sfi_malach_interviews_and_transcript,subset_of,usc_sfi_malach_english,https://catalog.ldc.upenn.edu/LDC2019S11,"A segmented, reformatted subset of LDC2012S05; the original keeps the full 30-minute interview sections, better for diarization"

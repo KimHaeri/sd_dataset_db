@@ -8,23 +8,23 @@ babel,IARPA Babel language packs,LDC2016S02,checked,hold,yes,,,,mul,telephone,bo
 bolt_cts_callfriend_callhome_egyptian_ar,BOLT CTS CALLFRIEND CALLHOME Egyptian Arabic Audio,LDC2025S09,licence checked,,unknown,116,"catalogue, approximate",~116,,,both,https://catalog.ldc.upenn.edu/LDC2025S09
 bolt_cts_callfriend_callhome_mainland_ma,BOLT CTS CALLFRIEND CALLHOME Mainland Mandarin Chinese Audio,LDC2025S04,licence checked,,unknown,93,"catalogue, approximate",~93,,,both,https://catalog.ldc.upenn.edu/LDC2025S04
 call_my_net_1,Call My Net 1 (LDC2024S05),LDC2024S05,licence checked,,unknown,364,"catalogue, approximate",364,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2024S05
-callfriend_american_english_non_southern,CALLFRIEND American English-Non-Southern Dialect,LDC96S46,licence checked,,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S46
+callfriend_american_english_non_southern,CALLFRIEND American English-Non-Southern Dialect,LDC96S46,excluded,not_used,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S46
 callfriend_american_english_non_southern_2,CALLFRIEND American English-Non-Southern Dialect Second Edition,LDC2019S21,licence checked,,unknown,26,"catalogue, approximate",~26,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2019S21
-callfriend_american_english_southern_dia,CALLFRIEND American English-Southern Dialect,LDC96S47,licence checked,,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S47
+callfriend_american_english_southern_dia,CALLFRIEND American English-Southern Dialect,LDC96S47,excluded,not_used,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S47
 callfriend_american_english_southern_dia_2,CALLFRIEND American English-Southern Dialect Second Edition,LDC2020S08,licence checked,,unknown,26,"catalogue, approximate",~26,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2020S08
-callfriend_canadian_french,CALLFRIEND Canadian French,LDC96S48,licence checked,,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S48
+callfriend_canadian_french,CALLFRIEND Canadian French,LDC96S48,excluded,not_used,unknown,26,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S48
 callfriend_canadian_french_second_editio,CALLFRIEND Canadian French Second Edition,LDC2019S18,licence checked,,unknown,26,"catalogue, approximate",~26,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2019S18
-callfriend_egyptian_arabic,CALLFRIEND Egyptian Arabic,LDC96S49,licence checked,,unknown,25,"catalogue, approximate",~25,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S49
+callfriend_egyptian_arabic,CALLFRIEND Egyptian Arabic,LDC96S49,excluded,not_used,unknown,25,"catalogue, approximate",~25,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S49
 callfriend_egyptian_arabic_second_editio,CALLFRIEND Egyptian Arabic Second Edition,LDC2019S04,licence checked,,unknown,25,"catalogue, approximate",~25,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2019S04
-callfriend_farsi,CALLFRIEND Farsi,LDC96S50,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S50
+callfriend_farsi,CALLFRIEND Farsi,LDC96S50,excluded,not_used,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S50
 callfriend_farsi_second_edition_speech,CALLFRIEND Farsi Second Edition Speech,LDC2014S01,licence checked,,unknown,42,"catalogue, approximate",~42,,,both,https://catalog.ldc.upenn.edu/LDC2014S01
 callfriend_german,CALLFRIEND German,LDC96S51,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S51
 callfriend_hindi,CALLFRIEND Hindi,LDC96S52,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S52
 callfriend_japanese,CALLFRIEND Japanese,LDC96S53,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S53
 callfriend_korean,CALLFRIEND Korean,LDC96S54,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S54
-callfriend_mandarin_chinese_mainland_dia,CALLFRIEND Mandarin Chinese-Mainland Dialect,LDC96S55,licence checked,,unknown,24,"catalogue, approximate",~24,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S55
+callfriend_mandarin_chinese_mainland_dia,CALLFRIEND Mandarin Chinese-Mainland Dialect,LDC96S55,excluded,not_used,unknown,24,"catalogue, approximate",~24,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S55
 callfriend_mandarin_chinese_mainland_dia_2,CALLFRIEND Mandarin Chinese-Mainland Dialect Second Edition,LDC2018S09,licence checked,,unknown,24,"catalogue, approximate",~24,,,both,https://catalog.ldc.upenn.edu/LDC2018S09
-callfriend_mandarin_chinese_taiwan_diale,CALLFRIEND Mandarin Chinese-Taiwan Dialect,LDC96S56,licence checked,,unknown,27,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S56
+callfriend_mandarin_chinese_taiwan_diale,CALLFRIEND Mandarin Chinese-Taiwan Dialect,LDC96S56,excluded,not_used,unknown,27,"catalogue, approximate",unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S56
 callfriend_mandarin_chinese_taiwan_diale_2,CALLFRIEND Mandarin Chinese-Taiwan Dialect Second Edition,LDC2020S06,licence checked,,unknown,27,"catalogue, approximate",~27,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2020S06
 callfriend_russian_speech,CALLFRIEND Russian Speech,LDC2023S08,licence checked,,unknown,48,"catalogue, approximate",~48,,,both,https://catalog.ldc.upenn.edu/LDC2023S08
 callfriend_spanish_caribbean_dialect,CALLFRIEND Spanish-Caribbean Dialect,LDC96S57,licence checked,,unknown,25,estimate,unknown,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S57
@@ -35,12 +35,12 @@ callhome_american_english,CALLHOME American English Speech,LDC97S42,checked,hold
 callhome_egyptian_arabic,CALLHOME Egyptian Arabic (LDC97S45 + LDC97T19),LDC97S45,licence checked,,unknown,48,estimate,unknown (120 calls up to 30 min),,,both,https://catalog.ldc.upenn.edu/LDC97S45
 callhome_egyptian_arabic_speech,CALLHOME Egyptian Arabic Speech,LDC97S45,excluded,,unknown,48,estimate,not stated,,,both,https://catalog.ldc.upenn.edu/LDC97S45
 callhome_egyptian_arabic_speech_suppleme,CALLHOME Egyptian Arabic Speech Supplement,LDC2002S37,licence checked,,unknown,8,estimate,unknown (20 calls),,,both,https://catalog.ldc.upenn.edu/LDC2002S37
-callhome_german,CALLHOME German (LDC97S43 + LDC97T15),LDC97S43,licence checked,,unknown,48,"catalogue, approximate",~48 h,,,both,https://catalog.ldc.upenn.edu/LDC97S43
+callhome_german,CALLHOME German (LDC97S43 + LDC97T15),LDC97S43,excluded,not_used,unknown,48,"catalogue, approximate",~48 h,,,both,https://catalog.ldc.upenn.edu/LDC97S43
 callhome_german_second_edition,CALLHOME German Second Edition,LDC2026S06,licence checked,,unknown,48,"catalogue, approximate",~48,,,both,https://catalog.ldc.upenn.edu/LDC2026S06
 callhome_german_speech,CALLHOME German Speech,LDC97S43,excluded,not_used,unknown,48,"catalogue, approximate",~48,,,both,https://catalog.ldc.upenn.edu/LDC97S43
-callhome_japanese,CALLHOME Japanese (LDC96S37 + LDC96T18),LDC96S37,licence checked,,unknown,49,"catalogue, approximate",~49 h,,,both,https://catalog.ldc.upenn.edu/LDC96S37
+callhome_japanese,CALLHOME Japanese (LDC96S37 + LDC96T18),LDC96S37,excluded,not_used,unknown,49,"catalogue, approximate",~49 h,,,both,https://catalog.ldc.upenn.edu/LDC96S37
 callhome_japanese_second_edition,CALLHOME Japanese Second Edition,LDC2026S02,licence checked,,unknown,49,"catalogue, approximate",~49,,,both,https://catalog.ldc.upenn.edu/LDC2026S02
-callhome_mandarin_chinese,CALLHOME Mandarin Chinese (LDC96S34 + LDC96T16),LDC96S34,licence checked,,unknown,38,"catalogue, approximate",~38 h,,,both,https://catalog.ldc.upenn.edu/LDC96S34
+callhome_mandarin_chinese,CALLHOME Mandarin Chinese (LDC96S34 + LDC96T16),LDC96S34,excluded,not_used,unknown,38,"catalogue, approximate",~38 h,,,both,https://catalog.ldc.upenn.edu/LDC96S34
 callhome_mandarin_chinese_second_edition,CALLHOME Mandarin Chinese Second Edition,LDC2026S11,licence checked,,unknown,38,"catalogue, approximate",~38,,,both,https://catalog.ldc.upenn.edu/LDC2026S11
 callhome_mandarin_chinese_speech,CALLHOME Mandarin Chinese Speech,LDC96S34,excluded,,unknown,38,"catalogue, approximate",~38,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC96S34
 callhome_spanish,CALLHOME Spanish Speech,LDC96S35,checked,hold,yes,38,catalogue,,spa,telephone,both,https://catalog.ldc.upenn.edu/LDC96S35
@@ -59,15 +59,15 @@ english_broadcast_news_speech_ldc98_1997,1997 English Broadcast News Speech (HUB
 first_dihard_challenge,First DIHARD Challenge (dev: Eight Sources LDC2019S09 + SEEDLingS LDC2019S10; eval: Nine Sources LDC2019S12 + SEEDLingS LDC2019S13),LDC2019S09,licence checked,,unknown,39,"catalogue, approximate",dev ~17 h (S09),,,provided_segments,https://catalog.ldc.upenn.edu/LDC2019S09
 fisher_english_part1,Fisher English Training Speech Part 1,LDC2004S13;LDC2004T19,checked,hold,yes,984,catalogue,,eng,telephone,both,https://catalog.ldc.upenn.edu/LDC2004S13
 fisher_english_part2,"Fisher English Training Part 2, Speech",LDC2005S13;LDC2005T19,checked,hold,yes,975,catalogue,,eng,telephone,both,https://catalog.ldc.upenn.edu/LDC2005S13
-fisher_levantine_arabic_cts,Fisher Levantine Arabic CTS (LDC2007S02 + LDC2007T04),LDC2007S02,licence checked,,unknown,45,"catalogue, approximate",45 h,,,both,https://catalog.ldc.upenn.edu/LDC2007S02
+fisher_levantine_arabic_cts,Fisher Levantine Arabic CTS (LDC2007S02 + LDC2007T04),LDC2007S02,excluded,not_used,unknown,45,"catalogue, approximate",45 h,,,both,https://catalog.ldc.upenn.edu/LDC2007S02
 fisher_meetings_sim,synth-fisher-meetings,,checked,hold,yes,2007.24,catalogue,,eng,simulated,provided_segments,
 fisher_spanish,Fisher Spanish Speech,LDC2010S01;LDC2010T04,checked,hold,yes,163,catalogue,,spa,telephone,both,https://catalog.ldc.upenn.edu/LDC2010S01
 gale_arabic_broadcast_conversation_speec,"GALE Arabic Broadcast Conversation Speech (Phase 2 Part 1 LDC2013S02; also Ph3 LDC2015S11/LDC2016S01, Ph4 LDC2017S15)",LDC2013S02,licence checked,,unknown,450,"catalogue, approximate",~123 h (Ph2 P1),,,,https://catalog.ldc.upenn.edu/LDC2013S02
-gale_chinese_broadcast_conversation_spee,"GALE Chinese Broadcast Conversation Speech, Phase 2 (LDC2013S04/T08), Phase 3 Part 1–2 (LDC2014S09, LDC2015S06), Phase 4 (LDC2016S03)",LDC2013S04,licence checked,,unknown,530,"catalogue, approximate",~530 (120 + 126 + 112 + 172),,,,https://catalog.ldc.upenn.edu/LDC2013S04
+gale_chinese_broadcast_conversation_spee,"GALE Chinese Broadcast Conversation Speech, Phase 2 (LDC2013S04/T08), Phase 3 Part 1–2 (LDC2014S09, LDC2015S06), Phase 4 (LDC2016S03)",LDC2013S04,excluded,not_used,unknown,530,"catalogue, approximate",~530 (120 + 126 + 112 + 172),,,,https://catalog.ldc.upenn.edu/LDC2013S04
 gale_chinese_broadcast_news_speech_phase,"GALE Chinese Broadcast News Speech, Phase 2 (LDC2013S08), Phase 3 (LDC2015S13), Phase 4 (LDC2017S25)",LDC2013S08,licence checked,,unknown,410,"catalogue, approximate",~410 (126 + 150 + 134),,,,https://catalog.ldc.upenn.edu/LDC2013S08
 gale_phase_2_arabic_broadcast_conversati,GALE Phase 2 Arabic Broadcast Conversation Speech Part 2,LDC2013S07,licence checked,,unknown,128,"catalogue, approximate",~128,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2013S07
 gale_phase_2_chinese_broadcast_conversat,GALE Phase 2 Chinese Broadcast Conversation Speech,LDC2013S04,licence checked,,unknown,120,"catalogue, approximate",~120,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2013S04
-gale_phase_3_arabic_broadcast_conversati,GALE Phase 3 Arabic Broadcast Conversation Speech Part 2,LDC2016S01,licence checked,,unknown,129,"catalogue, approximate",~129,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2016S01
+gale_phase_3_arabic_broadcast_conversati,GALE Phase 3 Arabic Broadcast Conversation Speech Part 2,LDC2016S01,excluded,not_used,unknown,129,"catalogue, approximate",~129,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2016S01
 gale_phase_3_chinese_broadcast_conversat,GALE Phase 3 Chinese Broadcast Conversation Speech Part 1,LDC2014S09,licence checked,,unknown,126,"catalogue, approximate",~126,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2014S09
 gale_phase_3_chinese_broadcast_conversat_2,GALE Phase 3 Chinese Broadcast Conversation Speech Part 2,LDC2015S06,licence checked,,unknown,112,"catalogue, approximate",~112,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2015S06
 gale_phase_4_chinese_broadcast_conversat,GALE Phase 4 Chinese Broadcast Conversation Speech,LDC2016S03,licence checked,,unknown,172,"catalogue, approximate",~172,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2016S03
@@ -161,13 +161,13 @@ switchboard_2_phase_i,Switchboard-2 Phase I,LDC98S75,licence checked,,unknown,30
 switchboard_2_phase_ii,Switchboard-2 Phase II,LDC99S79,licence checked,,unknown,373,estimate,"~373 (computed: 4,472 x 5 min)",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC99S79
 switchboard_2_phase_iii_audio,Switchboard-2 Phase III Audio,LDC2002S06,licence checked,,unknown,222,"catalogue, approximate","~250 (computed: 2,728 x 5-6 min)",,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2002S06
 switchboard_cellular_part_1,Switchboard Cellular Part 1 (LDC2001S13 + LDC2001T14),LDC2001S13,licence checked,,unknown,109,"catalogue, approximate",~109 h,,,both,https://catalog.ldc.upenn.edu/LDC2001S13
-switchboard_cellular_part_1_transcribed,Switchboard Cellular Part 1 Transcribed Audio,LDC2001S15,licence checked,,unknown,24,"catalogue, approximate",~24,,,both,https://catalog.ldc.upenn.edu/LDC2001S15
+switchboard_cellular_part_1_transcribed,Switchboard Cellular Part 1 Transcribed Audio,LDC2001S15,excluded,not_used,unknown,24,"catalogue, approximate",~24,,,both,https://catalog.ldc.upenn.edu/LDC2001S15
 switchboard_cellular_part_2,Switchboard Cellular Part 2 (LDC2004S07),LDC2004S07,licence checked,,unknown,200,"catalogue, approximate",~200 h,,,close_talk_vad,https://catalog.ldc.upenn.edu/LDC2004S07
-switchboard_credit_card,Switchboard Credit Card,,licence checked,,unknown,8,"catalogue, approximate",~8,,,both,https://catalog.ldc.upenn.edu/LDC93S8
+switchboard_credit_card,Switchboard Credit Card,,excluded,not_used,unknown,8,"catalogue, approximate",~8,,,both,https://catalog.ldc.upenn.edu/LDC93S8
 taiwanese_putonghua_speech_and_transcrip,Taiwanese Putonghua Speech and Transcripts,LDC98S72,licence checked,,unknown,1.7,estimate,~1.7 dialogues (5 x 20 min) + monologues,,,both,https://catalog.ldc.upenn.edu/LDC98S72
 the_walking_around_corpus,The Walking Around Corpus,LDC2015S08,licence checked,,unknown,33,"catalogue, approximate",~33,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2015S08
 trains_spoken_dialog_corpus,TRAINS Spoken Dialog Corpus,LDC95S25,licence checked,,unknown,6.5,"catalogue, approximate",~6.5,,,,https://catalog.ldc.upenn.edu/LDC95S25
 usc_sfi_malach_czech,USC-SFI MALACH Czech,LDC2014S04,licence checked,,unknown,229,"catalogue, approximate",~229 (143 transcribed),,,provided_segments,https://catalog.ldc.upenn.edu/LDC2014S04
 usc_sfi_malach_english,USC-SFI MALACH English,LDC2012S05,licence checked,,unknown,375,"catalogue, approximate",~375,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2012S05
-usc_sfi_malach_interviews_and_transcript,USC-SFI MALACH Interviews and Transcripts English - Speech Recognition Edition,LDC2019S11,licence checked,,unknown,168,"catalogue, approximate",~168,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2019S11
+usc_sfi_malach_interviews_and_transcript,USC-SFI MALACH Interviews and Transcripts English - Speech Recognition Edition,LDC2019S11,excluded,not_used,unknown,168,"catalogue, approximate",~168,,,provided_segments,https://catalog.ldc.upenn.edu/LDC2019S11
 vehicle_city_voices_corpus_part_i,Vehicle City Voices Corpus - Part I,LDC2017S17,licence checked,,unknown,16,"catalogue, approximate",~16,,,,https://catalog.ldc.upenn.edu/LDC2017S17
