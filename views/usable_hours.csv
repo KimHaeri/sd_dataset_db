@@ -20,7 +20,7 @@ expresso,Expresso,eval,eval,yes,,,,no hours recorded
 fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded
 harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded
 hcrc_maptask,HCRC Map Task Corpus,train,train,no,,,,no hours recorded
-hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,,,no hours recorded
+hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,11.00,,reported
 humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
@@ -42,7 +42,7 @@ otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,
 perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,no,5.10,,,reported
 primock57,PriMock57,train,train,no,,,,no hours recorded
 real_turnturk,Real-TurnTurk,train,train,no,1.94,,,reported
-rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,,,no hours recorded
+rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
 simsamu,Simsamu,train,train,no,3.25,,,reported
 spice,SpiCE: Speech in Cantonese and English,train,train,yes,28.13,,,used conditions' hours

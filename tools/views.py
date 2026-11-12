@@ -244,7 +244,7 @@ def usable_hours_md(rows, db):
     return "\n".join(lines)
 
 
-LDC_COLS = ["dataset_id", "name", "catalogue_ids", "check_level", "usable_as", "on_lab_storage", "hours_reported",
+LDC_COLS = ["dataset_id", "name", "catalogue_ids", "check_level", "usable_as", "on_lab_storage", "hours_reported", "hours_basis",
             "hours_as_found", "languages", "domain", "turn_source", "source_url"]
 
 
@@ -265,6 +265,13 @@ def ldc(db):
     ids = {}
     for a in db["aliases"][1]:
         ids.setdefault(a["dataset_id"], set()).update(re.findall(r"LDC\d{2,4}[A-Z]\d{2,3}", a["alias"]))
+    basis = {}
+    for e in db["evidence"][1]:
+        if e["field"] == "hours_reported" and e["is_canonical"] == "true":
+            n = e["note"]
+            basis[e["dataset_id"]] = ("estimate" if "Estimate:" in n or "Computed:" in n else
+                                      "catalogue, approximate" if n.startswith("Approximate figure") else
+                                      "catalogue" if e["source_type"] == "primary" else e["source_type"])
     out = []
     for d in db["datasets"][1]:
         if not is_ldc(d):
@@ -273,7 +280,8 @@ def ldc(db):
         m = re.search(r"; hours ([^;]*);", d["notes"])
         out.append({"dataset_id": d["dataset_id"], "name": d["name"], "catalogue_ids": ";".join(sorted(cat)),
                     "check_level": check_level(d), "usable_as": d["usable_as"], "on_lab_storage": on_lab(d),
-                    "hours_reported": d["hours_reported"], "hours_as_found": m.group(1).strip()[:60] if m else "",
+                    "hours_reported": d["hours_reported"],
+                    "hours_basis": basis.get(d["dataset_id"], "") if d["hours_reported"] else "", "hours_as_found": m.group(1).strip()[:60] if m else "",
                     "languages": d["languages"], "domain": d["domain"], "turn_source": d["turn_source"], "source_url": d["source_url"]})
     return out
 
@@ -294,11 +302,11 @@ def ldc_md(rows):
         if not sel:
             return []
         t = [f"## {title} ({len(sel)})", ""] + ([note, ""] if note else [])
-        t += ["| Dataset | Catalogue | Use | Hours | Turns | Languages |", "|---|---|---|---|---|---|"]
+        t += ["| Dataset | Catalogue | Use | Hours | Hours basis | Turns | Languages |", "|---|---|---|---|---|---|---|"]
         for r in sel:
             h = r["hours_reported"] or (f"{r['hours_as_found']} (as found)" if r["hours_as_found"] else "")
             name = f"[{r['name']}]({r['source_url']})" if r["source_url"] else r["name"]
-            t.append(f"| {name} | {r['catalogue_ids'].replace(';', ', ')} | {r['usable_as'] or '—'} | {h or '—'} | "
+            t.append(f"| {name} | {r['catalogue_ids'].replace(';', ', ')} | {r['usable_as'] or '—'} | {h or '—'} | {r['hours_basis'] or '—'} | "
                      f"{r['turn_source'] or '—'} | {r['languages'] or '—'} |")
         return t + [""]
     lines += table("On the lab storage", [r for r in rows if r["on_lab_storage"] == "yes" and r["check_level"] != "excluded"])
@@ -306,7 +314,7 @@ def ldc_md(rows):
                    [r for r in rows if r["on_lab_storage"] != "yes" and r["check_level"] == "checked"])
     lines += table("Survey leads, licence checked on the catalogue page (would need a licence)",
                    [r for r in rows if r["check_level"] == "licence checked" and r["on_lab_storage"] != "yes"],
-                   "Only the licence line was checked; hours, languages and turns are as the survey found them.")
+                   "The licence line and the hours were checked on the catalogue page (hours on 2026-11-11); languages and turns are as the survey found them.")
     lines += table("Survey leads not checked", [r for r in rows if r["check_level"] == "survey lead"])
     lines += table("Excluded (duplicates)", [r for r in rows if r["check_level"] == "excluded"])
     return "\n".join(lines)
