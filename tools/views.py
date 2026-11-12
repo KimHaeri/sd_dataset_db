@@ -303,7 +303,12 @@ def ldc_md(rows):
             return []
         t = [f"## {title} ({len(sel)})", ""] + ([note, ""] if note else [])
         t += ["| Dataset | Catalogue | Use | Hours | Hours basis | Turns | Languages |", "|---|---|---|---|---|---|---|"]
-        for r in sel:
+        def hours_key(r):
+            try:
+                return (0, -float(r["hours_reported"]), r["dataset_id"])
+            except ValueError:
+                return (1, 0.0, r["dataset_id"])
+        for r in sorted(sel, key=hours_key):
             h = r["hours_reported"] or (f"{r['hours_as_found']} (as found)" if r["hours_as_found"] else "")
             name = f"[{r['name']}]({r['source_url']})" if r["source_url"] else r["name"]
             t.append(f"| {name} | {r['catalogue_ids'].replace(';', ', ')} | {r['usable_as'] or '—'} | {h or '—'} | {r['hours_basis'] or '—'} | "
