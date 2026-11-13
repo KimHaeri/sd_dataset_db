@@ -152,3 +152,8 @@ usable_as,eval,Evaluation only,
 usable_as,hold,"Undecided: licence, rights or access not settled",
 usable_as,not_used,"Not used (excluded, a duplicate of another row, or simulation source only)",
 usable_as,eval_splits_only,"Only the development and test splits are used, for evaluation; the train split is on hold",
+license_spdx,CC-BY-3.0,CC Attribution 3.0 (any jurisdiction port),open
+license_spdx,CC-BY-SA-3.0,CC Attribution-ShareAlike 3.0,open
+license_spdx,CC-BY-NC-2.0,CC Attribution-NonCommercial 2.0,noncommercial
+license_spdx,CC-BY-NC-3.0,CC Attribution-NonCommercial 3.0,noncommercial
+license_spdx,CC-BY-NC-SA-3.0,CC Attribution-NonCommercial-ShareAlike 3.0,noncommercial
