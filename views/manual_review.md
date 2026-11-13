@@ -61,12 +61,6 @@ Decided 2026-11-13 with the PI: LDC data is used for evaluation only, never for 
 | [`olespeech_iv_2025_en_ar_100`](https://huggingface.co/datasets/olewave/OleSpeech-IV-2025-EN-AR-100) | LicenseRef-custom-research-only | Olewave DUA (non-commercial research only); at most eval once someone accepts the DUA, and the audio itself is third-party broadcast/podcast content. Audio: Content is "English podcasts, talk shows, teleconferences" (folders pub_air_program, pub_indi_podcast, pub_talk_shows), third-party material re |
 | [`otospeech_full_duplex_turn_104h`](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-turn-104h) | LicenseRef-custom-research-only | Custom non-commercial licence whose full LICENSE.md restricts corporate research, derived data and model artifacts, and says for-profit organizations need written approval; a human must read it (eval at most). |
 
-### Open decisions recorded earlier (collection_status needs_decision) (1)
-
-| Dataset | Licence | What we found |
-|---|---|---|
-| [`msdwild`](https://github.com/X-LANCE/MSDWILD) | LicenseRef-custom-research-only | Replaces the same day's excluded. Research-only agreement without redistribution; the agreement states that the video's original creator is the sole owner of the copyright. The agreement must be signed before download |
-
 ### Other rows on hold (reason in the note) (2)
 
 | Dataset | Licence | Reason |
