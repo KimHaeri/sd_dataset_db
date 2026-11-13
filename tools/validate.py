@@ -164,15 +164,18 @@ def allowed_tiers(spdx):
     """Tiers a licence permits. hold and excluded are always allowed except where noted.
 
     A permissive licence can still be held or excluded (terms that differ by part, platform terms),
-    but ShareAlike or NonCommercial terms can never be train, ND is always excluded and an
-    institutional licence is licensed_internal. Empty: no licence recorded, no constraint.
+    but ShareAlike or NonCommercial terms can never be train, ND is always excluded, an LDC
+    licence is licensed_internal or excluded, and a proprietary licence is licensed_internal once
+    obtained, hold while the purchase or agreement is undecided, or excluded. Empty: no licence recorded, no constraint.
     """
     if not spdx:
         return set()
     if "-ND-" in spdx:
         return {"excluded"}
-    if spdx in ("LicenseRef-LDC-member-or-nonmember", "LicenseRef-proprietary-restricted"):
+    if spdx == "LicenseRef-LDC-member-or-nonmember":
         return {"licensed_internal", "excluded"}
+    if spdx == "LicenseRef-proprietary-restricted":
+        return {"licensed_internal", "hold", "excluded"}  # hold: not bought or signed yet
     if "-SA-" in spdx or "-NC-" in spdx or spdx == "LicenseRef-custom-research-only":
         return {"eval", "hold", "excluded"}
     if spdx in UNDECIDED_LICENSES:

@@ -27,6 +27,7 @@ fisher_meetings_sim,shares_recordings_with,fisher_english_part1,clean supervisio
 fisher_meetings_sim,shares_recordings_with,fisher_english_part2,clean supervisions manifest,Source calls run to fe_03_11699; Part 2 holds fe_03_05851 to fe_03_11699 (lab copy of LDC2005T19)
 gale_chinese_broadcast_conversation_spee,contains,gale_phase_2_chinese_broadcast_conversat,https://catalog.ldc.upenn.edu/LDC2013S04,The survey row groups several releases; the other row is one of them
 gale_phase_3_arabic_broadcast_conversati,subset_of,gale_arabic_broadcast_conversation_speec,https://catalog.ldc.upenn.edu/LDC2016S01,"One of the releases grouped in gale_arabic_broadcast_conversation_speec (LDC2013S02, LDC2015S11, LDC2016S01, LDC2017S15)"
+iwslt_2022_tunisian_arabic_shared_task_t,possibly_same_as,iwslt_2022_2023_shared_task_training_dev,https://iwslt.org/2022/dialect,LDC2025S05 is the public release of the shared-task data
 libricss,shares_recordings_with,librispeech,https://arxiv.org/abs/2001.11482,Replays LibriSpeech test-clean utterances (40 speakers) through loudspeakers (paper 3.1)
 librispeech_meetings_sim,shares_recordings_with,librispeech,clean supervisions manifest,Built from LibriSpeech training utterances (original_cut_id)
 mcorec,possibly_same_as,chime_9_mcorec,https://www.chimechallenge.org/challenges/chime9/task1/data,"Same source page, entered twice by the survey"
@@ -37,6 +38,7 @@ otospeech_fd_task_v2,distinct_from,otospeech_fd_task_20h,https://huggingface.co/
 otospeech_full_duplex_processed_141h,version_of,otospeech_fd_280h,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h,280h card notice: We released a new processed version of otoSpeech (the 141h repository). Overlap in recordings likely; not checked
 rtve_2018_2020_2022,contains,rtve2018,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
 rtve_2018_2020_2022,contains,rtve2020,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
+safe_t,possibly_same_as,opensat_public_safety_communication_2019,https://catalog.ldc.upenn.edu/LDC2023S06,LDC2023S06 is the release of this collection
 santa_barbara_corpus_of_spoken_american_2,version_of,santa_barbara_corpus_of_spoken_american,https://www.openslr.org/155/,The same corpus redistributed on OpenSLR; one row for SBCSAE is enough (the JHU diarization release stays its own row)
 spjallr_mur_ab_diarization_test_set,subset_of,spjallromur,http://hdl.handle.net/20.500.12537/379,"Built from Spjallromur, whose full release (all 46 full conversations) is on the lab storage"
 switchboard_cellular_part_1_transcribed,subset_of,switchboard_cellular_part_1,https://catalog.ldc.upenn.edu/LDC2001S15,The transcribed 24 h are part of the 109 h of Part 1 Audio; that row also covers the transcripts LDC2001T14

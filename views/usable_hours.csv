@@ -5,15 +5,18 @@ aishell5,AISHELL-5,eval,eval,yes,,,,no hours recorded
 aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours
+aphasiabank,AphasiaBank,eval,eval,yes,,,,no hours recorded
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,train_split,train,yes,40.55,9.65,,split hours
 datahive_conversations_sample,DataHive Conversations samples,train,train,yes,25.41,,,reported
+dementiabank,DementiaBank,eval,eval,yes,,,,no hours recorded
 dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported
 dipco,Dinner Party Corpus (DiPCo),eval,eval,yes,,5.32,,reported
 displace2023,DISPLACE 2023,eval,eval,no,,31.50,,reported
 earnings21,Earnings-21,eval,eval,no,,39.25,,reported
 earnings22,Earnings-22,eval,eval,yes,,,,no hours recorded
+earnings25,Earnings25,eval,eval,no,,,,no hours recorded
 ego4d,Ego4D,train_split,licensed_internal,yes,,,,no hours recorded
 egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each session once
 expresso,Expresso,eval,eval,yes,,,,no hours recorded
