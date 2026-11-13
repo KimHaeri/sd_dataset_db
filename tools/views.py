@@ -115,7 +115,7 @@ def needs_verification(db):
     return [{"dataset_id": e["dataset_id"], "field": e["field"], "value": e["value"], "source_type": e["source_type"],
              "evidence_id": e["evidence_id"], "checked_on": e["checked_on"]}
             for e in db["evidence"][1] if e["is_canonical"] == "true" and e["source_type"] in ("seed", "secondary")
-            and (e["field"], e["value"]) not in WORKFLOW_DEFAULTS]
+            and not (e["source_type"] == "secondary" and (e["field"], e["value"]) in WORKFLOW_DEFAULTS)]
 
 
 HOURS_COLS = ["dataset_id", "name", "usable_as", "license_tier", "on_lab_storage", "train_hours", "eval_hours",
@@ -452,8 +452,11 @@ def manual_review_md(db):
              "recorded in the DB with its evidence. The second part lists rows waiting for information, which need no decision.", "",
              "## Decisions", "",
              f"### LDC releases ({len(ldc)} rows; one decision)", "",
-             "Training on LDC data is on hold until the PI has reviewed it (2026-11-08). LDC evaluation sets are used for evaluation. "
-             "Rows, hours and what is on the lab storage: `views/ldc.md`.", ""]
+             "Training on LDC data is on hold until the PI has reviewed it (2026-11-08), and LDC data not on the lab storage would "
+             "need a licence or order. LDC evaluation sets are used for evaluation, except these lab copies whose evaluation splits "
+             "are on hold too: " + ", ".join(f"`{d['dataset_id']}`" for d in sorted(ldc, key=lambda d: d["dataset_id"])
+                                              if on_lab(d) == "yes" and d["usable_as"] == "hold" and d["has_official_splits"] == "true")
+             + ". Rows, hours and storage: `views/ldc.md`.", ""]
     for title, rows in groups:
         rows = [d for d in rows if d["dataset_id"] not in seen]
         seen |= {d["dataset_id"] for d in rows}
@@ -471,6 +474,14 @@ def manual_review_md(db):
         ("Usable licence, but how to get speaker turns is not stated (check the files once obtained)",
          [d for d in D if d["license_tier"] in ("train", "eval") and d["usable_as"] not in ("not_used",) and not d["turn_source"]]),
     ]
+    rest = [d for d in D if not is_ldc(d) and d["license_tier"] == "hold" and d["dataset_id"] not in seen
+            and d["license_spdx"] not in ("unknown", "none_stated")]
+    if rest:
+        seen |= {d["dataset_id"] for d in rest}
+        lines += [f"### Other rows on hold (reason in the note) ({len(rest)})", "", "| Dataset | Licence | Reason |", "|---|---|---|"]
+        for d in sorted(rest, key=lambda d: d["dataset_id"]):
+            lines.append(f"| {link(d)} | {d['license_spdx'] or '—'} | {(note(d) or d['license_note'] or d['status_note'])[:300].replace('|', '/')} |")
+        lines.append("")
     lines += ["## Waiting for information (no decision needed)", ""]
     for title, rows in waiting:
         rows = [d for d in rows if d["dataset_id"] not in seen]

@@ -3,6 +3,9 @@ aalto_dsp_course_conversation_corpus,license_spdx,superseded,LicenseRef-custom-r
 aalto_dsp_course_conversation_corpus,license_tier,superseded,eval,user,hold,user,"META-SHARE metadata of the resource (Distribution and Licence info), as pasted by the maintainer","NonCommercial and no redistribution: not train; eval under the current rules expects redistribution to be allowed, so held until the maintainer decides between eval and licensed_internal"
 acp_filtered_conversations,license_spdx,superseded,none_stated,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/omzugo/acp-corpus-filtered,
 aihub_child_counsel,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,conflicting,primary,HTTP API https://huggingface.co/api/datasets/ironDong/Children_Counsel,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
+aihub_child_counsel,license_tier,superseded,excluded,primary,hold,primary,https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71680,
+aihub_child_counsel,license_tier,superseded,excluded,primary,hold,primary,https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71680; https://huggingface.co/datasets/ironDong/Children_Counsel/raw/main/README.md,"Hold (needs_human_agreement): The original is under AIHub application terms (Korean nationals only); the Apache-2.0 tag is from an unaffiliated re-uploader and should not be relied on, so a human must decide whether the lab can apply via AIHub at all (sensitive minors' counselling data)."
+aihub_child_counsel,usable_as,superseded,not_used,primary,hold,primary,https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71680,Follows from the licence and the rules; not a separate maintainer decision
 aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 aishell4,annotation_format,superseded,rttm;textgrid,measured,textgrid,primary,https://arxiv.org/abs/2104.03603,
 aishell4,hours_reported vs hours_measured,reported_vs_measured,120,see evidence,89.485,measured,measurements/aishell4.json,the release we obtained or the RTTM version may differ from the paper
@@ -46,7 +49,7 @@ cheese,license_spdx,superseded,CC-BY-NC-ND-3.0,primary,LicenseRef-other,secondar
 childes_biling_media_corpora,license_tier,superseded,eval,primary,hold,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
 childes_clinical_media_corpora,license_tier,superseded,eval,primary,hold,primary,https://talkbank.org/0share/rules.html,Clinical or restricted bank: held
 childtalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/NKU-HLT/ChildTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
-childtalk,license_tier,superseded,eval,primary,hold,primary,HTTP API https://api.github.com/repos/NKU-HLT/ChildTalk,Tier from the licence alone; the other values of this row are still survey leads
+childtalk,license_tier,superseded,hold,primary,eval,primary,https://github.com/NKU-HLT/ChildTalk; https://huggingface.co/datasets/yujie-ovo/ChildTalk/raw/main/README.md,"NC-SA plus a click-through DUA gives eval at most; the card shows no timestamps, so speaker turns must be confirmed before use."
 childtalk,turn_source,superseded,none,primary,provided_segments,secondary,https://github.com/NKU-HLT/ChildTalk,Copied by a survey search from the page it opened; not re-checked
 chime5,license_spdx,superseded,CC-BY-4.0,user,CC-BY-SA-4.0,primary,https://www.chimechallenge.org/datasets/chime5,
 chime5,license_tier,superseded,train,user,eval,primary,https://www.chimechallenge.org/datasets/chime5,"CC BY-SA 4.0: ShareAlike, redistribution allowed"
@@ -72,6 +75,7 @@ dihard3,annotation_format,superseded,rttm;uem;lab,primary,rttm;uem,seed,assistan
 dihard3,annotation_method,superseded,mixed,primary,manual,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 dipco,license_tier,superseded,eval,user,train,primary,https://cdn.amazon.science/ec/9b/de4df24f4aff87aee591b58f9ff5/dipco-dinner-party-corpus.pdf,CDLA-Permissive 1.0: permissive. Usable only once the data can be obtained (see access_method)
 displace2023,license_tier,superseded,eval,user,train,primary,https://zenodo.org/records/8375161,"By licence, for the Dev set on Zenodo. Whether the Dev set is used for training or evaluation is not decided"
+displace_2024,license_tier,superseded,hold,primary,eval,primary,https://displace2024.github.io/,NonCommercial/ShareAlike/research-only licence: evaluation at most
 displace_m_2026,license_tier,superseded,hold,primary,licensed_internal,primary,https://displace2026.github.io/,
 duplex_cue,license_spdx,superseded,CC-BY-NC-4.0,primary,conflicting,secondary,https://huggingface.co/datasets/besimple-ai/duplex-cue,Copied by a survey search from the page it opened; not re-checked
 earnings21,hours_reported,superseded,39.25,primary,39,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
@@ -87,6 +91,7 @@ easycom,turn_source,superseded,both,primary,provided_segments,secondary,https://
 echi,turn_source,superseded,both,primary,close_talk_vad,secondary,https://www.chimechallenge.org/challenges/chime9/task2/data,Copied by a survey search from the page it opened; not re-checked
 edacc,license_spdx,superseded,CC-BY-SA-4.0,primary,LicenseRef-other,secondary,https://groups.inf.ed.ac.uk/edacc/,Copied by a survey search from the page it opened; not re-checked
 ego4d,license_tier,superseded,licensed_internal,user,hold,primary,https://ego4d-data.org/docs/start-here/,"The agreement text could not be read (ego4d.dev answered HTTP 429, a bot checkpoint, on 2026-10-31), so license_spdx stays empty"
+elar_aggregate,license_tier,superseded,hold,primary,excluded,primary,https://www.elararchive.org/how-to-use/,"Terms bar using the material to train, fine-tune or evaluate AI/ML systems without community consent"
 elea,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,primary,HTTP API https://zenodo.org/api/records/4573018,
 elea,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,secondary,https://zenodo.org/records/4573018,Copied by a survey search from the page it opened; not re-checked
 english_broadcast_news_speech_ldc98_1997,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC98S71,Copied by a survey search from the page it opened; not re-checked
@@ -179,6 +184,8 @@ nb_samtale,hours_reported vs hours_measured,reported_vs_measured,24,see evidence
 nb_samtale,usable_as,superseded,train,user,train_split,primary,https://huggingface.co/datasets/Sprakbanken/nb_samtale,Follows from the licence and the rules; not a separate maintainer decision
 nepali_two_speaker_conversation_chunks,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/milanakdj/nepali-audio-reserve-r6,
 nepali_two_speaker_conversation_chunks,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/milanakdj/nepali-audio-reserve-r6,Copied by a survey search from the page it opened; not re-checked
+nepali_two_speaker_conversation_chunks,license_tier,superseded,excluded,primary,hold,primary,HTTP API https://huggingface.co/api/datasets/milanakdj/nepali-audio-reserve-r6,Tier from the licence alone; the other values of this row are still survey leads
+nepali_two_speaker_conversation_chunks,license_tier,superseded,excluded,primary,hold,primary,https://huggingface.co/datasets/milanakdj/nepali-audio-reserve-r6 (raw README 401; HTML card read),"Hold (needs_human_agreement): Custom access terms (licence ""see-card"") on audio the card itself says rights holders did not agree to redistribute; a human should decide, and exclusion looks likely. Audio: Card: ""Derived from third-party audio whose rights holders did not grant redistribution."""
 nexdata_full_duplex_multi_channel_conver,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,LicenseRef-other,secondary,https://ko.nexdata.ai/datasets/speechrecog/1770,Copied by a survey search from the page it opened; not re-checked
 nijmegen_corpus_of_casual_spanish,turn_source,superseded,both,primary,close_talk_vad,secondary,"LREC/*CL and corpus archives survey, 2026-11-03",Copied by a survey search from the page it opened; not re-checked
 nist_speaker_recognition_evaluation_2002,hours_reported,superseded,15,primary,157,primary,https://catalog.ldc.upenn.edu/LDC2004S04,Approximate figure from the catalogue page.
@@ -203,6 +210,10 @@ playlogue_v1,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,LicenseRef-other,se
 playlogue_v1,license_tier,superseded,eval,primary,hold,primary,HTTP API https://huggingface.co/api/datasets/playlogue/playlogue-v1,Tier from the licence alone; the other values of this row are still survey leads
 primock57,turn_source,superseded,both,measured,provided_segments,primary,https://github.com/babylonhealth/primock57,
 psychosisbank_c_oral_esq,license_tier,superseded,eval,primary,hold,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
+puebla_nahuatl,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,conflicting,primary,https://www.openslr.org/92/,
+puebla_nahuatl,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/92/,
+puebla_nahuatl,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/92/,"Hold (resolved_by_licence): The page gives both CC BY-NC-SA 3.0 and CC BY-SA, but both are ShareAlike, so either reading caps it at eval; the conflict does not change the tier."
+puebla_nahuatl,usable_as,superseded,eval,primary,hold,primary,https://www.openslr.org/92/,Follows from the licence and the rules; not a separate maintainer decision
 qasr,license_spdx,superseded,CC-BY-NC-2.0,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/QCRI/QASR,
 qasr,license_spdx,superseded,CC-BY-NC-2.0,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/QCRI/QASR,Copied by a survey search from the page it opened; not re-checked
 qasr,license_tier,superseded,eval,primary,hold,primary,HTTP API https://huggingface.co/api/datasets/QCRI/QASR,Tier from the licence alone; the other values of this row are still survey leads
@@ -215,10 +226,12 @@ rumi_classroom_coaching_sessions,license_spdx,superseded,LicenseRef-proprietary-
 rumi_classroom_coaching_sessions,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/hy270/rumi-coaching-case-study,Copied by a survey search from the page it opened; not re-checked
 santa_barbara_corpus_of_spoken_american,license_spdx,superseded,CC-BY-ND-3.0,primary,LicenseRef-other,secondary,https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english,Copied by a survey search from the page it opened; not re-checked
 santa_barbara_corpus_of_spoken_american_3,license_spdx,superseded,conflicting,primary,MIT,secondary,https://domklement.github.io/sbcsae/,Copied by a survey search from the page it opened; not re-checked
+santa_barbara_corpus_of_spoken_american_3,license_tier,superseded,excluded,primary,hold,primary,https://huggingface.co/datasets/dklement/SBCSAE,conflicting: The HF 'mit' tag conflicts with the UCSB licence of the underlying SBCSAE audio (CC BY-ND 3.0 US). This duplicates the santa_barbara_corpus_of_spoken_american entry (JHU re-alignment with RTTMs).
 saslaw,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 saslaw,license_tier,superseded,eval,primary,hold,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,Tier from the licence alone; the other values of this row are still survey leads
 saslaw,turn_source,superseded,both,primary,close_talk_vad,secondary,https://github.com/sarulab-speech/SaSLaW,Copied by a survey search from the page it opened; not re-checked
 seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
+second_mlc_slm_challenge_data,license_tier,superseded,hold,primary,eval,primary,https://www.nexdata.ai/competition/mlc-slm,NonCommercial/ShareAlike/research-only licence: evaluation at most
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 seniortalk,license_tier,superseded,eval,primary,hold,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,Tier from the licence alone; the other values of this row are still survey leads
 seoul_corpus_openslr_113,license_spdx,superseded,CC-BY-NC-2.0,primary,LicenseRef-other,secondary,https://www.openslr.org/113/,Copied by a survey search from the page it opened; not re-checked
@@ -235,6 +248,7 @@ spjallromur,hours_reported vs hours_measured,reported_vs_measured,21.33,see evid
 spjallromur,n_sessions_reported vs n_sessions_measured,reported_vs_measured,54,see evidence,46,measured,measurements/spjallromur.json,the release we obtained or the RTTM version may differ from the paper
 spjallromur,usable_as,superseded,train,user,train_split,primary,https://repository.clarin.is/repository/xmlui/handle/20.500.12537/379,Follows from the licence and the rules; not a separate maintainer decision
 spoken_corpus_gos_2_1,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://www.clarin.si/repository/xmlui/handle/11356/1973,Copied by a survey search from the page it opened; not re-checked
+spoken_corpus_gos_2_1,license_tier,superseded,hold,primary,eval,primary,https://www.clarin.si/repository/xmlui/handle/11356/1973,NonCommercial/ShareAlike/research-only licence: evaluation at most
 spokesbiz,license_spdx,superseded,CC-BY-NC-ND-4.0,primary,LicenseRef-other,secondary,http://docs.pelcra.pl/doku.php?id=spokesbiz,Copied by a survey search from the page it opened; not re-checked
 sporc_v1_1_weak,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/blitt/SPoRC,
 sporc_v1_1_weak,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/blitt/SPoRC,Copied by a survey search from the page it opened; not re-checked
@@ -254,8 +268,11 @@ this_american_life_podcast_set,license_spdx,superseded,none_stated,primary,MIT,s
 this_american_life_podcast_set,license_spdx,superseded,none_stated,primary,MIT,secondary,https://github.com/jovistos/TALAD,"Restored the survey's data licence: the 2026-11-07 GitHub API value is the repository licence and may cover code only, not the recordings"
 tooltalk_samples,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/fluid-concepts/tooltalk-samples,
 tooltalk_samples,turn_source,superseded,close_talk_vad,primary,both,secondary,https://huggingface.co/datasets/fluid-concepts/tooltalk-samples,Copied by a survey search from the page it opened; not re-checked
-totonac,license_spdx,superseded,conflicting,primary,LicenseRef-other,secondary,https://www.openslr.org/107/,Copied by a survey search from the page it opened; not re-checked
-totonac,license_spdx,superseded,conflicting,primary,LicenseRef-other,primary,https://www.openslr.org/107/,
+totonac,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,LicenseRef-other,secondary,https://www.openslr.org/107/,Copied by a survey search from the page it opened; not re-checked
+totonac,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,LicenseRef-other,primary,https://www.openslr.org/107/,
+totonac,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,conflicting,primary,https://www.openslr.org/107/,
+totonac,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/107/,Tier from the licence alone; the other values of this row are still survey leads
+totonac,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/107/,"Hold (resolved_by_licence): Same page states CC BY-NC-SA 3.0 and CC BY-SA; both are ShareAlike, so eval at most either way (record the conflict)."
 ttrpg_diarization_set,license_spdx,superseded,none_stated,primary,MIT,primary,HTTP API https://api.github.com/repos/LiRem101/playing-with-voices,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 ttrpg_diarization_set,license_spdx,superseded,none_stated,primary,MIT,secondary,https://github.com/LiRem101/playing-with-voices,Copied by a survey search from the page it opened; not re-checked
 ttrpg_diarization_set,license_spdx,superseded,none_stated,primary,MIT,secondary,https://github.com/LiRem101/playing-with-voices,"Restored the survey's data licence: the 2026-11-07 GitHub API value is the repository licence and may cover code only, not the recordings"
@@ -270,3 +287,7 @@ voxconverse,languages,superseded,unknown,primary,eng,seed,assistant background k
 voxconverse,license_tier,superseded,eval,user,train,primary,https://github.com/joonson/voxconverse,CC BY 4.0: permissive
 voxconverse,speech_style,superseded,unknown,primary,spontaneous,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 ycsep,license_spdx,superseded,conflicting,primary,MIT,secondary,https://ycsep.corpora.li,Copied by a survey search from the page it opened; not re-checked
+yoloxochitl_mixtec,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,conflicting,primary,https://www.openslr.org/89/,
+yoloxochitl_mixtec,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/89/,
+yoloxochitl_mixtec,license_tier,superseded,eval,primary,hold,primary,https://www.openslr.org/89/,"Hold (resolved_by_licence): Both statements are ShareAlike, so eval at most either way; record the conflict."
+yoloxochitl_mixtec,usable_as,superseded,eval,primary,hold,primary,https://www.openslr.org/89/,Follows from the licence and the rules; not a separate maintainer decision

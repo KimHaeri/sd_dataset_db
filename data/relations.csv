@@ -38,7 +38,7 @@ otospeech_fd_task_v2,distinct_from,otospeech_fd_task_20h,https://huggingface.co/
 otospeech_full_duplex_processed_141h,version_of,otospeech_fd_280h,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h,280h card notice: We released a new processed version of otoSpeech (the 141h repository). Overlap in recordings likely; not checked
 rtve_2018_2020_2022,contains,rtve2018,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
 rtve_2018_2020_2022,contains,rtve2020,https://catedrartve.unizar.es/rtvedatabase.html,The survey row groups several releases; the other row is one of them
-safe_t,possibly_same_as,opensat_public_safety_communication_2019,https://catalog.ldc.upenn.edu/LDC2023S06,LDC2023S06 is the release of this collection
+safe_t,contains,opensat_public_safety_communication_2019,https://catalog.ldc.upenn.edu/LDC2023S06,LDC2023S06 releases a portion of the SAFE-T collection (141 h of more than 300 h); only that portion is distributed
 santa_barbara_corpus_of_spoken_american_2,version_of,santa_barbara_corpus_of_spoken_american,https://www.openslr.org/155/,The same corpus redistributed on OpenSLR; one row for SBCSAE is enough (the JHU diarization release stays its own row)
 spjallr_mur_ab_diarization_test_set,subset_of,spjallromur,http://hdl.handle.net/20.500.12537/379,"Built from Spjallromur, whose full release (all 46 full conversations) is on the lab storage"
 switchboard_cellular_part_1_transcribed,subset_of,switchboard_cellular_part_1,https://catalog.ldc.upenn.edu/LDC2001S15,The transcribed 24 h are part of the 109 h of Part 1 Audio; that row also covers the transcripts LDC2001T14

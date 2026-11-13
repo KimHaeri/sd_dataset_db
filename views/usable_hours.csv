@@ -44,6 +44,7 @@ otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,yes,17.3
 otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,train,yes,141.56,,,measured
 perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,yes,5.10,,,reported
 primock57,PriMock57,train,train,yes,8.64,,,measured: each session once
+puebla_nahuatl,Highland Puebla Nahuatl Speech with Transcription (OpenSLR 92),eval,eval,yes,,,,no hours recorded
 real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,measured: each session once
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
@@ -53,3 +54,4 @@ spjallromur,Spjallrómur - Icelandic Conversational Speech,train,train,yes,18.20
 spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported
 voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported
 voxmm,VoxMM,eval,eval,no,,,,no hours recorded
+yoloxochitl_mixtec,Yoloxóchitl Mixtec Speech with Transcription (OpenSLR 89),eval,eval,yes,,,,no hours recorded
