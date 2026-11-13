@@ -7,6 +7,9 @@ alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported
 ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours
 aphasiabank,AphasiaBank,eval,eval,yes,,,,no hours recorded
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
+babel,IARPA Babel language packs,eval_splits_only,licensed_internal,yes,,256.94,,split hours
+callhome_american_english,CALLHOME American English Speech,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
+callhome_spanish,CALLHOME Spanish Speech,eval_splits_only,licensed_internal,yes,,12.67,,derived: share of sessions
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,train_split,train,yes,40.55,9.65,,split hours
 datahive_conversations_sample,DataHive Conversations samples,train,train,yes,25.41,,,reported
@@ -21,6 +24,9 @@ ego4d,Ego4D,train_split,licensed_internal,yes,,,,no hours recorded
 egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each session once
 expresso,Expresso,eval,eval,yes,,,,no hours recorded
 fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded
+fisher_english_part1,Fisher English Training Speech Part 1,eval,licensed_internal,yes,,984.00,,reported
+fisher_english_part2,"Fisher English Training Part 2, Speech",eval,licensed_internal,yes,,975.00,,reported
+fisher_spanish,Fisher Spanish Speech,eval,licensed_internal,yes,,163.00,,reported
 harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded
 hcrc_maptask,HCRC Map Task Corpus,train,train,yes,14.31,,,measured
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,11.00,,reported
@@ -32,6 +38,8 @@ kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,yes,125.00,,,reported
 kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured
 libricss,LibriCSS,eval,eval,no,,10.00,,reported
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions
+mixer6,Mixer 6 Speech,eval,licensed_internal,yes,,233.13,,measured: each session once
+mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded
 msdwild,MSDWild,eval,eval,no,,80.05,,reported
 msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,,split hours
 multi_tpc,Multi-TPC (three-party conversations),train,train,yes,4.71,,,measured: each session once
@@ -49,11 +57,13 @@ puebla_nahuatl,Highland Puebla Nahuatl Speech with Transcription (OpenSLR 92),ev
 real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,measured: each session once
 rhapsodie,Rhapsodie (Treebank Rhapsodie),eval,eval,no,,,,no hours recorded
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported
+seame,Mandarin-English Code-Switching in South-East Asia (SEAME),eval,licensed_internal,yes,,192.00,,reported
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
 simsamu,Simsamu,train,train,yes,3.25,,,reported
 spice,SpiCE: Speech in Cantonese and English,train,train,yes,28.13,,,used conditions' hours
 spjallromur,Spjallrómur - Icelandic Conversational Speech,train,train,yes,18.20,,,measured: each session once
 spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported
+switchboard1,Switchboard-1 Release 2,eval,licensed_internal,yes,,260.00,,reported
 voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported
 voxmm,VoxMM,eval,eval,no,,,,no hours recorded
 yoloxochitl_mixtec,Yoloxóchitl Mixtec Speech with Transcription (OpenSLR 89),eval,eval,yes,,,,no hours recorded

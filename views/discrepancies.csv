@@ -27,8 +27,9 @@ atco2,license_spdx,superseded,LicenseRef-other,primary,LicenseRef-proprietary-re
 av16_3,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,primary,HTTP API https://zenodo.org/api/records/4449274,
 av16_3,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,secondary,https://zenodo.org/records/4449274,Copied by a survey search from the page it opened; not re-checked
 ava_avd,annotation_format,superseded,rttm;lab,primary,rttm,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
-babel,usable_as,superseded,hold,user,eval_splits_only,user,maintainer decision 2026-11-08 (PI),Train split on hold; dev/test splits evaluate (published-splits rule)
-babel,usable_as,superseded,hold,user,train_split,primary,https://catalog.ldc.upenn.edu/LDC2016S02,Follows from the licence and the rules; not a separate maintainer decision
+babel,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+babel,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-11,"Replaces eval_splits_only of 2026-11-08, which kept the dev/test splits for evaluation on the assistant's reading, not on a decision (for babel no use had ever been decided)"
+babel,usable_as,superseded,eval_splits_only,user,train_split,primary,https://catalog.ldc.upenn.edu/LDC2016S02,Follows from the licence and the rules; not a separate maintainer decision
 bas_clips_mt_manual,license_tier,superseded,excluded,primary,hold,primary,https://www.bas.uni-muenchen.de/Bas/BasCLIPS_MT_MANUALeng.html,"LicenseRef-other: Turns are separate files, so session timing must be rebuilt; the page contradicts itself on 15 vs 30 map-task dialogues (30 speakers). No microphone/channel info."
 bas_clips_mt_manual,license_tier,superseded,excluded,primary,hold,primary,https://www.bas.uni-muenchen.de/Bas/BasCLIPS_MT_MANUALeng.html,Hold (needs_human_agreement): BAS licence: free use but no distribution to third parties; licensed_internal under the signed BAS agreement needs a maintainer decision (else excluded)
 bas_clips_mt_manual,turn_source,superseded,provided_segments,primary,both,secondary,https://www.bas.uni-muenchen.de/Bas/BasCLIPS_MT_MANUALeng.html,Copied by a survey search from the page it opened; not re-checked
@@ -39,10 +40,12 @@ cabnc,license_spdx,superseded,LicenseRef-custom-research-only,primary,CC-BY-NC-S
 cabnc,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://talkbank.org/ca/access/CABNC.html,Copied by a survey search from the page it opened; not re-checked
 cabnc,license_spdx,superseded,LicenseRef-custom-research-only,primary,conflicting,secondary,https://talkbank.org/ca/access/CABNC.html,"The corpus page states its own terms, which differ from the generic Ground Rules (CC BY-NC-SA 4.0) used on 2026-11-07"
 cabnc,license_tier,superseded,eval,primary,hold,secondary,https://talkbank.org/ca/access/CABNC.html,Corpus-specific terms differ from the Ground Rules
-callhome_american_english,usable_as,superseded,hold,user,eval_splits_only,user,maintainer decision 2026-11-08 (PI),Train split on hold; dev/test splits evaluate (published-splits rule)
-callhome_american_english,usable_as,superseded,hold,user,train_split,user,maintainer decision 2026-10-31,
-callhome_spanish,usable_as,superseded,hold,user,eval_splits_only,user,maintainer decision 2026-11-08 (PI),Train split on hold; dev/test splits evaluate (published-splits rule)
-callhome_spanish,usable_as,superseded,hold,user,train_split,user,maintainer decision 2026-10-31,
+callhome_american_english,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+callhome_american_english,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-11,"Replaces eval_splits_only of 2026-11-08, which kept the dev/test splits for evaluation on the assistant's reading, not on a decision (for babel no use had ever been decided)"
+callhome_american_english,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
+callhome_spanish,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+callhome_spanish,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-11,"Replaces eval_splits_only of 2026-11-08, which kept the dev/test splits for evaluation on the assistant's reading, not on a decision (for babel no use had ever been decided)"
+callhome_spanish,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
 candor,license_spdx,superseded,CC-BY-NC-SA-4.0,primary,none_stated,secondary,https://talkbank.org/ca/access/CANDOR.html,Copied by a survey search from the page it opened; not re-checked
 cantomap,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,primary,HTTP API https://api.github.com/repos/gwinterstein/CantoMap,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 cantomap,turn_source,superseded,provided_segments,primary,both,primary,http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.355.pdf,
@@ -104,10 +107,14 @@ elea,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated
 english_broadcast_news_speech_ldc98_1997,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC98S71,Copied by a survey search from the page it opened; not re-checked
 eslo_eslo_md,license_spdx,superseded,conflicting,secondary,CC-BY-NC-SA-4.0,secondary,https://cocoon.huma-num.fr/exist/crdo/meta/cocoon-5569b8dc-b40f-3ccd-95d1-86d20a1a836c,Copied by a survey search from the page it opened; not re-checked
 finnish_conversation_analysis_archive,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://www.kielipankki.fi/?p=31954,Copied by a survey search from the page it opened; not re-checked
-fisher_english_part1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
-fisher_english_part2,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
-fisher_meetings_sim,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-31,
-fisher_spanish,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2010S01,Follows from the licence and the rules; not a separate maintainer decision
+fisher_english_part1,usable_as,superseded,eval,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+fisher_english_part1,usable_as,superseded,eval,user,train,user,maintainer decision 2026-10-30,
+fisher_english_part2,usable_as,superseded,eval,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+fisher_english_part2,usable_as,superseded,eval,user,train,user,maintainer decision 2026-10-30,
+fisher_meetings_sim,usable_as,superseded,not_used,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+fisher_meetings_sim,usable_as,superseded,not_used,user,train,user,maintainer decision 2026-10-31,
+fisher_spanish,usable_as,superseded,eval,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+fisher_spanish,usable_as,superseded,eval,user,train,primary,https://catalog.ldc.upenn.edu/LDC2010S01,Follows from the licence and the rules; not a separate maintainer decision
 fluencybank_voices,license_tier,superseded,eval,primary,hold,primary,https://talkbank.org/0share/rules.html,Tier from the licence alone; the other values of this row are still survey leads
 gamma_corpus,license_tier,superseded,excluded,primary,hold,primary,https://zenodo.org/records/18343509/files/DUA%20GaMMA.pdf,
 gamma_corpus,license_tier,superseded,excluded,primary,hold,primary,https://zenodo.org/records/18343509; DUA GaMMA.pdf on the record,"Hold (needs_human_conflict): The record's CC BY 4.0 contradicts its own DUA (no redistribution, research use, no speaker identification); a human must decide which governs, and whether diarization counts as speaker identification."
@@ -172,9 +179,11 @@ misp_meeting,turn_source,superseded,close_talk_vad,primary,provided_segments,sec
 mixer6,domain,superseded,interview;telephone,primary,interview,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede
 mixer6,hours_reported,superseded,1090,primary,15863,primary,https://catalog.ldc.upenn.edu/LDC2013S03,
 mixer6,hours_reported vs hours_measured,reported_vs_measured,1090,see evidence,3011.86,measured,measurements/mixer6.json,the release we obtained or the RTTM version may differ from the paper
-mixer6,usable_as,superseded,hold,primary,train,primary,https://catalog.ldc.upenn.edu/LDC2013S03,Follows from the licence and the rules; not a separate maintainer decision
-mixer6_chime8,usable_as,superseded,hold,user,eval_splits_only,user,maintainer decision 2026-11-08 (PI),Train split on hold; dev/test splits evaluate (published-splits rule)
-mixer6_chime8,usable_as,superseded,hold,user,train_split,user,maintainer decision 2026-10-31,
+mixer6,usable_as,superseded,eval,user,hold,primary,https://catalog.ldc.upenn.edu/LDC2013S03,"Held: not purchased, and the 15,863 h counts all 14 microphones and the readings; only the telephone calls qualify and their hours are not stated"
+mixer6,usable_as,superseded,eval,user,train,primary,https://catalog.ldc.upenn.edu/LDC2013S03,Follows from the licence and the rules; not a separate maintainer decision
+mixer6_chime8,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+mixer6_chime8,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-11,"Replaces eval_splits_only of 2026-11-08, which kept the dev/test splits for evaluation on the assistant's reading, not on a decision (for babel no use had ever been decided)"
+mixer6_chime8,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
 mixer_3_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2023S02,Copied by a survey search from the page it opened; not re-checked
 mixer_4_and_5_speech,hours_reported,superseded,430,primary,14185,primary,https://catalog.ldc.upenn.edu/LDC2020S03,Approximate figure from the catalogue page.
 mixer_4_and_5_speech,license_spdx,superseded,LicenseRef-LDC-member-or-nonmember,primary,none_stated,secondary,https://catalog.ldc.upenn.edu/LDC2020S03,Copied by a survey search from the page it opened; not re-checked
@@ -250,7 +259,8 @@ santa_barbara_corpus_of_spoken_american_3,license_tier,superseded,excluded,prima
 saslaw,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 saslaw,license_tier,superseded,eval,primary,hold,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,Tier from the licence alone; the other values of this row are still survey leads
 saslaw,turn_source,superseded,both,primary,close_talk_vad,secondary,https://github.com/sarulab-speech/SaSLaW,Copied by a survey search from the page it opened; not re-checked
-seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
+seame,usable_as,superseded,eval,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+seame,usable_as,superseded,eval,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
 second_mlc_slm_challenge_data,license_tier,superseded,excluded,primary,eval,primary,https://www.nexdata.ai/competition/mlc-slm,NonCommercial/ShareAlike/research-only licence: evaluation at most
 second_mlc_slm_challenge_data,license_tier,superseded,excluded,primary,hold,primary,https://www.nexdata.ai/competition/mlc-slm,Hold (needs_human_agreement): Challenge-only Data Use Agreement (redistribution and other use prohibited); usable only if the lab registers for the challenge and accepts its terms
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"
@@ -278,7 +288,8 @@ sporc_v1_1_weak,license_tier,superseded,eval,primary,hold,primary,HTTP API https
 spot_the_difference_corpus,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,none_stated,primary,HTTP API https://api.github.com/repos/zedavid/SpotTheDifferenceData,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 spot_the_difference_corpus,license_spdx,superseded,LicenseRef-proprietary-restricted,primary,none_stated,secondary,https://github.com/zedavid/SpotTheDifferenceData,Copied by a survey search from the page it opened; not re-checked
 spring_nist_rt_05s_evaluation_set_2005,hours_reported,superseded,2,primary,78,primary,https://catalog.ldc.upenn.edu/LDC2011S06,"Approximate figure from the catalogue page. As stated on the page; RT-05S evaluation meetings are short excerpts, so this figure most likely counts every microphone channel. Session hours are much smaller; measure before use"
-switchboard1,usable_as,superseded,hold,user,train,user,maintainer decision 2026-10-30,
+switchboard1,usable_as,superseded,eval,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
+switchboard1,usable_as,superseded,eval,user,train,user,maintainer decision 2026-10-30,
 talkbank_ca_bank_phone_conversations_stt,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,LicenseRef-other,primary,HTTP API https://huggingface.co/api/datasets/diabolocom/talkbank_4_stt,
 talkbank_ca_bank_phone_conversations_stt,license_spdx,superseded,CC-BY-NC-SA-3.0,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/diabolocom/talkbank_4_stt,Copied by a survey search from the page it opened; not re-checked
 talkbank_ca_bank_phone_conversations_stt,license_tier,superseded,eval,primary,hold,primary,HTTP API https://huggingface.co/api/datasets/diabolocom/talkbank_4_stt,Tier from the licence alone; the other values of this row are still survey leads
