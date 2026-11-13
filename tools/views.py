@@ -106,10 +106,16 @@ def discrepancies(db):
     return out
 
 
+# Workflow defaults the survey wrote for every lead: they describe the DB's own state (a lead not yet examined),
+# not a claim about the dataset, so they need no source. Only these exact values are skipped.
+WORKFLOW_DEFAULTS = {("collection_status", "candidate"), ("status_reason_codes", "unexamined")}
+
+
 def needs_verification(db):
     return [{"dataset_id": e["dataset_id"], "field": e["field"], "value": e["value"], "source_type": e["source_type"],
              "evidence_id": e["evidence_id"], "checked_on": e["checked_on"]}
-            for e in db["evidence"][1] if e["is_canonical"] == "true" and e["source_type"] in ("seed", "secondary")]
+            for e in db["evidence"][1] if e["is_canonical"] == "true" and e["source_type"] in ("seed", "secondary")
+            and (e["field"], e["value"]) not in WORKFLOW_DEFAULTS]
 
 
 HOURS_COLS = ["dataset_id", "name", "usable_as", "license_tier", "on_lab_storage", "train_hours", "eval_hours",

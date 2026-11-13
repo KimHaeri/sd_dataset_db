@@ -11,7 +11,7 @@ The design follows [itoten/ser_dataset_db](https://github.com/itoten/ser_dataset
 | **How many hours we can train and evaluate on** | `views/usable_hours.md` (generated; totals by licence and lab storage, then per dataset) and `views/usable_hours.csv` |
 | All datasets at a glance | `views/datasets_wide.csv` (generated; one row per dataset) |
 | LDC releases only | `views/ldc.md` (generated; on the lab storage, would need a licence, survey leads) and `views/ldc.csv` |
-| Values nobody has checked yet | `views/needs_verification.csv` (generated; every canonical value backed only by `seed`, or by `secondary` evidence such as a survey lead) |
+| Values nobody has checked yet | `views/needs_verification.csv` (generated; every canonical value backed only by `seed`, or by `secondary` evidence such as a survey lead; the workflow defaults `collection_status=candidate` and `status_reason_codes=unexamined` are left out, since they describe the DB's own state) |
 | Disagreements between values | `views/discrepancies.csv` (generated; includes reported vs measured) |
 | The source of a value | `data/evidence.csv`, filtered by `dataset_id` and `field` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
