@@ -440,7 +440,7 @@ def manual_review_md(db):
          [d for d in D if not is_ldc(d) and d["license_spdx"] != "LicenseRef-proprietary-restricted"
           and d["license_tier"] == "hold" and "needs_human_agreement" in note(d)]),
         ("Conflicting licence statements (choose a reading or ask the authors)",
-         [d for d in D if not is_ldc(d) and d["license_tier"] in ("hold", "") and
+         [d for d in D if not is_ldc(d) and d["license_tier"] in ("hold", "") and not note(d).startswith("Hold (information)") and
           (d["license_spdx"] == "conflicting" or "needs_human_conflict" in note(d))]),
         ("Open decisions recorded earlier (collection_status needs_decision)",
          [d for d in D if d["collection_status"] == "needs_decision"]),
@@ -468,6 +468,8 @@ def manual_review_md(db):
             lines.append(f"| {link(d)} | {d['license_spdx'] or '—'} | {why[:300].replace('|', '/')} |")
         lines.append("")
     waiting = [
+        ("Licence or audio rights not yet established (find the source terms; no decision until then)",
+         [d for d in D if note(d).startswith("Hold (information)")]),
         ("Licence page unreadable (retry later or from another network)", [d for d in D if d["license_spdx"] == "unknown" and not is_ldc(d)]),
         ("No licence stated for the data (ask the authors before any use)",
          [d for d in D if d["license_spdx"] == "none_stated" and not is_ldc(d) and d["license_tier"] in ("hold", "")]),
@@ -475,7 +477,7 @@ def manual_review_md(db):
          [d for d in D if d["license_tier"] in ("train", "eval") and d["usable_as"] not in ("not_used",) and not d["turn_source"]]),
     ]
     rest = [d for d in D if not is_ldc(d) and d["license_tier"] == "hold" and d["dataset_id"] not in seen
-            and d["license_spdx"] not in ("unknown", "none_stated")]
+            and d["license_spdx"] not in ("unknown", "none_stated") and not note(d).startswith("Hold (information)")]
     if rest:
         seen |= {d["dataset_id"] for d in rest}
         lines += [f"### Other rows on hold (reason in the note) ({len(rest)})", "", "| Dataset | Licence | Reason |", "|---|---|---|"]
@@ -488,6 +490,11 @@ def manual_review_md(db):
         seen |= {d["dataset_id"] for d in rows}
         if rows:
             lines += [f"### {title} ({len(rows)})", "", ", ".join(link(d) for d in sorted(rows, key=lambda d: d["dataset_id"])), ""]
+    nr = [d for d in D if note(d).startswith("Excluded by the rule (no redistribution")]
+    if nr:
+        lines += ["## For information: excluded only because redistribution is not allowed", "",
+                  "No action needed. Each could be used internally (`licensed_internal`) if you decide to obtain it under its "
+                  "agreement: " + ", ".join(link(d) for d in sorted(nr, key=lambda d: d["dataset_id"])) + ".", ""]
     return "\n".join(lines)
 
 

@@ -26,6 +26,7 @@ hcrc_maptask,HCRC Map Task Corpus,train,train,yes,14.31,,,measured
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,11.00,,reported
 humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
+imda_nsc_conversational,"IMDA National Speech Corpus (NSC), conversational part (Part 3)",train,train,no,,,,no hours recorded
 indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded
 kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,yes,125.00,,,reported
 kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured
@@ -46,6 +47,7 @@ perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train
 primock57,PriMock57,train,train,yes,8.64,,,measured: each session once
 puebla_nahuatl,Highland Puebla Nahuatl Speech with Transcription (OpenSLR 92),eval,eval,yes,,,,no hours recorded
 real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,measured: each session once
+rhapsodie,Rhapsodie (Treebank Rhapsodie),eval,eval,no,,,,no hours recorded
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
 simsamu,Simsamu,train,train,yes,3.25,,,reported
