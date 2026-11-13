@@ -110,6 +110,7 @@ otospeech_fd_280h,usable_as,superseded,not_used,user,hold,primary,https://huggin
 otospeech_fd_280h,usable_as,superseded,not_used,user,train,user,maintainer decision 2026-11-11,
 otospeech_full_duplex_processed_141h,usable_as,superseded,train,user,hold,primary,https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-processed-141h,
 primock57,turn_source,superseded,both,measured,provided_segments,primary,https://github.com/babylonhealth/primock57,
+real_turnturk,hours_reported vs hours_measured,reported_vs_measured,1.94,see evidence,3.88,measured,measurements/real_turnturk.json,the release we obtained or the RTTM version may differ from the paper
 saslaw,license_spdx,superseded,CC-BY-NC-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/sarulab-speech/SaSLaW,"Repository licence from the GitHub API; it may cover code only, not the recordings"
 seame,usable_as,superseded,hold,user,train,primary,https://catalog.ldc.upenn.edu/LDC2015S04,Follows from the licence and the rules; not a separate maintainer decision
 seniortalk,license_spdx,superseded,CC-BY-NC-SA-4.0,secondary,none_stated,primary,HTTP API https://api.github.com/repos/flageval-baai/SeniorTalk,"Repository licence from the GitHub API; it may cover code only, not the recordings"

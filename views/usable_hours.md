@@ -40,7 +40,7 @@ The totals leave out 100 h in 1 datasets whose train/evaluation split hours are 
 | `perit_duplex_support_en` | 5.1 | train | yes | reported |
 | `multi_tpc` | 4.7 | train | yes | measured: each session once |
 | `simsamu` | 3.2 | train | yes | reported |
-| `real_turnturk` | 1.9 | train | yes | reported |
+| `real_turnturk` | 1.9 | train | yes | measured: each session once |
 | `ocular_en_fullduplex_sample` | 1.0 | train | no | reported |
 | `ego4d` | — | licensed_internal | yes | no hours recorded |
 | `fearless_steps_challenge` | — (100.0 h in all; split not recorded) | train | no | reported total; split hours not recorded |
