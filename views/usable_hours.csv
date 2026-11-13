@@ -8,7 +8,7 @@ ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported
 callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded
 chime6,CHiME-6,train_split,train,yes,40.55,9.65,,split hours
-datahive_conversations_sample,DataHive Conversations samples,train,train,no,19.53,,,reported
+datahive_conversations_sample,DataHive Conversations samples,train,train,yes,25.41,,,reported
 dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported
 dipco,Dinner Party Corpus (DiPCo),eval,eval,yes,,5.32,,reported
 displace2023,DISPLACE 2023,eval,eval,no,,31.50,,reported
@@ -19,7 +19,7 @@ egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each
 expresso,Expresso,eval,eval,yes,,,,no hours recorded
 fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded
 harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded
-hcrc_maptask,HCRC Map Task Corpus,train,train,no,,,,no hours recorded
+hcrc_maptask,HCRC Map Task Corpus,train,train,yes,14.31,,,measured
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,11.00,,reported
 humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported
@@ -39,12 +39,12 @@ open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported
 otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,yes,20.01,,,reported
 otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,yes,17.38,,,reported
 otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,train,yes,141.56,,,measured
-perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,no,5.10,,,reported
-primock57,PriMock57,train,train,no,,,,no hours recorded
-real_turnturk,Real-TurnTurk,train,train,no,1.94,,,reported
+perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,yes,5.10,,,reported
+primock57,PriMock57,train,train,yes,8.64,,,measured: each session once
+real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,reported
 rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported
 seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded
-simsamu,Simsamu,train,train,no,3.25,,,reported
+simsamu,Simsamu,train,train,yes,3.25,,,reported
 spice,SpiCE: Speech in Cantonese and English,train,train,yes,28.13,,,used conditions' hours
 spjallromur,Spjallrómur - Icelandic Conversational Speech,train,train,yes,18.20,,,measured: each session once
 spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported

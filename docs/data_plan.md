@@ -75,11 +75,11 @@ Found by the conversation survey and the re-scan of the lab storage, and checked
 | Dataset | Hours | Speaker turns | Licence | Download needed |
 |---|---|---|---|---|
 | [AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI)](https://huggingface.co/datasets/OcularAIInc/AMERICAN-ENGLISH-TRANSCRIBED-HIFI-FULL-DUPLEX-TWO-SPEAKER-CONVERSATIONAL-DATASET-SAMPLE) | 1.01 h | timed segments and channel per speaker | CC BY 4.0 | Yes (gated) |
-| [DataHive Conversations samples](https://huggingface.co/datasets/datahiveai/multilingual-conversations-sample) | 19.53 h | channel per speaker (VAD) | CC BY 4.0 | Yes |
+| [DataHive Conversations samples](https://huggingface.co/datasets/datahiveai/multilingual-conversations-sample) | 25.41 h | channel per speaker (VAD) | CC BY 4.0 | No (lab copy) |
 | [EgoCom (Egocentric Communications)](https://github.com/facebookresearch/EgoCom-Dataset) | — | timed segments and channel per speaker | MIT | Yes |
 | [Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)](https://fearless-steps.github.io/ChallengePhase4/) | 100 h | timed segments | CC BY 4.0 | Request |
 | [Gridspace-Stanford Harper Valley speech dataset](https://github.com/cricketclub/gridspace-stanford-harper-valley) | — | timed segments | CC BY 4.0 | No (lab copy) |
-| [HCRC Map Task Corpus](https://groups.inf.ed.ac.uk/maptask/) | — | timed segments and channel per speaker | CC BY 4.0 | Yes |
+| [HCRC Map Task Corpus](https://groups.inf.ed.ac.uk/maptask/) | 14.31 h | timed segments and channel per speaker | CC BY 4.0 | No (lab copy) |
 | [Indic High-Fidelity MultiSpeaker ASR (Humyn Labs)](https://huggingface.co/datasets/humyn-labs/Indic-High-Fidelity-MultiSpeaker-ASR) | — | timed segments | CC BY 4.0 | Yes |
 | [Kallaama (Wolof, Pulaar, Sereer)](https://www.openslr.org/151/) | 125 h | timed segments | CC BY 4.0 | No (lab copy) |
 | [Kenya/Philippines English Dialogue (Reord-AI)](https://huggingface.co/datasets/Reord-AI/kenya-philippines-twospeaker-english-dialogue) | — | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
@@ -89,10 +89,10 @@ Found by the conversation survey and the re-scan of the lab storage, and checked
 | [otoSpeech-full-duplex-280h](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h) | — | not confirmed | CC BY 4.0 | Yes (gated) |
 | [otoSpeech-full-duplex-task-oriented-20h](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-task-oriented-20h) | 20.005954 h | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
 | [otoSpeech-full-duplex-task-oriented-v2](https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-task-oriented-v2) | 17.376131 h | channel per speaker (VAD) | CC BY 4.0 | Yes (gated) |
-| [Perit Duplex Support Conversations (English)](https://huggingface.co/datasets/perit-ai/perit-duplex-support-en) | 5.10 h | channel per speaker (VAD) | CC BY 4.0 | Yes |
-| [PriMock57](https://github.com/babylonhealth/primock57) | — | timed segments | CC BY 4.0 | Yes |
-| [Real-TurnTurk](https://huggingface.co/datasets/tugrulbayrak/Real-TurnTurk) | 1.94 h | timed segments and channel per speaker | Apache 2.0 | Yes |
-| [Simsamu](https://huggingface.co/datasets/medkit/simsamu) | 3.25 h | timed segments | MIT | Yes |
+| [Perit Duplex Support Conversations (English)](https://huggingface.co/datasets/perit-ai/perit-duplex-support-en) | 5.10 h | channel per speaker (VAD) | CC BY 4.0 | No (lab copy) |
+| [PriMock57](https://github.com/babylonhealth/primock57) | 8.64 h | timed segments and channel per speaker | CC BY 4.0 | No (lab copy) |
+| [Real-TurnTurk](https://huggingface.co/datasets/tugrulbayrak/Real-TurnTurk) | 1.94 h | timed segments and channel per speaker | Apache 2.0 | No (lab copy) |
+| [Simsamu](https://huggingface.co/datasets/medkit/simsamu) | 3.24 h | timed segments | MIT | No (lab copy) |
 | [SpiCE: Speech in Cantonese and English](https://doi.org/10.5683/SP2/MJOXP3) | — | channel per speaker (VAD) | CC BY 4.0 | Yes |
 | [Spjallrómur - Icelandic Conversational Speech](https://repository.clarin.is/repository/xmlui/handle/20.500.12537/379) | 21.33 h | timed segments and channel per speaker | CC BY 4.0 | Yes |
 
