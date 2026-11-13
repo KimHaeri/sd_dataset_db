@@ -18,6 +18,7 @@ callhome_mandarin_chinese,version_of,callhome_mandarin_chinese_second_edition,ht
 callhome_mandarin_chinese_speech,possibly_same_as,callhome_mandarin_chinese,https://catalog.ldc.upenn.edu/LDC96S34,"Same source page, entered twice by the survey"
 callhome_spanish,distinct_from,callhome_sre2000,https://catalog.ldc.upenn.edu/LDC96S35,Both are called CALLHOME; the SRE 2000 diarization set is multilingual and separate
 callhome_sre2000,distinct_from,callhome_american_english,https://catalog.ldc.upenn.edu/docs/LDC2001S97/NIST_Speaker_Recognition-Eval_2000.pdf,"Different releases. The segmentation data is drawn from the CALLHOME Corpus (plan section 6), so it may share calls or speakers with CALLHOME American English; not checked"
+casper,subset_of,sssd,https://arxiv.org/abs/2506.00267,CASPER is the public release (CC BY-NC-SA 4.0) of conversations from the Scalable Spontaneous Speech Dataset project; the lab copy is the SSSD version under the CMU agreement
 children_adolescent_counselling,possibly_same_as,aihub_child_counsel,https://huggingface.co/datasets/ironDong/Children_Counsel,Same Hugging Face repository entered twice by the survey
 chime6,shares_recordings_with,chime5,https://www.chimechallenge.org/datasets/chime5,"The CHiME-5 page: CHiME-5 is superseded by the CHiME-6 release, which fixes audio alignment issues in the original data"
 dementiabank_conversational_subsets,subset_of,dementiabank,directory listing of the lab's shared corpus storage,Subset of DementiaBank; the lab copy holds English Pitt and ADReSS2020
