@@ -20,7 +20,6 @@ displace2023,DISPLACE 2023,eval,eval,no,,31.50,,reported
 earnings21,Earnings-21,eval,eval,no,,39.25,,reported
 earnings22,Earnings-22,eval,eval,yes,,,,no hours recorded
 earnings25,Earnings25,eval,eval,no,,,,no hours recorded
-ego4d,Ego4D,train_split,licensed_internal,yes,,,,no hours recorded
 egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each session once
 expresso,Expresso,eval,eval,yes,,,,no hours recorded
 fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded

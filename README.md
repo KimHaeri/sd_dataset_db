@@ -105,7 +105,7 @@ python3 tools/db.py get|set|add|ev|clear|fmt
 
 ## Current state (2026-11-04)
 
-570 datasets, 9 challenges: 100 checked against their sources, 312 survey leads whose licence was checked on 2026-11-07, 150 survey leads not checked at all, and 8 leads excluded as duplicates or for automatic labels. `candidate` 543, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 2 (`ego4d`, `msdwild`), `deferred` 2, `excluded` 21. Seed values left: none. Survey-lead values rest on `secondary` evidence and are listed in `views/needs_verification.csv`. The history of each change is in `git log`.
+571 datasets, 9 challenges: 89 checked against their sources, 434 survey leads whose licence (and, since 2026-11-12, access, turns and hours where the page states them) was checked on their page, none left unchecked, and 48 excluded (duplicates, ND or no-redistribution terms, region-bound, or not used by decision). `candidate` 518, `collected` 2 (`aishell4`, `dihard3`), `needs_decision` 1 (`msdwild`), `deferred` 2, `excluded` 48. Seed values left: none. Values still resting on `secondary` evidence are listed in `views/needs_verification.csv`; what needs a person is in `views/manual_review.md`. The history of each change is in `git log`.
 
 Licence tiers of the checked datasets (`license_tier`; survey leads have none yet):
 
@@ -128,9 +128,9 @@ Licence tiers of the checked datasets (`license_tier`; survey leads have none ye
   - Research-only agreement; evaluation only because the video copyright stays with the original creators (maintainer decision 2026-11-01): `msdwild` (agreement not signed yet)
 - **`licensed_internal`** (18): LDC or signed agreement, internal use only, never redistributed
   - LDC data is evaluation only (PI decision 2026-11-13): `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `fisher_spanish`, `seame`, `mixer6` (no official splits: `eval`); `callhome_spanish`, `callhome_american_english` (transcripts not on the lab storage), `mixer6_chime8`, `babel` (official splits: `eval_splits_only`, the train split is not used); `fisher_meetings_sim` (simulated training mixtures built from Fisher) is `not_used`
-  - Train split for training, other splits for evaluation (signed agreements): `msp_conversation` (usable; confirmed 2026-11-11), `ego4d` (who signed the agreement for the lab copy is not known)
+  - Train split for training, other splits for evaluation (signed agreements): `msp_conversation` (usable; confirmed 2026-11-11). `ego4d` is not used (PI decision 2026-11-13)
   - Evaluation only: `rt03_eval`, `callhome_sre2000`, `dihard3` (development and evaluation sets)
-  - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC, training on hold as above); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; who signed it for the lab copy is not known)
+  - Lab copies found by the 2026-11-04 re-scan: `fisher_spanish`, `seame`, `babel` (25 language packs) (LDC, evaluation only as above); `hub5_2000_eng` (LDC evaluation set); `open_yap_1k` (1,000 h, data use agreement that allows training but not redistribution; used for training, PI decision 2026-11-13; who accepted the agreement for the lab copy is to be confirmed with cornell2)
   - Re-judged 2026-11-04 under the conversation scope: `mixer6` (its telephone calls have one channel per side, so turns can come from VAD; not on the lab storage). Its interview subset with segments is `mixer6_chime8`
 - **`hold`** (29): undecided
   - `iemocap`: release form with a licence PDF not read yet; who signed it for the lab copy is not known
@@ -143,7 +143,7 @@ Maintainer rules: SA/NC data is evaluation only; published splits are used as de
 
 Open items:
 
-- Decisions: signing the `msdwild` agreement and which of its splits to evaluate on; who signed the agreement for the lab copy of `ego4d` (only an institutional signature covers a shared copy).
+- Decisions: signing the `msdwild` agreement and which of its splits to evaluate on. Decided 2026-11-13 with the PI: `open_yap_1k` is used for training, `ego4d` is not used, LDC data is evaluation only.
 - Licence: the maintainer reports that the CHiME organisers dropped ShareAlike (first reported 2026-11-03; decided 2026-11-11), so `chime5` and `chime6` are recorded as CC BY 4.0 (source: maintainer) with tier `train`; `chime6` is `train_split` (train 40.55 h trains, dev 4.45 h and eval 5.2 h evaluate) and `chime5` stays `not_used` (same recordings). The public LICENSE.txt (OpenSLR 150) still read CC BY-SA 4.0 on 2026-11-11; replace the evidence with the published licence when it appears. The lab copy of `chime5` carries the earlier CHiME-5 non-commercial licence 1.00.
 - Transcripts for `callhome_american_english` (LDC97T14): not on the lab storage.
 - Lab copies without RTTM (`lab_copy_available`): `ami`, `chime6`, `alimeeting`, `msp_conversation`, `seamless_interaction`, `chime5`, `dipco`, `callhome_american_english` (speech only), `ego4d`, `mixer6_chime8` (transcripts still archived), `switchboard1`, `fisher_english_part1`, `fisher_english_part2`, `callhome_spanish`, `rt03_eval`. Lab copies with RTTM in the copy or its repository, not registered yet: `voxconverse`; with speaker segments not yet examined: `callhome_sre2000`. Converting their labels to RTTM is the next step before they can be measured and marked `collected`. The two simulations have RTTM per shard, but they sit outside `$SD_DATA_ROOT` on purgeable scratch storage and need to be copied to permanent storage first.

@@ -101,6 +101,7 @@ echi,license_tier,superseded,excluded,primary,hold,primary,https://www.chimechal
 echi,turn_source,superseded,both,primary,close_talk_vad,secondary,https://www.chimechallenge.org/challenges/chime9/task2/data,Copied by a survey search from the page it opened; not re-checked
 edacc,license_spdx,superseded,CC-BY-SA-4.0,primary,LicenseRef-other,secondary,https://groups.inf.ed.ac.uk/edacc/,Copied by a survey search from the page it opened; not re-checked
 ego4d,license_tier,superseded,licensed_internal,user,hold,primary,https://ego4d-data.org/docs/start-here/,"The agreement text could not be read (ego4d.dev answered HTTP 429, a bot checkpoint, on 2026-10-31), so license_spdx stays empty"
+ego4d,usable_as,superseded,not_used,user,train_split,user,maintainer decision 2026-10-31,
 elar_aggregate,license_tier,superseded,hold,primary,excluded,primary,https://www.elararchive.org/how-to-use/,"Terms bar using the material to train, fine-tune or evaluate AI/ML systems without community consent"
 elea,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,primary,HTTP API https://zenodo.org/api/records/4573018,
 elea,license_spdx,superseded,LicenseRef-custom-research-only,primary,none_stated,secondary,https://zenodo.org/records/4573018,Copied by a survey search from the page it opened; not re-checked
