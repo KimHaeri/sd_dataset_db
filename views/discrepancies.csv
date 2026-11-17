@@ -58,10 +58,10 @@ childtalk,license_tier,superseded,excluded,primary,eval,primary,https://github.c
 childtalk,license_tier,superseded,excluded,primary,hold,primary,HTTP API https://api.github.com/repos/NKU-HLT/ChildTalk,Tier from the licence alone; the other values of this row are still survey leads
 childtalk,license_tier,superseded,excluded,primary,hold,primary,https://github.com/NKU-HLT/ChildTalk; https://huggingface.co/datasets/yujie-ovo/ChildTalk/raw/main/README.md,"Hold (needs_human_agreement): No redistribution allowed, so not eval by the rule; usable only as licensed_internal under the agreement, which needs a maintainer decision (else excluded)"
 childtalk,turn_source,superseded,none,primary,provided_segments,secondary,https://github.com/NKU-HLT/ChildTalk,Copied by a survey search from the page it opened; not re-checked
-chime5,license_spdx,superseded,CC-BY-4.0,user,CC-BY-SA-4.0,primary,https://www.chimechallenge.org/datasets/chime5,
-chime5,license_tier,superseded,train,user,eval,primary,https://www.chimechallenge.org/datasets/chime5,"CC BY-SA 4.0: ShareAlike, redistribution allowed"
-chime6,license_spdx,superseded,CC-BY-4.0,user,CC-BY-SA-4.0,primary,LICENSE.txt of the CHiME-6 release (lab copy),
-chime6,license_tier,superseded,train,user,eval,primary,LICENSE.txt of the CHiME-6 release (lab copy),"CC BY-SA 4.0: ShareAlike, redistribution allowed"
+chime5,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,primary,https://www.chimechallenge.org/datasets/chime5,
+chime5,license_tier,superseded,train,primary,eval,primary,https://www.chimechallenge.org/datasets/chime5,"CC BY-SA 4.0: ShareAlike, redistribution allowed"
+chime6,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,primary,LICENSE.txt of the CHiME-6 release (lab copy),
+chime6,license_tier,superseded,train,primary,eval,primary,LICENSE.txt of the CHiME-6 release (lab copy),"CC BY-SA 4.0: ShareAlike, redistribution allowed"
 chime6,usable_as,superseded,train_split,user,eval,primary,LICENSE.txt of the CHiME-6 release (lab copy),Follows from the licence and the rules; not a separate maintainer decision
 chime_8_mmcsg,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://www.chimechallenge.org/challenges/chime8/task3/data,Copied by a survey search from the page it opened; not re-checked
 chime_9_echi,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,secondary,https://huggingface.co/datasets/CHiME9-ECHI/CHiME9-ECHI,Copied by a survey search from the page it opened; not re-checked
