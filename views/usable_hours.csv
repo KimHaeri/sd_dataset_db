@@ -40,7 +40,7 @@ librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,de
 mixer6,Mixer 6 Speech,eval,licensed_internal,yes,,233.13,,measured: each session once,eng,,interview;telephone,
 mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded,eng,,interview;telephone,
 msdwild,MSDWild,eval,eval,no,,80.05,,reported,mul,2-10,web_video,
-msp_conversation,MSP-Conversation,train_split,licensed_internal,yes,36.72,22.82,,split hours,,,podcast,
+msp_conversation,MSP-Conversation,eval,licensed_internal,yes,,59.55,,reported,,,podcast,
 multi_tpc,Multi-TPC (three-party conversations),train,train,yes,4.71,,,measured: each session once,,3,,
 nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train,train,yes,24.00,,,reported,nor,,podcast,
 notsofar1,NOTSOFAR-1,train_split,train,yes,11.14,11.78,,derived: total minus train split,eng,4-8,meeting,close_talk;far_field_array;far_field_single
