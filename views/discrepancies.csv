@@ -46,6 +46,7 @@ callhome_american_english,usable_as,superseded,eval_splits_only,user,train_split
 callhome_spanish,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-08 (PI),Replaces the 2026-10-30 rule that LDC training corpora are used for training
 callhome_spanish,usable_as,superseded,eval_splits_only,user,hold,user,maintainer decision 2026-11-11,"Replaces eval_splits_only of 2026-11-08, which kept the dev/test splits for evaluation on the assistant's reading, not on a decision (for babel no use had ever been decided)"
 callhome_spanish,usable_as,superseded,eval_splits_only,user,train_split,user,maintainer decision 2026-10-31,
+callhome_sre2000,speakers_per_session_reported,superseded,2-10,primary,2-7,seed,assistant background knowledge at repository creation (no source opened),Unchecked: confirm against a primary source and supersede Withdrawn 2026-10-30: Not supported: the evaluation plan (4.5) says segments may include as many as 10 speakers and gives no range
 candor,license_spdx,superseded,CC-BY-NC-SA-4.0,primary,none_stated,secondary,https://talkbank.org/ca/access/CANDOR.html,Copied by a survey search from the page it opened; not re-checked
 cantomap,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-other,primary,HTTP API https://api.github.com/repos/gwinterstein/CantoMap,"Relabelled primary on 2026-11-08: published metadata, not a measurement."
 cantomap,turn_source,superseded,provided_segments,primary,both,primary,http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.355.pdf,

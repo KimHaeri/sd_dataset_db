@@ -17,32 +17,32 @@ The totals leave out 100 h in 1 datasets whose train/evaluation split hours are 
 
 | Dataset | Hours | Licence tier | On the lab storage | Basis | Languages | Speakers per session | Domain | Recording setup |
 |---|---|---|---|---|---|---|---|---|
-| `open_yap_1k` | 1,000.2 | licensed_internal | yes | reported | eng | 2 | — | — |
+| `open_yap_1k` | 1,000.2 | licensed_internal | yes | reported | eng | 2 | conversation | remote call |
 | `otospeech_full_duplex_processed_141h` | 141.6 | train | yes | measured | eng | 2 | conversation | — |
 | `kallaama` | 125.0 | train | yes | reported | wol, fuc, srr | — | mixed | — |
-| `npsc` | 112.5 | train | yes | split hours | nor | — | meeting | — |
-| `ami` | 80.7 | train | yes | split hours | eng | — | meeting | close talk, far field array |
+| `npsc` | 112.5 | train | yes | split hours | nor | — | meeting | broadcast mix |
+| `ami` | 80.7 | train | yes | split hours | eng | 3-5 | meeting | close talk, far field array |
 | `icsi` | 70.0 | train | yes | reported | eng | 3-10 | meeting | close talk |
-| `kenya_ph_dialogue` | 68.5 | train | yes | measured | eng | — | conversation | — |
+| `kenya_ph_dialogue` | 68.5 | train | yes | measured | eng | 2 | conversation | remote call |
 | `chime6` | 40.5 | train | yes | split hours | eng | 4 | dinner party | close talk, far field array |
 | `spice` | 28.1 | train | yes | used conditions' hours | yue, eng | 2 | interview | close talk |
 | `datahive_conversations_sample` | 25.4 | train | yes | reported | eng, hin, ind, rus, vie | 2 | telephone | mobile device |
-| `nb_samtale` | 24.0 | train | yes | reported | nor | — | podcast | — |
+| `nb_samtale` | 24.0 | train | yes | reported | nor | — | podcast | broadcast mix |
 | `otospeech_fd_task_20h` | 20.0 | train | yes | reported | eng | 2 | conversation | — |
-| `spjallromur` | 18.2 | train | yes | measured: each session once | isl | 2 | conversation | — |
+| `spjallromur` | 18.2 | train | yes | measured: each session once | isl | 2 | conversation | remote call |
 | `otospeech_fd_task_v2` | 17.4 | train | yes | reported | eng | 2 | conversation | — |
 | `hcrc_maptask` | 14.3 | train | yes | measured | eng | 2 | conversation | close talk |
-| `egocom` | 12.0 | train | yes | measured: each session once | — | — | egocentric | wearable |
+| `egocom` | 12.0 | train | yes | measured: each session once | eng | 3 | egocentric | wearable |
 | `notsofar1` | 11.1 | train | yes | derived: total minus train split | eng | 4-8 | meeting | close talk, far field array, far field single |
-| `primock57` | 8.6 | train | yes | measured: each session once | eng | 2 | clinical | — |
-| `humyn_indic_multispeaker` | 8.3 | train | yes | measured | asm, ben, bho, hne, bgc, mar, tel, guj, pan, hin, kan, tam, mal | — | conversation | — |
+| `primock57` | 8.6 | train | yes | measured: each session once | eng | 2 | clinical | remote call |
+| `humyn_indic_multispeaker` | 8.3 | train | yes | measured | asm, ben, bho, hne, bgc, mar, tel, guj, pan, hin, kan, tam, mal | 2 | conversation | — |
 | `perit_duplex_support_en` | 5.1 | train | yes | reported | eng | 2 | conversation | — |
-| `multi_tpc` | 4.7 | train | yes | measured: each session once | — | 3 | — | — |
+| `multi_tpc` | 4.7 | train | yes | measured: each session once | eng | 3 | conversation | close talk |
 | `simsamu` | 3.2 | train | yes | reported | fra | — | clinical, telephone | far field single |
-| `real_turnturk` | 1.9 | train | yes | measured: each session once | tur | 2 | conversation | — |
-| `ocular_en_fullduplex_sample` | 1.0 | train | no | reported | eng | — | conversation | close talk |
-| `fearless_steps_challenge` | — (100.0 h in all; split not recorded) | train | no | reported total; split hours not recorded | eng | — | — | — |
-| `harper_valley_bank` | — | train | yes | no hours recorded | — | — | telephone | — |
+| `real_turnturk` | 1.9 | train | yes | measured: each session once | tur | 2 | conversation | remote call |
+| `ocular_en_fullduplex_sample` | 1.0 | train | no | reported | eng | 2 | conversation | close talk |
+| `fearless_steps_challenge` | — (100.0 h in all; split not recorded) | train | no | reported total; split hours not recorded | eng | 3-33 | conversation | close talk |
+| `harper_valley_bank` | — | train | yes | no hours recorded | eng | 2 | telephone | telephone channel |
 | `imda_nsc_conversational` | — | train | no | no hours recorded | eng | 2 | conversation | close talk, far field single, telephone channel |
 
 ## Training, simulated
@@ -59,45 +59,45 @@ The totals leave out 100 h in 1 datasets whose train/evaluation split hours are 
 | `fisher_english_part2` | 975.0 | licensed_internal | yes | reported | eng | 2 | telephone | telephone channel |
 | `switchboard1` | 260.0 | licensed_internal | yes | reported | eng | 2 | telephone | telephone channel |
 | `babel` | 256.9 | licensed_internal | yes | split hours | mul | — | telephone | telephone channel |
-| `spokenwoz` | 249.0 | eval | yes | reported | — | 2 | telephone | — |
-| `mixer6` | 233.1 | licensed_internal | yes | measured: each session once | eng | — | interview, telephone | — |
-| `seame` | 192.0 | licensed_internal | yes | reported | cmn, eng | — | — | — |
+| `spokenwoz` | 249.0 | eval | yes | reported | — | 2 | telephone | telephone channel |
+| `mixer6` | 233.1 | licensed_internal | yes | measured: each session once | eng | 2 | interview, telephone | close talk, far field array, telephone channel |
+| `seame` | 192.0 | licensed_internal | yes | reported | cmn, eng | 1-2 | mixed | — |
 | `fisher_spanish` | 163.0 | licensed_internal | yes | reported | spa | 2 | telephone | telephone channel |
 | `aishell4` | 120.0 | eval | yes | reported | cmn | 4-8 | meeting | far field array |
 | `alimeeting` | 118.8 | eval | yes | reported | cmn | 2-4 | meeting | close talk, far field array |
 | `aishell8_realscene` | 102.2 | eval | no | reported | cmn | 1-5 | conversation | close talk, far field array |
-| `msdwild` | 80.0 | eval | no | reported | mul | 2-10 | web video | — |
-| `dihard3` | 67.2 | licensed_internal | yes | reported | eng, cmn | — | mixed | — |
-| `voxconverse` | 63.8 | eval | yes | reported | unknown | — | broadcast, web video | broadcast mix |
-| `msp_conversation` | 59.5 | licensed_internal | yes | reported | — | — | podcast | — |
+| `msdwild` | 80.0 | eval | no | reported | mul | 2-10 | web video | broadcast mix |
+| `dihard3` | 67.2 | licensed_internal | yes | reported | eng, cmn | — | mixed | close talk, far field single, telephone channel, broadcast mix |
+| `voxconverse` | 63.8 | eval | yes | reported | unknown | 1-21 | broadcast, web video | broadcast mix |
+| `msp_conversation` | 59.5 | licensed_internal | yes | reported | — | 1-5 | podcast | broadcast mix |
 | `earnings21` | 39.2 | eval | no | reported | eng | 2-20 | earnings call | — |
 | `displace2023` | 31.5 | eval | no | reported | mul | 3-5 | conversation | far field single |
-| `npsc` | 27.8 | train | yes | split hours | nor | — | meeting | — |
-| `ami` | 18.7 | train | yes | split hours | eng | — | meeting | close talk, far field array |
-| `rt03_eval` | 13.0 | licensed_internal | yes | reported | eng, arb, arz, cmn | — | broadcast, telephone | — |
+| `npsc` | 27.8 | train | yes | split hours | nor | — | meeting | broadcast mix |
+| `ami` | 18.7 | train | yes | split hours | eng | 3-5 | meeting | close talk, far field array |
+| `rt03_eval` | 13.0 | licensed_internal | yes | reported | eng, arb, arz, cmn | — | broadcast, telephone | telephone channel, broadcast mix |
 | `callhome_spanish` | 12.7 | licensed_internal | yes | derived: share of sessions | spa | — | telephone | telephone channel |
 | `notsofar1` | 11.8 | train | yes | derived: total minus train split | eng | 4-8 | meeting | close talk, far field array, far field single |
 | `hub5_2000_eng` | 11.0 | licensed_internal | yes | reported | eng | — | telephone | telephone channel |
 | `ascend` | 10.6 | eval | no | reported | cmn, eng | 2 | conversation | close talk |
 | `chime6` | 9.7 | train | yes | split hours | eng | 4 | dinner party | close talk, far field array |
 | `dipco` | 5.3 | eval | yes | reported | eng | 4 | dinner party | close talk, far field array |
-| `aalto_dsp_course_conversation_corpus` | — | eval | unknown | no hours recorded | — | — | — | — |
+| `aalto_dsp_course_conversation_corpus` | — | eval | unknown | no hours recorded | fin | 2 | conversation | close talk |
 | `aishell5` | — | eval | yes | no hours recorded | cmn | 2-4 | in car | close talk, far field array |
-| `aphasiabank` | — | eval | yes | no hours recorded | — | — | clinical | — |
+| `aphasiabank` | — | eval | yes | no hours recorded | mul | 2 | clinical | — |
 | `callhome_american_english` | — | licensed_internal | yes | reported total; split hours not recorded | eng | — | telephone | telephone channel |
-| `callhome_sre2000` | — | licensed_internal | yes | no hours recorded | mul | — | telephone | telephone channel |
-| `dementiabank` | — | eval | yes | no hours recorded | — | — | clinical | — |
+| `callhome_sre2000` | — | licensed_internal | yes | no hours recorded | mul | 2-10 | telephone | telephone channel |
+| `dementiabank` | — | eval | yes | no hours recorded | mul | — | clinical | — |
 | `earnings22` | — | eval | yes | no hours recorded | eng | — | earnings call | — |
-| `earnings25` | — | eval | no | no hours recorded | eng | — | earnings call | — |
-| `expresso` | — | eval | yes | no hours recorded | — | — | — | — |
-| `fearless_steps_challenge` | — (100.0 h in all; split not recorded) | train | no | reported total; split hours not recorded | eng | — | — | — |
-| `harper_valley_bank` | — | train | yes | no hours recorded | — | — | telephone | — |
-| `indic_diarbench` | — | eval | no | no hours recorded | mul | — | — | — |
-| `mixer6_chime8` | — | licensed_internal | yes | reported total; split hours not recorded | eng | — | interview, telephone | — |
+| `earnings25` | — | eval | no | no hours recorded | eng | — | earnings call | telephone channel |
+| `expresso` | — | eval | yes | no hours recorded | eng | 2 | conversation | close talk |
+| `fearless_steps_challenge` | — (100.0 h in all; split not recorded) | train | no | reported total; split hours not recorded | eng | 3-33 | conversation | close talk |
+| `harper_valley_bank` | — | train | yes | no hours recorded | eng | 2 | telephone | telephone channel |
+| `indic_diarbench` | — | eval | no | no hours recorded | mul | — | mixed | remote call, far field single, broadcast mix |
+| `mixer6_chime8` | — | licensed_internal | yes | reported total; split hours not recorded | eng | 2 | interview, telephone | close talk, far field array |
 | `puebla_nahuatl` | — | eval | yes | no hours recorded | azz | 2 | interview | close talk |
 | `rhapsodie` | — | eval | no | no hours recorded | fra | — | mixed | — |
-| `seamless_interaction` | — | eval | yes | no hours recorded | — | 2 | conversation | — |
-| `voxmm` | — | eval | no | no hours recorded | — | — | web video | — |
+| `seamless_interaction` | — | eval | yes | no hours recorded | eng | 2 | conversation | close talk |
+| `voxmm` | — | eval | no | no hours recorded | — | 1-118 | web video | broadcast mix |
 | `yoloxochitl_mixtec` | — | eval | yes | no hours recorded | xty | 2 | interview | close talk |
 
 ## Evaluation, simulated

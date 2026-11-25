@@ -161,3 +161,4 @@ license_spdx,CC-BY-NC-ND-3.0,CC Attribution-NonCommercial-NoDerivatives 3.0,nonc
 license_spdx,CC-BY-NC-SA-2.0,CC Attribution-NonCommercial-ShareAlike 2.0,noncommercial
 license_spdx,CC-BY-ND-3.0,CC Attribution-NoDerivatives 3.0 (any jurisdiction port),open
 license_spdx,LicenseRef-Singapore-Open-Data-1.0,"Singapore Open Data Licence v1.0 (use, redistribution and adaptation, commercial or not, with attribution)",open
+recording_setup,remote_call,"Online call (VoIP or WebRTC): each participant on their own device, usually recorded as one track per participant",

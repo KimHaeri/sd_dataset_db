@@ -1,68 +1,68 @@
 dataset_id,name,usable_as,license_tier,on_lab_storage,train_hours,eval_hours,unsplit_hours,basis,languages,speakers_per_session,domain,recording_setup
-aalto_dsp_course_conversation_corpus,Aalto DSP Course Conversation Corpus (dspcon),eval,eval,unknown,,,,no hours recorded,,,,
+aalto_dsp_course_conversation_corpus,Aalto DSP Course Conversation Corpus (dspcon),eval,eval,unknown,,,,no hours recorded,fin,2,conversation,close_talk
 aishell4,AISHELL-4,eval,eval,yes,,120.00,,reported,cmn,4-8,meeting,far_field_array
 aishell5,AISHELL-5,eval,eval,yes,,,,no hours recorded,cmn,2-4,in_car,close_talk;far_field_array
 aishell8_realscene,AISHELL8-RealScene,eval,eval,no,,102.19,,reported,cmn,1-5,conversation,close_talk;far_field_array
 alimeeting,AliMeeting,eval,eval,yes,,118.75,,reported,cmn,2-4,meeting,close_talk;far_field_array
-ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours,eng,,meeting,close_talk;far_field_array
-aphasiabank,AphasiaBank,eval,eval,yes,,,,no hours recorded,,,clinical,
+ami,AMI Meeting Corpus,train_split,train,yes,80.67,18.73,,split hours,eng,3-5,meeting,close_talk;far_field_array
+aphasiabank,AphasiaBank,eval,eval,yes,,,,no hours recorded,mul,2,clinical,
 ascend,ASCEND: A Spontaneous Chinese-English Dataset for Code-switching in Multi-turn Conversation,eval,eval,no,,10.62,,reported,cmn;eng,2,conversation,close_talk
 babel,IARPA Babel language packs,eval_splits_only,licensed_internal,yes,,256.94,,split hours,mul,,telephone,telephone_channel
 callhome_american_english,CALLHOME American English Speech,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded,eng,,telephone,telephone_channel
 callhome_spanish,CALLHOME Spanish Speech,eval_splits_only,licensed_internal,yes,,12.67,,derived: share of sessions,spa,,telephone,telephone_channel
-callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded,mul,,telephone,telephone_channel
+callhome_sre2000,2000 NIST Speaker Recognition Evaluation (CALLHOME diarization set),eval,licensed_internal,yes,,,,no hours recorded,mul,2-10,telephone,telephone_channel
 chime6,CHiME-6,train_split,train,yes,40.55,9.65,,split hours,eng,4,dinner_party,close_talk;far_field_array
 datahive_conversations_sample,DataHive Conversations samples,train,train,yes,25.41,,,reported,eng;hin;ind;rus;vie,2,telephone,mobile_device
-dementiabank,DementiaBank,eval,eval,yes,,,,no hours recorded,,,clinical,
-dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported,eng;cmn,,mixed,
+dementiabank,DementiaBank,eval,eval,yes,,,,no hours recorded,mul,,clinical,
+dihard3,Third DIHARD Speech Diarization Challenge data,eval,licensed_internal,yes,,67.16,,reported,eng;cmn,,mixed,close_talk;far_field_single;telephone_channel;broadcast_mix
 dipco,Dinner Party Corpus (DiPCo),eval,eval,yes,,5.32,,reported,eng,4,dinner_party,close_talk;far_field_array
 displace2023,DISPLACE 2023,eval,eval,no,,31.50,,reported,mul,3-5,conversation,far_field_single
 earnings21,Earnings-21,eval,eval,no,,39.25,,reported,eng,2-20,earnings_call,
 earnings22,Earnings-22,eval,eval,yes,,,,no hours recorded,eng,,earnings_call,
-earnings25,Earnings25,eval,eval,no,,,,no hours recorded,eng,,earnings_call,
-egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each session once,,,egocentric,wearable
-expresso,Expresso,eval,eval,yes,,,,no hours recorded,,,,
-fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded,eng,,,
+earnings25,Earnings25,eval,eval,no,,,,no hours recorded,eng,,earnings_call,telephone_channel
+egocom,EgoCom (Egocentric Communications),train,train,yes,12.01,,,measured: each session once,eng,3,egocentric,wearable
+expresso,Expresso,eval,eval,yes,,,,no hours recorded,eng,2,conversation,close_talk
+fearless_steps_challenge,"Fearless Steps Challenge corpus (Apollo, FS-1 to FS-4)",train_split,train,no,,,100.00,reported total; split hours not recorded,eng,3-33,conversation,close_talk
 fisher_english_part1,Fisher English Training Speech Part 1,eval,licensed_internal,yes,,984.00,,reported,eng,2,telephone,telephone_channel
 fisher_english_part2,"Fisher English Training Part 2, Speech",eval,licensed_internal,yes,,975.00,,reported,eng,2,telephone,telephone_channel
 fisher_spanish,Fisher Spanish Speech,eval,licensed_internal,yes,,163.00,,reported,spa,2,telephone,telephone_channel
-harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded,,,telephone,
+harper_valley_bank,Gridspace-Stanford Harper Valley speech dataset,train_split,train,yes,,,,no hours recorded,eng,2,telephone,telephone_channel
 hcrc_maptask,HCRC Map Task Corpus,train,train,yes,14.31,,,measured,eng,2,conversation,close_talk
 hub5_2000_eng,2000 HUB5 English Evaluation Speech and Transcripts,eval,licensed_internal,yes,,11.00,,reported,eng,,telephone,telephone_channel
-humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured,asm;ben;bho;hne;bgc;mar;tel;guj;pan;hin;kan;tam;mal,,conversation,
+humyn_indic_multispeaker,Indic High-Fidelity MultiSpeaker ASR (Humyn Labs),train,train,yes,8.35,,,measured,asm;ben;bho;hne;bgc;mar;tel;guj;pan;hin;kan;tam;mal,2,conversation,
 icsi,ICSI Meeting Corpus,train,train,yes,70.00,,,reported,eng,3-10,meeting,close_talk
 imda_nsc_conversational,"IMDA National Speech Corpus (NSC), conversational part (Part 3)",train,train,no,,,,no hours recorded,eng,2,conversation,close_talk;far_field_single;telephone_channel
-indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded,mul,,,
+indic_diarbench,Indic DiarBench,eval,eval,no,,,,no hours recorded,mul,,mixed,remote_call;far_field_single;broadcast_mix
 kallaama,"Kallaama (Wolof, Pulaar, Sereer)",train,train,yes,125.00,,,reported,wol;fuc;srr,,mixed,
-kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured,eng,,conversation,
+kenya_ph_dialogue,Kenya/Philippines English Dialogue (Reord-AI),train,train,yes,68.53,,,measured,eng,2,conversation,remote_call
 libricss,LibriCSS,eval,eval,no,,10.00,,reported,eng,8,simulated,far_field_array
 librispeech_meetings_sim,synth-librispeech-meetings,train,train,yes,1004.33,,,derived: used conditions' share of sessions,eng,3-8,simulated,
-mixer6,Mixer 6 Speech,eval,licensed_internal,yes,,233.13,,measured: each session once,eng,,interview;telephone,
-mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded,eng,,interview;telephone,
-msdwild,MSDWild,eval,eval,no,,80.05,,reported,mul,2-10,web_video,
-msp_conversation,MSP-Conversation,eval,licensed_internal,yes,,59.55,,reported,,,podcast,
-multi_tpc,Multi-TPC (three-party conversations),train,train,yes,4.71,,,measured: each session once,,3,,
-nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train,train,yes,24.00,,,reported,nor,,podcast,
+mixer6,Mixer 6 Speech,eval,licensed_internal,yes,,233.13,,measured: each session once,eng,2,interview;telephone,close_talk;far_field_array;telephone_channel
+mixer6_chime8,Mixer 6 - CHiME 8 Transcribed Calls and Interviews,eval_splits_only,licensed_internal,yes,,,,reported total; split hours not recorded,eng,2,interview;telephone,close_talk;far_field_array
+msdwild,MSDWild,eval,eval,no,,80.05,,reported,mul,2-10,web_video,broadcast_mix
+msp_conversation,MSP-Conversation,eval,licensed_internal,yes,,59.55,,reported,,1-5,podcast,broadcast_mix
+multi_tpc,Multi-TPC (three-party conversations),train,train,yes,4.71,,,measured: each session once,eng,3,conversation,close_talk
+nb_samtale,NB Samtale (Norwegian Conversation Speech Corpus),train,train,yes,24.00,,,reported,nor,,podcast,broadcast_mix
 notsofar1,NOTSOFAR-1,train_split,train,yes,11.14,11.78,,derived: total minus train split,eng,4-8,meeting,close_talk;far_field_array;far_field_single
-npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours,nor,,meeting,
-ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,no,1.01,,,reported,eng,,conversation,close_talk
-open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported,eng,2,,
+npsc,Norwegian Parliamentary Speech Corpus (NPSC),train_split,train,yes,112.55,27.78,,split hours,nor,,meeting,broadcast_mix
+ocular_en_fullduplex_sample,AMERICAN ENGLISH TRANSCRIBED HI-FI FULL-DUPLEX TWO-SPEAKER CONVERSATIONAL DATASET — SAMPLE (Ocular AI),train,train,no,1.01,,,reported,eng,2,conversation,close_talk
+open_yap_1k,Open Yap 1K,train,licensed_internal,yes,1000.25,,,reported,eng,2,conversation,remote_call
 otospeech_fd_task_20h,otoSpeech-full-duplex-task-oriented-20h,train,train,yes,20.01,,,reported,eng,2,conversation,
 otospeech_fd_task_v2,otoSpeech-full-duplex-task-oriented-v2,train,train,yes,17.38,,,reported,eng,2,conversation,
 otospeech_full_duplex_processed_141h,otoSpeech-full-duplex-processed-141h,train,train,yes,141.56,,,measured,eng,2,conversation,
 perit_duplex_support_en,Perit Duplex Support Conversations (English),train,train,yes,5.10,,,reported,eng,2,conversation,
-primock57,PriMock57,train,train,yes,8.64,,,measured: each session once,eng,2,clinical,
+primock57,PriMock57,train,train,yes,8.64,,,measured: each session once,eng,2,clinical,remote_call
 puebla_nahuatl,Highland Puebla Nahuatl Speech with Transcription (OpenSLR 92),eval,eval,yes,,,,no hours recorded,azz,2,interview,close_talk
-real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,measured: each session once,tur,2,conversation,
+real_turnturk,Real-TurnTurk,train,train,yes,1.94,,,measured: each session once,tur,2,conversation,remote_call
 rhapsodie,Rhapsodie (Treebank Rhapsodie),eval,eval,no,,,,no hours recorded,fra,,mixed,
-rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported,eng;arb;arz;cmn,,broadcast;telephone,
-seame,Mandarin-English Code-Switching in South-East Asia (SEAME),eval,licensed_internal,yes,,192.00,,reported,cmn;eng,,,
-seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded,,2,conversation,
+rt03_eval,2003 NIST Rich Transcription Evaluation Data,eval,licensed_internal,yes,,13.00,,reported,eng;arb;arz;cmn,,broadcast;telephone,telephone_channel;broadcast_mix
+seame,Mandarin-English Code-Switching in South-East Asia (SEAME),eval,licensed_internal,yes,,192.00,,reported,cmn;eng,1-2,mixed,
+seamless_interaction,Seamless Interaction,eval,eval,yes,,,,no hours recorded,eng,2,conversation,close_talk
 simsamu,Simsamu,train,train,yes,3.25,,,reported,fra,,clinical;telephone,far_field_single
 spice,SpiCE: Speech in Cantonese and English,train,train,yes,28.13,,,used conditions' hours,yue;eng,2,interview,close_talk
-spjallromur,Spjallrómur - Icelandic Conversational Speech,train,train,yes,18.20,,,measured: each session once,isl,2,conversation,
-spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported,,2,telephone,
+spjallromur,Spjallrómur - Icelandic Conversational Speech,train,train,yes,18.20,,,measured: each session once,isl,2,conversation,remote_call
+spokenwoz,SpokenWOZ,eval,eval,yes,,249.00,,reported,,2,telephone,telephone_channel
 switchboard1,Switchboard-1 Release 2,eval,licensed_internal,yes,,260.00,,reported,eng,2,telephone,telephone_channel
-voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported,unknown,,broadcast;web_video,broadcast_mix
-voxmm,VoxMM,eval,eval,no,,,,no hours recorded,,,web_video,
+voxconverse,VoxConverse,eval,eval,yes,,63.83,,reported,unknown,1-21,broadcast;web_video,broadcast_mix
+voxmm,VoxMM,eval,eval,no,,,,no hours recorded,,1-118,web_video,broadcast_mix
 yoloxochitl_mixtec,Yoloxóchitl Mixtec Speech with Transcription (OpenSLR 89),eval,eval,yes,,,,no hours recorded,xty,2,interview,close_talk
